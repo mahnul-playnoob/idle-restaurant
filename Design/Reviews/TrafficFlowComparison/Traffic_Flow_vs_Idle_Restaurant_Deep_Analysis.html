@@ -1,0 +1,353 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Traffic Flow vs Idle Restaurant — Deep Comparison</title><style>*{box-sizing:border-box}body{margin:0;background:#f4f0e7;color:#233a37;font:16px/1.65 system-ui,-apple-system,sans-serif}main{max-width:1240px;margin:auto;padding:30px 40px 80px}header{background:#193a36;color:#fbf8ed;padding:44px;border-radius:24px}h1{font-size:clamp(30px,4vw,52px);line-height:1.12;margin:8px 0 22px}h2{margin:52px 0 16px;font-size:29px;line-height:1.3}h3{font-size:20px;margin-top:25px}p{max-width:1040px}a{color:#157061}header a{color:#aff4df}small,.muted,figcaption{color:#60756d}.refs{white-space:nowrap;font-size:11px}.refs a{margin:0 3px}header small{color:#b8dace}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}.card,.note{background:#fffdf6;border:1px solid #dedfce;border-radius:16px;padding:22px}.note{border-left:5px solid #df9d4c}.metric{font-size:30px;line-height:1.25;font-weight:700;color:#21745d}.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px}figure{margin:0;background:#e9e5d9;padding:14px;border-radius:15px}figure img{width:100%;max-height:590px;object-fit:contain;display:block}figcaption{font-size:13px;padding-top:10px}.table{overflow-x:auto;background:#fffdf6;border-radius:12px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:14px 16px;border-bottom:1px solid #e4e4d7;text-align:left;vertical-align:top}th{background:#dfe9dc;color:#284639}td:first-child{font-weight:600}code{background:#e2e9dc;padding:2px 5px;overflow-wrap:anywhere;font-size:13px}nav{display:flex;gap:18px;flex-wrap:wrap;padding:24px 0;font-size:14px}ul,ol{padding-left:24px}li{margin:9px 0}.tag{font-size:12px;font-weight:700;color:#8a5424}.priority{display:inline-block;background:#f3dfbf;padding:3px 9px;border-radius:6px;font-size:12px}.sources p{font-size:13px;max-width:none;overflow-wrap:anywhere}.historical{border:2px dashed #c69b64}.art{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}.art img{max-height:340px}.chart{background:#fffdf6;border-radius:15px;padding:24px}svg{width:100%;height:auto}video{max-width:100%;height:440px;background:#182824}@media(max-width:700px){main{padding:16px}header{padding:25px}.hero{gap:12px}h2{font-size:25px}td,th{padding:10px}}@media print{body{background:white}header{background:white;color:#233a37}main{padding:0}nav,video{display:none}h2{break-after:avoid}tr,figure,.card{break-inside:avoid}.art{grid-template-columns:repeat(5,1fr)}}</style></head><body><main>
+<header><small>5 NOVEMBER 2026 · REFERENCE & BUILD REVIEW</small>
+<h1>Traffic Flow<br>vs Idle Restaurant</h1>
+<p>Traffic Flow 0.8.1 package, footage, GDD and balance compared with Idle Restaurant 0.3.0’s Android artifact, active Unity game and recorded evidence.</p>
+<p><b>Verdict:</b> Restaurant is a working, original family-game foundation. It shares Traffic Flow’s three-stage idle structure and content counts, but its active progression, economy and repeat loop have been redesigned. It has not reached equivalent presentation polish or verified mobile release readiness.</p></header>
+<nav><a href="#scope">Evidence</a><a href="#visual">Visuals</a><a href="#gameplay">Gameplay</a><a href="#economy">Economy</a><a href="#experience">Experience</a><a href="#polish">Polish</a><a href="#priorities">Priorities</a><a href="#sources">Sources</a></nav>
+<div class="grid">
+<div class="card">
+<div class="metric">23.75 s</div>
+<p>First completed Restaurant meal in the new Editor audit. First cash is earned earlier at ordering/cooking.</p></div>
+<div class="card">
+<div class="metric">42.0 s</div>
+<p>First Restaurant service completed. Six meals, one ticket, 182.8 coins earned, 157.8 coins after guided purchases.</p></div>
+<div class="card">
+<div class="metric">12–13%</div>
+<p>Maximum-upgrade income forecast overstatement against existing actual five-district service tests, recalculated in this review.</p></div></div>
+<h2 id="scope">1. What was actually verified</h2>
+<p>The APKs were inspected directly for package identity, version, platform requirements, structure and size. The reference DEX was matched to the preserved extraction. GDD paragraphs and workbook cells/formulas were read; no source tuning was changed. Traffic Flow footage and all 450 frames of the current 15-second Restaurant recording were indexed, with meaningful screen states visually inspected. A new Restaurant first-session test ran against the active scene, through real UI raycasts and guest movement.</p>
+<div class="note"><b>Testing boundary:</b> no Android phone/emulator was connected. Editor gameplay is not APK gameplay. This review cannot certify phone FPS, touch reliability, thermal behavior, Android suspend/resume or child comprehension. A static package, authored GDD and prior tests are not three independent confirmations of the same behavior. The full original Traffic Flow XAPK archive was not located in Downloads; its preserved base/split APKs and manifest were available.</div> <small class="refs"><a href="#T1">T1</a> <a href="#T2">T2</a> <a href="#T3">T3</a> <a href="#T4">T4</a> <a href="#R1">R1</a> <a href="#R4">R4</a> <a href="#R7">R7</a></small>
+<div class="table">
+<table>
+<thead>
+<tr><th>Evidence type</th><th>What it supports</th><th>What it does not prove</th></tr></thead>
+<tbody>
+<tr><td>Package/source verified</td><td>Formulas, constants, content definitions and implemented branches</td><td>Server account assignment, current live offers, actual phone behavior</td></tr>
+<tr><td>Video verified</td><td>Visible values, screen structure, animations and the captured user journey</td><td>Unseen first-launch steps, all destinations or total lifetime playtime</td></tr>
+<tr><td>Fresh Editor verified</td><td>Live guest phases, first service, UI purchases, map navigation and active Family mode</td><td>The installed Android binary’s interaction/performance</td></tr>
+<tr><td>Historical recorded tests</td><td>Specific previously captured service/economy results, with scope/date retained</td><td>A fresh device run or universal reliability</td></tr>
+<tr><td>Model/forecast</td><td>Conditional estimates under stated rules and spending policy</td><td>Measured duration or guaranteed player experience</td></tr>
+<tr><td>Design judgment</td><td>Readability, hierarchy, perceived variety and recommended improvements</td><td>User-study results, retention or market performance</td></tr></tbody></table></div>
+<h3>Build identities</h3>
+<div class="table">
+<table>
+<thead>
+<tr><th>Item</th><th>Traffic Flow</th><th>Idle Restaurant</th></tr></thead>
+<tbody>
+<tr><td>Version/package</td><td>0.8.1 (740) · com.coolcatsgames.idletransport</td><td>0.3.0 (3) · com.mahnul.idlerestaurant</td></tr>
+<tr><td>Minimum / target Android API</td><td>29 / 36 (Android 10 minimum)</td><td>30 / 36 (Android 11 minimum)</td></tr>
+<tr><td>Artifact size</td><td>31.60 MiB for preserved base + all supplied splits</td><td>59.34 MiB for APK</td></tr>
+<tr><td>ABI / engine evidence</td><td>Native Android DEX package; supplied armeabi-v7a split</td><td>Unity IL2CPP, arm64-v8a only</td></tr>
+<tr><td>Monetization footprint</td><td>BILLING, advertising-ID and ad SDK evidence present</td><td>No BILLING or AD_ID permission; ad/purchase packages removed in current source</td></tr>
+<tr><td>Distribution status</td><td>Preserved third-party package, not reinstalled during this review</td><td>Installable test APK; debug signing certificate reported despite debuggable=false</td></tr>
+<tr><td>Hash</td><td><code>875274b5…8247ac</code> (base APK)</td><td><code>df9645c2…07deb</code></td></tr></tbody></table></div> <small class="refs"><a href="#T1">T1</a> <a href="#R1">R1</a></small>
+<p>APK size alone does not establish runtime efficiency. Restaurant contains Unity/native libraries and 3D assets; Traffic Flow’s minimalist Android presentation has a different cost structure. Frame-time and memory claims need phone profiling.</p>
+<h2 id="visual">2. Visual hierarchy and readability</h2>
+<div class="hero">
+<figure><a href="evidence/traffic-gameplay.jpg"><img loading="lazy" src="evidence/traffic-gameplay.jpg"></a><figcaption>Traffic Flow: actual supplied FTUE footage, around 00:56. The vehicle/queue and money feedback dominate the center.</figcaption></figure>
+<figure><a href="evidence/restaurant-gameplay.jpg"><img loading="lazy" src="evidence/restaurant-gameplay.jpg"></a><figcaption>Restaurant v0.3.0: actual 15-second family-game recording, 00:08. Configured progression state; not clean-install timing.</figcaption></figure></div>
+<div class="table">
+<table>
+<thead>
+<tr><th>Dimension</th><th>Traffic Flow</th><th>Restaurant</th><th>Assessment</th></tr></thead>
+<tbody>
+<tr><td>Art identity</td><td>Black field, thin cyan/grey outlines, green/orange occupancy and bright money</td><td>Cream/sage/peach palette, low-poly 3D characters, geometric food and furnishings</td><td>Restaurant has a coherent original direction. More geometry has not yet translated into stronger readability.</td></tr>
+<tr><td>World framing</td><td>Large tall vehicle plus visible queue makes remaining capacity legible</td><td>Tilted miniature restaurant sits below a large header/guide and above large cards</td><td>Compact the repeated text and enlarge the service scene. Food and occupancy should remain readable at normal phone scale.</td></tr>
+<tr><td>Value/color separation</td><td>Green/orange seats contrast strongly with black, although empty outlines and dim text can be hard to see</td><td>Floor, counters, chairs, skin and food share light warm values; shadows are soft/low contrast</td><td>Preserve warmth, increase material/value separation, and reserve saturated accents for actions and dishes.</td></tr>
+<tr><td>Typography</td><td>Compact uppercase numerical presentation; information-dense and sometimes small</td><td>Large readable sentence-case text; repeated labels and multiple card lines consume space</td><td>Restaurant suits a younger audience, but needs concise phrasing and wrapping QA rather than simply more font size.</td></tr>
+<tr><td>Visual growth</td><td>Different vehicle bodies/capacities/modes are present in data and GDD; later layouts not all filmed</td><td>Five cuisine environments exist, while playable service geometry stays largely the same</td><td>Restaurant’s district identity is real, but most card upgrades do not visibly improve the restaurant.</td></tr>
+<tr><td>Upgrade availability</td><td>Reference uses green states and dim unaffordable text in captured screens</td><td>Green BUY, grey NEED, SOON and MAX LEVEL text are implemented</td><td>Restaurant improves action wording. NEED currently shows the full price, not the additional shortfall.</td></tr>
+<tr><td>Food appeal</td><td>No direct food equivalent</td><td>Distinct signature dishes across outlets; generally tiny from the main camera</td><td>Judge food at gameplay scale, not asset closeup. Add stronger silhouettes, toppings/material separation and a short dish reveal.</td></tr></tbody></table></div> <small class="refs"><a href="#T4">T4</a> <a href="#T5">T5</a> <a href="#R4">R4</a> <a href="#R7">R7</a> <a href="#R11">R11</a> <a href="#R12">R12</a></small>
+<h3>Five district environments: present, but not five different service games</h3>
+<p>Current environment code defines street awnings/string lights, diner windows/checker flooring, Asian screens/lanterns, Mediterranean arches/pergola and dessert displays. Current DistrictIcon draws a burger, diner plate/cutlery, noodle bowl, olive motif and cupcake. These are appropriate district emblems. They do not distinguish Taco Terrace from Noodle Nook inside Street kitchens.</p>
+<div class="art">
+<figure><a href="evidence/historical-art-street.png"><img loading="lazy" src="evidence/historical-art-street.png"></a><figcaption>Street — historical v0.2.0 environment preview. Use for art direction only; currency, UI, guest counts and progression shown here are obsolete.</figcaption></figure>
+<figure><a href="evidence/historical-art-comfort.png"><img loading="lazy" src="evidence/historical-art-comfort.png"></a><figcaption>Comfort — historical v0.2.0 environment preview. Use for art direction only; currency, UI, guest counts and progression shown here are obsolete.</figcaption></figure>
+<figure><a href="evidence/historical-art-asian.png"><img loading="lazy" src="evidence/historical-art-asian.png"></a><figcaption>Asian — historical v0.2.0 environment preview. Use for art direction only; currency, UI, guest counts and progression shown here are obsolete.</figcaption></figure>
+<figure><a href="evidence/historical-art-bistro.png"><img loading="lazy" src="evidence/historical-art-bistro.png"></a><figcaption>Bistro — historical v0.2.0 environment preview. Use for art direction only; currency, UI, guest counts and progression shown here are obsolete.</figcaption></figure>
+<figure><a href="evidence/historical-art-dessert.png"><img loading="lazy" src="evidence/historical-art-dessert.png"></a><figcaption>Dessert — historical v0.2.0 environment preview. Use for art direction only; currency, UI, guest counts and progression shown here are obsolete.</figcaption></figure></div>
+<p class="muted">These older images are explicitly retained as art previews, not presented as current APK screenshots. Current source confirms the five environment-building branches; only the Street environment received a new live capture in this review.</p>
+<h2 id="gameplay">3. Gameplay, movement and production logic</h2>
+<div class="table">
+<table>
+<thead>
+<tr><th>System</th><th>Traffic Flow reference</th><th>Restaurant family edition</th><th>Implication</th></tr></thead>
+<tbody>
+<tr><td>Core decision</td><td>Spend cash on the stage limiting boarding income, or expand the network</td><td>Spend coins on ordering, kitchen, dining, team, research or expansion</td><td>The investment structure carries over; the actual reward and timing relationships differ.</td></tr>
+<tr><td>Controls</td><td>Tap cards/tabs, map and menus; passengers move automatically</td><td>Touch-oriented buttons; Editor mouse and 1/2/3, M, Escape paths</td><td>Both are management games. Restaurant is not a direct-control cooking or serving game.</td></tr>
+<tr><td>Physical cycle</td><td>Grouped passengers pass gate, transit/door and seating until a vehicle departs</td><td>Guests enter, queue, order, wait for food, collect, reserve a seat, sit/eat, stand and leave via tray return</td><td>The restaurant loop now has a coherent service purpose; random circling is no longer the designed movement system.</td></tr>
+<tr><td>Capacity</td><td>Route body/premium/economy layouts; recovered range 42–208</td><td>Four chairs during early tutorial, then twelve; first 6 guests, regular 8+2×(outlet mod 8)</td><td>Stored Traffic Flow capacities remain in the catalog but are bypassed by active Family service sizes.</td></tr>
+<tr><td>Bottlenecks</td><td>Check-in, boarding and cabin/segments vary with vehicle body and cards</td><td>One ordering station, two cooking slots, travel lanes and seating; same topology across districts</td><td>Original vehicle differences were mechanically meaningful; Restaurant currently loses much of that long-range variation.</td></tr>
+<tr><td>Collisions</td><td>No new reference physics test; visible fixed paths do not establish collider rules</td><td>CharacterController guests; table/chair/counter BoxColliders; explicit chair owner reservations</td><td>Furniture collision exists. Sitting/standing intentionally disables the guest controller and moves to a reserved seat. That is controlled placement, not always-on collision.</td></tr>
+<tr><td>Movement scope</td><td>Native vehicle service animation and income prediction</td><td>Hard-coded waypoint routes and frame-based CharacterController movement</td><td>Current paths are tailored to this furniture layout. Moving replacement tables can block lanes; no general pathfinding guarantee follows.</td></tr>
+<tr><td>Human variation</td><td>Passenger dots/classes, not articulated people</td><td>Five variant seeds, different idle/look, cooking styles and eating rhythms; walking/carrying/sitting states</td><td>Variation is parameterized procedural motion, not a library of authored skeletal clips with polished hand-object contacts.</td></tr>
+<tr><td>Food variation</td><td>Not applicable</td><td>Signature prefab differs by outlet; each guest at that outlet receives that same prefab</td><td>The displayed menu is not an implemented multi-dish order/recipe selection system.</td></tr>
+<tr><td>Completion reward</td><td>Observed structured departure card: 52 passengers, 4 premium, +$36, +1 gem</td><td>New test: completion toast, one ticket, 15% service bonus and first-service gift</td><td>Restaurant needs a more legible reward moment; it need not copy premium seating or monetization.</td></tr></tbody></table></div> <small class="refs"><a href="#T1">T1</a> <a href="#T4">T4</a> <a href="#T5">T5</a> <a href="#R2">R2</a> <a href="#R4">R4</a> <a href="#R12">R12</a></small>
+<h3>Source/footage discrepancies worth preserving</h3>
+<ul>
+<li>The Traffic Flow GDD models precise formulas from the package, while the footage confirms only displayed rounded values and one assignment. Dublin’s first prices match the packaged <b>Current</b> override; the New branch would show half-size starting prices.</li>
+<li>The footage map shows maximum income around <b>$1.8K/min</b>, whereas the workbook’s approximate Dublin maximum is <b>$2,104.72/min</b>. The latter is about 16.9% above 1,800, with rounding/account effects unresolved. This is an estimator limitation, not proof the shipped game is wrong.</li>
+<li>Traffic Flow’s recorded first visible departure is 03:31.775 into the clip; the map later displays <b>Last Run 3:46</b>. The recording began after that cycle started. Neither number is a universal first-session timer.</li></ul> <small class="refs"><a href="#T3">T3</a> <a href="#T4">T4</a> <a href="#T5">T5</a></small>
+<h2 id="economy">4. Economy and upgrade comparison</h2>
+<div class="table">
+<table>
+<thead>
+<tr><th>Rule</th><th>Traffic Flow package/footage</th><th>Restaurant active family game</th></tr></thead>
+<tbody>
+<tr><td>Initial cash</td><td>The clip starts with $598; true first-launch grant remains unverified</td><td>0 coins. No paid boost modifies account income.</td></tr>
+<tr><td>First upgrade prices by stage</td><td>Gate 50/50/100; Transit 40/50/80; Seating 40/40/100 (Current)</td><td>Orders 10/18/22; Kitchen 15/25/30; Dining 18/28/35</td></tr>
+<tr><td>Next local upgrade cost</td><td>round-even(base × route/stage or Dublin override × (1+0.4L) × 1.1^L × discount × prestige cost multiplier)</td><td>max(1, round(baseCard × 1.65^outlet × (1+0.12L) × 1.075^L × discount)); no rank cost multiplier</td></tr>
+<tr><td>Level cap and local purchases</td><td>9 cards × 30 levels = 270 per route</td><td>Same cap/count: 270 per outlet; total potential first-pass purchases 10,800</td></tr>
+<tr><td>Late price relative to first price</td><td>Unrounded L29 factor ≈199.875×</td><td>Unrounded L29 factor ≈36.486×</td></tr>
+<tr><td>First route/outlet all 270 levels</td><td>844,045 Current / 422,016 New, excluding discounts/rank</td><td>69,502 coins in the active family export, excluding discounts</td></tr>
+<tr><td>Stage payout split</td><td>30% gate / 30% door / 40% seat; economy and premium have different base values</td><td>25% order / 25% kitchen / 50% dining; 12 base meal coins at first outlet</td></tr>
+<tr><td>Revenue cards</td><td>Linear 1+0.2L per affected stage</td><td>1+0.12L stage pay; menu card adds 1+0.06L across meal value; Happy Guests adds tip chance</td></tr>
+<tr><td>Completion payout</td><td>10% of stage earnings before departure modifiers</td><td>15% of wave earnings, including tips; +100 first-service gift</td></tr>
+<tr><td>Next expansion</td><td>Palma base unlock cost 20,000; later modes require certificates</td><td>Second restaurant 200; later unlocks 200×1.9^(i−1), previous outlet required; no certificate gate</td></tr>
+<tr><td>Research</td><td>13 repeatable nodes and 4 certificates; nonlinear price curve, 3/5-minute families initially, mode timers 4/8/12/16h</td><td>Same 17 catalog entries rethemed; base 80×1.2^level×2^district, time (15+10L)/(1+research speed); district skills give income instead of access</td></tr>
+<tr><td>Extra research slots</td><td>120 / 450 / 1,500 / 3,200 gems</td><td>8 / 16 / 24 / 40 earned tickets</td></tr>
+<tr><td>Managers / teammates</td><td>71 definitions, rarity/role/affinity and duplicate progression</td><td>71 rethemed definitions; deterministic unowned recruitment at 8 tickets; training uses 2+currentLevel tickets; level cap 15</td></tr>
+<tr><td>Prestige / stars</td><td>All cards capped and safe boarding state; reset local cards, preserve shared wallet; income ×15.625^rank; cost ×27^rank or ×42.875^rank</td><td>All cards capped plus five additional completed services since last star; upgrades/cash retained; income ×1.1^min(rank,60), then an additional linear 1% per rank beyond 60</td></tr>
+<tr><td>Star research</td><td>8 nodes capped at 20, one coin per purchase; longer research timers</td><td>Same 8-node structure, one earned star; 10+5L seconds</td></tr>
+<tr><td>Offline</td><td>Absence >300s, 25% rate, 2h standard cap; premium 75%, 24h cap; pending credited time capped in package</td><td>Absence >300s retained; 100% forecast, 24h per Resume grant, no purchase; pending reward can accumulate over multiple returns</td></tr>
+<tr><td>Monetization</td><td>Rewarded ×2, permanent ×2/×3 packs, premium offline, passes/packs/offers in package; prices can depend on store/account</td><td>No IAP or ad integration in current edition; rewards are earned. This matches the later user direction.</td></tr></tbody></table></div> <small class="refs"><a href="#T1">T1</a> <a href="#T3">T3</a> <a href="#T4">T4</a> <a href="#T5">T5</a> <a href="#R2">R2</a> <a href="#R3">R3</a> <a href="#R5">R5</a> <a href="#R13">R13</a></small>
+<div class="note"><b>Interpretation:</b> absolute currency values are arbitrary. Smaller prices alone do not prove better balance. The meaningful comparison is purchase affordability, marginal production gain, time to the next useful action and retention of interesting choices. Restaurant changes both the reward model and the spending curve, so preserving 40 entries and 71 teammates does not preserve Traffic Flow pacing.</div>
+<h3>How quickly local upgrade prices steepen</h3>
+<div class="chart"><svg viewBox="0 0 900 320" role="img" aria-label="Unrounded level price multipliers: Traffic Flow rises to 200, Restaurant rises to 36.5"><rect width="900" height="320" fill="#fffdf6"/><path d="M65 270 H855" stroke="#dce2d5"/><text x="15" y="274" font-size="13" fill="#52675f">0×</text><path d="M65 220 H855" stroke="#dce2d5"/><text x="15" y="224" font-size="13" fill="#52675f">50×</text><path d="M65 170 H855" stroke="#dce2d5"/><text x="15" y="174" font-size="13" fill="#52675f">100×</text><path d="M65 120 H855" stroke="#dce2d5"/><text x="15" y="124" font-size="13" fill="#52675f">150×</text><path d="M65 70 H855" stroke="#dce2d5"/><text x="15" y="74" font-size="13" fill="#52675f">200×</text><polyline fill="none" stroke="#a85e3b" stroke-width="4" points="65.0,269.0 92.2,268.5 119.5,267.8 146.7,267.1 174.0,266.2 201.2,265.2 228.4,264.0 255.7,262.6 282.9,261.0 310.2,259.2 337.4,257.0 364.7,254.6 391.9,251.8 419.1,248.6 446.4,244.9 473.6,240.8 500.9,236.0 528.1,230.6 555.3,224.4 582.6,217.4 609.8,209.5 637.1,200.4 664.3,190.2 691.6,178.7 718.8,165.6 746.0,150.8 773.3,134.1 800.5,115.3 827.8,94.1 855.0,70.1"/><polyline fill="none" stroke="#287e65" stroke-width="4" points="65.0,269.0 92.2,268.8 119.5,268.6 146.7,268.3 174.0,268.0 201.2,267.7 228.4,267.3 255.7,266.9 282.9,266.5 310.2,266.0 337.4,265.5 364.7,264.9 391.9,264.2 419.1,263.4 446.4,262.6 473.6,261.7 500.9,260.7 528.1,259.6 555.3,258.4 582.6,257.0 609.8,255.6 637.1,253.9 664.3,252.1 691.6,250.2 718.8,248.0 746.0,245.6 773.3,243.0 800.5,240.1 827.8,237.0 855.0,233.5"/><text x="70" y="305" font-size="13" fill="#52675f">Level 0</text><text x="780" y="305" font-size="13" fill="#52675f">Level 29</text><text x="510" y="36" font-size="15" fill="#a85e3b">Traffic Flow: 199.9×</text><text x="510" y="61" font-size="15" fill="#287e65">Restaurant: 36.5×</text></svg>
+<p class="muted">Same level, normalized to each card’s own starting cost; before rounding, route scaling, discounts or rank. These are formula shapes, not measured wait times.</p></div>
+<h3>Income prediction is an active balance issue</h3>
+<p>For each existing five-district service result, observed rate was recalculated as earned coins ×60 / recorded service seconds, then compared with the independently loaded current FamilyIncome calculation. The maximum-level results already include deterministic tips. This comparison uses the same 22-guest service and zero managers/research/rank, rather than comparing unrelated states.</p>
+<div class="table">
+<table>
+<thead>
+<tr><th>Outlet</th><th>Level</th><th>Recorded service seconds</th><th>Forecast above observed</th></tr></thead>
+<tbody>
+<tr><td>8</td><td>0</td><td>78.25</td><td>2.29%</td></tr>
+<tr><td>16</td><td>0</td><td>78.05</td><td>2.03%</td></tr>
+<tr><td>24</td><td>0</td><td>78.10</td><td>2.09%</td></tr>
+<tr><td>32</td><td>0</td><td>78.00</td><td>1.96%</td></tr>
+<tr><td>40</td><td>0</td><td>78.15</td><td>2.16%</td></tr>
+<tr><td>8</td><td>30</td><td>46.70</td><td>12.45%</td></tr>
+<tr><td>16</td><td>30</td><td>46.50</td><td>12.95%</td></tr>
+<tr><td>24</td><td>30</td><td>46.40</td><td>12.71%</td></tr>
+<tr><td>32</td><td>30</td><td>46.55</td><td>13.07%</td></tr>
+<tr><td>40</td><td>30</td><td>46.35</td><td>12.58%</td></tr></tbody></table></div> <small class="refs"><a href="#R2">R2</a> <a href="#R5">R5</a> <a href="#R6">R6</a></small>
+<p>Base-level error is about 2%. At maximum upgrades it rises to 12–13%. This matters because inactive outlets are paid directly from the forecast while the selected outlet earns through actual guests, and offline rewards use the same forecast. In theory, changing which outlet is selected can change the rate of earning. A new controlled two-outlet long-window test is needed to measure that effect; this review does not claim it has already been quantified.</p>
+<h3>Two independently reproduced rule gaps</h3>
+<ul>
+<li><b>Dining speed:</b> assigning a level-15 Mythic Dining teammate produces a nominal speed bonus of +240%, but eating stays at 3.8 seconds. Pay increases from 6 to 9 for the dining stage. The team member is useful for pay; its speed component is not applied by Family MealDuration. Affinity also is not consumed by active family equations. UI does not currently expose the full bonus vector, so this is an incomplete mechanic rather than a demonstrated false numeric UI promise.</li>
+<li><b>Pending offline cap:</b> at the initial 127.712/min forecast, a 24h absence adds 183,905.39 coins. A second 24h absence without claiming yields 367,810.79 pending. Claiming twice still returns zero on the second claim. The difference is accumulated-cap semantics, not a duplicated claim. Decide whether this generosity is intentional.</li></ul> <small class="refs"><a href="#T1">T1</a> <a href="#R5">R5</a> <a href="#R13">R13</a></small>
+<h2>5. Progression, difficulty and total playtime</h2>
+<p>Both games are primarily economic progression games; there is no demonstrated combat, failure score or dexterity challenge. Difficulty comes from choosing investments, recognizing bottlenecks and waiting for affordability/unlocks. Removing ads/IAP is appropriate for the requested edition, but it creates a new balance problem to solve rather than an automatic parity conversion.</p>
+<div class="table">
+<table>
+<thead>
+<tr><th>Estimate</th><th>Endpoint / policy</th><th>Result</th><th>How to read it</th></tr></thead>
+<tbody>
+<tr><td>Traffic Flow Current ×1</td><td>Max all nine local cards on each route before advancing; approximate throughput; all 10,800 purchases</td><td>422.7567 online hours</td><td>Conditional model. Omits managers, prestige, general research, rewards, ads and manual interaction time.</td></tr>
+<tr><td>Traffic Flow New ×1</td><td>Same max-route policy; alternate packaged costs</td><td>356.3832 online hours</td><td>Not a measured completion duration.</td></tr>
+<tr><td>Historical Restaurant v0.2.0</td><td>A separate reconstructed reference model under roughly matched max-route policy</td><td>435.6113h Current ×1 / 365.6567h New ×1</td><td>Historical model results; their 1.5–3% differences are not current family-game parity evidence.</td></tr>
+<tr><td>Restaurant v0.3.0 family</td><td>Open all outlets; choose upgrades with forecast payback under 180s; no team/research/stars/offline; 592 purchases</td><td>352.6173 minutes = 5.88 online hours</td><td>Open-all forecast only. Not a max-all duration and not measured player playtime.</td></tr>
+<tr><td>Restaurant new direct test</td><td>One clean modeled save, tutorial UI clicks and first six-guest service</td><td>First meal 23.75s; first service 42s</td><td>Measured Editor simulation time, a single run. First coins arrive earlier than the first completed meal.</td></tr></tbody></table></div> <small class="refs"><a href="#T3">T3</a> <a href="#T5">T5</a> <a href="#R4">R4</a> <a href="#R8">R8</a> <a href="#R9">R9</a></small>
+<p><b>The original 5.88h and 422.76h results have different endpoints and cannot be divided into a meaningful completion-speed ratio.</b> I therefore ran a new matched-policy calculation using the same max-every-route-before-advancing strategy and all 10,800 purchases:</p>
+<div class="note"><b>New matched max-all forecast:</b> Traffic Flow Current <b>422.76h</b>; Traffic Flow New <b>356.38h</b>; Restaurant Family <b>5.43h</b> (325.61 minutes). Under this model only, the family progression is roughly 78× shorter than Current or 66× shorter than New. These ratios describe a substantial economic redesign, not measured player playtime. <a href="#M1">M1</a></div>
+<p>Both calculations start with zero cash and use normal steady service sizes, choose the lowest cost per incremental network income, and max all 270 upgrades before opening each next route/outlet. Neither includes onboarding rewards, general research, teammates/managers, stars, offline claims, ads or paid multipliers. Original Traffic Flow certificate requirements/timers are retained because they are part of its progression. Restaurant formulas matched 20 loaded/exported base/max samples within 0.0001%; Traffic Flow replays reproduced both workbook scenario totals. The original Traffic Flow throughput proxy has known omissions, and Restaurant’s estimator overstates measured max-level service rates, so this is evidence of direction and scale, not an exact duration promise.</p>
+<p>Under the matched strategy, Restaurant’s first outlet reaches all 270 upgrades at 34.97 model minutes, the second opens at 35.02, district two opens at 93.92, and the final outlet is maxed at 325.61. The existing open-first strategy opens the second at 1.26 minutes and all outlets at 352.62. A different investment policy can change long-run income enough that the max-first model completes its harder endpoint earlier. This sensitivity is another reason to validate actual milestones rather than quote one “total playtime”.</p>
+<h3>Current family forecast milestones</h3>
+<div class="table">
+<table>
+<thead>
+<tr><th>Milestone</th><th>Forecast online minutes</th><th>Important limitation</th></tr></thead>
+<tbody>
+<tr><td>Outlet 2 · Toast and Bean</td><td>1.26</td><td>Forecast income and purchasing policy; not naturally played through</td></tr>
+<tr><td>Outlet 9 · Morning Table</td><td>9.38</td><td>Forecast income and purchasing policy; not naturally played through</td></tr>
+<tr><td>Outlet 17 · Miso Lane</td><td>21.81</td><td>Forecast income and purchasing policy; not naturally played through</td></tr>
+<tr><td>Outlet 25 · Olive Room</td><td>51.82</td><td>Forecast income and purchasing policy; not naturally played through</td></tr>
+<tr><td>Outlet 33 · Sweet Start</td><td>136.27</td><td>Forecast income and purchasing policy; not naturally played through</td></tr>
+<tr><td>Outlet 40 · Celebration Cafe</td><td>352.62</td><td>Forecast income and purchasing policy; not naturally played through</td></tr></tbody></table></div>
+<h3>Long-term experience</h3>
+<p>Restaurant can keep cycling services, repeating goal books and earning non-destructive stars. That supplies practical repeatability, but not unlimited new content. There are still 40 finite authored outlets, the same local level cap, the same common service topology, and a finite research/team roster. After full local maxing, repeated stars mostly increase income and star research rather than reopening a local upgrade journey. Traffic Flow resets local cards and makes rebuild economics steeper, which supplies another investment cycle at the cost of complexity.</p>
+<p>For a ten-year-old, retaining earned upgrades is a reasonable choice. Improve lasting variety through visible recipe mastery, earned decorations, new customer patterns and optional challenges; do not equate giant currency values or an unbounded counter with an engaging endless game. These are proposals, not features currently verified.</p> <small class="refs"><a href="#T2">T2</a> <a href="#T5">T5</a> <a href="#R2">R2</a> <a href="#R13">R13</a></small>
+<h2 id="experience">6. First-time experience and player understanding</h2>
+<div class="hero">
+<figure><a href="evidence/traffic-tutorial.jpg"><img loading="lazy" src="evidence/traffic-tutorial.jpg"></a><figcaption>Traffic Flow tutorial: dimmed surroundings and a highlighted Transit upgrade. Actual supplied recording; earlier first-launch steps are missing.</figcaption></figure>
+<figure><a href="evidence/restaurant-ftue-welcome.png"><img loading="lazy" src="evidence/restaurant-ftue-welcome.png"></a><figcaption>New Restaurant fresh-state welcome capture. Original save was backed up and restored after the audit.</figcaption></figure></div>
+<div class="table">
+<table>
+<thead>
+<tr><th>Moment</th><th>Traffic Flow footage</th><th>Restaurant fresh test</th><th>Assessment</th></tr></thead>
+<tbody>
+<tr><td>Explain the loop</td><td>Gate earns money; Transit and Seating introduced one at a time</td><td>Welcome explains that staff act automatically and the player chooses upgrades</td><td>Restaurant wording is clear but the large initial modal obscures most of the world.</td></tr>
+<tr><td>First agency</td><td>First visible $50 purchase at 00:08.913 into a mid-tutorial clip; already had $598 at start</td><td>First completed meal at 23.75s; guided $10 order purchase at 24.10s; $15 delivery at 24.45s</td><td>Restaurant has a longer initial observation period than the clip’s visible purchase wait. Full first-launch-to-action comparison is unavailable.</td></tr>
+<tr><td>Progressive reveal</td><td>Spotlights stage/location, then explains route and vehicle expansion</td><td>Stages/menu access restricted during guide; four chairs become twelve after delivery step; map after first service</td><td>Good structure; reveal of tables could be more visible and rewarding.</td></tr>
+<tr><td>Affordability</td><td>Rounded current→next effect and price; dim purchase states</td><td>Explicit BUY / NEED / SOON / MAX, contrasting colors and guided outline</td><td>A sound improvement. Show the extra coins needed rather than full-price NEED; add non-color cues and richer purchase response.</td></tr>
+<tr><td>First reward</td><td>Departure card gives capacity, premium count, cash and gem with progress bar</td><td>First service 42s, 182.8 earned incl. +100 gift, 157.8 wallet, one ticket; toast announces bonus</td><td>Restaurant should explain why the large reward arrived and where the ticket goes.</td></tr>
+<tr><td>Next goal</td><td>Network/rank/research surfaces visible; locked vehicle gives prerequisite message</td><td>Map points to second restaurant costing 200; wallet still below that immediately after first service</td><td>Small additional earning step is reasonable, but show the 42.2-coin shortfall and a clear return-to-serving action.</td></tr>
+<tr><td>Exit/skip</td><td>No full first-launch skip flow captured</td><td>Skip Guide and welcome replay are present; closing welcome starts service</td><td>Avoid surprising progression on dismiss. Guide replay is a summary, not a complete tutorial-state replay.</td></tr></tbody></table></div> <small class="refs"><a href="#T4">T4</a> <a href="#R4">R4</a> <a href="#R11">R11</a></small>
+<p>The new test visited all 14 service phases, made both guided purchases via raycast and opened the map. A first harness attempt clicked before the 0.2-second UI refresh enabled the new target and was rejected by its own lookup; that attempt is retained separately and excluded from game-failure counts. The corrected test waits for the UI to refresh and verifies each guide transition. No child usability claim is made.</p>
+<h2 id="polish">7. Presentation polish, UX and sound</h2>
+<div class="hero">
+<figure><a href="evidence/traffic-departure.jpg"><img loading="lazy" src="evidence/traffic-departure.jpg"></a><figcaption>Traffic Flow’s observed completion moment: visible full reward breakdown.</figcaption></figure>
+<figure><a href="evidence/restaurant-map.png"><img loading="lazy" src="evidence/restaurant-map.png"></a><figcaption>Current Restaurant map from the fresh audit: PLAY remains highlighted and the first node’s description exceeds its card. The service-complete toast sits just above the navigation.</figcaption></figure></div>
+<div class="table">
+<table>
+<thead>
+<tr><th>Area</th><th>Current Restaurant assessment</th><th>Recommended direction</th></tr></thead>
+<tbody>
+<tr><td>Navigation</td><td>Buttons navigate, but bottom selected state is hard-coded to PLAY. Goals is a rewards hub before the actual goals page.</td><td>Make current location unmistakable and reduce unnecessary navigation steps.</td></tr>
+<tr><td>UI density</td><td>Readable individual text, but repeated labels, oversized margins and four-to-five-line cards constrain the game view. Current map wrapping fails.</td><td>Shorter hierarchy, flexible row sizing, clear cost/effect rows and supported aspect-ratio checks.</td></tr>
+<tr><td>Animation logic</td><td>Walking, carrying, receiving, sitting, eating, standing, leaving and cooking use purposeful states. Seats are reserved.</td><td>Improve anticipation, contacts, turns and easing; add more than phase-shift variation and verify all rig replacements.</td></tr>
+<tr><td>Food animation</td><td>Prep grows/enables renderers; meal consumption hides renderers in sorted order; plate is separated by material-name filtering.</td><td>Use explicit edible-piece metadata rather than material-name heuristics, stable plating and utensil/hand contacts.</td></tr>
+<tr><td>Reward feel</td><td>Coin sound on economic events, upgrade cue on purchase/service; temporary toast. No full reward card, coin-flight or custom particle hook identified in current service code.</td><td>Short, readable service summary and grounded reward motion; avoid blocking repeated gameplay.</td></tr>
+<tr><td>Audio</td><td>Four runtime clip slots (music, coin, tap, upgrade), actual current recording has an audio track. Source does not show semantic cooking/eating/return hooks.</td><td>Event-based restrained kitchen ambience and service cues, with mixing, cooldowns and audio-switch tests. Perceptual audio quality was not independently auditioned in this review.</td></tr>
+<tr><td>Accessibility</td><td>Safe-area anchors, larger text, reduced motion, music/SFX/haptics and low/medium graphics toggles exist.</td><td>Verify all pages on device, including contrast, touch targets, cutouts, text overflow and reduced-motion correctness.</td></tr>
+<tr><td>Economy explanations</td><td>Cards show effects, but team/research pages mainly give level, rarity, price and time. Assigned teammate location/benefit is not clearly exposed in row text.</td><td>Show an understandable before→after outcome and explain why moving/training a teammate is useful.</td></tr>
+<tr><td>Failure/recovery</td><td>Checksum+backup save, damaged-file preservation and storage-error message exist in source; original prior tests cover roundtrip.</td><td>Test interrupted writes, fresh install/update, kill/relaunch, no-storage and clock changes on an Android device. A checksum detects damage, not tamper-resistant anti-cheat.</td></tr></tbody></table></div> <small class="refs"><a href="#R4">R4</a> <a href="#R7">R7</a> <a href="#R11">R11</a> <a href="#R12">R12</a> <a href="#R13">R13</a></small>
+<h2>8. Feature coverage and deliberate differences</h2>
+<div class="table">
+<table>
+<thead>
+<tr><th>Feature</th><th>Traffic Flow evidence</th><th>Restaurant 0.3.0 status</th></tr></thead>
+<tbody>
+<tr><td>40 destinations / five groups</td><td>Packaged and listed in GDD/workbook</td><td>40 outlets / five districts retained; active capacity/cost/fare behavior redesigned</td></tr>
+<tr><td>Nine upgrades, 30 levels</td><td>Packaged formulas and footage</td><td>Structure retained, different card meanings and formulas</td></tr>
+<tr><td>71 managers / teammates</td><td>Packaged roster, rarity/role/affinity</td><td>Rethemed roster retained; deterministic earned recruitment and ticket training; full benefit transparency incomplete</td></tr>
+<tr><td>Research and eight prestige nodes</td><td>Packaged nodes, slots, timers, certificates; first research shown in video</td><td>Rethemed research and star nodes work in source/tests, much shorter timers; certificates no longer gate districts</td></tr>
+<tr><td>Offline rewards</td><td>Packaged rule and premium branch; no offline experiment in supplied clip</td><td>24h free forecast-based rewards; repeated pending grants differ from reference cap semantics</td></tr>
+<tr><td>Daily/weekly/event loops</td><td>Daily reward captured; other live-event/pass/shop controller presence in package</td><td>Repeating service goals and stars; no equivalent implemented event/live-ops schedule verified</td></tr>
+<tr><td>Ads and in-app purchases</td><td>Package integrations and observed placements; real transactions not shown</td><td>Removed intentionally to satisfy later free-family request; absence is not a defect</td></tr>
+<tr><td>Online identity/ranks/cloud</td><td>Settings/cloud sign-in and ranks visible; package integrations</td><td>Local device progress and local diagnostics; no equivalent backend/cloud/leaderboard configured</td></tr>
+<tr><td>Localization</td><td>Supplied language splits and packaged localization</td><td>Current player-facing source strings are English; no translated-content workflow verified</td></tr>
+<tr><td>Editable assets and tools</td><td>Original editable competitor project not provided</td><td>Unity source, FamilyBalance asset/catalog, food/environment slots, authoring tools and development controls present</td></tr>
+<tr><td>Release readiness</td><td>Store-distributed reference package available, but no current live-ops audit</td><td>Android test candidate; phone QA, child test, release signing/AAB and store preparation still needed</td></tr></tbody></table></div> <small class="refs"><a href="#T1">T1</a> <a href="#T2">T2</a> <a href="#T3">T3</a> <a href="#T4">T4</a> <a href="#R1">R1</a> <a href="#R2">R2</a> <a href="#R11">R11</a> <a href="#R13">R13</a></small>
+<p>Do not restore Traffic Flow’s purchases, ads, duplicate grinding, daily pressure or paid offline cap simply to increase a feature-parity count. Evaluate Restaurant against the latest requested audience and no-payment rule. The useful reference qualities are clear throughput, visible bottlenecks, readable rewards, meaningful investment choices and long-term variety.</p>
+<h2>9. Measurable acceptance criteria for the next pass</h2>
+<p>These are proposed targets to approve and validate, not recovered Traffic Flow requirements.</p>
+<div class="table">
+<table>
+<thead>
+<tr><th>Area</th><th>Proposed acceptance target</th></tr></thead>
+<tbody>
+<tr><td>First session</td><td>Unaided child can start serving, identify a buyable upgrade, make both guided purchases and find the next restaurant. Instrument first coin, first meal, first upgrade, first service and second outlet separately.</td></tr>
+<tr><td>Economy</td><td>Common endpoint simulations for both editions; ±5% agreed forecast-to-observed tolerance at base/mid/max over multiple complete services; no undefined/negative/duplicate reward states.</td></tr>
+<tr><td>Navigation and UI</td><td>Correct active tab on all screens; no clipping/overlap at 16:9, 18:9, 19.5:9 and 20:9 portrait screens, safe areas and larger text; touch areas checked in physical units on devices.</td></tr>
+<tr><td>Guest service</td><td>Every guest reaches valid seat/exit; no double reservation or furniture intersection while walking; no stall over five seconds without a visible legitimate queue cause; test base/max throughput in all districts.</td></tr>
+<tr><td>Visual growth</td><td>Each district has a recognizable silhouette, signature dish/icon and at least one meaningful station/presentation distinction; selected milestone upgrades visibly change equipment or service activity.</td></tr>
+<tr><td>Reward response</td><td>First service result clearly separates meal cash, bonus and ticket; repeated completions stay non-blocking; reduced-motion mode still communicates earned rewards.</td></tr>
+<tr><td>Android performance</td><td>Proposed sustained 30 FPS target on named Android 11+ midrange phones; record frame-time percentiles, RAM, thermal drift and battery behavior over 30 minutes. No Editor capture FPS is substituted for these results.</td></tr>
+<tr><td>Reliability</td><td>Fresh install, update, airplane mode, pause/resume, kill/relaunch, damaged primary save, full storage and repeated offline claims tested. Verify current source assets correspond to the shipped artifact.</td></tr>
+<tr><td>Release</td><td>Publisher-signed AAB, recoverable release diagnostics, current store declarations, localization decision and final asset/license inventory reviewed.</td></tr></tbody></table></div>
+<h2 id="priorities">10. Prioritized improvement backlog</h2>
+<p>P1 = resolve before calling the candidate polished/validated. P2 = important quality and depth work. Release = distribution preparation. These are review priorities, not externally measured severity scores. <a href="Prioritized_Improvements.csv">Download the editable CSV backlog</a>.</p>
+<article class="card" style="margin:18px 0"><span class="priority">P1 · Economy</span>
+<h3>Forecast differs from actual service throughput</h3>
+<p><b>Evidence:</b> Maximum-level 22-guest tests: forecast exceeds recorded earned/min by 12.45–13.07%; base by 1.96–2.29%. Inactive and offline income use this forecast. <small class="refs"><a href="#R2">R2</a> <a href="#R5">R5</a> <a href="#R6">R6</a></small></p>
+<p><b>Change:</b> Calibrate the estimator against the same service phases, traversal and tips, or explicitly define passive production as a separate rate.</p>
+<p><b>Pass condition:</b> At base/mid/max levels and all five districts, published rate agrees with long-window selected-outlet production within an agreed tolerance (proposed ±5%).</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P1 · Navigation</span>
+<h3>PLAY stays selected on every screen</h3>
+<p><b>Evidence:</b> Bottom buttons are colored once in BuildCanvas; Navigate rebuilds body but never updates those colors. Fresh map screenshot shows PLAY highlighted. <small class="refs"><a href="#R4">R4</a> <a href="#R11">R11</a></small></p>
+<p><b>Change:</b> Track navigation buttons and update selected state on every transition.</p>
+<p><b>Pass condition:</b> Map/Team/Play/Lab/Goals each show exactly one correct active tab.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P1 · Progression</span>
+<h3>Choose and validate the intended progression horizon</h3>
+<p><b>Evidence:</b> New matched max-all model: family 5.43h versus Traffic Flow Current 422.76h / New 356.38h. All use 10,800 upgrades under the same spending policy. These are conditional forecasts, not measured duration. <small class="refs"><a href="#T3">T3</a> <a href="#T5">T5</a> <a href="#R8">R8</a> <a href="#R9">R9</a> <a href="#M1">M1</a></small></p>
+<p><b>Change:</b> Retain the deliberate free-family direction, decide the desired content horizon and validate milestones in gameplay. Keep historical v0.2.0 parity percentages out of current release claims.</p>
+<p><b>Pass condition:</b> Report open-all, max-all, team/research and repeat-star milestones separately, with consistent endpoints and observed checkpoints.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P1 · UI</span>
+<h3>Map description overflows its card</h3>
+<p><b>Evidence:</b> Current map capture: the first node wraps to three description lines and the last line extends below its card. Larger-text layouts increase risk. <small class="refs"><a href="#R4">R4</a> <a href="#R11">R11</a></small></p>
+<p><b>Change:</b> Use content-driven row height or a fixed two-line description; test wrapping at supported sizes.</p>
+<p><b>Pass condition:</b> No clipping, overlap or hidden cost at portrait aspect ratios and larger text.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P1 · Validation</span>
+<h3>No Android runtime or child usability evidence</h3>
+<p><b>Evidence:</b> No device attached. Build manifest is verified, but source/Editor and 15s recording cannot establish phone input, thermal stability or understanding. <small class="refs"><a href="#R1">R1</a> <a href="#R4">R4</a></small></p>
+<p><b>Change:</b> Run clean install, 30-minute device sessions and first-session usability with a ten-year-old.</p>
+<p><b>Pass condition:</b> Real touch, pause/resume, recovery, safe areas and sustained performance pass on named Android 11+ midrange devices.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Gameplay depth</span>
+<h3>Dining teammate speed is unused in family service</h3>
+<p><b>Evidence:</b> Independent Mythic Dining teammate test: speed vector +240%, eating duration remains 3.8s; Dining pay increases 6→9. Affinity vector is not consumed by the family service equations. <small class="refs"><a href="#R2">R2</a> <a href="#R5">R5</a> <a href="#R13">R13</a></small></p>
+<p><b>Change:</b> Either apply meaningful role/affinity effects or remove unsupported stats/data; show assignment and before/after impact.</p>
+<p><b>Pass condition:</b> Each displayed teammate effect changes an observable or economic outcome; role/affinity usefulness is tested.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Visual hierarchy</span>
+<h3>Restaurant world and food are too small</h3>
+<p><b>Evidence:</b> Fresh portrait shots devote much of the upper screen to header/outlet/guide; food is a small fraction of a character. Bright floor/counters/chairs merge. <small class="refs"><a href="#T4">T4</a> <a href="#R4">R4</a> <a href="#R7">R7</a></small></p>
+<p><b>Change:</b> Compact header and guide; frame the service area more closely; establish material/value separation and food focal lighting.</p>
+<p><b>Pass condition:</b> A viewer can identify the current dish, where to order and which table is free at normal phone size.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Feedback</span>
+<h3>Completion and upgrades lack persistent visual payoff</h3>
+<p><b>Evidence:</b> Service result is a short toast plus sound; upgrades mostly change numbers/timers, with no equipment evolution. Traffic Flow gives a structured departure summary. <small class="refs"><a href="#T4">T4</a> <a href="#R4">R4</a> <a href="#R11">R11</a></small></p>
+<p><b>Change:</b> Add a brief non-blocking service summary, coin flight, ticket reveal, upgrade pulse and milestone equipment changes.</p>
+<p><b>Pass condition:</b> Six-guest onboarding completion communicates meals, earned coins and ticket clearly; feedback respects reduced motion.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Map identity</span>
+<h3>District icons do not identify individual outlets</h3>
+<p><b>Evidence:</b> Street nodes share a burger icon, including Taco Terrace and Noodle Nook. The path is a scrolling connected list rather than a spatial restaurant world. <small class="refs"><a href="#R4">R4</a> <a href="#R11">R11</a></small></p>
+<p><b>Change:</b> Keep district emblems but add signature-food outlet icons, district landmarks and a clear next objective.</p>
+<p><b>Pass condition:</b> Every outlet icon matches its cuisine; current/next/locked nodes and requirements are visually distinct.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Food and animation</span>
+<h3>One served food prefab per outlet; food removal is renderer-based</h3>
+<p><b>Evidence:</b> Every NewDish instantiates the same outlet food. Portion animation hides sorted renderers; it is not bite-shape animation or a menu-order system. <small class="refs"><a href="#R12">R12</a></small></p>
+<p><b>Change:</b> Add two or three recognizable dish/order variants with explicit edible portions and matching hand/utensil actions.</p>
+<p><b>Pass condition:</b> Each visible menu item has an appropriate dish; plate remains stable while food disappears logically.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Progression variety</span>
+<h3>Five districts share one service topology</h3>
+<p><b>Evidence:</b> Family rules bypass original vehicle capacity/body/segment/timing differences. All districts reuse one order counter, two cook slots and twelve chairs. <small class="refs"><a href="#T1">T1</a> <a href="#T5">T5</a> <a href="#R2">R2</a> <a href="#R12">R12</a></small></p>
+<p><b>Change:</b> Introduce modest district-specific station layouts/behaviors while keeping the free economy understandable; recalibrate every change.</p>
+<p><b>Pass condition:</b> New district introduces a clearly visible difference beyond palette/menu/income scale.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Offline</span>
+<h3>Unclaimed rewards can accumulate above one-day cap</h3>
+<p><b>Evidence:</b> Two isolated 24h Resume calls before a claim accumulate 367,810.79 from a 127.71/min forecast; one-day value is 183,905.39. Original Traffic Flow carries credited time and caps the pending bucket. <small class="refs"><a href="#T1">T1</a> <a href="#R5">R5</a> <a href="#R13">R13</a></small></p>
+<p><b>Change:</b> Decide whether cap is per absence or total pending; make wording and tests match. Do not call the current behavior exact reference parity.</p>
+<p><b>Pass condition:</b> Boundary tests cover &gt;300s, 24h, repeated unclaimed returns and duplicate claims; documented behavior matches UI.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Accessibility</span>
+<h3>Menu rebuilding and mixed labels add cognitive load</h3>
+<p><b>Evidence:</b> GOALS opens rewards before the goal list; descriptions use research/teammate abstractions; world motion reduction and larger text exist but need device validation. <small class="refs"><a href="#R4">R4</a> <a href="#R11">R11</a></small></p>
+<p><b>Change:</b> Make Goals open goals directly; show useful upgrade outcomes; provide icon+text and test all large-text pages.</p>
+<p><b>Pass condition:</b> An unaided new player can find the next action and explain its purpose.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Audio</span>
+<h3>Semantic sound layer is thin</h3>
+<p><b>Evidence:</b> Runtime wires music, coin, tap and upgrade clips; no separate pickup/chop/grill/sit/bite/plate-return hooks are visible in the service code. Concept soundtrack event lists are not proof of runtime wiring. <small class="refs"><a href="#R11">R11</a> <a href="#R12">R12</a></small></p>
+<p><b>Change:</b> Add restrained event-driven kitchen and dining sounds with a mixer/voice budget and sensible cooldowns.</p>
+<p><b>Pass condition:</b> Sounds follow actual service events, remain clear under load, and honor SFX/music switches.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">P2 · Long-term retention</span>
+<h3>Repeatability is mostly the same loop with higher values</h3>
+<p><b>Evidence:</b> Stars retain upgrades and can repeat every five services after maxing; goals repeat in books; finite 40-outlet art/content remains. There is no verified endless stream of new mechanics. <small class="refs"><a href="#R2">R2</a> <a href="#R13">R13</a></small></p>
+<p><b>Change:</b> Add earned cosmetic/recipe goals and optional challenges that create variety without coercive timers or payments.</p>
+<p><b>Pass condition:</b> Post-map-clear sessions offer meaningful choices; content and expected repetition are honestly described.</p></article>
+<article class="card" style="margin:18px 0"><span class="priority">Release · Distribution</span>
+<h3>Testing APK is not a store-ready release</h3>
+<p><b>Evidence:</b> Current APK is non-debuggable ARM64, but prior signature report says Android debug certificate; no store AAB/release validation shown. <small class="refs"><a href="#R1">R1</a></small></p>
+<p><b>Change:</b> Prepare publisher signing, AAB, diagnostics, icon/listing and required store declarations after gameplay acceptance.</p>
+<p><b>Pass condition:</b> Release artifact, device matrix and store setup verified separately from Editor/build checks.</p></article>
+<h2>11. Recommended development sequence</h2>
+<ol>
+<li><b>Correct what the player is being told.</b> Fix navigation selection, map wrapping, shortfall labels, teammate effect definitions and income-rate semantics. Keep economy changes separate from visual changes.</li>
+<li><b>Make the opening minute satisfying.</b> Compact the header, enlarge the scene, make food readable, improve guest contacts and add a clear first-service reward moment. Re-run the whole unaided onboarding test after each significant change.</li>
+<li><b>Give each district a reason to exist.</b> Evolve layouts, stations, serving props and signature dish icons. Start with small differences and remeasure the resulting cycle times; cosmetic theme changes should not silently alter income.</li>
+<li><b>Set the intended progression horizon.</b> Define open-all, max-all and repeat-play milestones for the free family edition. Rebuild forecasts using measured production and the same endpoint policy; retain Traffic Flow numbers only as a separately labeled reference.</li>
+<li><b>Validate and prepare distribution.</b> Test named phones and real players, then complete release signing, store assets and diagnostics. No further ad/billing setup is needed for the current direction.</li></ol>
+<h2 id="sources">12. Source register and reproducibility</h2>
+<div class="sources">
+<p id="T1"><b>T1 — <a href="file:///Users/playnoob/Desktop/Mahnul/GPT/traffic_flow_analysis/extracted/com.coolcatsgames.idletransport.apk">Traffic Flow APK 0.8.1 (740)</a></b><br>Direct manifest/ZIP inventory, original classes.dex matched to extracted dex; packaged code can differ from server-controlled live behavior.<br><small>SHA-256 <code>875274b5e7a6204036b49de87172ad6f69667a968f7139810c639a09d68247ac</code></small></p>
+<p id="T2"><b>T2 — <a href="../../Source/Traffic_Flow_081_GDD.docx">Traffic Flow GDD</a></b><br>22-page reconstructed specification, not an independent runtime oracle.<br><small>SHA-256 <code>462e2596fc955201e8ea3564f1291f42e146e67b952600ba8b400ae5075ebd99</code></small></p>
+<p id="T3"><b>T3 — <a href="../../Source/Traffic_Flow_081_Balance.xlsx">Traffic Flow balance workbook</a></b><br>Six tabs, 72 formula cells inspected read-only; no cached error values found; not recalculated in Excel in this review.<br><small>SHA-256 <code>363eb1d421e51c1b325a1cb86fa4b63866e13ac1992f9c73762a6a6275d5ca1e</code></small></p>
+<p id="T4"><b>T4 — <a href="file:///Users/playnoob/Desktop/Mahnul/GPT/traffic-flow-ftue-analysis/reference/Taffic%20Flow%20FTUE.mov">Traffic Flow FTUE recording</a></b><br>266.94 seconds, 15,847 indexed frames, 552 screenshot/OCR states. Starts mid-tutorial, Group 2/5; this group counter is not tutorial-step numbering. Settings shows 0.8.1. Recording platform shows Apple sign-in: Android APK data and iOS-like video UI are triangulated, not assumed identical platform builds.<br><small>SHA-256 <code>59b089413b53267a48e80fbe25fbb67e454f1d60d64f0613505185129a16c1ca</code></small></p>
+<p id="T5"><b>T5 — <a href="data/traffic-reference-model.json">Decoded reference economy</a></b><br>Derived tables plus approximate income/playtime model; original decompiled classes cited separately.<br><small>SHA-256 <code>4e9d021a094b0d57df6e131ca828060e3877e635dd8540bc22c8bc847c87651b</code></small></p>
+<p id="R1"><b>R1 — <a href="../../../Builds/IdleRestaurant-Android.apk">Idle Restaurant APK 0.3.0 (3)</a></b><br>Actual current file hash and manifest checked; no connected Android device. APK runtime/phone performance not tested.<br><small>SHA-256 <code>df9645c2f5a36aaa5c42726cba240963542083cc13cb9bc24f52c10f9b007deb</code></small></p>
+<p id="R2"><b>R2 — <a href="../../../Assets/Restaurant/Production/Runtime/RestaurantFamilyGame.cs">Active Restaurant economy source</a></b><br>Family flag confirmed true in the running Editor. Source at b57daf806ad0efae84c0b46dafedf1156a7361e3.<br><small>SHA-256 <code>292dbf6f3a531cf724022535714943674f7a4e1c94a3d7da0ce63df9001f3a08</code></small></p>
+<p id="R3"><b>R3 — <a href="../../FamilyBalance.json">Family balance data</a></b><br>Active source/data checked against loaded Editor model; historical Traffic Flow fields remain in the catalog but many are bypassed.<br><small>SHA-256 <code>12cc5f415c3a3392011a8f7114a179434f804bf48d55f1fcbe50f2dcd2cc1c29</code></small></p>
+<p id="R4"><b>R4 — <a href="evidence/independent-first-service.json">Independent fresh-session playtest</a></b><br>New run: real Editor guest movement, chair colliders, phases and GraphicRaycaster UI clicks; not an APK/device test.<br><small>SHA-256 <code>17f1cc7e1392292cfc5b910c782c6b5281cb736e922f755ba40a56beb6518616</code></small></p>
+<p id="R5"><b>R5 — <a href="data/independent-model-audit.json">Independent model audit</a></b><br>Twenty outlet/level samples, manager and offline behavior calculated against active loaded data without modifying the live state.<br><small>SHA-256 <code>981593c12c2d01ff9146883ec20cf0a7fc43a852bf3146d62d8017432d473d43</code></small></p>
+<p id="R6"><b>R6 — <a href="../../../Verification/FamilyBusyServicesMax.json">Existing five-district service tests</a></b><br>Previously recorded Editor service results. Reconciled now against current forecast and base-service report. Not fresh physical-device measurements.<br><small>SHA-256 <code>4df4fa9ca8cab2f3b628aa63b5624c221306ea491e21ea6679ce1bc98c74d6f3</code></small></p>
+<p id="R7"><b>R7 — <a href="../../../Media/IdleRestaurant_Family_15s.mp4">Current gameplay recording</a></b><br>450 decoded frames, 30 screenshot/OCR samples newly inspected. Configured progression state, not a full clean-install session.<br><small>SHA-256 <code>41d4a0767a418df2329da5ccd6475949f965f1ffcfa68afc82f28324f52f9949</code></small></p>
+<p id="R8"><b>R8 — <a href="../../../Verification/PacingComparison.json">Historical pacing comparison</a></b><br>Explicitly historical v0.2.0, not the current v0.3.0 family economy.<br><small>SHA-256 <code>14cb06ea7ff9bc81ddcb5826cb75fd152c9d58d3e48dbf3f36bc42fd19e553ec</code></small></p>
+<p id="R9"><b>R9 — <a href="../../../Verification/FamilyProgressionForecast.json">Family unlock forecast</a></b><br>352.617 minutes to OPEN all 40, 592 upgrades; heuristic uses forecast income. No research, team, stars or offline claims.<br><small>SHA-256 <code>bff3d4c65fce8b2c15c158f9c3368a9558f3603fd9d52d494c0f7388871a6d95</code></small></p>
+<p id="R10"><b>R10 — <a href="evidence/save-restoration.json">Save restoration evidence</a></b><br>Original Editor save and backup restored byte-for-byte; review changed no game source or tuning.<br><small>SHA-256 <code>43fea1d3ba2bf4280111fce17c46b5a2bff70f53b4b9086abf7ce2c6de3a76ed</code></small></p>
+<p id="R11"><b>R11 — <a href="../../../Assets/Restaurant/Production/Runtime/RestaurantApp.cs">Rendering and UI source</a></b><br>Navigation, safe area, card availability, tutorial, audio wiring and settings.<br><small>SHA-256 <code>a926f0780a48888bb8507b851c9e2ea069d0ab0a5b5848ec7ab4a5763dc627d6</code></small></p>
+<p id="R12"><b>R12 — <a href="../../../Assets/Restaurant/Production/Runtime/RestaurantServiceView.cs">Guest behavior source</a></b><br>Fixed waypoint routes, chair reservation, CharacterControllers, food pickup/portioning, staff work states.<br><small>SHA-256 <code>94c3364f375eb9f3d71b3253b172db71e00b14a3377eeda7da4952b1f0b7f7a9</code></small></p>
+<p id="R13"><b>R13 — <a href="../../../Assets/Restaurant/Production/Runtime/RestaurantGame.cs">Shared economy and progression source</a></b><br>Source for recruitment, training, research, stars, inactive income and offline claims.<br><small>SHA-256 <code>caa7ab7da53d42f4a036544da9e8c275336e7e05fecd1f96e43277282ad9f2fd</code></small></p>
+<p id="M1"><b>M1 — <a href="data/matched-policy-model.json">New matched-policy progression model</a></b><br>Same endpoint and buying policy: max 10,800 upgrades before advancing; zero start cash, no boosts/research/team/stars/offline/grants; includes native Traffic Flow certificates. Formula/model result, not observed playtime.<br><small>SHA-256 <code>025e42a0b47ff70235cbc6d2b6a2b0190b811413dccea83c8e759a71aa529deb</code></small></p></div>
+<h3>Supporting evidence files</h3>
+<p><a href="data/apk-inventory.json">APK inventory/hashes</a> · <a href="data/workbook-cells.json">Workbook cell/formula extraction</a> · <a href="data/forecast-reconciliation.json">Rate reconciliation</a> · <a href="data/matched-policy-model.json">Matched-policy model</a> · <a href="data/independent-model-audit.json">Independent model audit</a> · <a href="evidence/independent-first-service.json">Fresh session audit</a> · <a href="evidence/save-restoration.json">Save restoration</a> · <a href="data/source-register.json">Source register</a> · <a href="Prioritized_Improvements.csv">Improvement backlog</a></p>
+<p>Reference decompiled source locations: <code>k52/fm1/pv7</code> route/body definitions; <code>kk0/z46</code> effects/costs; <code>e73/dh3/uh3</code> payment/prediction; <code>jx5/zx5/ay5</code> research; <code>xf4/lh4</code> managers; <code>gm1/fk5/vw2/du1/a0</code> prestige; <code>o3.t</code> offline. This review relies on the preserved extraction; it did not rerun a full decompiler or recover missing runtime methods.</p>
+<p>Method limits: arithmetic comparisons against authored/model data do not establish server behavior; no actual retention statistics, user-study scores or benchmarked device FPS were available. No artificial overall quality score is assigned. Source binaries and original videos were retained; no new video was supplied or uploaded in this task. Current reference YouTube URL remains recorded with the prior preservation evidence. The earlier optional staged-preview batch was rejected by automatic review; existing historical art previews were used instead, and the original Editor save was restored.</p></main></body></html>

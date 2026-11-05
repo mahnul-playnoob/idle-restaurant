@@ -1,0 +1,240 @@
+{
+  "review_utc": "2026-11-05T12:21:03.961179+00:00",
+  "restaurant_version": "0.3.0",
+  "reference_version": "0.8.1",
+  "physical_android_tested": false,
+  "fresh_first_service": {
+    "utc": "2026-11-05T12:05:06.383205Z",
+    "done": true,
+    "error": "",
+    "initialFrame": 3633,
+    "finalFrame": 4118,
+    "orderBought": true,
+    "deliveryBought": true,
+    "firstCompletedMealSeconds": 23.750000000000203,
+    "phases": [
+      "Unspawned",
+      "Entering",
+      "ToOrder",
+      "Queued",
+      "Ordering",
+      "ToPickup",
+      "WaitingFood",
+      "Receiving",
+      "ToSeat",
+      "Sitting",
+      "Eating",
+      "Standing",
+      "Leaving",
+      "Exited"
+    ],
+    "log": [
+      {
+        "title": "Fresh welcome",
+        "frame": 3633,
+        "simulationSeconds": 0.25,
+        "cash": 0.0,
+        "earned": 0.0,
+        "guide": 0,
+        "guests": 0,
+        "waves": 0,
+        "forecast": 127.7120798182947
+      },
+      {
+        "title": "Welcome button tapped",
+        "frame": 3633,
+        "simulationSeconds": 0.25,
+        "cash": 0.0,
+        "earned": 0.0,
+        "guide": 1,
+        "guests": 0,
+        "waves": 0,
+        "forecast": 127.7120798182947
+      },
+      {
+        "title": "Observation",
+        "frame": 3722,
+        "simulationSeconds": 8.04999999999998,
+        "cash": 3.0,
+        "earned": 3.0,
+        "guide": 1,
+        "guests": 0,
+        "waves": 0,
+        "forecast": 127.7120798182947
+      },
+      {
+        "title": "Observation",
+        "frame": 3862,
+        "simulationSeconds": 20.05000000000015,
+        "cash": 33.0,
+        "earned": 33.0,
+        "guide": 1,
+        "guests": 0,
+        "waves": 0,
+        "forecast": 127.7120798182947
+      },
+      {
+        "title": "First completed meal / first guided upgrade offered",
+        "frame": 3905,
+        "simulationSeconds": 23.750000000000203,
+        "cash": 42.0,
+        "earned": 42.0,
+        "guide": 2,
+        "guests": 1,
+        "waves": 0,
+        "forecast": 127.7120798182947
+      },
+      {
+        "title": "Faster orders purchased through raycast",
+        "frame": 3910,
+        "simulationSeconds": 24.100000000000207,
+        "cash": 32.0,
+        "earned": 42.0,
+        "guide": 3,
+        "guests": 1,
+        "waves": 0,
+        "forecast": 129.23076675128326
+      },
+      {
+        "title": "Faster delivery purchased through raycast",
+        "frame": 3914,
+        "simulationSeconds": 24.450000000000212,
+        "cash": 17.0,
+        "earned": 42.0,
+        "guide": 4,
+        "guests": 1,
+        "waves": 0,
+        "forecast": 130.70363130520408
+      },
+      {
+        "title": "Observation",
+        "frame": 4002,
+        "simulationSeconds": 32.05000000000032,
+        "cash": 35.0,
+        "earned": 60.0,
+        "guide": 4,
+        "guests": 4,
+        "waves": 0,
+        "forecast": 130.70363130520408
+      },
+      {
+        "title": "First service completed",
+        "frame": 4116,
+        "simulationSeconds": 41.99999999999975,
+        "cash": 157.8,
+        "earned": 182.8,
+        "guide": 5,
+        "guests": 6,
+        "waves": 1,
+        "forecast": 155.74612911123262
+      },
+      {
+        "title": "Map opened through raycast",
+        "frame": 4116,
+        "simulationSeconds": 41.99999999999975,
+        "cash": 157.8,
+        "earned": 182.8,
+        "guide": 5,
+        "guests": 6,
+        "waves": 1,
+        "forecast": 155.74612911123262
+      }
+    ],
+    "scope": "Actual Editor guest movement, colliders and UI raycasts; no Android phone or APK runtime test"
+  },
+  "forecast_reconciliation": [
+    {
+      "outlet": 8,
+      "level": 0,
+      "seconds": 78.2499999999977,
+      "recorded_coins": 10108.561943607185,
+      "observed_coins_per_minute": 7750.974014267718,
+      "forecast_coins_per_minute": 7928.283727711323,
+      "forecast_overstatement_percent": 2.2875797689067223
+    },
+    {
+      "outlet": 16,
+      "level": 0,
+      "seconds": 78.04999999999771,
+      "recorded_coins": 555342.5248246926,
+      "observed_coins_per_minute": 426912.89544500364,
+      "forecast_coins_per_minute": 435562.7563481671,
+      "forecast_overstatement_percent": 2.026141865344
+    },
+    {
+      "outlet": 24,
+      "level": 0,
+      "seconds": 78.0999999999977,
+      "recorded_coins": 30509316.91363922,
+      "observed_coins_per_minute": 23438655.759518653,
+      "forecast_coins_per_minute": 23928875.559096362,
+      "forecast_overstatement_percent": 2.0915013412346584
+    },
+    {
+      "outlet": 32,
+      "level": 0,
+      "seconds": 77.99999999999771,
+      "recorded_coins": 1676115868.9057825,
+      "observed_coins_per_minute": 1289319899.158332,
+      "forecast_coins_per_minute": 1314600656.6847475,
+      "forecast_overstatement_percent": 1.9607823894534304
+    },
+    {
+      "outlet": 40,
+      "level": 0,
+      "seconds": 78.1499999999977,
+      "recorded_coins": 92082179812.48416,
+      "observed_coins_per_minute": 70696491218.7999,
+      "forecast_coins_per_minute": 72221316136.98071,
+      "forecast_overstatement_percent": 2.1568608171254278
+    },
+    {
+      "outlet": 8,
+      "level": 30,
+      "seconds": 46.699999999999484,
+      "recorded_coins": 133478.96566444953,
+      "observed_coins_per_minute": 171493.31777017258,
+      "forecast_coins_per_minute": 192845.5197792301,
+      "forecast_overstatement_percent": 12.450748686122415
+    },
+    {
+      "outlet": 16,
+      "level": 30,
+      "seconds": 46.499999999999496,
+      "recorded_coins": 7269433.649955225,
+      "observed_coins_per_minute": 9379914.387039103,
+      "forecast_coins_per_minute": 10594515.664323216,
+      "forecast_overstatement_percent": 12.948959096710034
+    },
+    {
+      "outlet": 24,
+      "level": 30,
+      "seconds": 46.3999999999995,
+      "recorded_coins": 399366958.399537,
+      "observed_coins_per_minute": 516422791.03388965,
+      "forecast_coins_per_minute": 582039770.9528686,
+      "forecast_overstatement_percent": 12.70605810940535
+    },
+    {
+      "outlet": 32,
+      "level": 30,
+      "seconds": 46.54999999999949,
+      "recorded_coins": 21940356723.976715,
+      "observed_coins_per_minute": 28279729397.1776,
+      "forecast_coins_per_minute": 31976005860.434834,
+      "forecast_overstatement_percent": 13.070409590362386
+    },
+    {
+      "outlet": 40,
+      "level": 30,
+      "seconds": 46.349999999999504,
+      "recorded_coins": 1205355733745.4172,
+      "observed_coins_per_minute": 1560331046919.6506,
+      "forecast_coins_per_minute": 1756692586681.2595,
+      "forecast_overstatement_percent": 12.584607615752997
+    }
+  ],
+  "source_commit": "b57daf806ad0efae84c0b46dafedf1156a7361e3",
+  "changes_to_game_source": false,
+  "backlog_items": 16
+}

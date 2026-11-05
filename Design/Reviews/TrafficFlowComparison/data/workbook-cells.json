@@ -1,0 +1,6459 @@
+{
+  "Overview": [
+    {
+      "cell": "A2",
+      "value": "Traffic Flow 0.8.1 balance analysis",
+      "formula": null
+    },
+    {
+      "cell": "A5",
+      "value": "Metric",
+      "formula": null
+    },
+    {
+      "cell": "B5",
+      "value": "Value",
+      "formula": null
+    },
+    {
+      "cell": "C5",
+      "value": "Interpretation",
+      "formula": null
+    },
+    {
+      "cell": "A6",
+      "value": "Main destinations",
+      "formula": null
+    },
+    {
+      "cell": "B6",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "C6",
+      "value": "Five transport modes with eight destinations each",
+      "formula": null
+    },
+    {
+      "cell": "A7",
+      "value": "Upgrade purchases before prestige",
+      "formula": null
+    },
+    {
+      "cell": "B7",
+      "value": "10800",
+      "formula": null
+    },
+    {
+      "cell": "C7",
+      "value": "40 destinations x 9 cards x 30 levels",
+      "formula": null
+    },
+    {
+      "cell": "A8",
+      "value": "Manager definitions",
+      "formula": null
+    },
+    {
+      "cell": "B8",
+      "value": "71",
+      "formula": null
+    },
+    {
+      "cell": "C8",
+      "value": "Packaged roster; availability may be gated",
+      "formula": null
+    },
+    {
+      "cell": "A9",
+      "value": "Standard research nodes",
+      "formula": null
+    },
+    {
+      "cell": "B9",
+      "value": "17",
+      "formula": null
+    },
+    {
+      "cell": "C9",
+      "value": "13 repeatable nodes and 4 certificates",
+      "formula": null
+    },
+    {
+      "cell": "A10",
+      "value": "Prestige research nodes",
+      "formula": null
+    },
+    {
+      "cell": "B10",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "C10",
+      "value": "Five mode income nodes and three stage income nodes",
+      "formula": null
+    },
+    {
+      "cell": "A11",
+      "value": "Current reference clear hours",
+      "formula": null
+    },
+    {
+      "cell": "B11",
+      "value": "422.7567456846488",
+      "formula": "Playtime!B6"
+    },
+    {
+      "cell": "C11",
+      "value": "Proxy model; continuous online; max each route before advancing",
+      "formula": null
+    },
+    {
+      "cell": "A12",
+      "value": "New reference clear hours",
+      "formula": null
+    },
+    {
+      "cell": "B12",
+      "value": "356.38321285757786",
+      "formula": "Playtime!B9"
+    },
+    {
+      "cell": "C12",
+      "value": "Same strategy; alternate packaged upgrade costs",
+      "formula": null
+    },
+    {
+      "cell": "A13",
+      "value": "Measured completion time",
+      "formula": null
+    },
+    {
+      "cell": "B13",
+      "value": "Unavailable",
+      "formula": null
+    },
+    {
+      "cell": "C13",
+      "value": "No Android runtime playthrough or account telemetry",
+      "formula": null
+    },
+    {
+      "cell": "A14",
+      "value": "Source",
+      "formula": null
+    },
+    {
+      "cell": "B14",
+      "value": "Supplied XAPK",
+      "formula": null
+    },
+    {
+      "cell": "C14",
+      "value": "Version code 740; Android API 29 minimum",
+      "formula": null
+    },
+    {
+      "cell": "A15",
+      "value": "Model limits",
+      "formula": null
+    },
+    {
+      "cell": "B15",
+      "value": "No prestige or managers",
+      "formula": null
+    },
+    {
+      "cell": "C15",
+      "value": "No general research, ads, events, gem rewards or paid boosts",
+      "formula": null
+    },
+    {
+      "cell": "A16",
+      "value": "Reading order",
+      "formula": null
+    },
+    {
+      "cell": "B16",
+      "value": "GDD then workbook",
+      "formula": null
+    },
+    {
+      "cell": "C16",
+      "value": "Route costs are extracted; throughput and playtime are approximations",
+      "formula": null
+    }
+  ],
+  "Playtime": [
+    {
+      "cell": "A2",
+      "value": "Conditional playtime estimates",
+      "formula": null
+    },
+    {
+      "cell": "A5",
+      "value": "Simulation snapshot",
+      "formula": null
+    },
+    {
+      "cell": "B5",
+      "value": "Online hours",
+      "formula": null
+    },
+    {
+      "cell": "C5",
+      "value": "Status",
+      "formula": null
+    },
+    {
+      "cell": "E5",
+      "value": "Daily cadence input",
+      "formula": null
+    },
+    {
+      "cell": "F5",
+      "value": "Value",
+      "formula": null
+    },
+    {
+      "cell": "A6",
+      "value": "Current x1",
+      "formula": null
+    },
+    {
+      "cell": "B6",
+      "value": "422.7567456846488",
+      "formula": null
+    },
+    {
+      "cell": "C6",
+      "value": "proxy",
+      "formula": null
+    },
+    {
+      "cell": "E6",
+      "value": "Sessions per day",
+      "formula": null
+    },
+    {
+      "cell": "F6",
+      "value": "3",
+      "formula": null
+    },
+    {
+      "cell": "A7",
+      "value": "Current x2",
+      "formula": null
+    },
+    {
+      "cell": "B7",
+      "value": "226.20627919216955",
+      "formula": null
+    },
+    {
+      "cell": "C7",
+      "value": "proxy",
+      "formula": null
+    },
+    {
+      "cell": "E7",
+      "value": "Minutes per session",
+      "formula": null
+    },
+    {
+      "cell": "F7",
+      "value": "10",
+      "formula": null
+    },
+    {
+      "cell": "A8",
+      "value": "Current x6",
+      "formula": null
+    },
+    {
+      "cell": "B8",
+      "value": "97.19050659493344",
+      "formula": null
+    },
+    {
+      "cell": "C8",
+      "value": "proxy",
+      "formula": null
+    },
+    {
+      "cell": "E8",
+      "value": "Offline cap minutes",
+      "formula": null
+    },
+    {
+      "cell": "F8",
+      "value": "120",
+      "formula": null
+    },
+    {
+      "cell": "A9",
+      "value": "New x1",
+      "formula": null
+    },
+    {
+      "cell": "B9",
+      "value": "356.38321285757786",
+      "formula": null
+    },
+    {
+      "cell": "C9",
+      "value": "proxy",
+      "formula": null
+    },
+    {
+      "cell": "E9",
+      "value": "Offline efficiency",
+      "formula": null
+    },
+    {
+      "cell": "F9",
+      "value": "0.25",
+      "formula": null
+    },
+    {
+      "cell": "A10",
+      "value": "New x2",
+      "formula": null
+    },
+    {
+      "cell": "B10",
+      "value": "194.0251404762176",
+      "formula": null
+    },
+    {
+      "cell": "C10",
+      "value": "proxy",
+      "formula": null
+    },
+    {
+      "cell": "E10",
+      "value": "Captured offline minutes",
+      "formula": null
+    },
+    {
+      "cell": "F10",
+      "value": "360",
+      "formula": "MIN(1440-F6*F7,F6*F8)"
+    },
+    {
+      "cell": "A11",
+      "value": "New x6",
+      "formula": null
+    },
+    {
+      "cell": "B11",
+      "value": "88.22958247047944",
+      "formula": null
+    },
+    {
+      "cell": "C11",
+      "value": "proxy",
+      "formula": null
+    },
+    {
+      "cell": "E11",
+      "value": "Equivalent online hours per day",
+      "formula": null
+    },
+    {
+      "cell": "F11",
+      "value": "2",
+      "formula": "(F6*F7+F10*F9)/60"
+    },
+    {
+      "cell": "E12",
+      "value": "Current x1 calendar days proxy",
+      "formula": null
+    },
+    {
+      "cell": "F12",
+      "value": "211.3783728423244",
+      "formula": "B6/F11"
+    },
+    {
+      "cell": "A14",
+      "value": "Current x1 reference milestones",
+      "formula": null
+    },
+    {
+      "cell": "E14",
+      "value": "Cadence conversion assumes evenly spaced sessions and frozen income between visits.",
+      "formula": null
+    },
+    {
+      "cell": "A15",
+      "value": "Destination",
+      "formula": null
+    },
+    {
+      "cell": "B15",
+      "value": "Milestone",
+      "formula": null
+    },
+    {
+      "cell": "C15",
+      "value": "Online hours",
+      "formula": null
+    },
+    {
+      "cell": "E15",
+      "value": "It is an illustrative conversion, not a simulated calendar completion time.",
+      "formula": null
+    },
+    {
+      "cell": "A16",
+      "value": "bus:OXF",
+      "formula": null
+    },
+    {
+      "cell": "B16",
+      "value": "unlock",
+      "formula": null
+    },
+    {
+      "cell": "C16",
+      "value": "73.41328419293268",
+      "formula": null
+    },
+    {
+      "cell": "A17",
+      "value": "bus:OXF",
+      "formula": null
+    },
+    {
+      "cell": "B17",
+      "value": "all upgrades 30",
+      "formula": null
+    },
+    {
+      "cell": "C17",
+      "value": "88.56821276367208",
+      "formula": null
+    },
+    {
+      "cell": "A18",
+      "value": "train:MAN",
+      "formula": null
+    },
+    {
+      "cell": "B18",
+      "value": "unlock",
+      "formula": null
+    },
+    {
+      "cell": "C18",
+      "value": "162.3412585463781",
+      "formula": null
+    },
+    {
+      "cell": "A19",
+      "value": "train:MAN",
+      "formula": null
+    },
+    {
+      "cell": "B19",
+      "value": "all upgrades 30",
+      "formula": null
+    },
+    {
+      "cell": "C19",
+      "value": "175.70714410990257",
+      "formula": null
+    },
+    {
+      "cell": "A20",
+      "value": "ship:ROT",
+      "formula": null
+    },
+    {
+      "cell": "B20",
+      "value": "unlock",
+      "formula": null
+    },
+    {
+      "cell": "C20",
+      "value": "252.71737843188257",
+      "formula": null
+    },
+    {
+      "cell": "A21",
+      "value": "ship:ROT",
+      "formula": null
+    },
+    {
+      "cell": "B21",
+      "value": "all upgrades 30",
+      "formula": null
+    },
+    {
+      "cell": "C21",
+      "value": "264.89521699041984",
+      "formula": null
+    },
+    {
+      "cell": "A22",
+      "value": "truck:CHI",
+      "formula": null
+    },
+    {
+      "cell": "B22",
+      "value": "unlock",
+      "formula": null
+    },
+    {
+      "cell": "C22",
+      "value": "345.085149570893",
+      "formula": null
+    },
+    {
+      "cell": "A23",
+      "value": "truck:CHI",
+      "formula": null
+    },
+    {
+      "cell": "B23",
+      "value": "all upgrades 30",
+      "formula": null
+    },
+    {
+      "cell": "C23",
+      "value": "355.803934917396",
+      "formula": null
+    },
+    {
+      "cell": "A24",
+      "value": "truck:WAW",
+      "formula": null
+    },
+    {
+      "cell": "B24",
+      "value": "unlock",
+      "formula": null
+    },
+    {
+      "cell": "C24",
+      "value": "415.79640576891546",
+      "formula": null
+    },
+    {
+      "cell": "A25",
+      "value": "truck:WAW",
+      "formula": null
+    },
+    {
+      "cell": "B25",
+      "value": "all upgrades 30",
+      "formula": null
+    },
+    {
+      "cell": "C25",
+      "value": "422.7567456846488",
+      "formula": null
+    }
+  ],
+  "Route balance": [
+    {
+      "cell": "A2",
+      "value": "Main destination balance",
+      "formula": null
+    },
+    {
+      "cell": "A3",
+      "value": "Source: k52.java and pv7.java from supplied APK. Cash values are in game currency.",
+      "formula": null
+    },
+    {
+      "cell": "A5",
+      "value": "Route",
+      "formula": null
+    },
+    {
+      "cell": "B5",
+      "value": "City",
+      "formula": null
+    },
+    {
+      "cell": "C5",
+      "value": "Body",
+      "formula": null
+    },
+    {
+      "cell": "D5",
+      "value": "Premium seats",
+      "formula": null
+    },
+    {
+      "cell": "E5",
+      "value": "Economy seats",
+      "formula": null
+    },
+    {
+      "cell": "F5",
+      "value": "Capacity",
+      "formula": null
+    },
+    {
+      "cell": "G5",
+      "value": "Fare coefficient",
+      "formula": null
+    },
+    {
+      "cell": "H5",
+      "value": "Unlock cash",
+      "formula": null
+    },
+    {
+      "cell": "I5",
+      "value": "Cost scale Current",
+      "formula": null
+    },
+    {
+      "cell": "J5",
+      "value": "Cost scale New",
+      "formula": null
+    },
+    {
+      "cell": "K5",
+      "value": "Gate weight",
+      "formula": null
+    },
+    {
+      "cell": "L5",
+      "value": "Transit weight",
+      "formula": null
+    },
+    {
+      "cell": "M5",
+      "value": "Seat weight",
+      "formula": null
+    },
+    {
+      "cell": "N5",
+      "value": "Total upgrades Current",
+      "formula": null
+    },
+    {
+      "cell": "O5",
+      "value": "Total upgrades New",
+      "formula": null
+    },
+    {
+      "cell": "A6",
+      "value": "plane:DUB",
+      "formula": null
+    },
+    {
+      "cell": "B6",
+      "value": "Dublin",
+      "formula": null
+    },
+    {
+      "cell": "C6",
+      "value": "plane",
+      "formula": null
+    },
+    {
+      "cell": "D6",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E6",
+      "value": "48",
+      "formula": null
+    },
+    {
+      "cell": "F6",
+      "value": "52",
+      "formula": "D6+E6"
+    },
+    {
+      "cell": "G6",
+      "value": "0.4348",
+      "formula": null
+    },
+    {
+      "cell": "H6",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "I6",
+      "value": "0.9474571254384647",
+      "formula": null
+    },
+    {
+      "cell": "J6",
+      "value": "0.47372856271923236",
+      "formula": null
+    },
+    {
+      "cell": "K6",
+      "value": "1.2877725896902916",
+      "formula": null
+    },
+    {
+      "cell": "L6",
+      "value": "0.9539056219928086",
+      "formula": null
+    },
+    {
+      "cell": "M6",
+      "value": "0.8108197786938873",
+      "formula": null
+    },
+    {
+      "cell": "N6",
+      "value": "844045",
+      "formula": null
+    },
+    {
+      "cell": "O6",
+      "value": "422016",
+      "formula": null
+    },
+    {
+      "cell": "A7",
+      "value": "plane:PMI",
+      "formula": null
+    },
+    {
+      "cell": "B7",
+      "value": "Palma",
+      "formula": null
+    },
+    {
+      "cell": "C7",
+      "value": "plane",
+      "formula": null
+    },
+    {
+      "cell": "D7",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "E7",
+      "value": "76",
+      "formula": null
+    },
+    {
+      "cell": "F7",
+      "value": "76",
+      "formula": "D7+E7"
+    },
+    {
+      "cell": "G7",
+      "value": "1.3939900699738657",
+      "formula": null
+    },
+    {
+      "cell": "H7",
+      "value": "20000",
+      "formula": null
+    },
+    {
+      "cell": "I7",
+      "value": "3.1976677983548183",
+      "formula": null
+    },
+    {
+      "cell": "J7",
+      "value": "1.7764821101971213",
+      "formula": null
+    },
+    {
+      "cell": "K7",
+      "value": "1.272345194921994",
+      "formula": null
+    },
+    {
+      "cell": "L7",
+      "value": "0.8011062338397739",
+      "formula": null
+    },
+    {
+      "cell": "M7",
+      "value": "0.9424779221644398",
+      "formula": null
+    },
+    {
+      "cell": "N7",
+      "value": "2895259",
+      "formula": null
+    },
+    {
+      "cell": "O7",
+      "value": "1608475",
+      "formula": null
+    },
+    {
+      "cell": "A8",
+      "value": "plane:DXB",
+      "formula": null
+    },
+    {
+      "cell": "B8",
+      "value": "Dubai",
+      "formula": null
+    },
+    {
+      "cell": "C8",
+      "value": "plane",
+      "formula": null
+    },
+    {
+      "cell": "D8",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "E8",
+      "value": "64",
+      "formula": null
+    },
+    {
+      "cell": "F8",
+      "value": "72",
+      "formula": "D8+E8"
+    },
+    {
+      "cell": "G8",
+      "value": "2.3676859462512154",
+      "formula": null
+    },
+    {
+      "cell": "H8",
+      "value": "98000",
+      "formula": null
+    },
+    {
+      "cell": "I8",
+      "value": "8.42940761288534",
+      "formula": null
+    },
+    {
+      "cell": "J8",
+      "value": "5.489329720509106",
+      "formula": null
+    },
+    {
+      "cell": "K8",
+      "value": "0.9539066269693273",
+      "formula": null
+    },
+    {
+      "cell": "L8",
+      "value": "1.287773946408592",
+      "formula": null
+    },
+    {
+      "cell": "M8",
+      "value": "0.8108206329239281",
+      "formula": null
+    },
+    {
+      "cell": "N8",
+      "value": "7632236",
+      "formula": null
+    },
+    {
+      "cell": "O8",
+      "value": "4970208",
+      "formula": null
+    },
+    {
+      "cell": "A9",
+      "value": "plane:EDI",
+      "formula": null
+    },
+    {
+      "cell": "B9",
+      "value": "Edinburgh",
+      "formula": null
+    },
+    {
+      "cell": "C9",
+      "value": "plane",
+      "formula": null
+    },
+    {
+      "cell": "D9",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E9",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "F9",
+      "value": "44",
+      "formula": "D9+E9"
+    },
+    {
+      "cell": "G9",
+      "value": "6.699153932643653",
+      "formula": null
+    },
+    {
+      "cell": "H9",
+      "value": "380000",
+      "formula": null
+    },
+    {
+      "cell": "I9",
+      "value": "20.747904665431804",
+      "formula": null
+    },
+    {
+      "cell": "J9",
+      "value": "15.842963539089633",
+      "formula": null
+    },
+    {
+      "cell": "K9",
+      "value": "0.8011045660741088",
+      "formula": null
+    },
+    {
+      "cell": "L9",
+      "value": "1.2723425461177025",
+      "formula": null
+    },
+    {
+      "cell": "M9",
+      "value": "0.9424759600871869",
+      "formula": null
+    },
+    {
+      "cell": "N9",
+      "value": "18785716",
+      "formula": null
+    },
+    {
+      "cell": "O9",
+      "value": "14344658",
+      "formula": null
+    },
+    {
+      "cell": "A10",
+      "value": "plane:NCE",
+      "formula": null
+    },
+    {
+      "cell": "B10",
+      "value": "Nice",
+      "formula": null
+    },
+    {
+      "cell": "C10",
+      "value": "planeL",
+      "formula": null
+    },
+    {
+      "cell": "D10",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "E10",
+      "value": "78",
+      "formula": null
+    },
+    {
+      "cell": "F10",
+      "value": "86",
+      "formula": "D10+E10"
+    },
+    {
+      "cell": "G10",
+      "value": "15.259923716626473",
+      "formula": null
+    },
+    {
+      "cell": "H10",
+      "value": "1400000",
+      "formula": null
+    },
+    {
+      "cell": "I10",
+      "value": "49.9027944086143",
+      "formula": null
+    },
+    {
+      "cell": "J10",
+      "value": "44.4730897194309",
+      "formula": null
+    },
+    {
+      "cell": "K10",
+      "value": "0.9539066269693273",
+      "formula": null
+    },
+    {
+      "cell": "L10",
+      "value": "1.287773946408592",
+      "formula": null
+    },
+    {
+      "cell": "M10",
+      "value": "0.8108206329239281",
+      "formula": null
+    },
+    {
+      "cell": "N10",
+      "value": "45183454",
+      "formula": null
+    },
+    {
+      "cell": "O10",
+      "value": "40267249",
+      "formula": null
+    },
+    {
+      "cell": "A11",
+      "value": "plane:KEF",
+      "formula": null
+    },
+    {
+      "cell": "B11",
+      "value": "Reykjavik",
+      "formula": null
+    },
+    {
+      "cell": "C11",
+      "value": "planeL",
+      "formula": null
+    },
+    {
+      "cell": "D11",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "E11",
+      "value": "90",
+      "formula": null
+    },
+    {
+      "cell": "F11",
+      "value": "98",
+      "formula": "D11+E11"
+    },
+    {
+      "cell": "G11",
+      "value": "39.08721364396193",
+      "formula": null
+    },
+    {
+      "cell": "H11",
+      "value": "5000000",
+      "formula": null
+    },
+    {
+      "cell": "I11",
+      "value": "119.04919382988813",
+      "formula": null
+    },
+    {
+      "cell": "J11",
+      "value": "123.37933321253871",
+      "formula": null
+    },
+    {
+      "cell": "K11",
+      "value": "0.7793243939757559",
+      "formula": null
+    },
+    {
+      "cell": "L11",
+      "value": "0.9168522282067717",
+      "formula": null
+    },
+    {
+      "cell": "M11",
+      "value": "1.2377505080791418",
+      "formula": null
+    },
+    {
+      "cell": "N11",
+      "value": "107791199",
+      "formula": null
+    },
+    {
+      "cell": "O11",
+      "value": "111711858",
+      "formula": null
+    },
+    {
+      "cell": "A12",
+      "value": "plane:CAI",
+      "formula": null
+    },
+    {
+      "cell": "B12",
+      "value": "Cairo",
+      "formula": null
+    },
+    {
+      "cell": "C12",
+      "value": "planeL",
+      "formula": null
+    },
+    {
+      "cell": "D12",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "E12",
+      "value": "96",
+      "formula": null
+    },
+    {
+      "cell": "F12",
+      "value": "108",
+      "formula": "D12+E12"
+    },
+    {
+      "cell": "G12",
+      "value": "88.11049656553867",
+      "formula": null
+    },
+    {
+      "cell": "H12",
+      "value": "17400000",
+      "formula": null
+    },
+    {
+      "cell": "I12",
+      "value": "283.1802519225682",
+      "formula": null
+    },
+    {
+      "cell": "J12",
+      "value": "340.56223896547147",
+      "formula": null
+    },
+    {
+      "cell": "K12",
+      "value": "0.9168550134678088",
+      "formula": null
+    },
+    {
+      "cell": "L12",
+      "value": "0.7793267614476375",
+      "formula": null
+    },
+    {
+      "cell": "M12",
+      "value": "1.237754268181542",
+      "formula": null
+    },
+    {
+      "cell": "N12",
+      "value": "256401837",
+      "formula": null
+    },
+    {
+      "cell": "O12",
+      "value": "308357593",
+      "formula": null
+    },
+    {
+      "cell": "A13",
+      "value": "plane:SIN",
+      "formula": null
+    },
+    {
+      "cell": "B13",
+      "value": "Singapore",
+      "formula": null
+    },
+    {
+      "cell": "C13",
+      "value": "planeL",
+      "formula": null
+    },
+    {
+      "cell": "D13",
+      "value": "16",
+      "formula": null
+    },
+    {
+      "cell": "E13",
+      "value": "102",
+      "formula": null
+    },
+    {
+      "cell": "F13",
+      "value": "118",
+      "formula": "D13+E13"
+    },
+    {
+      "cell": "G13",
+      "value": "204.6256005527505",
+      "formula": null
+    },
+    {
+      "cell": "H13",
+      "value": "61000000",
+      "formula": null
+    },
+    {
+      "cell": "I13",
+      "value": "672.90445638648",
+      "formula": null
+    },
+    {
+      "cell": "J13",
+      "value": "938.0250395476114",
+      "formula": null
+    },
+    {
+      "cell": "K13",
+      "value": "0.7793243939757559",
+      "formula": null
+    },
+    {
+      "cell": "L13",
+      "value": "0.9168522282067717",
+      "formula": null
+    },
+    {
+      "cell": "M13",
+      "value": "1.2377505080791418",
+      "formula": null
+    },
+    {
+      "cell": "N13",
+      "value": "609270635",
+      "formula": null
+    },
+    {
+      "cell": "O13",
+      "value": "849319848",
+      "formula": null
+    },
+    {
+      "cell": "A14",
+      "value": "bus:OXF",
+      "formula": null
+    },
+    {
+      "cell": "B14",
+      "value": "Oxford",
+      "formula": null
+    },
+    {
+      "cell": "C14",
+      "value": "bus",
+      "formula": null
+    },
+    {
+      "cell": "D14",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "E14",
+      "value": "44",
+      "formula": null
+    },
+    {
+      "cell": "F14",
+      "value": "44",
+      "formula": "D14+E14"
+    },
+    {
+      "cell": "G14",
+      "value": "4141.713936576898",
+      "formula": null
+    },
+    {
+      "cell": "H14",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "I14",
+      "value": "9635.505729550921",
+      "formula": null
+    },
+    {
+      "cell": "J14",
+      "value": "4817.752864775461",
+      "formula": null
+    },
+    {
+      "cell": "K14",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L14",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M14",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N14",
+      "value": "8715031008",
+      "formula": null
+    },
+    {
+      "cell": "O14",
+      "value": "4357515508",
+      "formula": null
+    },
+    {
+      "cell": "A15",
+      "value": "bus:BTN",
+      "formula": null
+    },
+    {
+      "cell": "B15",
+      "value": "Brighton",
+      "formula": null
+    },
+    {
+      "cell": "C15",
+      "value": "bus",
+      "formula": null
+    },
+    {
+      "cell": "D15",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E15",
+      "value": "52",
+      "formula": null
+    },
+    {
+      "cell": "F15",
+      "value": "56",
+      "formula": "D15+E15"
+    },
+    {
+      "cell": "G15",
+      "value": "7752.530070989346",
+      "formula": null
+    },
+    {
+      "cell": "H15",
+      "value": "285000000",
+      "formula": null
+    },
+    {
+      "cell": "I15",
+      "value": "22888.115936185193",
+      "formula": null
+    },
+    {
+      "cell": "J15",
+      "value": "13250.715292383396",
+      "formula": null
+    },
+    {
+      "cell": "K15",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L15",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M15",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N15",
+      "value": "20701626431",
+      "formula": null
+    },
+    {
+      "cell": "O15",
+      "value": "11984881524",
+      "formula": null
+    },
+    {
+      "cell": "A16",
+      "value": "bus:CAM",
+      "formula": null
+    },
+    {
+      "cell": "B16",
+      "value": "Cambridge",
+      "formula": null
+    },
+    {
+      "cell": "C16",
+      "value": "busL",
+      "formula": null
+    },
+    {
+      "cell": "D16",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "E16",
+      "value": "72",
+      "formula": null
+    },
+    {
+      "cell": "F16",
+      "value": "78",
+      "formula": "D16+E16"
+    },
+    {
+      "cell": "G16",
+      "value": "17789.567927496588",
+      "formula": null
+    },
+    {
+      "cell": "H16",
+      "value": "1000000000",
+      "formula": null
+    },
+    {
+      "cell": "I16",
+      "value": "54362.615134807005",
+      "formula": null
+    },
+    {
+      "cell": "J16",
+      "value": "36441.8830697242",
+      "formula": null
+    },
+    {
+      "cell": "K16",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L16",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M16",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N16",
+      "value": "49206153350",
+      "formula": null
+    },
+    {
+      "cell": "O16",
+      "value": "32985258019",
+      "formula": null
+    },
+    {
+      "cell": "A17",
+      "value": "bus:BRS",
+      "formula": null
+    },
+    {
+      "cell": "B17",
+      "value": "Bristol",
+      "formula": null
+    },
+    {
+      "cell": "C17",
+      "value": "busL",
+      "formula": null
+    },
+    {
+      "cell": "D17",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "E17",
+      "value": "88",
+      "formula": null
+    },
+    {
+      "cell": "F17",
+      "value": "96",
+      "formula": "D17+E17"
+    },
+    {
+      "cell": "G17",
+      "value": "42888.03592718036",
+      "formula": null
+    },
+    {
+      "cell": "H17",
+      "value": "3500000000",
+      "formula": null
+    },
+    {
+      "cell": "I17",
+      "value": "129114.12319150595",
+      "formula": null
+    },
+    {
+      "cell": "J17",
+      "value": "100218.16766897234",
+      "formula": null
+    },
+    {
+      "cell": "K17",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L17",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M17",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N17",
+      "value": "116867250219",
+      "formula": null
+    },
+    {
+      "cell": "O17",
+      "value": "90712165235",
+      "formula": null
+    },
+    {
+      "cell": "A18",
+      "value": "bus:BHX",
+      "formula": null
+    },
+    {
+      "cell": "B18",
+      "value": "Birmingham",
+      "formula": null
+    },
+    {
+      "cell": "C18",
+      "value": "busXL",
+      "formula": null
+    },
+    {
+      "cell": "D18",
+      "value": "10",
+      "formula": null
+    },
+    {
+      "cell": "E18",
+      "value": "112",
+      "formula": null
+    },
+    {
+      "cell": "F18",
+      "value": "122",
+      "formula": "D18+E18"
+    },
+    {
+      "cell": "G18",
+      "value": "105693.13281266138",
+      "formula": null
+    },
+    {
+      "cell": "H18",
+      "value": "12200000000",
+      "formula": null
+    },
+    {
+      "cell": "I18",
+      "value": "306648.54866313946",
+      "formula": null
+    },
+    {
+      "cell": "J18",
+      "value": "275603.5808496217",
+      "formula": null
+    },
+    {
+      "cell": "K18",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L18",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M18",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N18",
+      "value": "278028275457",
+      "formula": null
+    },
+    {
+      "cell": "O18",
+      "value": "249880811841",
+      "formula": null
+    },
+    {
+      "cell": "A19",
+      "value": "bus:MAN",
+      "formula": null
+    },
+    {
+      "cell": "B19",
+      "value": "Manchester",
+      "formula": null
+    },
+    {
+      "cell": "C19",
+      "value": "busXL",
+      "formula": null
+    },
+    {
+      "cell": "D19",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "E19",
+      "value": "132",
+      "formula": null
+    },
+    {
+      "cell": "F19",
+      "value": "144",
+      "formula": "D19+E19"
+    },
+    {
+      "cell": "G19",
+      "value": "261044.32721322903",
+      "formula": null
+    },
+    {
+      "cell": "H19",
+      "value": "43000000000",
+      "formula": null
+    },
+    {
+      "cell": "I19",
+      "value": "728292.4233033938",
+      "formula": null
+    },
+    {
+      "cell": "J19",
+      "value": "757914.160682396",
+      "formula": null
+    },
+    {
+      "cell": "K19",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L19",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M19",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N19",
+      "value": "660319076555",
+      "formula": null
+    },
+    {
+      "cell": "O19",
+      "value": "687176143368",
+      "formula": null
+    },
+    {
+      "cell": "A20",
+      "value": "bus:LIV",
+      "formula": null
+    },
+    {
+      "cell": "B20",
+      "value": "Liverpool",
+      "formula": null
+    },
+    {
+      "cell": "C20",
+      "value": "busXL",
+      "formula": null
+    },
+    {
+      "cell": "D20",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "E20",
+      "value": "136",
+      "formula": null
+    },
+    {
+      "cell": "F20",
+      "value": "148",
+      "formula": "D20+E20"
+    },
+    {
+      "cell": "G20",
+      "value": "656789.277307246",
+      "formula": null
+    },
+    {
+      "cell": "H20",
+      "value": "150000000000",
+      "formula": null
+    },
+    {
+      "cell": "I20",
+      "value": "1729696.2590118665",
+      "formula": null
+    },
+    {
+      "cell": "J20",
+      "value": "2084269.0181671132",
+      "formula": null
+    },
+    {
+      "cell": "K20",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L20",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M20",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N20",
+      "value": "1564459297562",
+      "formula": null
+    },
+    {
+      "cell": "O20",
+      "value": "1885159910067",
+      "formula": null
+    },
+    {
+      "cell": "A21",
+      "value": "bus:LON",
+      "formula": null
+    },
+    {
+      "cell": "B21",
+      "value": "London",
+      "formula": null
+    },
+    {
+      "cell": "C21",
+      "value": "busXL",
+      "formula": null
+    },
+    {
+      "cell": "D21",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "E21",
+      "value": "140",
+      "formula": null
+    },
+    {
+      "cell": "F21",
+      "value": "152",
+      "formula": "D21+E21"
+    },
+    {
+      "cell": "G21",
+      "value": "1652016.138171632",
+      "formula": null
+    },
+    {
+      "cell": "H21",
+      "value": "520000000000",
+      "formula": null
+    },
+    {
+      "cell": "I21",
+      "value": "4108030.0205854643",
+      "formula": null
+    },
+    {
+      "cell": "J21",
+      "value": "5731745.715489133",
+      "formula": null
+    },
+    {
+      "cell": "K21",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L21",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M21",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N21",
+      "value": "3715592102875",
+      "formula": null
+    },
+    {
+      "cell": "O21",
+      "value": "5184195103117",
+      "formula": null
+    },
+    {
+      "cell": "A22",
+      "value": "train:MAN",
+      "formula": null
+    },
+    {
+      "cell": "B22",
+      "value": "Manchester",
+      "formula": null
+    },
+    {
+      "cell": "C22",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D22",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E22",
+      "value": "72",
+      "formula": null
+    },
+    {
+      "cell": "F22",
+      "value": "76",
+      "formula": "D22+E22"
+    },
+    {
+      "cell": "G22",
+      "value": "24959013.728712145",
+      "formula": null
+    },
+    {
+      "cell": "H22",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "I22",
+      "value": "58825870.52053275",
+      "formula": null
+    },
+    {
+      "cell": "J22",
+      "value": "29412935.260266375",
+      "formula": null
+    },
+    {
+      "cell": "K22",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L22",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M22",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N22",
+      "value": "53206266472095",
+      "formula": null
+    },
+    {
+      "cell": "O22",
+      "value": "26603133236054",
+      "formula": null
+    },
+    {
+      "cell": "A23",
+      "value": "train:PAR",
+      "formula": null
+    },
+    {
+      "cell": "B23",
+      "value": "Paris",
+      "formula": null
+    },
+    {
+      "cell": "C23",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D23",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "E23",
+      "value": "80",
+      "formula": null
+    },
+    {
+      "cell": "F23",
+      "value": "86",
+      "formula": "D23+E23"
+    },
+    {
+      "cell": "G23",
+      "value": "57785246.18961891",
+      "formula": null
+    },
+    {
+      "cell": "H23",
+      "value": "1740000000000",
+      "formula": null
+    },
+    {
+      "cell": "I23",
+      "value": "139711457.64557928",
+      "formula": null
+    },
+    {
+      "cell": "J23",
+      "value": "80885579.54538953",
+      "formula": null
+    },
+    {
+      "cell": "K23",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L23",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M23",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N23",
+      "value": "126364896582370",
+      "formula": null
+    },
+    {
+      "cell": "O23",
+      "value": "73158623254712",
+      "formula": null
+    },
+    {
+      "cell": "A24",
+      "value": "train:BRU",
+      "formula": null
+    },
+    {
+      "cell": "B24",
+      "value": "Brussels",
+      "formula": null
+    },
+    {
+      "cell": "C24",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D24",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "E24",
+      "value": "84",
+      "formula": null
+    },
+    {
+      "cell": "F24",
+      "value": "90",
+      "formula": "D24+E24"
+    },
+    {
+      "cell": "G24",
+      "value": "145285474.83605427",
+      "formula": null
+    },
+    {
+      "cell": "H24",
+      "value": "6000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I24",
+      "value": "331814725.2673963",
+      "formula": null
+    },
+    {
+      "cell": "J24",
+      "value": "222435353.41388395",
+      "formula": null
+    },
+    {
+      "cell": "K24",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L24",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M24",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N24",
+      "value": "300341074739787",
+      "formula": null
+    },
+    {
+      "cell": "O24",
+      "value": "201336673803779",
+      "formula": null
+    },
+    {
+      "cell": "A25",
+      "value": "train:EDI",
+      "formula": null
+    },
+    {
+      "cell": "B25",
+      "value": "Edinburgh",
+      "formula": null
+    },
+    {
+      "cell": "C25",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D25",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "E25",
+      "value": "88",
+      "formula": null
+    },
+    {
+      "cell": "F25",
+      "value": "96",
+      "formula": "D25+E25"
+    },
+    {
+      "cell": "G25",
+      "value": "340668374.7858074",
+      "formula": null
+    },
+    {
+      "cell": "H25",
+      "value": "21000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I25",
+      "value": "788059984.1590514",
+      "formula": null
+    },
+    {
+      "cell": "J25",
+      "value": "611697233.8450898",
+      "formula": null
+    },
+    {
+      "cell": "K25",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L25",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M25",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N25",
+      "value": "713310063051053",
+      "formula": null
+    },
+    {
+      "cell": "O25",
+      "value": "553675863783144",
+      "formula": null
+    },
+    {
+      "cell": "A26",
+      "value": "train:AMS",
+      "formula": null
+    },
+    {
+      "cell": "B26",
+      "value": "Amsterdam",
+      "formula": null
+    },
+    {
+      "cell": "C26",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D26",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "E26",
+      "value": "96",
+      "formula": null
+    },
+    {
+      "cell": "F26",
+      "value": "104",
+      "formula": "D26+E26"
+    },
+    {
+      "cell": "G26",
+      "value": "863165945.1699775",
+      "formula": null
+    },
+    {
+      "cell": "H26",
+      "value": "75000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I26",
+      "value": "1871642472.4020803",
+      "formula": null
+    },
+    {
+      "cell": "J26",
+      "value": "1682167407.553037",
+      "formula": null
+    },
+    {
+      "cell": "K26",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L26",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M26",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N26",
+      "value": "1696957416376283",
+      "formula": null
+    },
+    {
+      "cell": "O26",
+      "value": "1525166531495737",
+      "formula": null
+    },
+    {
+      "cell": "A27",
+      "value": "train:FRA",
+      "formula": null
+    },
+    {
+      "cell": "B27",
+      "value": "Frankfurt",
+      "formula": null
+    },
+    {
+      "cell": "C27",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D27",
+      "value": "10",
+      "formula": null
+    },
+    {
+      "cell": "E27",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "F27",
+      "value": "110",
+      "formula": "D27+E27"
+    },
+    {
+      "cell": "G27",
+      "value": "2048898008.0583234",
+      "formula": null
+    },
+    {
+      "cell": "H27",
+      "value": "260000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I27",
+      "value": "4445150880.435854",
+      "formula": null
+    },
+    {
+      "cell": "J27",
+      "value": "4625960388.024235",
+      "formula": null
+    },
+    {
+      "cell": "K27",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L27",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M27",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N27",
+      "value": "4030273871583037",
+      "formula": null
+    },
+    {
+      "cell": "O27",
+      "value": "4194207977256370",
+      "formula": null
+    },
+    {
+      "cell": "A28",
+      "value": "train:LYS",
+      "formula": null
+    },
+    {
+      "cell": "B28",
+      "value": "Lyon",
+      "formula": null
+    },
+    {
+      "cell": "C28",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D28",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "E28",
+      "value": "104",
+      "formula": null
+    },
+    {
+      "cell": "F28",
+      "value": "116",
+      "formula": "D28+E28"
+    },
+    {
+      "cell": "G28",
+      "value": "4898113871.080753",
+      "formula": null
+    },
+    {
+      "cell": "H28",
+      "value": "900000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I28",
+      "value": "10557233348.049816",
+      "formula": null
+    },
+    {
+      "cell": "J28",
+      "value": "12721391087.371809",
+      "formula": null
+    },
+    {
+      "cell": "K28",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L28",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M28",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N28",
+      "value": "9571900451369692",
+      "formula": null
+    },
+    {
+      "cell": "O28",
+      "value": "11534071955865042",
+      "formula": null
+    },
+    {
+      "cell": "A29",
+      "value": "train:ROM",
+      "formula": null
+    },
+    {
+      "cell": "B29",
+      "value": "Rome",
+      "formula": null
+    },
+    {
+      "cell": "C29",
+      "value": "train",
+      "formula": null
+    },
+    {
+      "cell": "D29",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "E29",
+      "value": "108",
+      "formula": null
+    },
+    {
+      "cell": "F29",
+      "value": "120",
+      "formula": "D29+E29"
+    },
+    {
+      "cell": "G29",
+      "value": "12341691619.874676",
+      "formula": null
+    },
+    {
+      "cell": "H29",
+      "value": "3200000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I29",
+      "value": "25073429207.240047",
+      "formula": null
+    },
+    {
+      "cell": "J29",
+      "value": "34983825513.9346",
+      "formula": null
+    },
+    {
+      "cell": "K29",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L29",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M29",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N29",
+      "value": "22678177882704920",
+      "formula": null
+    },
+    {
+      "cell": "O29",
+      "value": "31641839313843496",
+      "formula": null
+    },
+    {
+      "cell": "A30",
+      "value": "ship:ROT",
+      "formula": null
+    },
+    {
+      "cell": "B30",
+      "value": "Rotterdam",
+      "formula": null
+    },
+    {
+      "cell": "C30",
+      "value": "shipS",
+      "formula": null
+    },
+    {
+      "cell": "D30",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E30",
+      "value": "72",
+      "formula": null
+    },
+    {
+      "cell": "F30",
+      "value": "76",
+      "formula": "D30+E30"
+    },
+    {
+      "cell": "G30",
+      "value": "134749628439.51047",
+      "formula": null
+    },
+    {
+      "cell": "H30",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "I30",
+      "value": "359044681519.28033",
+      "formula": null
+    },
+    {
+      "cell": "J30",
+      "value": "179522340759.64017",
+      "formula": null
+    },
+    {
+      "cell": "K30",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L30",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M30",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N30",
+      "value": "324745334514602560",
+      "formula": null
+    },
+    {
+      "cell": "O30",
+      "value": "162372667257301280",
+      "formula": null
+    },
+    {
+      "cell": "A31",
+      "value": "ship:BIO",
+      "formula": null
+    },
+    {
+      "cell": "B31",
+      "value": "Bilbao",
+      "formula": null
+    },
+    {
+      "cell": "C31",
+      "value": "shipS",
+      "formula": null
+    },
+    {
+      "cell": "D31",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "E31",
+      "value": "96",
+      "formula": null
+    },
+    {
+      "cell": "F31",
+      "value": "102",
+      "formula": "D31+E31"
+    },
+    {
+      "cell": "G31",
+      "value": "322258836217.5898",
+      "formula": null
+    },
+    {
+      "cell": "H31",
+      "value": "10600000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I31",
+      "value": "852731118668.928",
+      "formula": null
+    },
+    {
+      "cell": "J31",
+      "value": "493686437119.3291",
+      "formula": null
+    },
+    {
+      "cell": "K31",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L31",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M31",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N31",
+      "value": "771270169527025700",
+      "formula": null
+    },
+    {
+      "cell": "O31",
+      "value": "446524834985000800",
+      "formula": null
+    },
+    {
+      "cell": "A32",
+      "value": "ship:OSL",
+      "formula": null
+    },
+    {
+      "cell": "B32",
+      "value": "Oslo",
+      "formula": null
+    },
+    {
+      "cell": "C32",
+      "value": "ship",
+      "formula": null
+    },
+    {
+      "cell": "D32",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "E32",
+      "value": "112",
+      "formula": null
+    },
+    {
+      "cell": "F32",
+      "value": "124",
+      "formula": "D32+E32"
+    },
+    {
+      "cell": "G32",
+      "value": "695354738823.1453",
+      "formula": null
+    },
+    {
+      "cell": "H32",
+      "value": "37000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I32",
+      "value": "2025236406892.1406",
+      "formula": null
+    },
+    {
+      "cell": "J32",
+      "value": "1357637702116.8113",
+      "formula": null
+    },
+    {
+      "cell": "K32",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L32",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M32",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N32",
+      "value": "1833136484699300900",
+      "formula": null
+    },
+    {
+      "cell": "O32",
+      "value": "1228861576991289000",
+      "formula": null
+    },
+    {
+      "cell": "A33",
+      "value": "ship:LIS",
+      "formula": null
+    },
+    {
+      "cell": "B33",
+      "value": "Lisbon",
+      "formula": null
+    },
+    {
+      "cell": "C33",
+      "value": "ship",
+      "formula": null
+    },
+    {
+      "cell": "D33",
+      "value": "16",
+      "formula": null
+    },
+    {
+      "cell": "E33",
+      "value": "144",
+      "formula": null
+    },
+    {
+      "cell": "F33",
+      "value": "160",
+      "formula": "D33+E33"
+    },
+    {
+      "cell": "G33",
+      "value": "1700191979216.4163",
+      "formula": null
+    },
+    {
+      "cell": "H33",
+      "value": "130000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I33",
+      "value": "4809936466415.429",
+      "formula": null
+    },
+    {
+      "cell": "J33",
+      "value": "3733503680869.0596",
+      "formula": null
+    },
+    {
+      "cell": "K33",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L33",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M33",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N33",
+      "value": "4353699151203014700",
+      "formula": null
+    },
+    {
+      "cell": "O33",
+      "value": "3379369336769337000",
+      "formula": null
+    },
+    {
+      "cell": "A34",
+      "value": "ship:KEF",
+      "formula": null
+    },
+    {
+      "cell": "B34",
+      "value": "Reykjavik",
+      "formula": null
+    },
+    {
+      "cell": "C34",
+      "value": "shipXL",
+      "formula": null
+    },
+    {
+      "cell": "D34",
+      "value": "10",
+      "formula": null
+    },
+    {
+      "cell": "E34",
+      "value": "160",
+      "formula": null
+    },
+    {
+      "cell": "F34",
+      "value": "170",
+      "formula": "D34+E34"
+    },
+    {
+      "cell": "G34",
+      "value": "3961015663500.355",
+      "formula": null
+    },
+    {
+      "cell": "H34",
+      "value": "450000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I34",
+      "value": "11423599107776.74",
+      "formula": null
+    },
+    {
+      "cell": "J34",
+      "value": "10267135122447.828",
+      "formula": null
+    },
+    {
+      "cell": "K34",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L34",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M34",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N34",
+      "value": "10357406135784002000",
+      "formula": null
+    },
+    {
+      "cell": "O34",
+      "value": "9308877816079157000",
+      "formula": null
+    },
+    {
+      "cell": "A35",
+      "value": "ship:NYC",
+      "formula": null
+    },
+    {
+      "cell": "B35",
+      "value": "New York",
+      "formula": null
+    },
+    {
+      "cell": "C35",
+      "value": "shipXL",
+      "formula": null
+    },
+    {
+      "cell": "D35",
+      "value": "14",
+      "formula": null
+    },
+    {
+      "cell": "E35",
+      "value": "184",
+      "formula": null
+    },
+    {
+      "cell": "F35",
+      "value": "198",
+      "formula": "D35+E35"
+    },
+    {
+      "cell": "G35",
+      "value": "9417557802244.63",
+      "formula": null
+    },
+    {
+      "cell": "H35",
+      "value": "1600000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I35",
+      "value": "27131047881003.684",
+      "formula": null
+    },
+    {
+      "cell": "J35",
+      "value": "28234621586800.543",
+      "formula": null
+    },
+    {
+      "cell": "K35",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L35",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M35",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N35",
+      "value": "24598839572517760000",
+      "formula": null
+    },
+    {
+      "cell": "O35",
+      "value": "25599413994280255000",
+      "formula": null
+    },
+    {
+      "cell": "A36",
+      "value": "ship:RIO",
+      "formula": null
+    },
+    {
+      "cell": "B36",
+      "value": "Rio de Janeiro",
+      "formula": null
+    },
+    {
+      "cell": "C36",
+      "value": "shipXL",
+      "formula": null
+    },
+    {
+      "cell": "D36",
+      "value": "14",
+      "formula": null
+    },
+    {
+      "cell": "E36",
+      "value": "192",
+      "formula": null
+    },
+    {
+      "cell": "F36",
+      "value": "206",
+      "formula": "D36+E36"
+    },
+    {
+      "cell": "G36",
+      "value": "23725321793067.1",
+      "formula": null
+    },
+    {
+      "cell": "H36",
+      "value": "5600000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I36",
+      "value": "64436238717411.8",
+      "formula": null
+    },
+    {
+      "cell": "J36",
+      "value": "77645209363782.72",
+      "formula": null
+    },
+    {
+      "cell": "K36",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L36",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M36",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N36",
+      "value": "58280679186233840000",
+      "formula": null
+    },
+    {
+      "cell": "O36",
+      "value": "70227803908979380000",
+      "formula": null
+    },
+    {
+      "cell": "A37",
+      "value": "ship:SYD",
+      "formula": null
+    },
+    {
+      "cell": "B37",
+      "value": "Sydney",
+      "formula": null
+    },
+    {
+      "cell": "C37",
+      "value": "shipXL",
+      "formula": null
+    },
+    {
+      "cell": "D37",
+      "value": "16",
+      "formula": null
+    },
+    {
+      "cell": "E37",
+      "value": "192",
+      "formula": null
+    },
+    {
+      "cell": "F37",
+      "value": "208",
+      "formula": "D37+E37"
+    },
+    {
+      "cell": "G37",
+      "value": "57479533535754.63",
+      "formula": null
+    },
+    {
+      "cell": "H37",
+      "value": "19500000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I37",
+      "value": "153036066953875.5",
+      "formula": null
+    },
+    {
+      "cell": "J37",
+      "value": "213524325750497.22",
+      "formula": null
+    },
+    {
+      "cell": "K37",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L37",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M37",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N37",
+      "value": "138416613067325700000",
+      "formula": null
+    },
+    {
+      "cell": "O37",
+      "value": "193126460749778980000",
+      "formula": null
+    },
+    {
+      "cell": "A38",
+      "value": "truck:CHI",
+      "formula": null
+    },
+    {
+      "cell": "B38",
+      "value": "Chicago",
+      "formula": null
+    },
+    {
+      "cell": "C38",
+      "value": "truck",
+      "formula": null
+    },
+    {
+      "cell": "D38",
+      "value": "2",
+      "formula": null
+    },
+    {
+      "cell": "E38",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "F38",
+      "value": "42",
+      "formula": "D38+E38"
+    },
+    {
+      "cell": "G38",
+      "value": "692709202393547.4",
+      "formula": null
+    },
+    {
+      "cell": "H38",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "I38",
+      "value": "2191434823972647.8",
+      "formula": null
+    },
+    {
+      "cell": "J38",
+      "value": "1095717411986323.9",
+      "formula": null
+    },
+    {
+      "cell": "K38",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L38",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M38",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N38",
+      "value": "1.9820882235787452e+21",
+      "formula": null
+    },
+    {
+      "cell": "O38",
+      "value": "991044111789372600000",
+      "formula": null
+    },
+    {
+      "cell": "A39",
+      "value": "truck:MIA",
+      "formula": null
+    },
+    {
+      "cell": "B39",
+      "value": "Miami",
+      "formula": null
+    },
+    {
+      "cell": "C39",
+      "value": "truck",
+      "formula": null
+    },
+    {
+      "cell": "D39",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E39",
+      "value": "48",
+      "formula": null
+    },
+    {
+      "cell": "F39",
+      "value": "52",
+      "formula": "D39+E39"
+    },
+    {
+      "cell": "G39",
+      "value": "1515752874389037.8",
+      "formula": null
+    },
+    {
+      "cell": "H39",
+      "value": "65000000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I39",
+      "value": "5204657706935281",
+      "formula": null
+    },
+    {
+      "cell": "J39",
+      "value": "3013222882962512.5",
+      "formula": null
+    },
+    {
+      "cell": "K39",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L39",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M39",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N39",
+      "value": "4.707459530999739e+21",
+      "formula": null
+    },
+    {
+      "cell": "O39",
+      "value": "2.7253713074208847e+21",
+      "formula": null
+    },
+    {
+      "cell": "A40",
+      "value": "truck:DAL",
+      "formula": null
+    },
+    {
+      "cell": "B40",
+      "value": "Dallas",
+      "formula": null
+    },
+    {
+      "cell": "C40",
+      "value": "truckUS",
+      "formula": null
+    },
+    {
+      "cell": "D40",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E40",
+      "value": "52",
+      "formula": null
+    },
+    {
+      "cell": "F40",
+      "value": "56",
+      "formula": "D40+E40"
+    },
+    {
+      "cell": "G40",
+      "value": "3807749592674415",
+      "formula": null
+    },
+    {
+      "cell": "H40",
+      "value": "230000000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I40",
+      "value": "12361062053971508",
+      "formula": null
+    },
+    {
+      "cell": "J40",
+      "value": "8286362928147065",
+      "formula": null
+    },
+    {
+      "cell": "K40",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L40",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M40",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N40",
+      "value": "1.118857717728854e+22",
+      "formula": null
+    },
+    {
+      "cell": "O40",
+      "value": "7.500375836298651e+21",
+      "formula": null
+    },
+    {
+      "cell": "A41",
+      "value": "truck:SEA",
+      "formula": null
+    },
+    {
+      "cell": "B41",
+      "value": "Seattle",
+      "formula": null
+    },
+    {
+      "cell": "C41",
+      "value": "truckSemi",
+      "formula": null
+    },
+    {
+      "cell": "D41",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "E41",
+      "value": "72",
+      "formula": null
+    },
+    {
+      "cell": "F41",
+      "value": "76",
+      "formula": "D41+E41"
+    },
+    {
+      "cell": "G41",
+      "value": "9650803367998424",
+      "formula": null
+    },
+    {
+      "cell": "H41",
+      "value": "800000000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "I41",
+      "value": "29357522378182516",
+      "formula": null
+    },
+    {
+      "cell": "J41",
+      "value": "22787498052404624",
+      "formula": null
+    },
+    {
+      "cell": "K41",
+      "value": "0.8008565310492505",
+      "formula": null
+    },
+    {
+      "cell": "L41",
+      "value": "1.271948608137045",
+      "formula": null
+    },
+    {
+      "cell": "M41",
+      "value": "0.9421841541755888",
+      "formula": null
+    },
+    {
+      "cell": "N41",
+      "value": "2.6572870796060444e+22",
+      "formula": null
+    },
+    {
+      "cell": "O41",
+      "value": "2.062603354982147e+22",
+      "formula": null
+    },
+    {
+      "cell": "A42",
+      "value": "truck:HAM",
+      "formula": null
+    },
+    {
+      "cell": "B42",
+      "value": "Hamburg",
+      "formula": null
+    },
+    {
+      "cell": "C42",
+      "value": "truckSemiUS",
+      "formula": null
+    },
+    {
+      "cell": "D42",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "E42",
+      "value": "78",
+      "formula": null
+    },
+    {
+      "cell": "F42",
+      "value": "84",
+      "formula": "D42+E42"
+    },
+    {
+      "cell": "G42",
+      "value": "22607278129474256",
+      "formula": null
+    },
+    {
+      "cell": "H42",
+      "value": "2.8e+21",
+      "formula": null
+    },
+    {
+      "cell": "I42",
+      "value": "69724115648183624",
+      "formula": null
+    },
+    {
+      "cell": "J42",
+      "value": "62665619644112936",
+      "formula": null
+    },
+    {
+      "cell": "K42",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L42",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M42",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N42",
+      "value": "6.321659018434841e+22",
+      "formula": null
+    },
+    {
+      "cell": "O42",
+      "value": "5.681688120189648e+22",
+      "formula": null
+    },
+    {
+      "cell": "A43",
+      "value": "truck:MIL",
+      "formula": null
+    },
+    {
+      "cell": "B43",
+      "value": "Milan",
+      "formula": null
+    },
+    {
+      "cell": "C43",
+      "value": "truckSemi",
+      "formula": null
+    },
+    {
+      "cell": "D43",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "E43",
+      "value": "78",
+      "formula": null
+    },
+    {
+      "cell": "F43",
+      "value": "84",
+      "formula": "D43+E43"
+    },
+    {
+      "cell": "G43",
+      "value": "56160296720196380",
+      "formula": null
+    },
+    {
+      "cell": "H43",
+      "value": "9.7e+21",
+      "formula": null
+    },
+    {
+      "cell": "I43",
+      "value": "165594774664436220",
+      "formula": null
+    },
+    {
+      "cell": "J43",
+      "value": "172330454021310880",
+      "formula": null
+    },
+    {
+      "cell": "K43",
+      "value": "0.9181011997913401",
+      "formula": null
+    },
+    {
+      "cell": "L43",
+      "value": "0.780386019822639",
+      "formula": null
+    },
+    {
+      "cell": "M43",
+      "value": "1.239436619718309",
+      "formula": null
+    },
+    {
+      "cell": "N43",
+      "value": "1.5013940168782757e+23",
+      "formula": null
+    },
+    {
+      "cell": "O43",
+      "value": "1.562464233052156e+23",
+      "formula": null
+    },
+    {
+      "cell": "A44",
+      "value": "truck:MAD",
+      "formula": null
+    },
+    {
+      "cell": "B44",
+      "value": "Madrid",
+      "formula": null
+    },
+    {
+      "cell": "C44",
+      "value": "truckSemiUS",
+      "formula": null
+    },
+    {
+      "cell": "D44",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "E44",
+      "value": "84",
+      "formula": null
+    },
+    {
+      "cell": "F44",
+      "value": "92",
+      "formula": "D44+E44"
+    },
+    {
+      "cell": "G44",
+      "value": "133640902778797870",
+      "formula": null
+    },
+    {
+      "cell": "H44",
+      "value": "3.4e+22",
+      "formula": null
+    },
+    {
+      "cell": "I44",
+      "value": "393287589828036100",
+      "formula": null
+    },
+    {
+      "cell": "J44",
+      "value": "473908748558605250",
+      "formula": null
+    },
+    {
+      "cell": "K44",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L44",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M44",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N44",
+      "value": "3.557170360488658e+23",
+      "formula": null
+    },
+    {
+      "cell": "O44",
+      "value": "4.286364984682183e+23",
+      "formula": null
+    },
+    {
+      "cell": "A45",
+      "value": "truck:WAW",
+      "formula": null
+    },
+    {
+      "cell": "B45",
+      "value": "Warsaw",
+      "formula": null
+    },
+    {
+      "cell": "C45",
+      "value": "truckHV",
+      "formula": null
+    },
+    {
+      "cell": "D45",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "E45",
+      "value": "102",
+      "formula": null
+    },
+    {
+      "cell": "F45",
+      "value": "108",
+      "formula": "D45+E45"
+    },
+    {
+      "cell": "G45",
+      "value": "299625162244472100",
+      "formula": null
+    },
+    {
+      "cell": "H45",
+      "value": "1.2e+23",
+      "formula": null
+    },
+    {
+      "cell": "I45",
+      "value": "934058025841585900",
+      "formula": null
+    },
+    {
+      "cell": "J45",
+      "value": "1303249058536165000",
+      "formula": null
+    },
+    {
+      "cell": "K45",
+      "value": "1.2864103952355168",
+      "formula": null
+    },
+    {
+      "cell": "L45",
+      "value": "0.9528965890633457",
+      "formula": null
+    },
+    {
+      "cell": "M45",
+      "value": "0.8099621007038439",
+      "formula": null
+    },
+    {
+      "cell": "N45",
+      "value": "8.448279606160564e+23",
+      "formula": null
+    },
+    {
+      "cell": "O45",
+      "value": "1.178750370787601e+24",
+      "formula": null
+    }
+  ],
+  "Upgrade calculator": [
+    {
+      "cell": "A2",
+      "value": "Dublin upgrade calculator",
+      "formula": null
+    },
+    {
+      "cell": "A3",
+      "value": "Variant",
+      "formula": null
+    },
+    {
+      "cell": "B3",
+      "value": "1",
+      "formula": null
+    },
+    {
+      "cell": "C3",
+      "value": "1 Current  2 New  Amber cells are editable",
+      "formula": null
+    },
+    {
+      "cell": "A5",
+      "value": "Card",
+      "formula": null
+    },
+    {
+      "cell": "B5",
+      "value": "Upgrade",
+      "formula": null
+    },
+    {
+      "cell": "C5",
+      "value": "Level input",
+      "formula": null
+    },
+    {
+      "cell": "D5",
+      "value": "Current base",
+      "formula": null
+    },
+    {
+      "cell": "E5",
+      "value": "New base",
+      "formula": null
+    },
+    {
+      "cell": "F5",
+      "value": "Active base",
+      "formula": null
+    },
+    {
+      "cell": "G5",
+      "value": "Effect",
+      "formula": null
+    },
+    {
+      "cell": "H5",
+      "value": "Effect units",
+      "formula": null
+    },
+    {
+      "cell": "I5",
+      "value": "Next cost",
+      "formula": null
+    },
+    {
+      "cell": "A6",
+      "value": "1",
+      "formula": null
+    },
+    {
+      "cell": "B6",
+      "value": "Check in speed",
+      "formula": null
+    },
+    {
+      "cell": "C6",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D6",
+      "value": "50",
+      "formula": null
+    },
+    {
+      "cell": "E6",
+      "value": "25",
+      "formula": null
+    },
+    {
+      "cell": "F6",
+      "value": "50",
+      "formula": "CHOOSE($B$3,D6,E6)"
+    },
+    {
+      "cell": "G6",
+      "value": "0.25",
+      "formula": ".25*(1+.045*C6)"
+    },
+    {
+      "cell": "H6",
+      "value": "per second",
+      "formula": null
+    },
+    {
+      "cell": "I6",
+      "value": "50",
+      "formula": "IF(C6>=30,0,ROUND(F6*(1+.4*C6)*1.1^C6,0))"
+    },
+    {
+      "cell": "A7",
+      "value": "2",
+      "formula": null
+    },
+    {
+      "cell": "B7",
+      "value": "Instant check in",
+      "formula": null
+    },
+    {
+      "cell": "C7",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D7",
+      "value": "50",
+      "formula": null
+    },
+    {
+      "cell": "E7",
+      "value": "25",
+      "formula": null
+    },
+    {
+      "cell": "F7",
+      "value": "50",
+      "formula": "CHOOSE($B$3,D7,E7)"
+    },
+    {
+      "cell": "G7",
+      "value": "0",
+      "formula": "1-1/(1+.0222*C7)"
+    },
+    {
+      "cell": "H7",
+      "value": "probability",
+      "formula": null
+    },
+    {
+      "cell": "I7",
+      "value": "50",
+      "formula": "IF(C7>=30,0,ROUND(F7*(1+.4*C7)*1.1^C7,0))"
+    },
+    {
+      "cell": "A8",
+      "value": "3",
+      "formula": null
+    },
+    {
+      "cell": "B8",
+      "value": "Check in income",
+      "formula": null
+    },
+    {
+      "cell": "C8",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D8",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "E8",
+      "value": "50",
+      "formula": null
+    },
+    {
+      "cell": "F8",
+      "value": "100",
+      "formula": "CHOOSE($B$3,D8,E8)"
+    },
+    {
+      "cell": "G8",
+      "value": "1",
+      "formula": "1+.2*C8"
+    },
+    {
+      "cell": "H8",
+      "value": "multiplier",
+      "formula": null
+    },
+    {
+      "cell": "I8",
+      "value": "100",
+      "formula": "IF(C8>=30,0,ROUND(F8*(1+.4*C8)*1.1^C8,0))"
+    },
+    {
+      "cell": "A9",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "B9",
+      "value": "Walking time",
+      "formula": null
+    },
+    {
+      "cell": "C9",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D9",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "E9",
+      "value": "20",
+      "formula": null
+    },
+    {
+      "cell": "F9",
+      "value": "40",
+      "formula": "CHOOSE($B$3,D9,E9)"
+    },
+    {
+      "cell": "G9",
+      "value": "9",
+      "formula": "9/(1+C9/24)"
+    },
+    {
+      "cell": "H9",
+      "value": "time units",
+      "formula": null
+    },
+    {
+      "cell": "I9",
+      "value": "40",
+      "formula": "IF(C9>=30,0,ROUND(F9*(1+.4*C9)*1.1^C9,0))"
+    },
+    {
+      "cell": "A10",
+      "value": "5",
+      "formula": null
+    },
+    {
+      "cell": "B10",
+      "value": "Boarding time",
+      "formula": null
+    },
+    {
+      "cell": "C10",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D10",
+      "value": "50",
+      "formula": null
+    },
+    {
+      "cell": "E10",
+      "value": "25",
+      "formula": null
+    },
+    {
+      "cell": "F10",
+      "value": "50",
+      "formula": "CHOOSE($B$3,D10,E10)"
+    },
+    {
+      "cell": "G10",
+      "value": "3.5",
+      "formula": "3.5/(1+.15*C10)"
+    },
+    {
+      "cell": "H10",
+      "value": "time units",
+      "formula": null
+    },
+    {
+      "cell": "I10",
+      "value": "50",
+      "formula": "IF(C10>=30,0,ROUND(F10*(1+.4*C10)*1.1^C10,0))"
+    },
+    {
+      "cell": "A11",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "B11",
+      "value": "Door income",
+      "formula": null
+    },
+    {
+      "cell": "C11",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D11",
+      "value": "80",
+      "formula": null
+    },
+    {
+      "cell": "E11",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "F11",
+      "value": "80",
+      "formula": "CHOOSE($B$3,D11,E11)"
+    },
+    {
+      "cell": "G11",
+      "value": "1",
+      "formula": "1+.2*C11"
+    },
+    {
+      "cell": "H11",
+      "value": "multiplier",
+      "formula": null
+    },
+    {
+      "cell": "I11",
+      "value": "80",
+      "formula": "IF(C11>=30,0,ROUND(F11*(1+.4*C11)*1.1^C11,0))"
+    },
+    {
+      "cell": "A12",
+      "value": "7",
+      "formula": null
+    },
+    {
+      "cell": "B12",
+      "value": "Stowing time",
+      "formula": null
+    },
+    {
+      "cell": "C12",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D12",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "E12",
+      "value": "20",
+      "formula": null
+    },
+    {
+      "cell": "F12",
+      "value": "40",
+      "formula": "CHOOSE($B$3,D12,E12)"
+    },
+    {
+      "cell": "G12",
+      "value": "3",
+      "formula": "3/(1+.05*C12)"
+    },
+    {
+      "cell": "H12",
+      "value": "time units",
+      "formula": null
+    },
+    {
+      "cell": "I12",
+      "value": "40",
+      "formula": "IF(C12>=30,0,ROUND(F12*(1+.4*C12)*1.1^C12,0))"
+    },
+    {
+      "cell": "A13",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "B13",
+      "value": "Instant seating",
+      "formula": null
+    },
+    {
+      "cell": "C13",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D13",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "E13",
+      "value": "20",
+      "formula": null
+    },
+    {
+      "cell": "F13",
+      "value": "40",
+      "formula": "CHOOSE($B$3,D13,E13)"
+    },
+    {
+      "cell": "G13",
+      "value": "0",
+      "formula": "1-1/(1+.0222*C13)"
+    },
+    {
+      "cell": "H13",
+      "value": "probability",
+      "formula": null
+    },
+    {
+      "cell": "I13",
+      "value": "40",
+      "formula": "IF(C13>=30,0,ROUND(F13*(1+.4*C13)*1.1^C13,0))"
+    },
+    {
+      "cell": "A14",
+      "value": "9",
+      "formula": null
+    },
+    {
+      "cell": "B14",
+      "value": "Seat income",
+      "formula": null
+    },
+    {
+      "cell": "C14",
+      "value": "0",
+      "formula": null
+    },
+    {
+      "cell": "D14",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "E14",
+      "value": "50",
+      "formula": null
+    },
+    {
+      "cell": "F14",
+      "value": "100",
+      "formula": "CHOOSE($B$3,D14,E14)"
+    },
+    {
+      "cell": "G14",
+      "value": "1",
+      "formula": "1+.2*C14"
+    },
+    {
+      "cell": "H14",
+      "value": "multiplier",
+      "formula": null
+    },
+    {
+      "cell": "I14",
+      "value": "100",
+      "formula": "IF(C14>=30,0,ROUND(F14*(1+.4*C14)*1.1^C14,0))"
+    },
+    {
+      "cell": "A17",
+      "value": "Source: kk0.a and z46.x. No research discounts or prestige cost multiplier.",
+      "formula": null
+    },
+    {
+      "cell": "A18",
+      "value": "Level 30 next cost is 0 because the card is capped. Game rounding uses Math.rint.",
+      "formula": null
+    },
+    {
+      "cell": "A19",
+      "value": "At exact .5 ties, Excel ROUND may differ from game ties to even.",
+      "formula": null
+    }
+  ],
+  "Research": [
+    {
+      "cell": "A2",
+      "value": "Standard research definitions",
+      "formula": null
+    },
+    {
+      "cell": "A3",
+      "value": "Source: jx5.java. Repeatable node prices and timers use zx5 and ay5 formulas; base is not first price.",
+      "formula": null
+    },
+    {
+      "cell": "A5",
+      "value": "Key",
+      "formula": null
+    },
+    {
+      "cell": "B5",
+      "value": "Research",
+      "formula": null
+    },
+    {
+      "cell": "C5",
+      "value": "Cap",
+      "formula": null
+    },
+    {
+      "cell": "D5",
+      "value": "Base cost parameter",
+      "formula": null
+    },
+    {
+      "cell": "E5",
+      "value": "Timer parameter minutes",
+      "formula": null
+    },
+    {
+      "cell": "F5",
+      "value": "Income gate",
+      "formula": null
+    },
+    {
+      "cell": "G5",
+      "value": "Vehicle tag",
+      "formula": null
+    },
+    {
+      "cell": "A6",
+      "value": "arr",
+      "formula": null
+    },
+    {
+      "cell": "B6",
+      "value": "Departure Bonus",
+      "formula": null
+    },
+    {
+      "cell": "C6",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D6",
+      "value": "3000",
+      "formula": null
+    },
+    {
+      "cell": "E6",
+      "value": "2",
+      "formula": null
+    },
+    {
+      "cell": "A7",
+      "value": "rsp",
+      "formula": null
+    },
+    {
+      "cell": "B7",
+      "value": "Research speed",
+      "formula": null
+    },
+    {
+      "cell": "C7",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D7",
+      "value": "5000",
+      "formula": null
+    },
+    {
+      "cell": "E7",
+      "value": "3",
+      "formula": null
+    },
+    {
+      "cell": "A8",
+      "value": "tds",
+      "formula": null
+    },
+    {
+      "cell": "B8",
+      "value": "Gate discount",
+      "formula": null
+    },
+    {
+      "cell": "C8",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D8",
+      "value": "8000",
+      "formula": null
+    },
+    {
+      "cell": "E8",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "A9",
+      "value": "bds",
+      "formula": null
+    },
+    {
+      "cell": "B9",
+      "value": "Transit discount",
+      "formula": null
+    },
+    {
+      "cell": "C9",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D9",
+      "value": "8000",
+      "formula": null
+    },
+    {
+      "cell": "E9",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "A10",
+      "value": "ccr",
+      "formula": null
+    },
+    {
+      "cell": "B10",
+      "value": "Premium crew",
+      "formula": null
+    },
+    {
+      "cell": "C10",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D10",
+      "value": "4000",
+      "formula": null
+    },
+    {
+      "cell": "E10",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "A11",
+      "value": "cds",
+      "formula": null
+    },
+    {
+      "cell": "B11",
+      "value": "Seating discount",
+      "formula": null
+    },
+    {
+      "cell": "C11",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D11",
+      "value": "8000",
+      "formula": null
+    },
+    {
+      "cell": "E11",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "A12",
+      "value": "cbus",
+      "formula": null
+    },
+    {
+      "cell": "B12",
+      "value": "Bus certificate",
+      "formula": null
+    },
+    {
+      "cell": "C12",
+      "value": "1",
+      "formula": null
+    },
+    {
+      "cell": "D12",
+      "value": "1800000",
+      "formula": null
+    },
+    {
+      "cell": "E12",
+      "value": "240",
+      "formula": null
+    },
+    {
+      "cell": "F12",
+      "value": "757000",
+      "formula": null
+    },
+    {
+      "cell": "G12",
+      "value": "BUS",
+      "formula": null
+    },
+    {
+      "cell": "A13",
+      "value": "ctrn",
+      "formula": null
+    },
+    {
+      "cell": "B13",
+      "value": "Train certificate",
+      "formula": null
+    },
+    {
+      "cell": "C13",
+      "value": "1",
+      "formula": null
+    },
+    {
+      "cell": "D13",
+      "value": "6800000000",
+      "formula": null
+    },
+    {
+      "cell": "E13",
+      "value": "480",
+      "formula": null
+    },
+    {
+      "cell": "F13",
+      "value": "4510000000",
+      "formula": null
+    },
+    {
+      "cell": "G13",
+      "value": "TRAIN",
+      "formula": null
+    },
+    {
+      "cell": "A14",
+      "value": "cshp",
+      "formula": null
+    },
+    {
+      "cell": "B14",
+      "value": "Ship certificate",
+      "formula": null
+    },
+    {
+      "cell": "C14",
+      "value": "1",
+      "formula": null
+    },
+    {
+      "cell": "D14",
+      "value": "30000000000000",
+      "formula": null
+    },
+    {
+      "cell": "E14",
+      "value": "720",
+      "formula": null
+    },
+    {
+      "cell": "F14",
+      "value": "27400000000000",
+      "formula": null
+    },
+    {
+      "cell": "G14",
+      "value": "SHIP",
+      "formula": null
+    },
+    {
+      "cell": "A15",
+      "value": "ctrk",
+      "formula": null
+    },
+    {
+      "cell": "B15",
+      "value": "Truck certificate",
+      "formula": null
+    },
+    {
+      "cell": "C15",
+      "value": "1",
+      "formula": null
+    },
+    {
+      "cell": "D15",
+      "value": "180000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "E15",
+      "value": "960",
+      "formula": null
+    },
+    {
+      "cell": "F15",
+      "value": "169000000000000000",
+      "formula": null
+    },
+    {
+      "cell": "G15",
+      "value": "TRUCK",
+      "formula": null
+    },
+    {
+      "cell": "A16",
+      "value": "gchk",
+      "formula": null
+    },
+    {
+      "cell": "B16",
+      "value": "Network check-in",
+      "formula": null
+    },
+    {
+      "cell": "C16",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D16",
+      "value": "6000",
+      "formula": null
+    },
+    {
+      "cell": "E16",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "A17",
+      "value": "gcin",
+      "formula": null
+    },
+    {
+      "cell": "B17",
+      "value": "Network gate pay",
+      "formula": null
+    },
+    {
+      "cell": "C17",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D17",
+      "value": "6000",
+      "formula": null
+    },
+    {
+      "cell": "E17",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "A18",
+      "value": "gwlk",
+      "formula": null
+    },
+    {
+      "cell": "B18",
+      "value": "Network walking",
+      "formula": null
+    },
+    {
+      "cell": "C18",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D18",
+      "value": "6000",
+      "formula": null
+    },
+    {
+      "cell": "E18",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "A19",
+      "value": "gdor",
+      "formula": null
+    },
+    {
+      "cell": "B19",
+      "value": "Network boarding",
+      "formula": null
+    },
+    {
+      "cell": "C19",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D19",
+      "value": "6000",
+      "formula": null
+    },
+    {
+      "cell": "E19",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "A20",
+      "value": "gdin",
+      "formula": null
+    },
+    {
+      "cell": "B20",
+      "value": "Network door pay",
+      "formula": null
+    },
+    {
+      "cell": "C20",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D20",
+      "value": "6000",
+      "formula": null
+    },
+    {
+      "cell": "E20",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "A21",
+      "value": "gsea",
+      "formula": null
+    },
+    {
+      "cell": "B21",
+      "value": "Network stowing",
+      "formula": null
+    },
+    {
+      "cell": "C21",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D21",
+      "value": "6000",
+      "formula": null
+    },
+    {
+      "cell": "E21",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "A22",
+      "value": "gsin",
+      "formula": null
+    },
+    {
+      "cell": "B22",
+      "value": "Network seat pay",
+      "formula": null
+    },
+    {
+      "cell": "C22",
+      "value": "100",
+      "formula": null
+    },
+    {
+      "cell": "D22",
+      "value": "6000",
+      "formula": null
+    },
+    {
+      "cell": "E22",
+      "value": "6",
+      "formula": null
+    }
+  ],
+  "Managers": [
+    {
+      "cell": "A2",
+      "value": "Packaged manager roster",
+      "formula": null
+    },
+    {
+      "cell": "A3",
+      "value": "Source: xf4.java. 21 Common, 15 Rare, 15 Epic, 15 Legendary and 5 Mythic definitions.",
+      "formula": null
+    },
+    {
+      "cell": "A5",
+      "value": "ID",
+      "formula": null
+    },
+    {
+      "cell": "B5",
+      "value": "Number",
+      "formula": null
+    },
+    {
+      "cell": "C5",
+      "value": "Name",
+      "formula": null
+    },
+    {
+      "cell": "D5",
+      "value": "Role",
+      "formula": null
+    },
+    {
+      "cell": "E5",
+      "value": "Rarity",
+      "formula": null
+    },
+    {
+      "cell": "A6",
+      "value": "mgr_common_001",
+      "formula": null
+    },
+    {
+      "cell": "B6",
+      "value": "1",
+      "formula": null
+    },
+    {
+      "cell": "C6",
+      "value": "R. VANCE",
+      "formula": null
+    },
+    {
+      "cell": "D6",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E6",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A7",
+      "value": "mgr_common_002",
+      "formula": null
+    },
+    {
+      "cell": "B7",
+      "value": "2",
+      "formula": null
+    },
+    {
+      "cell": "C7",
+      "value": "M. OSEI",
+      "formula": null
+    },
+    {
+      "cell": "D7",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E7",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A8",
+      "value": "mgr_common_003",
+      "formula": null
+    },
+    {
+      "cell": "B8",
+      "value": "3",
+      "formula": null
+    },
+    {
+      "cell": "C8",
+      "value": "D. KOWALCZYK",
+      "formula": null
+    },
+    {
+      "cell": "D8",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E8",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A9",
+      "value": "mgr_rare_001",
+      "formula": null
+    },
+    {
+      "cell": "B9",
+      "value": "4",
+      "formula": null
+    },
+    {
+      "cell": "C9",
+      "value": "L. TRAN",
+      "formula": null
+    },
+    {
+      "cell": "D9",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E9",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A10",
+      "value": "mgr_rare_002",
+      "formula": null
+    },
+    {
+      "cell": "B10",
+      "value": "5",
+      "formula": null
+    },
+    {
+      "cell": "C10",
+      "value": "S. MOREAU",
+      "formula": null
+    },
+    {
+      "cell": "D10",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E10",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A11",
+      "value": "mgr_epic_001",
+      "formula": null
+    },
+    {
+      "cell": "B11",
+      "value": "6",
+      "formula": null
+    },
+    {
+      "cell": "C11",
+      "value": "T. IBARRA",
+      "formula": null
+    },
+    {
+      "cell": "D11",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E11",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A12",
+      "value": "mgr_epic_002",
+      "formula": null
+    },
+    {
+      "cell": "B12",
+      "value": "7",
+      "formula": null
+    },
+    {
+      "cell": "C12",
+      "value": "N. ADEYEMI",
+      "formula": null
+    },
+    {
+      "cell": "D12",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E12",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A13",
+      "value": "mgr_legendary_001",
+      "formula": null
+    },
+    {
+      "cell": "B13",
+      "value": "8",
+      "formula": null
+    },
+    {
+      "cell": "C13",
+      "value": "H. STERLING",
+      "formula": null
+    },
+    {
+      "cell": "D13",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E13",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A14",
+      "value": "mgr_common_004",
+      "formula": null
+    },
+    {
+      "cell": "B14",
+      "value": "9",
+      "formula": null
+    },
+    {
+      "cell": "C14",
+      "value": "K. NAKATA",
+      "formula": null
+    },
+    {
+      "cell": "D14",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E14",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A15",
+      "value": "mgr_common_005",
+      "formula": null
+    },
+    {
+      "cell": "B15",
+      "value": "10",
+      "formula": null
+    },
+    {
+      "cell": "C15",
+      "value": "J. MORETTI",
+      "formula": null
+    },
+    {
+      "cell": "D15",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E15",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A16",
+      "value": "mgr_common_006",
+      "formula": null
+    },
+    {
+      "cell": "B16",
+      "value": "11",
+      "formula": null
+    },
+    {
+      "cell": "C16",
+      "value": "P. LINDQVIST",
+      "formula": null
+    },
+    {
+      "cell": "D16",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E16",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A17",
+      "value": "mgr_rare_003",
+      "formula": null
+    },
+    {
+      "cell": "B17",
+      "value": "12",
+      "formula": null
+    },
+    {
+      "cell": "C17",
+      "value": "A. OKAFOR",
+      "formula": null
+    },
+    {
+      "cell": "D17",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E17",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A18",
+      "value": "mgr_rare_004",
+      "formula": null
+    },
+    {
+      "cell": "B18",
+      "value": "13",
+      "formula": null
+    },
+    {
+      "cell": "C18",
+      "value": "E. SANTOS",
+      "formula": null
+    },
+    {
+      "cell": "D18",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E18",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A19",
+      "value": "mgr_epic_003",
+      "formula": null
+    },
+    {
+      "cell": "B19",
+      "value": "14",
+      "formula": null
+    },
+    {
+      "cell": "C19",
+      "value": "V. PETROV",
+      "formula": null
+    },
+    {
+      "cell": "D19",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E19",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A20",
+      "value": "mgr_epic_004",
+      "formula": null
+    },
+    {
+      "cell": "B20",
+      "value": "15",
+      "formula": null
+    },
+    {
+      "cell": "C20",
+      "value": "C. DUBOIS",
+      "formula": null
+    },
+    {
+      "cell": "D20",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E20",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A21",
+      "value": "mgr_legendary_002",
+      "formula": null
+    },
+    {
+      "cell": "B21",
+      "value": "16",
+      "formula": null
+    },
+    {
+      "cell": "C21",
+      "value": "R. WINGATE",
+      "formula": null
+    },
+    {
+      "cell": "D21",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E21",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A22",
+      "value": "mgr_common_007",
+      "formula": null
+    },
+    {
+      "cell": "B22",
+      "value": "17",
+      "formula": null
+    },
+    {
+      "cell": "C22",
+      "value": "J. WHITLOCK",
+      "formula": null
+    },
+    {
+      "cell": "D22",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E22",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A23",
+      "value": "mgr_common_008",
+      "formula": null
+    },
+    {
+      "cell": "B23",
+      "value": "18",
+      "formula": null
+    },
+    {
+      "cell": "C23",
+      "value": "S. PARKER",
+      "formula": null
+    },
+    {
+      "cell": "D23",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E23",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A24",
+      "value": "mgr_common_009",
+      "formula": null
+    },
+    {
+      "cell": "B24",
+      "value": "19",
+      "formula": null
+    },
+    {
+      "cell": "C24",
+      "value": "I. BJORK",
+      "formula": null
+    },
+    {
+      "cell": "D24",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E24",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A25",
+      "value": "mgr_rare_005",
+      "formula": null
+    },
+    {
+      "cell": "B25",
+      "value": "20",
+      "formula": null
+    },
+    {
+      "cell": "C25",
+      "value": "A. FERREIRA",
+      "formula": null
+    },
+    {
+      "cell": "D25",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E25",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A26",
+      "value": "mgr_rare_006",
+      "formula": null
+    },
+    {
+      "cell": "B26",
+      "value": "21",
+      "formula": null
+    },
+    {
+      "cell": "C26",
+      "value": "M. CHEN",
+      "formula": null
+    },
+    {
+      "cell": "D26",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E26",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A27",
+      "value": "mgr_epic_005",
+      "formula": null
+    },
+    {
+      "cell": "B27",
+      "value": "22",
+      "formula": null
+    },
+    {
+      "cell": "C27",
+      "value": "O. HARRISON",
+      "formula": null
+    },
+    {
+      "cell": "D27",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E27",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A28",
+      "value": "mgr_epic_006",
+      "formula": null
+    },
+    {
+      "cell": "B28",
+      "value": "23",
+      "formula": null
+    },
+    {
+      "cell": "C28",
+      "value": "G. ROSSI",
+      "formula": null
+    },
+    {
+      "cell": "D28",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E28",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A29",
+      "value": "mgr_legendary_003",
+      "formula": null
+    },
+    {
+      "cell": "B29",
+      "value": "24",
+      "formula": null
+    },
+    {
+      "cell": "C29",
+      "value": "Y. KIMURA",
+      "formula": null
+    },
+    {
+      "cell": "D29",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E29",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A30",
+      "value": "mgr_common_010",
+      "formula": null
+    },
+    {
+      "cell": "B30",
+      "value": "25",
+      "formula": null
+    },
+    {
+      "cell": "C30",
+      "value": "B. NDIAYE",
+      "formula": null
+    },
+    {
+      "cell": "D30",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E30",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A31",
+      "value": "mgr_common_011",
+      "formula": null
+    },
+    {
+      "cell": "B31",
+      "value": "26",
+      "formula": null
+    },
+    {
+      "cell": "C31",
+      "value": "W. HOLMQVIST",
+      "formula": null
+    },
+    {
+      "cell": "D31",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E31",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A32",
+      "value": "mgr_common_012",
+      "formula": null
+    },
+    {
+      "cell": "B32",
+      "value": "27",
+      "formula": null
+    },
+    {
+      "cell": "C32",
+      "value": "Z. RAHMAN",
+      "formula": null
+    },
+    {
+      "cell": "D32",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E32",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A33",
+      "value": "mgr_rare_007",
+      "formula": null
+    },
+    {
+      "cell": "B33",
+      "value": "28",
+      "formula": null
+    },
+    {
+      "cell": "C33",
+      "value": "E. KOVACS",
+      "formula": null
+    },
+    {
+      "cell": "D33",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E33",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A34",
+      "value": "mgr_rare_008",
+      "formula": null
+    },
+    {
+      "cell": "B34",
+      "value": "29",
+      "formula": null
+    },
+    {
+      "cell": "C34",
+      "value": "P. ADEBAYO",
+      "formula": null
+    },
+    {
+      "cell": "D34",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E34",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A35",
+      "value": "mgr_legendary_004",
+      "formula": null
+    },
+    {
+      "cell": "B35",
+      "value": "30",
+      "formula": null
+    },
+    {
+      "cell": "C35",
+      "value": "G. MERCADO",
+      "formula": null
+    },
+    {
+      "cell": "D35",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E35",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A36",
+      "value": "mgr_legendary_005",
+      "formula": null
+    },
+    {
+      "cell": "B36",
+      "value": "31",
+      "formula": null
+    },
+    {
+      "cell": "C36",
+      "value": "T. HALVORSEN",
+      "formula": null
+    },
+    {
+      "cell": "D36",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E36",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A37",
+      "value": "mgr_legendary_006",
+      "formula": null
+    },
+    {
+      "cell": "B37",
+      "value": "32",
+      "formula": null
+    },
+    {
+      "cell": "C37",
+      "value": "R. DESAI",
+      "formula": null
+    },
+    {
+      "cell": "D37",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E37",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A38",
+      "value": "mgr_common_013",
+      "formula": null
+    },
+    {
+      "cell": "B38",
+      "value": "33",
+      "formula": null
+    },
+    {
+      "cell": "C38",
+      "value": "L. FONTAINE",
+      "formula": null
+    },
+    {
+      "cell": "D38",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E38",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A39",
+      "value": "mgr_common_014",
+      "formula": null
+    },
+    {
+      "cell": "B39",
+      "value": "34",
+      "formula": null
+    },
+    {
+      "cell": "C39",
+      "value": "A. MBEKI",
+      "formula": null
+    },
+    {
+      "cell": "D39",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E39",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A40",
+      "value": "mgr_common_015",
+      "formula": null
+    },
+    {
+      "cell": "B40",
+      "value": "35",
+      "formula": null
+    },
+    {
+      "cell": "C40",
+      "value": "J. VOLKOV",
+      "formula": null
+    },
+    {
+      "cell": "D40",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E40",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A41",
+      "value": "mgr_rare_009",
+      "formula": null
+    },
+    {
+      "cell": "B41",
+      "value": "36",
+      "formula": null
+    },
+    {
+      "cell": "C41",
+      "value": "C. NWOSU",
+      "formula": null
+    },
+    {
+      "cell": "D41",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E41",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A42",
+      "value": "mgr_rare_010",
+      "formula": null
+    },
+    {
+      "cell": "B42",
+      "value": "37",
+      "formula": null
+    },
+    {
+      "cell": "C42",
+      "value": "M. SILVEIRA",
+      "formula": null
+    },
+    {
+      "cell": "D42",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E42",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A43",
+      "value": "mgr_legendary_007",
+      "formula": null
+    },
+    {
+      "cell": "B43",
+      "value": "38",
+      "formula": null
+    },
+    {
+      "cell": "C43",
+      "value": "D. BRANNIGAN",
+      "formula": null
+    },
+    {
+      "cell": "D43",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E43",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A44",
+      "value": "mgr_legendary_008",
+      "formula": null
+    },
+    {
+      "cell": "B44",
+      "value": "39",
+      "formula": null
+    },
+    {
+      "cell": "C44",
+      "value": "O. LINDGREN",
+      "formula": null
+    },
+    {
+      "cell": "D44",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E44",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A45",
+      "value": "mgr_legendary_009",
+      "formula": null
+    },
+    {
+      "cell": "B45",
+      "value": "40",
+      "formula": null
+    },
+    {
+      "cell": "C45",
+      "value": "S. YAMASHITA",
+      "formula": null
+    },
+    {
+      "cell": "D45",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E45",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A46",
+      "value": "mgr_common_016",
+      "formula": null
+    },
+    {
+      "cell": "B46",
+      "value": "41",
+      "formula": null
+    },
+    {
+      "cell": "C46",
+      "value": "N. ROUX",
+      "formula": null
+    },
+    {
+      "cell": "D46",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E46",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A47",
+      "value": "mgr_common_017",
+      "formula": null
+    },
+    {
+      "cell": "B47",
+      "value": "42",
+      "formula": null
+    },
+    {
+      "cell": "C47",
+      "value": "K. BAUTISTA",
+      "formula": null
+    },
+    {
+      "cell": "D47",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E47",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A48",
+      "value": "mgr_common_018",
+      "formula": null
+    },
+    {
+      "cell": "B48",
+      "value": "43",
+      "formula": null
+    },
+    {
+      "cell": "C48",
+      "value": "H. ELMASRI",
+      "formula": null
+    },
+    {
+      "cell": "D48",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E48",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A49",
+      "value": "mgr_rare_011",
+      "formula": null
+    },
+    {
+      "cell": "B49",
+      "value": "44",
+      "formula": null
+    },
+    {
+      "cell": "C49",
+      "value": "V. NOVAK",
+      "formula": null
+    },
+    {
+      "cell": "D49",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E49",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A50",
+      "value": "mgr_rare_012",
+      "formula": null
+    },
+    {
+      "cell": "B50",
+      "value": "45",
+      "formula": null
+    },
+    {
+      "cell": "C50",
+      "value": "A. THORNE",
+      "formula": null
+    },
+    {
+      "cell": "D50",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E50",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A51",
+      "value": "mgr_legendary_010",
+      "formula": null
+    },
+    {
+      "cell": "B51",
+      "value": "46",
+      "formula": null
+    },
+    {
+      "cell": "C51",
+      "value": "J. CARVALHO",
+      "formula": null
+    },
+    {
+      "cell": "D51",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E51",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A52",
+      "value": "mgr_legendary_011",
+      "formula": null
+    },
+    {
+      "cell": "B52",
+      "value": "47",
+      "formula": null
+    },
+    {
+      "cell": "C52",
+      "value": "I. KALLIO",
+      "formula": null
+    },
+    {
+      "cell": "D52",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E52",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A53",
+      "value": "mgr_legendary_012",
+      "formula": null
+    },
+    {
+      "cell": "B53",
+      "value": "48",
+      "formula": null
+    },
+    {
+      "cell": "C53",
+      "value": "M. TAKEDA",
+      "formula": null
+    },
+    {
+      "cell": "D53",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E53",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A54",
+      "value": "mgr_epic_007",
+      "formula": null
+    },
+    {
+      "cell": "B54",
+      "value": "49",
+      "formula": null
+    },
+    {
+      "cell": "C54",
+      "value": "D. ACOSTA",
+      "formula": null
+    },
+    {
+      "cell": "D54",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E54",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A55",
+      "value": "mgr_epic_008",
+      "formula": null
+    },
+    {
+      "cell": "B55",
+      "value": "50",
+      "formula": null
+    },
+    {
+      "cell": "C55",
+      "value": "N. KAUR",
+      "formula": null
+    },
+    {
+      "cell": "D55",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E55",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A56",
+      "value": "mgr_epic_009",
+      "formula": null
+    },
+    {
+      "cell": "B56",
+      "value": "51",
+      "formula": null
+    },
+    {
+      "cell": "C56",
+      "value": "T. OKONKWO",
+      "formula": null
+    },
+    {
+      "cell": "D56",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E56",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A57",
+      "value": "mgr_epic_010",
+      "formula": null
+    },
+    {
+      "cell": "B57",
+      "value": "52",
+      "formula": null
+    },
+    {
+      "cell": "C57",
+      "value": "B. SZABO",
+      "formula": null
+    },
+    {
+      "cell": "D57",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E57",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A58",
+      "value": "mgr_epic_011",
+      "formula": null
+    },
+    {
+      "cell": "B58",
+      "value": "53",
+      "formula": null
+    },
+    {
+      "cell": "C58",
+      "value": "A. BOATENG",
+      "formula": null
+    },
+    {
+      "cell": "D58",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E58",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A59",
+      "value": "mgr_epic_012",
+      "formula": null
+    },
+    {
+      "cell": "B59",
+      "value": "54",
+      "formula": null
+    },
+    {
+      "cell": "C59",
+      "value": "E. FALCONE",
+      "formula": null
+    },
+    {
+      "cell": "D59",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E59",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A60",
+      "value": "mgr_mythic_001",
+      "formula": null
+    },
+    {
+      "cell": "B60",
+      "value": "55",
+      "formula": null
+    },
+    {
+      "cell": "C60",
+      "value": "C. NOVA",
+      "formula": null
+    },
+    {
+      "cell": "D60",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E60",
+      "value": "Mythic",
+      "formula": null
+    },
+    {
+      "cell": "A61",
+      "value": "mgr_mythic_002",
+      "formula": null
+    },
+    {
+      "cell": "B61",
+      "value": "56",
+      "formula": null
+    },
+    {
+      "cell": "C61",
+      "value": "R. APEX",
+      "formula": null
+    },
+    {
+      "cell": "D61",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E61",
+      "value": "Mythic",
+      "formula": null
+    },
+    {
+      "cell": "A62",
+      "value": "mgr_mythic_003",
+      "formula": null
+    },
+    {
+      "cell": "B62",
+      "value": "57",
+      "formula": null
+    },
+    {
+      "cell": "C62",
+      "value": "UNIT-07",
+      "formula": null
+    },
+    {
+      "cell": "D62",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E62",
+      "value": "Mythic",
+      "formula": null
+    },
+    {
+      "cell": "A63",
+      "value": "mgr_mythic_004",
+      "formula": null
+    },
+    {
+      "cell": "B63",
+      "value": "58",
+      "formula": null
+    },
+    {
+      "cell": "C63",
+      "value": "Q. ZANTH",
+      "formula": null
+    },
+    {
+      "cell": "D63",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E63",
+      "value": "Mythic",
+      "formula": null
+    },
+    {
+      "cell": "A64",
+      "value": "mgr_common_019",
+      "formula": null
+    },
+    {
+      "cell": "B64",
+      "value": "59",
+      "formula": null
+    },
+    {
+      "cell": "C64",
+      "value": "B. HOLLAND",
+      "formula": null
+    },
+    {
+      "cell": "D64",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E64",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A65",
+      "value": "mgr_common_020",
+      "formula": null
+    },
+    {
+      "cell": "B65",
+      "value": "60",
+      "formula": null
+    },
+    {
+      "cell": "C65",
+      "value": "F. DELGADO",
+      "formula": null
+    },
+    {
+      "cell": "D65",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E65",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A66",
+      "value": "mgr_common_021",
+      "formula": null
+    },
+    {
+      "cell": "B66",
+      "value": "61",
+      "formula": null
+    },
+    {
+      "cell": "C66",
+      "value": "A. SZYMANSKA",
+      "formula": null
+    },
+    {
+      "cell": "D66",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E66",
+      "value": "Common",
+      "formula": null
+    },
+    {
+      "cell": "A67",
+      "value": "mgr_rare_013",
+      "formula": null
+    },
+    {
+      "cell": "B67",
+      "value": "62",
+      "formula": null
+    },
+    {
+      "cell": "C67",
+      "value": "V. BARROSO",
+      "formula": null
+    },
+    {
+      "cell": "D67",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E67",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A68",
+      "value": "mgr_rare_014",
+      "formula": null
+    },
+    {
+      "cell": "B68",
+      "value": "63",
+      "formula": null
+    },
+    {
+      "cell": "C68",
+      "value": "D. MKHIZE",
+      "formula": null
+    },
+    {
+      "cell": "D68",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E68",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A69",
+      "value": "mgr_rare_015",
+      "formula": null
+    },
+    {
+      "cell": "B69",
+      "value": "64",
+      "formula": null
+    },
+    {
+      "cell": "C69",
+      "value": "N. OKPARA",
+      "formula": null
+    },
+    {
+      "cell": "D69",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E69",
+      "value": "Rare",
+      "formula": null
+    },
+    {
+      "cell": "A70",
+      "value": "mgr_epic_013",
+      "formula": null
+    },
+    {
+      "cell": "B70",
+      "value": "65",
+      "formula": null
+    },
+    {
+      "cell": "C70",
+      "value": "S. HADDAD",
+      "formula": null
+    },
+    {
+      "cell": "D70",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E70",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A71",
+      "value": "mgr_epic_014",
+      "formula": null
+    },
+    {
+      "cell": "B71",
+      "value": "66",
+      "formula": null
+    },
+    {
+      "cell": "C71",
+      "value": "M. ESCOBAR",
+      "formula": null
+    },
+    {
+      "cell": "D71",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E71",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A72",
+      "value": "mgr_epic_015",
+      "formula": null
+    },
+    {
+      "cell": "B72",
+      "value": "67",
+      "formula": null
+    },
+    {
+      "cell": "C72",
+      "value": "L. ABIOLA",
+      "formula": null
+    },
+    {
+      "cell": "D72",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E72",
+      "value": "Epic",
+      "formula": null
+    },
+    {
+      "cell": "A73",
+      "value": "mgr_legendary_013",
+      "formula": null
+    },
+    {
+      "cell": "B73",
+      "value": "68",
+      "formula": null
+    },
+    {
+      "cell": "C73",
+      "value": "W. MBATHA",
+      "formula": null
+    },
+    {
+      "cell": "D73",
+      "value": "Gate",
+      "formula": null
+    },
+    {
+      "cell": "E73",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A74",
+      "value": "mgr_legendary_014",
+      "formula": null
+    },
+    {
+      "cell": "B74",
+      "value": "69",
+      "formula": null
+    },
+    {
+      "cell": "C74",
+      "value": "N. BRENNAN",
+      "formula": null
+    },
+    {
+      "cell": "D74",
+      "value": "Boarding",
+      "formula": null
+    },
+    {
+      "cell": "E74",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A75",
+      "value": "mgr_legendary_015",
+      "formula": null
+    },
+    {
+      "cell": "B75",
+      "value": "70",
+      "formula": null
+    },
+    {
+      "cell": "C75",
+      "value": "E. VARGAS",
+      "formula": null
+    },
+    {
+      "cell": "D75",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E75",
+      "value": "Legendary",
+      "formula": null
+    },
+    {
+      "cell": "A76",
+      "value": "mgr_mythic_005",
+      "formula": null
+    },
+    {
+      "cell": "B76",
+      "value": "71",
+      "formula": null
+    },
+    {
+      "cell": "C76",
+      "value": "M. BASALT",
+      "formula": null
+    },
+    {
+      "cell": "D76",
+      "value": "Cabin",
+      "formula": null
+    },
+    {
+      "cell": "E76",
+      "value": "Mythic",
+      "formula": null
+    }
+  ]
+}

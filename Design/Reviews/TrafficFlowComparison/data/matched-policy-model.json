@@ -1,0 +1,1325 @@
+{
+  "scope": "Matched model policy: zero initial cash, normal service sizes, max all 270 local upgrades before advancing, choose cost/incremental-network-income, aggregate forecast income, no managers/general research/stars/offline/ads/grants; Traffic Flow certificate gates/timers retained. These are model calculations, not observed playtime. Original TF throughput proxy omits some seating/premium/body effects. Family forecast uses steady post-first-service size (8 guests at outlet 0), omits tips as its own HUD estimator does. Onboarding gift/timing excluded for matching.",
+  "scenarios": {
+    "Traffic Flow Current": {
+      "hours": 422.7567456846488,
+      "purchases": 10800,
+      "events": [
+        {
+          "outlet": 1,
+          "event": "open",
+          "minutes": 0
+        },
+        {
+          "outlet": 1,
+          "event": "max_all_local",
+          "minutes": 803.383320744323
+        },
+        {
+          "outlet": 2,
+          "event": "open",
+          "minutes": 812.8857691057634
+        },
+        {
+          "outlet": 2,
+          "event": "max_all_local",
+          "minutes": 1388.8896586469061
+        },
+        {
+          "outlet": 3,
+          "event": "open",
+          "minutes": 1402.3596757231328
+        },
+        {
+          "outlet": 3,
+          "event": "max_all_local",
+          "minutes": 1902.2461034570447
+        },
+        {
+          "outlet": 4,
+          "event": "open",
+          "minutes": 1920.541596631212
+        },
+        {
+          "outlet": 4,
+          "event": "max_all_local",
+          "minutes": 2379.4629155050125
+        },
+        {
+          "outlet": 5,
+          "event": "open",
+          "minutes": 2405.463983771019
+        },
+        {
+          "outlet": 5,
+          "event": "max_all_local",
+          "minutes": 2841.16954600568
+        },
+        {
+          "outlet": 6,
+          "event": "open",
+          "minutes": 2877.5431966721517
+        },
+        {
+          "outlet": 6,
+          "event": "max_all_local",
+          "minutes": 3287.4355064883034
+        },
+        {
+          "outlet": 7,
+          "event": "open",
+          "minutes": 3337.718018316447
+        },
+        {
+          "outlet": 7,
+          "event": "max_all_local",
+          "minutes": 3727.6928995869594
+        },
+        {
+          "outlet": 8,
+          "event": "open",
+          "minutes": 3797.8036583846415
+        },
+        {
+          "outlet": 8,
+          "event": "max_all_local",
+          "minutes": 4163.976069082779
+        },
+        {
+          "outlet": 9,
+          "event": "open",
+          "minutes": 4404.79705157596
+        },
+        {
+          "outlet": 9,
+          "event": "max_all_local",
+          "minutes": 5314.092765820324
+        },
+        {
+          "outlet": 10,
+          "event": "open",
+          "minutes": 5335.730631855017
+        },
+        {
+          "outlet": 10,
+          "event": "max_all_local",
+          "minutes": 6024.386452646695
+        },
+        {
+          "outlet": 11,
+          "event": "open",
+          "minutes": 6048.410041463684
+        },
+        {
+          "outlet": 11,
+          "event": "max_all_local",
+          "minutes": 6607.995299492271
+        },
+        {
+          "outlet": 12,
+          "event": "open",
+          "minutes": 6639.306204203057
+        },
+        {
+          "outlet": 12,
+          "event": "max_all_local",
+          "minutes": 7151.920051588363
+        },
+        {
+          "outlet": 13,
+          "event": "open",
+          "minutes": 7194.368898691653
+        },
+        {
+          "outlet": 13,
+          "event": "max_all_local",
+          "minutes": 7679.7481579774785
+        },
+        {
+          "outlet": 14,
+          "event": "open",
+          "minutes": 7738.949089923175
+        },
+        {
+          "outlet": 14,
+          "event": "max_all_local",
+          "minutes": 8196.13127099012
+        },
+        {
+          "outlet": 15,
+          "event": "open",
+          "minutes": 8278.368961904103
+        },
+        {
+          "outlet": 15,
+          "event": "max_all_local",
+          "minutes": 8723.430356899225
+        },
+        {
+          "outlet": 16,
+          "event": "open",
+          "minutes": 8837.294886978716
+        },
+        {
+          "outlet": 16,
+          "event": "max_all_local",
+          "minutes": 9259.880115195876
+        },
+        {
+          "outlet": 17,
+          "event": "open",
+          "minutes": 9740.475512782687
+        },
+        {
+          "outlet": 17,
+          "event": "max_all_local",
+          "minutes": 10542.428646594155
+        },
+        {
+          "outlet": 18,
+          "event": "open",
+          "minutes": 10564.301368489796
+        },
+        {
+          "outlet": 18,
+          "event": "max_all_local",
+          "minutes": 11234.185042558738
+        },
+        {
+          "outlet": 19,
+          "event": "open",
+          "minutes": 11258.13073925521
+        },
+        {
+          "outlet": 19,
+          "event": "max_all_local",
+          "minutes": 11825.152525467469
+        },
+        {
+          "outlet": 20,
+          "event": "open",
+          "minutes": 11856.134676949045
+        },
+        {
+          "outlet": 20,
+          "event": "max_all_local",
+          "minutes": 12373.024447668135
+        },
+        {
+          "outlet": 21,
+          "event": "open",
+          "minutes": 12415.888328744086
+        },
+        {
+          "outlet": 21,
+          "event": "max_all_local",
+          "minutes": 12896.168156783204
+        },
+        {
+          "outlet": 22,
+          "event": "open",
+          "minutes": 12954.912225996079
+        },
+        {
+          "outlet": 22,
+          "event": "max_all_local",
+          "minutes": 13407.941006365652
+        },
+        {
+          "outlet": 23,
+          "event": "open",
+          "minutes": 13488.764197843973
+        },
+        {
+          "outlet": 23,
+          "event": "max_all_local",
+          "minutes": 13917.131639527928
+        },
+        {
+          "outlet": 24,
+          "event": "open",
+          "minutes": 14031.631320952845
+        },
+        {
+          "outlet": 24,
+          "event": "max_all_local",
+          "minutes": 14442.61384349725
+        },
+        {
+          "outlet": 25,
+          "event": "open",
+          "minutes": 15163.042705912954
+        },
+        {
+          "outlet": 25,
+          "event": "max_all_local",
+          "minutes": 15893.713019425191
+        },
+        {
+          "outlet": 26,
+          "event": "open",
+          "minutes": 15913.57325059606
+        },
+        {
+          "outlet": 26,
+          "event": "max_all_local",
+          "minutes": 16554.169421397914
+        },
+        {
+          "outlet": 27,
+          "event": "open",
+          "minutes": 16575.916168376
+        },
+        {
+          "outlet": 27,
+          "event": "max_all_local",
+          "minutes": 17084.554595974107
+        },
+        {
+          "outlet": 28,
+          "event": "open",
+          "minutes": 17112.566380839933
+        },
+        {
+          "outlet": 28,
+          "event": "max_all_local",
+          "minutes": 17573.33354392136
+        },
+        {
+          "outlet": 29,
+          "event": "open",
+          "minutes": 17610.782413053057
+        },
+        {
+          "outlet": 29,
+          "event": "max_all_local",
+          "minutes": 18100.526756450578
+        },
+        {
+          "outlet": 30,
+          "event": "open",
+          "minutes": 18157.094598567262
+        },
+        {
+          "outlet": 30,
+          "event": "max_all_local",
+          "minutes": 18638.75088036723
+        },
+        {
+          "outlet": 31,
+          "event": "open",
+          "minutes": 18719.83224698411
+        },
+        {
+          "outlet": 31,
+          "event": "max_all_local",
+          "minutes": 19185.80053743059
+        },
+        {
+          "outlet": 32,
+          "event": "open",
+          "minutes": 19299.86314335084
+        },
+        {
+          "outlet": 32,
+          "event": "max_all_local",
+          "minutes": 19744.686623645444
+        },
+        {
+          "outlet": 33,
+          "event": "open",
+          "minutes": 20705.10897425358
+        },
+        {
+          "outlet": 33,
+          "event": "max_all_local",
+          "minutes": 21348.23609504376
+        },
+        {
+          "outlet": 34,
+          "event": "open",
+          "minutes": 21369.88330925641
+        },
+        {
+          "outlet": 34,
+          "event": "max_all_local",
+          "minutes": 22028.299757870358
+        },
+        {
+          "outlet": 35,
+          "event": "open",
+          "minutes": 22052.358779027647
+        },
+        {
+          "outlet": 35,
+          "event": "max_all_local",
+          "minutes": 22623.824058667145
+        },
+        {
+          "outlet": 36,
+          "event": "open",
+          "minutes": 22654.230912330375
+        },
+        {
+          "outlet": 36,
+          "event": "max_all_local",
+          "minutes": 23174.42353803677
+        },
+        {
+          "outlet": 37,
+          "event": "open",
+          "minutes": 23215.883100013536
+        },
+        {
+          "outlet": 37,
+          "event": "max_all_local",
+          "minutes": 23760.349405061876
+        },
+        {
+          "outlet": 38,
+          "event": "open",
+          "minutes": 23816.578990757487
+        },
+        {
+          "outlet": 38,
+          "event": "max_all_local",
+          "minutes": 24278.38916936536
+        },
+        {
+          "outlet": 39,
+          "event": "open",
+          "minutes": 24356.861516606365
+        },
+        {
+          "outlet": 39,
+          "event": "max_all_local",
+          "minutes": 24838.2653628642
+        },
+        {
+          "outlet": 40,
+          "event": "open",
+          "minutes": 24947.78434613493
+        },
+        {
+          "outlet": 40,
+          "event": "max_all_local",
+          "minutes": 25365.404741078928
+        }
+      ]
+    },
+    "Traffic Flow New": {
+      "hours": 356.38321285757786,
+      "purchases": 10800,
+      "events": [
+        {
+          "outlet": 1,
+          "event": "open",
+          "minutes": 0
+        },
+        {
+          "outlet": 1,
+          "event": "max_all_local",
+          "minutes": 401.6654130766612
+        },
+        {
+          "outlet": 2,
+          "event": "open",
+          "minutes": 411.1678614381016
+        },
+        {
+          "outlet": 2,
+          "event": "max_all_local",
+          "minutes": 731.1691546130194
+        },
+        {
+          "outlet": 3,
+          "event": "open",
+          "minutes": 744.6391716892462
+        },
+        {
+          "outlet": 3,
+          "event": "max_all_local",
+          "minutes": 1070.1715592096198
+        },
+        {
+          "outlet": 4,
+          "event": "open",
+          "minutes": 1088.4670523837872
+        },
+        {
+          "outlet": 4,
+          "event": "max_all_local",
+          "minutes": 1438.8966065828652
+        },
+        {
+          "outlet": 5,
+          "event": "open",
+          "minutes": 1464.8976748488715
+        },
+        {
+          "outlet": 5,
+          "event": "max_all_local",
+          "minutes": 1853.1961633438
+        },
+        {
+          "outlet": 6,
+          "event": "open",
+          "minutes": 1889.5698140102716
+        },
+        {
+          "outlet": 6,
+          "event": "max_all_local",
+          "minutes": 2314.3710292706696
+        },
+        {
+          "outlet": 7,
+          "event": "open",
+          "minutes": 2364.653541098813
+        },
+        {
+          "outlet": 7,
+          "event": "max_all_local",
+          "minutes": 2833.6506307084137
+        },
+        {
+          "outlet": 8,
+          "event": "open",
+          "minutes": 2903.761389506096
+        },
+        {
+          "outlet": 8,
+          "event": "max_all_local",
+          "minutes": 3414.203673033687
+        },
+        {
+          "outlet": 9,
+          "event": "open",
+          "minutes": 3655.0246555268677
+        },
+        {
+          "outlet": 9,
+          "event": "max_all_local",
+          "minutes": 4062.035729857347
+        },
+        {
+          "outlet": 10,
+          "event": "open",
+          "minutes": 4083.673595892041
+        },
+        {
+          "outlet": 10,
+          "event": "max_all_local",
+          "minutes": 4482.360068782973
+        },
+        {
+          "outlet": 11,
+          "event": "open",
+          "minutes": 4506.383657599962
+        },
+        {
+          "outlet": 11,
+          "event": "max_all_local",
+          "minutes": 4881.500647270065
+        },
+        {
+          "outlet": 12,
+          "event": "open",
+          "minutes": 4912.811551980851
+        },
+        {
+          "outlet": 12,
+          "event": "max_all_local",
+          "minutes": 5310.701567683331
+        },
+        {
+          "outlet": 13,
+          "event": "open",
+          "minutes": 5353.150414786621
+        },
+        {
+          "outlet": 13,
+          "event": "max_all_local",
+          "minutes": 5789.390085597218
+        },
+        {
+          "outlet": 14,
+          "event": "open",
+          "minutes": 5848.591017542914
+        },
+        {
+          "outlet": 14,
+          "event": "max_all_local",
+          "minutes": 6324.368106467684
+        },
+        {
+          "outlet": 15,
+          "event": "open",
+          "minutes": 6406.605797381669
+        },
+        {
+          "outlet": 15,
+          "event": "max_all_local",
+          "minutes": 6942.900925462364
+        },
+        {
+          "outlet": 16,
+          "event": "open",
+          "minutes": 7056.765455541856
+        },
+        {
+          "outlet": 16,
+          "event": "max_all_local",
+          "minutes": 7646.379226407141
+        },
+        {
+          "outlet": 17,
+          "event": "open",
+          "minutes": 8126.97462399395
+        },
+        {
+          "outlet": 17,
+          "event": "max_all_local",
+          "minutes": 8461.426017455073
+        },
+        {
+          "outlet": 18,
+          "event": "open",
+          "minutes": 8483.298739350714
+        },
+        {
+          "outlet": 18,
+          "event": "max_all_local",
+          "minutes": 8871.126123862914
+        },
+        {
+          "outlet": 19,
+          "event": "open",
+          "minutes": 8895.071820559386
+        },
+        {
+          "outlet": 19,
+          "event": "max_all_local",
+          "minutes": 9275.180603579365
+        },
+        {
+          "outlet": 20,
+          "event": "open",
+          "minutes": 9306.162755060941
+        },
+        {
+          "outlet": 20,
+          "event": "max_all_local",
+          "minutes": 9707.375923229967
+        },
+        {
+          "outlet": 21,
+          "event": "open",
+          "minutes": 9750.239804305918
+        },
+        {
+          "outlet": 21,
+          "event": "max_all_local",
+          "minutes": 10181.898673531978
+        },
+        {
+          "outlet": 22,
+          "event": "open",
+          "minutes": 10240.642742744853
+        },
+        {
+          "outlet": 22,
+          "event": "max_all_local",
+          "minutes": 10712.098774045884
+        },
+        {
+          "outlet": 23,
+          "event": "open",
+          "minutes": 10792.921965524205
+        },
+        {
+          "outlet": 23,
+          "event": "max_all_local",
+          "minutes": 11309.101685636682
+        },
+        {
+          "outlet": 24,
+          "event": "open",
+          "minutes": 11423.6013670616
+        },
+        {
+          "outlet": 24,
+          "event": "max_all_local",
+          "minutes": 11997.026754515964
+        },
+        {
+          "outlet": 25,
+          "event": "open",
+          "minutes": 12717.455616931667
+        },
+        {
+          "outlet": 25,
+          "event": "max_all_local",
+          "minutes": 12989.26451163277
+        },
+        {
+          "outlet": 26,
+          "event": "open",
+          "minutes": 13009.124742803639
+        },
+        {
+          "outlet": 26,
+          "event": "max_all_local",
+          "minutes": 13379.996210106368
+        },
+        {
+          "outlet": 27,
+          "event": "open",
+          "minutes": 13401.742957084454
+        },
+        {
+          "outlet": 27,
+          "event": "max_all_local",
+          "minutes": 13742.713869765377
+        },
+        {
+          "outlet": 28,
+          "event": "open",
+          "minutes": 13770.725654631202
+        },
+        {
+          "outlet": 28,
+          "event": "max_all_local",
+          "minutes": 14128.376095837599
+        },
+        {
+          "outlet": 29,
+          "event": "open",
+          "minutes": 14165.824964969295
+        },
+        {
+          "outlet": 29,
+          "event": "max_all_local",
+          "minutes": 14605.990214263958
+        },
+        {
+          "outlet": 30,
+          "event": "open",
+          "minutes": 14662.558056380643
+        },
+        {
+          "outlet": 30,
+          "event": "max_all_local",
+          "minutes": 15163.806032911994
+        },
+        {
+          "outlet": 31,
+          "event": "open",
+          "minutes": 15244.887399528874
+        },
+        {
+          "outlet": 31,
+          "event": "max_all_local",
+          "minutes": 15806.3758754045
+        },
+        {
+          "outlet": 32,
+          "event": "open",
+          "minutes": 15920.43848132475
+        },
+        {
+          "outlet": 32,
+          "event": "max_all_local",
+          "minutes": 16541.08063188738
+        },
+        {
+          "outlet": 33,
+          "event": "open",
+          "minutes": 17501.502982495516
+        },
+        {
+          "outlet": 33,
+          "event": "max_all_local",
+          "minutes": 17720.429142564775
+        },
+        {
+          "outlet": 34,
+          "event": "open",
+          "minutes": 17742.076356777423
+        },
+        {
+          "outlet": 34,
+          "event": "max_all_local",
+          "minutes": 18123.26482702761
+        },
+        {
+          "outlet": 35,
+          "event": "open",
+          "minutes": 18147.3238481849
+        },
+        {
+          "outlet": 35,
+          "event": "max_all_local",
+          "minutes": 18530.411376364278
+        },
+        {
+          "outlet": 36,
+          "event": "open",
+          "minutes": 18560.818230027508
+        },
+        {
+          "outlet": 36,
+          "event": "max_all_local",
+          "minutes": 18964.595098267877
+        },
+        {
+          "outlet": 37,
+          "event": "open",
+          "minutes": 19006.05466024464
+        },
+        {
+          "outlet": 37,
+          "event": "max_all_local",
+          "minutes": 19495.40211290156
+        },
+        {
+          "outlet": 38,
+          "event": "open",
+          "minutes": 19551.63169859717
+        },
+        {
+          "outlet": 38,
+          "event": "max_all_local",
+          "minutes": 20032.22631827901
+        },
+        {
+          "outlet": 39,
+          "event": "open",
+          "minutes": 20110.698665520013
+        },
+        {
+          "outlet": 39,
+          "event": "max_all_local",
+          "minutes": 20690.786876366157
+        },
+        {
+          "outlet": 40,
+          "event": "open",
+          "minutes": 20800.305859636886
+        },
+        {
+          "outlet": 40,
+          "event": "max_all_local",
+          "minutes": 21382.992771454672
+        }
+      ]
+    },
+    "Restaurant Family": {
+      "hours": 5.426915018454892,
+      "purchases": 10800,
+      "events": [
+        {
+          "outlet": 1,
+          "event": "open",
+          "minutes": 0
+        },
+        {
+          "outlet": 1,
+          "event": "max_all_local",
+          "minutes": 34.96593833046452
+        },
+        {
+          "outlet": 2,
+          "event": "open",
+          "minutes": 35.02391119595831
+        },
+        {
+          "outlet": 2,
+          "event": "max_all_local",
+          "minutes": 49.300355628298554
+        },
+        {
+          "outlet": 3,
+          "event": "open",
+          "minutes": 49.33846640184985
+        },
+        {
+          "outlet": 3,
+          "event": "max_all_local",
+          "minutes": 59.53896335210755
+        },
+        {
+          "outlet": 4,
+          "event": "open",
+          "minutes": 59.57195063096708
+        },
+        {
+          "outlet": 4,
+          "event": "max_all_local",
+          "minutes": 67.92706698387192
+        },
+        {
+          "outlet": 5,
+          "event": "open",
+          "minutes": 67.958837810358
+        },
+        {
+          "outlet": 5,
+          "event": "max_all_local",
+          "minutes": 75.25575540796723
+        },
+        {
+          "outlet": 6,
+          "event": "open",
+          "minutes": 75.28806306052284
+        },
+        {
+          "outlet": 6,
+          "event": "max_all_local",
+          "minutes": 81.90164301851908
+        },
+        {
+          "outlet": 7,
+          "event": "open",
+          "minutes": 81.9355900478945
+        },
+        {
+          "outlet": 7,
+          "event": "max_all_local",
+          "minutes": 88.06939129625128
+        },
+        {
+          "outlet": 8,
+          "event": "open",
+          "minutes": 88.10580583616876
+        },
+        {
+          "outlet": 8,
+          "event": "max_all_local",
+          "minutes": 93.88351161689546
+        },
+        {
+          "outlet": 9,
+          "event": "open",
+          "minutes": 93.92312987718273
+        },
+        {
+          "outlet": 9,
+          "event": "max_all_local",
+          "minutes": 100.36153240873197
+        },
+        {
+          "outlet": 10,
+          "event": "open",
+          "minutes": 100.41454282945661
+        },
+        {
+          "outlet": 10,
+          "event": "max_all_local",
+          "minutes": 107.36365812237418
+        },
+        {
+          "outlet": 11,
+          "event": "open",
+          "minutes": 107.42825989368775
+        },
+        {
+          "outlet": 11,
+          "event": "max_all_local",
+          "minutes": 114.44137334047589
+        },
+        {
+          "outlet": 12,
+          "event": "open",
+          "minutes": 114.5155242527648
+        },
+        {
+          "outlet": 12,
+          "event": "max_all_local",
+          "minutes": 121.33513103430937
+        },
+        {
+          "outlet": 13,
+          "event": "open",
+          "minutes": 121.4176406858868
+        },
+        {
+          "outlet": 13,
+          "event": "max_all_local",
+          "minutes": 127.93858661535477
+        },
+        {
+          "outlet": 14,
+          "event": "open",
+          "minutes": 128.02924743599718
+        },
+        {
+          "outlet": 14,
+          "event": "max_all_local",
+          "minutes": 134.23731127885526
+        },
+        {
+          "outlet": 15,
+          "event": "open",
+          "minutes": 134.33666568468757
+        },
+        {
+          "outlet": 15,
+          "event": "max_all_local",
+          "minutes": 140.25342350914235
+        },
+        {
+          "outlet": 16,
+          "event": "open",
+          "minutes": 140.36252979413632
+        },
+        {
+          "outlet": 16,
+          "event": "max_all_local",
+          "minutes": 146.02181007374705
+        },
+        {
+          "outlet": 17,
+          "event": "open",
+          "minutes": 146.14209994118806
+        },
+        {
+          "outlet": 17,
+          "event": "max_all_local",
+          "minutes": 152.49183195999325
+        },
+        {
+          "outlet": 18,
+          "event": "open",
+          "minutes": 152.65363569417465
+        },
+        {
+          "outlet": 18,
+          "event": "max_all_local",
+          "minutes": 159.53955198565896
+        },
+        {
+          "outlet": 19,
+          "event": "open",
+          "minutes": 159.73763288225598
+        },
+        {
+          "outlet": 19,
+          "event": "max_all_local",
+          "minutes": 166.71145563424196
+        },
+        {
+          "outlet": 20,
+          "event": "open",
+          "minutes": 166.939554525918
+        },
+        {
+          "outlet": 20,
+          "event": "max_all_local",
+          "minutes": 173.7365400734961
+        },
+        {
+          "outlet": 21,
+          "event": "open",
+          "minutes": 173.99087129115384
+        },
+        {
+          "outlet": 21,
+          "event": "max_all_local",
+          "minutes": 180.4992492675089
+        },
+        {
+          "outlet": 22,
+          "event": "open",
+          "minutes": 180.77904876741633
+        },
+        {
+          "outlet": 22,
+          "event": "max_all_local",
+          "minutes": 186.9802038268891
+        },
+        {
+          "outlet": 23,
+          "event": "open",
+          "minutes": 187.28705164477915
+        },
+        {
+          "outlet": 23,
+          "event": "max_all_local",
+          "minutes": 193.2000046375796
+        },
+        {
+          "outlet": 24,
+          "event": "open",
+          "minutes": 193.5371084350476
+        },
+        {
+          "outlet": 24,
+          "event": "max_all_local",
+          "minutes": 199.19427893875942
+        },
+        {
+          "outlet": 25,
+          "event": "open",
+          "minutes": 199.56602387395466
+        },
+        {
+          "outlet": 25,
+          "event": "max_all_local",
+          "minutes": 205.9141651556285
+        },
+        {
+          "outlet": 26,
+          "event": "open",
+          "minutes": 206.41425239971122
+        },
+        {
+          "outlet": 26,
+          "event": "max_all_local",
+          "minutes": 213.29902911670837
+        },
+        {
+          "outlet": 27,
+          "event": "open",
+          "minutes": 213.91128839778156
+        },
+        {
+          "outlet": 27,
+          "event": "max_all_local",
+          "minutes": 220.88440008098334
+        },
+        {
+          "outlet": 28,
+          "event": "open",
+          "minutes": 221.5894848969524
+        },
+        {
+          "outlet": 28,
+          "event": "max_all_local",
+          "minutes": 228.38606009553925
+        },
+        {
+          "outlet": 29,
+          "event": "open",
+          "minutes": 229.17226183158286
+        },
+        {
+          "outlet": 29,
+          "event": "max_all_local",
+          "minutes": 235.68041154700154
+        },
+        {
+          "outlet": 30,
+          "event": "open",
+          "minutes": 236.54536136551565
+        },
+        {
+          "outlet": 30,
+          "event": "max_all_local",
+          "minutes": 242.74639081728182
+        },
+        {
+          "outlet": 31,
+          "event": "open",
+          "minutes": 243.69496790632525
+        },
+        {
+          "outlet": 31,
+          "event": "max_all_local",
+          "minutes": 249.60785168184918
+        },
+        {
+          "outlet": 32,
+          "event": "open",
+          "minutes": 250.64996865344327
+        },
+        {
+          "outlet": 32,
+          "event": "max_all_local",
+          "minutes": 256.3071007709747
+        },
+        {
+          "outlet": 33,
+          "event": "open",
+          "minutes": 257.45631168682047
+        },
+        {
+          "outlet": 33,
+          "event": "max_all_local",
+          "minutes": 263.8044240229832
+        },
+        {
+          "outlet": 34,
+          "event": "open",
+          "minutes": 265.3503945505663
+        },
+        {
+          "outlet": 34,
+          "event": "max_all_local",
+          "minutes": 272.23515053090983
+        },
+        {
+          "outlet": 35,
+          "event": "open",
+          "minutes": 274.1278926991497
+        },
+        {
+          "outlet": 35,
+          "event": "max_all_local",
+          "minutes": 281.10099143971
+        },
+        {
+          "outlet": 36,
+          "event": "open",
+          "minutes": 283.28069736641095
+        },
+        {
+          "outlet": 36,
+          "event": "max_all_local",
+          "minutes": 290.07726509699745
+        },
+        {
+          "outlet": 37,
+          "event": "open",
+          "minutes": 292.5077382881582
+        },
+        {
+          "outlet": 37,
+          "event": "max_all_local",
+          "minutes": 299.01588384990333
+        },
+        {
+          "outlet": 38,
+          "event": "open",
+          "minutes": 301.68980086079165
+        },
+        {
+          "outlet": 38,
+          "event": "max_all_local",
+          "minutes": 307.89082802599404
+        },
+        {
+          "outlet": 39,
+          "event": "open",
+          "minutes": 310.8232721482242
+        },
+        {
+          "outlet": 39,
+          "event": "max_all_local",
+          "minutes": 316.73615466400673
+        },
+        {
+          "outlet": 40,
+          "event": "open",
+          "minutes": 319.95776968853755
+        },
+        {
+          "outlet": 40,
+          "event": "max_all_local",
+          "minutes": 325.6149011072935
+        }
+      ]
+    }
+  },
+  "family_formula_validation": [
+    {
+      "outlet": 1,
+      "level": 0,
+      "relative_difference": 1.9078347346379587e-08
+    },
+    {
+      "outlet": 1,
+      "level": 30,
+      "relative_difference": 2.0293630997869627e-08
+    },
+    {
+      "outlet": 8,
+      "level": 0,
+      "relative_difference": 1.8872640117351125e-08
+    },
+    {
+      "outlet": 8,
+      "level": 30,
+      "relative_difference": 2.0143982482068168e-08
+    },
+    {
+      "outlet": 9,
+      "level": 0,
+      "relative_difference": 1.9078347346379587e-08
+    },
+    {
+      "outlet": 9,
+      "level": 30,
+      "relative_difference": 2.0293630997869627e-08
+    },
+    {
+      "outlet": 16,
+      "level": 0,
+      "relative_difference": 1.8872640117351125e-08
+    },
+    {
+      "outlet": 16,
+      "level": 30,
+      "relative_difference": 2.0143982260023563e-08
+    },
+    {
+      "outlet": 17,
+      "level": 0,
+      "relative_difference": 1.9078347346379587e-08
+    },
+    {
+      "outlet": 17,
+      "level": 30,
+      "relative_difference": 2.0293630997869627e-08
+    },
+    {
+      "outlet": 24,
+      "level": 0,
+      "relative_difference": 1.8872640117351125e-08
+    },
+    {
+      "outlet": 24,
+      "level": 30,
+      "relative_difference": 2.0143982260023563e-08
+    },
+    {
+      "outlet": 25,
+      "level": 0,
+      "relative_difference": 1.9078347568424192e-08
+    },
+    {
+      "outlet": 25,
+      "level": 30,
+      "relative_difference": 2.0293631219914232e-08
+    },
+    {
+      "outlet": 32,
+      "level": 0,
+      "relative_difference": 1.8872640117351125e-08
+    },
+    {
+      "outlet": 32,
+      "level": 30,
+      "relative_difference": 2.0143982482068168e-08
+    },
+    {
+      "outlet": 33,
+      "level": 0,
+      "relative_difference": 1.9078347568424192e-08
+    },
+    {
+      "outlet": 33,
+      "level": 30,
+      "relative_difference": 2.0293630997869627e-08
+    },
+    {
+      "outlet": 40,
+      "level": 0,
+      "relative_difference": 1.8872640117351125e-08
+    },
+    {
+      "outlet": 40,
+      "level": 30,
+      "relative_difference": 2.0143982260023563e-08
+    }
+  ]
+}

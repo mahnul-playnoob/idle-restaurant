@@ -1,0 +1,171 @@
+[
+  {
+    "id": "T1",
+    "name": "Traffic Flow APK 0.8.1 (740)",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic_flow_analysis/extracted/com.coolcatsgames.idletransport.apk",
+    "sha256": "875274b5e7a6204036b49de87172ad6f69667a968f7139810c639a09d68247ac",
+    "bytes": 31002267,
+    "note": "Direct manifest/ZIP inventory, original classes.dex matched to extracted dex; packaged code can differ from server-controlled live behavior."
+  },
+  {
+    "id": "T2",
+    "name": "Traffic Flow GDD",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic_flow_analysis/outputs/traffic_flow_081/Traffic_Flow_081_GDD.docx",
+    "sha256": "462e2596fc955201e8ea3564f1291f42e146e67b952600ba8b400ae5075ebd99",
+    "bytes": 61997,
+    "note": "22-page reconstructed specification, not an independent runtime oracle.",
+    "repository_relative_link": "../../Source/Traffic_Flow_081_GDD.docx"
+  },
+  {
+    "id": "T3",
+    "name": "Traffic Flow balance workbook",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic_flow_analysis/outputs/traffic_flow_081/Traffic_Flow_081_Balance.xlsx",
+    "sha256": "363eb1d421e51c1b325a1cb86fa4b63866e13ac1992f9c73762a6a6275d5ca1e",
+    "bytes": 19607,
+    "note": "Six tabs, 72 formula cells inspected read-only; no cached error values found; not recalculated in Excel in this review.",
+    "repository_relative_link": "../../Source/Traffic_Flow_081_Balance.xlsx"
+  },
+  {
+    "id": "T4",
+    "name": "Traffic Flow FTUE recording",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic-flow-ftue-analysis/reference/Taffic Flow FTUE.mov",
+    "sha256": "59b089413b53267a48e80fbe25fbb67e454f1d60d64f0613505185129a16c1ca",
+    "bytes": 117793746,
+    "note": "266.94 seconds, 15,847 indexed frames, 552 screenshot/OCR states. Starts mid-tutorial, Group 2/5; this group counter is not tutorial-step numbering. Settings shows 0.8.1. Recording platform shows Apple sign-in: Android APK data and iOS-like video UI are triangulated, not assumed identical platform builds."
+  },
+  {
+    "id": "T5",
+    "name": "Decoded reference economy",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic_flow_analysis/analysis_data.json",
+    "sha256": "4e9d021a094b0d57df6e131ca828060e3877e635dd8540bc22c8bc847c87651b",
+    "bytes": 148577,
+    "note": "Derived tables plus approximate income/playtime model; original decompiled classes cited separately.",
+    "repository_relative_link": "data/traffic-reference-model.json"
+  },
+  {
+    "id": "R1",
+    "name": "Idle Restaurant APK 0.3.0 (3)",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Builds/IdleRestaurant-Android.apk",
+    "sha256": "df9645c2f5a36aaa5c42726cba240963542083cc13cb9bc24f52c10f9b007deb",
+    "bytes": 62221264,
+    "note": "Actual current file hash and manifest checked; no connected Android device. APK runtime/phone performance not tested.",
+    "repository_relative_link": "../../../Builds/IdleRestaurant-Android.apk"
+  },
+  {
+    "id": "R2",
+    "name": "Active Restaurant economy source",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Assets/Restaurant/Production/Runtime/RestaurantFamilyGame.cs",
+    "sha256": "292dbf6f3a531cf724022535714943674f7a4e1c94a3d7da0ce63df9001f3a08",
+    "bytes": 6768,
+    "note": "Family flag confirmed true in the running Editor. Source at b57daf806ad0efae84c0b46dafedf1156a7361e3.",
+    "repository_relative_link": "../../../Assets/Restaurant/Production/Runtime/RestaurantFamilyGame.cs"
+  },
+  {
+    "id": "R3",
+    "name": "Family balance data",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Design/FamilyBalance.json",
+    "sha256": "12cc5f415c3a3392011a8f7114a179434f804bf48d55f1fcbe50f2dcd2cc1c29",
+    "bytes": 25117,
+    "note": "Active source/data checked against loaded Editor model; historical Traffic Flow fields remain in the catalog but many are bypassed.",
+    "repository_relative_link": "../../FamilyBalance.json"
+  },
+  {
+    "id": "R4",
+    "name": "Independent fresh-session playtest",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic-flow-vs-restaurant/evidence/independent-first-service.json",
+    "sha256": "17f1cc7e1392292cfc5b910c782c6b5281cb736e922f755ba40a56beb6518616",
+    "bytes": 3127,
+    "note": "New run: real Editor guest movement, chair colliders, phases and GraphicRaycaster UI clicks; not an APK/device test.",
+    "repository_relative_link": "evidence/independent-first-service.json"
+  },
+  {
+    "id": "R5",
+    "name": "Independent model audit",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic-flow-vs-restaurant/data/independent-model-audit.json",
+    "sha256": "981593c12c2d01ff9146883ec20cf0a7fc43a852bf3146d62d8017432d473d43",
+    "bytes": 10355,
+    "note": "Twenty outlet/level samples, manager and offline behavior calculated against active loaded data without modifying the live state.",
+    "repository_relative_link": "data/independent-model-audit.json"
+  },
+  {
+    "id": "R6",
+    "name": "Existing five-district service tests",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Verification/FamilyBusyServicesMax.json",
+    "sha256": "4df4fa9ca8cab2f3b628aa63b5624c221306ea491e21ea6679ce1bc98c74d6f3",
+    "bytes": 1493,
+    "note": "Previously recorded Editor service results. Reconciled now against current forecast and base-service report. Not fresh physical-device measurements.",
+    "repository_relative_link": "../../../Verification/FamilyBusyServicesMax.json"
+  },
+  {
+    "id": "R7",
+    "name": "Current gameplay recording",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Media/IdleRestaurant_Family_15s.mp4",
+    "sha256": "41d4a0767a418df2329da5ccd6475949f965f1ffcfa68afc82f28324f52f9949",
+    "bytes": 3590235,
+    "note": "450 decoded frames, 30 screenshot/OCR samples newly inspected. Configured progression state, not a full clean-install session.",
+    "repository_relative_link": "../../../Media/IdleRestaurant_Family_15s.mp4"
+  },
+  {
+    "id": "R8",
+    "name": "Historical pacing comparison",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Verification/PacingComparison.json",
+    "sha256": "14cb06ea7ff9bc81ddcb5826cb75fd152c9d58d3e48dbf3f36bc42fd19e553ec",
+    "bytes": 1514,
+    "note": "Explicitly historical v0.2.0, not the current v0.3.0 family economy.",
+    "repository_relative_link": "../../../Verification/PacingComparison.json"
+  },
+  {
+    "id": "R9",
+    "name": "Family unlock forecast",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Verification/FamilyProgressionForecast.json",
+    "sha256": "bff3d4c65fce8b2c15c158f9c3368a9558f3603fd9d52d494c0f7388871a6d95",
+    "bytes": 6274,
+    "note": "352.617 minutes to OPEN all 40, 592 upgrades; heuristic uses forecast income. No research, team, stars or offline claims.",
+    "repository_relative_link": "../../../Verification/FamilyProgressionForecast.json"
+  },
+  {
+    "id": "R10",
+    "name": "Save restoration evidence",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic-flow-vs-restaurant/evidence/save-restoration.json",
+    "sha256": "43fea1d3ba2bf4280111fce17c46b5a2bff70f53b4b9086abf7ce2c6de3a76ed",
+    "bytes": 298,
+    "note": "Original Editor save and backup restored byte-for-byte; review changed no game source or tuning.",
+    "repository_relative_link": "evidence/save-restoration.json"
+  },
+  {
+    "id": "R11",
+    "name": "Rendering and UI source",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Assets/Restaurant/Production/Runtime/RestaurantApp.cs",
+    "sha256": "a926f0780a48888bb8507b851c9e2ea069d0ab0a5b5848ec7ab4a5763dc627d6",
+    "bytes": 30507,
+    "note": "Navigation, safe area, card availability, tutorial, audio wiring and settings.",
+    "repository_relative_link": "../../../Assets/Restaurant/Production/Runtime/RestaurantApp.cs"
+  },
+  {
+    "id": "R12",
+    "name": "Guest behavior source",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Assets/Restaurant/Production/Runtime/RestaurantServiceView.cs",
+    "sha256": "94c3364f375eb9f3d71b3253b172db71e00b14a3377eeda7da4952b1f0b7f7a9",
+    "bytes": 10233,
+    "note": "Fixed waypoint routes, chair reservation, CharacterControllers, food pickup/portioning, staff work states.",
+    "repository_relative_link": "../../../Assets/Restaurant/Production/Runtime/RestaurantServiceView.cs"
+  },
+  {
+    "id": "R13",
+    "name": "Shared economy and progression source",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Assets/Restaurant/Production/Runtime/RestaurantGame.cs",
+    "sha256": "caa7ab7da53d42f4a036544da9e8c275336e7e05fecd1f96e43277282ad9f2fd",
+    "bytes": 14901,
+    "note": "Source for recruitment, training, research, stars, inactive income and offline claims.",
+    "repository_relative_link": "../../../Assets/Restaurant/Production/Runtime/RestaurantGame.cs"
+  },
+  {
+    "id": "M1",
+    "name": "New matched-policy progression model",
+    "path": "/Users/playnoob/Desktop/Mahnul/GPT/traffic-flow-vs-restaurant/data/matched-policy-model.json",
+    "sha256": "025e42a0b47ff70235cbc6d2b6a2b0190b811413dccea83c8e759a71aa529deb",
+    "bytes": 30784,
+    "note": "Same endpoint and buying policy: max 10,800 upgrades before advancing; zero start cash, no boosts/research/team/stars/offline/grants; includes native Traffic Flow certificates. Formula/model result, not observed playtime.",
+    "repository_relative_link": "data/matched-policy-model.json"
+  }
+]

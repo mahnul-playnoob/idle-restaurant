@@ -1,0 +1,942 @@
+01   GAME DESIGN DOCUMENT
+Traffic Flow Game Design and Balance
+Android version 0.8.1   Version code 740   4 November 2026
+Traffic Flow is an idle transport management game built around boarding throughput. Players improve check in, transit and seating, collect route income, expand into new destinations and transport modes, then reset individual destinations through prestige. Its main strategic decision is where to invest the next unit of cash to improve network earnings.
+This document reconstructs the packaged design and economy and provides a conditional playtime model. The strongest balance finding is the combination of exponential upgrade costs, restricted offline earnings and prestige costs that grow faster than prestige income. These systems make account power and play cadence essential to any completion estimate.
+Main content
+Recovered quantity
+Transport modes
+5  Plane, bus, train, ship and truck
+Main destinations
+40  Eight per mode
+Upgrade cards
+9 per destination, each capped at level 30
+First pass upgrade purchases
+10,800 across all destinations
+Manager definitions
+71 across five rarities
+Research definitions
+17 standard plus 8 prestige nodes
+
+How to read the evidence
+Recovered means a value or behavior is visible in the supplied package. Derived means arithmetic applied to recovered values. Model means an explicit approximation. Proposed means a design or tuning recommendation. A packaged feature may still depend on remote configuration, event scheduling or account eligibility.
+Deliverables
+The companion balance workbook contains the full destination table, manager roster, research definitions, editable Dublin upgrade calculator and playtime reference results. The extracted package remains in the analysis folder. Source identifiers in this GDD refer to the decoded classes listed in the evidence appendix.
+
+02   GAME DESIGN DOCUMENT
+Player Experience and Core Loop
+Fantasy and player role
+The player runs an expanding transport network. Vehicles are visual production units; the primary interaction is economic management. A glowing queue passes through several services, fills a cabin or cargo layout, and generates payments. Players observe congestion and redirect spending toward the limiting stage.
+Moment to moment loop
+1  Passengers or cargo enter the queue and are processed at check in.
+2  Units walk or move along a path and pass the boarding door.
+3  Units occupy seats or loading spaces. Stage payments accrue.
+4  A full vehicle completes a departure and generates its departure payment.
+5  The player buys upgrades, improves throughput or pay, and repeats.
+Long term loop
+Cash funds destination unlocks and timed research. Certificates open additional transport modes. Managers add route and stage power. Maximized routes become eligible for prestige, producing a permanent progression currency and a higher route rank. Live events and collection systems supply parallel objectives.
+Decision horizon
+Player question
+Relevant system
+Seconds
+Where is the visible queue accumulating?
+Check in, door and seating timing
+Minutes
+Which purchase raises earnings most?
+Upgrade marginal return and route unlocks
+Sessions
+Which research or manager improves the network?
+Research slots, role assignment and offline income
+Days and beyond
+Should I prestige or pursue an event reward?
+Route resets, collections and event schedules
+
+Design pillars
+Readable flow creates feedback. Small upgrades offer frequent decisions. New vehicle layouts change the feel of throughput. Persistent collection and prestige provide goals after the first network expansion. These are design interpretations of the recovered systems, rather than statements of developer intent.
+Evidence  kk0, z46, uh3, e73 and xw2. The developer store listing independently describes the boarding loop and calm neon presentation.
+
+03   GAME DESIGN DOCUMENT
+Feature Inventory and Scope
+System
+Package evidence
+Design role
+Main boarding simulation
+ib0 and vehicle body definitions
+Readable service bottlenecks
+Destination network
+40 fm1 records in k52
+Expansion and passive network income
+Nine upgrade cards
+kk0 and z46
+Local throughput and revenue growth
+Research and certificates
+jx5, zx5 and ay5
+Permanent improvement and timed mode gates
+Managers
+71 xf4 records and lh4
+Collection, duplicates and route assignment
+Prestige
+gm1, fk5 and linked callbacks
+Route reset and permanent coin rewards
+Offline collection
+o3.t and offline reward callback
+Return incentive and idle monetization
+Rewarded ads and shop
+Reward action registry and km6
+Income acceleration and purchases
+Daily rewards and mailbox
+xw2 controllers and packaged data classes
+Return rewards and reward delivery
+Traffic Rush
+Lifecycle, play, research and leaderboard controllers
+Parallel event progression
+Dive Rush and Island Event
+Dedicated event controller families
+Additional timed economy loops
+Battle pass, dig and lucky draw
+xw2 controllers and snapshot classes
+Quest and collection retention
+Offers and growth fund
+Monthly, chain, welcome and festive controllers
+Segmented purchases and milestone rewards
+Profile and leaderboard
+Profile and global power controllers
+Identity and comparative progression
+Localization and feedback
+Language APK splits and sound resources
+Market support and purchase feedback
+
+Feature presence establishes implementation scope, not a guarantee that every player sees every system. Exact event schedules, eligibility thresholds, offer prices and server reward tables require a live account or remote configuration capture.
+
+04   GAME DESIGN DOCUMENT
+Destination Structure and Progression
+Main network structure
+Five mode groups each define eight destinations. A destination stores a mode, body, ID, city, premium rows, economy rows, fare coefficient, cash unlock cost and map or travel parameters. The fare is a game coefficient, not a real ticket price. City IDs repeat across transport modes, so the unique key is mode plus city ID.
+Capacity and payout
+Premium capacity equals premium rows times premium columns. Economy capacity equals economy rows times body columns. A premium seat has six times the base pay of an economy seat in the aggregate trip payout calculation. Capacity grows unevenly between destinations; a smaller layout can still earn more because its fare coefficient is higher.
+Mode
+First destination
+First capacity
+Final destination
+Final capacity
+Plane
+Dublin
+52
+Singapore
+118
+Bus
+Oxford
+44
+London
+152
+Train
+Manchester
+76
+Rome
+120
+Ship
+Rotterdam
+76
+Sydney
+208
+Truck
+Chicago
+42
+Warsaw
+108
+
+Certificate gates
+The first destination in every newly certified mode has zero destination unlock cost. The certificate itself still costs cash, requires a network income threshold and occupies timed research. Plane access is available without a certificate.
+Mode
+Certificate cash
+Income per minute gate
+Base duration
+Bus
+1.8M
+757K
+4 hours
+Train
+6.8B
+4.51B
+8 hours
+Ship
+30T
+27.4T
+12 hours
+Truck
+180Qa
+169Qa
+16 hours
+
+Research speed reduces these durations. The four unreduced certificate timers total 40 hours if started and completed sequentially. This is a timer total, not a universal minimum completion time; research speed, premium rushing and overlap change elapsed time.
+Evidence  k52.b, pv7, b66, e73.a0, jx5 and zx5.c.
+
+05   GAME DESIGN DOCUMENT
+Plane Destinations
+Recovered destination definitions. Premium and economy columns are capacities, calculated from the packaged row and vehicle body data. Unlock cash excludes the transport certificate.
+ID and city
+Premium
+Economy
+Fare coefficient
+Unlock cash
+DUB Dublin
+4
+48
+0.4348
+Free
+PMI Palma
+0
+76
+1.394
+20K
+DXB Dubai
+8
+64
+2.3677
+98K
+EDI Edinburgh
+4
+40
+6.6992
+380K
+NCE Nice
+8
+78
+15.26
+1.4M
+KEF Reykjavik
+8
+90
+39.087
+5M
+CAI Cairo
+12
+96
+88.11
+17.4M
+SIN Singapore
+16
+102
+204.63
+61M
+
+Progression interpretation
+Dublin is the initial free route. Palma increases capacity without premium seating. Later wide body planes increase premium capacity, while the fare coefficient supplies most of the long range revenue escalation. Airplane income prediction uses a dedicated seating simulation, making visual timing important to validate.
+Balance scale at the start of this mode
+The first destination has 52 total spaces. Buying all nine cards from level 0 to level 30 costs approximately 844K cash under Current balance, before research discounts or prestige. This cost is a sum of recovered upgrade formulas, not a claim about the optimal spending path.
+Notation
+K = thousand, M = million, B = billion, T = trillion, Qa = quadrillion, Qi = quintillion and Sx = sextillion. The workbook retains numeric values, including the full fare coefficients and both balance variants.
+Evidence  k52.b destination definitions, k52.c to k52.e cost scaling, pv7 vehicle dimensions and z46.x upgrade costs.
+
+06   GAME DESIGN DOCUMENT
+Bus Destinations
+Recovered destination definitions. Premium and economy columns are capacities, calculated from the packaged row and vehicle body data. Unlock cash excludes the transport certificate.
+ID and city
+Premium
+Economy
+Fare coefficient
+Unlock cash
+OXF Oxford
+0
+44
+4141.7
+Free
+BTN Brighton
+4
+52
+7752.5
+285M
+CAM Cambridge
+6
+72
+17790
+1B
+BRS Bristol
+8
+88
+42888
+3.5B
+BHX Birmingham
+10
+112
+1.0569e+05
+12.2B
+MAN Manchester
+12
+132
+2.6104e+05
+43B
+LIV Liverpool
+12
+136
+6.5679e+05
+150B
+LON London
+12
+140
+1.652e+06
+520B
+
+Progression interpretation
+Oxford becomes free after the bus certificate. Larger bus bodies change walking, door and stowing modifiers. Later routes retain similar capacity while raising the fare coefficient sharply, so city progression is primarily economic rather than simply more seats.
+Balance scale at the start of this mode
+The first destination has 44 total spaces. Buying all nine cards from level 0 to level 30 costs approximately 8.72B cash under Current balance, before research discounts or prestige. This cost is a sum of recovered upgrade formulas, not a claim about the optimal spending path.
+Notation
+K = thousand, M = million, B = billion, T = trillion, Qa = quadrillion, Qi = quintillion and Sx = sextillion. The workbook retains numeric values, including the full fare coefficients and both balance variants.
+Evidence  k52.b destination definitions, k52.c to k52.e cost scaling, pv7 vehicle dimensions and z46.x upgrade costs.
+
+07   GAME DESIGN DOCUMENT
+Train Destinations
+Recovered destination definitions. Premium and economy columns are capacities, calculated from the packaged row and vehicle body data. Unlock cash excludes the transport certificate.
+ID and city
+Premium
+Economy
+Fare coefficient
+Unlock cash
+MAN Manchester
+4
+72
+2.4959e+07
+Free
+PAR Paris
+6
+80
+5.7785e+07
+1.74T
+BRU Brussels
+6
+84
+1.4529e+08
+6T
+EDI Edinburgh
+8
+88
+3.4067e+08
+21T
+AMS Amsterdam
+8
+96
+8.6317e+08
+75T
+FRA Frankfurt
+10
+100
+2.0489e+09
+260T
+LYS Lyon
+12
+104
+4.8981e+09
+900T
+ROM Rome
+12
+108
+1.2342e+10
+3.2Qa
+
+Progression interpretation
+Manchester becomes free after certification. Train bodies have three segments, which changes the aggregate stowing calculation. The income model uses segmentation, so applying plane timing assumptions to trains produces misleading throughput.
+Balance scale at the start of this mode
+The first destination has 76 total spaces. Buying all nine cards from level 0 to level 30 costs approximately 53.2T cash under Current balance, before research discounts or prestige. This cost is a sum of recovered upgrade formulas, not a claim about the optimal spending path.
+Notation
+K = thousand, M = million, B = billion, T = trillion, Qa = quadrillion, Qi = quintillion and Sx = sextillion. The workbook retains numeric values, including the full fare coefficients and both balance variants.
+Evidence  k52.b destination definitions, k52.c to k52.e cost scaling, pv7 vehicle dimensions and z46.x upgrade costs.
+
+08   GAME DESIGN DOCUMENT
+Ship Destinations
+Recovered destination definitions. Premium and economy columns are capacities, calculated from the packaged row and vehicle body data. Unlock cash excludes the transport certificate.
+ID and city
+Premium
+Economy
+Fare coefficient
+Unlock cash
+ROT Rotterdam
+4
+72
+1.3475e+11
+Free
+BIO Bilbao
+6
+96
+3.2226e+11
+10.6Qa
+OSL Oslo
+12
+112
+6.9535e+11
+37Qa
+LIS Lisbon
+16
+144
+1.7002e+12
+130Qa
+KEF Reykjavik
+10
+160
+3.961e+12
+450Qa
+NYC New York
+14
+184
+9.4176e+12
+1.6Qi
+RIO Rio de Janeiro
+14
+192
+2.3725e+13
+5.6Qi
+SYD Sydney
+16
+192
+5.748e+13
+19.5Qi
+
+Progression interpretation
+Rotterdam becomes free after certification. The body switches from shipS to ship and then shipXL. Sydney has 208 spaces, but the economy also relies on large fare and upgrade cost scales. These are high magnitude incremental values, not realistic currency amounts.
+Balance scale at the start of this mode
+The first destination has 76 total spaces. Buying all nine cards from level 0 to level 30 costs approximately 325Qa cash under Current balance, before research discounts or prestige. This cost is a sum of recovered upgrade formulas, not a claim about the optimal spending path.
+Notation
+K = thousand, M = million, B = billion, T = trillion, Qa = quadrillion, Qi = quintillion and Sx = sextillion. The workbook retains numeric values, including the full fare coefficients and both balance variants.
+Evidence  k52.b destination definitions, k52.c to k52.e cost scaling, pv7 vehicle dimensions and z46.x upgrade costs.
+
+09   GAME DESIGN DOCUMENT
+Truck Destinations
+Recovered destination definitions. Premium and economy columns are capacities, calculated from the packaged row and vehicle body data. Unlock cash excludes the transport certificate.
+ID and city
+Premium
+Economy
+Fare coefficient
+Unlock cash
+CHI Chicago
+2
+40
+6.9271e+14
+Free
+MIA Miami
+4
+48
+1.5158e+15
+65Qi
+DAL Dallas
+4
+52
+3.8077e+15
+230Qi
+SEA Seattle
+4
+72
+9.6508e+15
+800Qi
+HAM Hamburg
+6
+78
+2.2607e+16
+2.8Sx
+MIL Milan
+6
+78
+5.616e+16
+9.7Sx
+MAD Madrid
+8
+84
+1.3364e+17
+34Sx
+WAW Warsaw
+6
+102
+2.9963e+17
+120Sx
+
+Progression interpretation
+Chicago becomes free after the truck certificate. Trucks reuse the three stage economy with loading related presentation. Several truck body variants are packaged. Warsaw is the final main destination in this version, while an additional truckRT body exists without a destination in the recovered 40 record list.
+Balance scale at the start of this mode
+The first destination has 42 total spaces. Buying all nine cards from level 0 to level 30 costs approximately 1.98Sx cash under Current balance, before research discounts or prestige. This cost is a sum of recovered upgrade formulas, not a claim about the optimal spending path.
+Notation
+K = thousand, M = million, B = billion, T = trillion, Qa = quadrillion, Qi = quintillion and Sx = sextillion. The workbook retains numeric values, including the full fare coefficients and both balance variants.
+Evidence  k52.b destination definitions, k52.c to k52.e cost scaling, pv7 vehicle dimensions and z46.x upgrade costs.
+
+10   GAME DESIGN DOCUMENT
+Upgrade Effects and Game Balance
+Each destination has nine independent cards grouped into Gate, Transit and Seating. Every card has 30 purchased levels. L below is the current purchased level from 0 to 30. Values are raw card outputs before managers, research or other multipliers.
+Group and card
+Raw effect at level L
+At level 0
+At level 30
+Gate  Check in speed
+0.25 x (1 + 0.045L)
+0.25
+0.5875
+Gate  Instant check in
+1 - 1 / (1 + 0.0222L)
+0%
+39.98%
+Gate  Check in income
+1 + 0.2L
+1x
+7x
+Transit  Walking time
+9 / (1 + L / 24)
+9
+4
+Transit  Boarding time
+3.5 / (1 + 0.15L)
+3.5
+0.6364
+Transit  Door income
+1 + 0.2L
+1x
+7x
+Seating  Stowing time
+3 / (1 + 0.05L)
+3
+1.2
+Seating  Instant seating
+1 - 1 / (1 + 0.0222L)
+0%
+39.98%
+Seating  Seat income
+1 + 0.2L
+1x
+7x
+
+Bottleneck behavior
+Increasing one service speed can move congestion to another service. A speed purchase that does not change the limiting stage can have little immediate effect on income. Pay cards increase revenue without solving congestion. The correct comparison is next cost divided by the change in total network income, rather than raw effect size.
+Diminishing marginal benefits
+Income multipliers rise linearly while cash costs accelerate. A pay card moving from 1.0x to 1.2x improves that component by 20%. Moving from 6.8x to 7.0x improves it by only 2.94%. Instant processing remains probabilistic at maximum level. It does not reach 100% with the raw card alone.
+Evidence  kk0.a and z46.m. Raw timing outputs are interpreted as service parameters; on screen timing also depends on vehicle and account modifiers.
+
+11   GAME DESIGN DOCUMENT
+Upgrade Costs and Balance Variants
+Recovered cost rule
+Next cost = rint[B x route scale x stage weight x (1 + 0.4L) x 1.1^L x research discount x prestige cost multiplier]. B is the card base parameter. rint uses ties to even rounding. A Dublin override supplies a complete card specific starting price and replaces the route scale and stage weight terms.
+Card
+Base parameter
+Dublin Current
+Dublin New
+Check in speed
+45
+50
+25
+Instant check in
+45
+50
+25
+Check in income
+90
+100
+50
+Walking
+40
+40
+20
+Boarding
+50
+50
+25
+Door income
+90
+80
+40
+Stowing
+55
+40
+20
+Instant seating
+55
+40
+20
+Seat income
+120
+100
+50
+
+Cost curve implications
+Before route modifiers, the level 29 purchase is about 199.9 times its level 0 price. Costs therefore become much steeper while the percentage gain from linear pay upgrades shrinks. Maxing a route can be a collection or prestige objective even when opening another route has better financial return.
+Dublin all card cost is 844,045 in Current and 422,016 in New, without discounts or prestige. First prices are exactly halved by the New override; the total is close to half because each purchase is rounded separately.
+Variant selection
+The package defines Current and New variants and stores an origin such as Remote or Default. Current is the packaged fallback. New is not uniformly a 50% reduction: its route scales differ by destination. Account assignment must be recorded before comparing economy telemetry or validating prices.
+Evidence  k52.c to k52.e, z46.x, a40, d40, j40 and b40. The workbook calculator uses Excel rounding and discloses its possible difference on exact half ties.
+
+12   GAME DESIGN DOCUMENT
+Cash Economy and Offline Balance
+Trip income construction
+Let F be the fare coefficient, E the number of economy seats and P the premium seats. Base trip value V = F x (10E + 60P). Gate pay is 30% of V times its pay card. Door pay is 30% times its card. Seat pay is 40% times its card. Each component also receives the applicable stage, route, manager and account multipliers.
+Departure pay is 10% of the combined stage payout before departure modifiers. Route income per minute equals total trip payout divided by predicted trip duration in minutes. Network income sums eligible unlocked route incomes, then applies global income multipliers. Inactive unlocked routes therefore matter to network economics.
+Currency or resource
+Faucets
+Sinks or use
+Cash
+Boarding stages, departure, offline claims and configured rewards
+Upgrade cards, destinations, cash research and certificates
+Gems
+Wallet rewards, purchases and configured reward systems
+Research slots, research rushes and eligible shop actions
+Prestige coins
+One coin per confirmed destination prestige
+Prestige research
+Manager duplicates
+Pack pulls and configured grants
+Manager upgrade requirements
+Event resources
+Event play, quests and configured grants
+Event upgrades, research or event reward mechanics
+
+Recovered offline rule
+For a qualifying absence longer than 300 seconds, standard offline cash = 0.25 x network income per minute x min(absence seconds, 7200) / 60. The premium idle flag changes the multiplier to 0.75 and the cap to 86,400 seconds. Collection x2 is separately registered as a rewarded action.
+At 1,000 cash per minute, a two hour standard claim yields 30,000 cash. An eight hour standard absence still yields 30,000. With the premium flag, eight hours yields 360,000, before a collection bonus. The cap difference is as important as the advertised income multiplier.
+Evidence  e73.a0, dh3.w, uh3.b, o3.t, vx2 rewarded action registration and d18 wallet behavior.
+
+13   GAME DESIGN DOCUMENT
+Research Economy and Timers
+Standard research defines 13 repeatable nodes capped at level 100 and four single level certificates. There is initially one research slot, expandable to five. Listed slot prices are 0, 120, 450, 1,500 and 3,200 gems by slot index; the four paid expansions total 5,270 gems.
+Research family
+Nodes
+Base cash parameter
+Key role
+General
+Departure Bonus
+3,000
+Departure payout
+General
+Research speed
+5,000
+Timer acceleration
+Discounts
+Gate, Transit and Seating discount
+8,000 each
+Local upgrade cost reduction
+Premium
+Premium crew
+4,000
+Premium seating related improvement
+Network speed
+Check in, walking, boarding and stowing
+6,000 each
+Broad service improvement
+Network pay
+Gate, door and seat pay
+6,000 each
+Broad component revenue
+Certificates
+Bus, train, ship and truck
+See certificate table
+Mode access
+
+Price escalation
+For a repeatable node at level L, q = 1.28^0.3. Price = max(1, floor[adjusted base x q^L x (q - 1) / 0.28 x 10000^S]). S = (3 - 2x)x^2, where x is clamp((L - 20) / 60, 0, 1). Research speed has a 2.4x base adjustment and Premium crew has 1.75x. The late curve adds up to a 10,000x multiplier beyond ordinary exponential growth.
+Timers and rushing
+Noncertificate timers use a group curve of (1 + bL + cL^2) times the group base minutes, then divide by 1 + 0.01 times Research speed level. Timer rounding is 30 second increments below an hour and 5 minute increments at or above an hour, with a 30 second minimum. Certificate timers use their own base minutes.
+Research rush gems = max(2, ceil[1.5 x remaining minutes^0.75]). More slots increase parallelism, but do not remove income gates or cash costs. Exact group constants are retained in ay5, while the workbook preserves the raw node parameters.
+Evidence  jx5, zx5.b, zx5.c, zx5.h, ay5 and rx5. Base cost and timer parameters are not always the first payable cost or actual runtime duration.
+
+14   GAME DESIGN DOCUMENT
+Managers and Collection Economy
+The package defines 71 managers across Gate, Boarding and Cabin roles. Managers are assigned to a compatible role on an unlocked route. Assigning a manager elsewhere removes the previous assignment, which creates a real allocation decision across the network.
+Rarity
+Definitions
+Level 15 effect A
+Effect B
+Mode affinity C
+Common
+21
+15%
+10%
+0%
+Rare
+15
+30%
+20%
+0%
+Epic
+15
+60%
+30%
+15%
+Legendary
+15
+120%
+40%
+20%
+Mythic
+5
+240%
+50%
+25%
+
+These are the raw three component manager effect vectors, not three universal income boosts. Component C applies only when the configured vehicle affinity matches. Effects scale linearly with level divided by 15, clamped from 0 to 15. The exact component application depends on role and runtime economy wiring.
+Duplicate requirements
+Fourteen upgrade requirements are defined for progression to level 15. Common and Rare share 2, 4, 7, 11, 17, 25, 35, 47, 61, 77, 95, 116, 140 and 167. Their sum is 804 duplicates, excluding the initial unlock. Epic sums to 409. Legendary sums to 240. Mythic requirements run from 2 through 15, totaling 119.
+Collection balance
+Higher rarity has stronger raw effects and lower duplicate upgrade totals, but acquisition probability and targeting determine its actual time cost. Pack existence does not establish expected collection time. A complete collection forecast needs draw odds, guaranteed rewards, pack prices, free claim cadence and event eligibility.
+Suggested player facing clarity
+Show the effect on the assigned route, compare the current and next level, and identify mode affinity explicitly. Display the opportunity cost of moving a manager from a high earning route. These are proposed interface requirements for a reproduction or redesign.
+Evidence  xf4 roster, effect vectors and duplicate requirements; nk0 rarity labels; lh4.a assignment logic.
+
+15   GAME DESIGN DOCUMENT
+Prestige and Long Term Balance
+Recovered eligibility and reset
+A destination must be the active route, have every card at its cap, and be in a safe boarding state before prestige can confirm. Confirmation increases that destination rank by one, adds one prestige coin, resets its nine card levels to zero and clears its current boarding state. The visible confirmation path does not zero the shared cash wallet or reset other routes.
+Rank scaling
+Rank dependent term
+Current
+New
+Route income multiplier
+2.5^(3R) = 15.625^R
+Same recovered income rule
+Upgrade cost multiplier
+3^(3R) = 27^R
+3.5^(3R) = 42.875^R
+Cost divided by income per rank
+1.728x
+2.744x
+
+R is destination prestige rank. This comparison isolates the recovered rank multipliers and holds other account power constant. It shows that each prestige makes a fully rebuilt route more expensive relative to its own income. Existing wallet reserves, other routes, managers and research can offset that pressure.
+Prestige research
+Eight nodes are present: five mode income nodes and three stage income nodes. Each is capped at 20 levels and costs one prestige coin per purchase. Mode nodes add 5% per level, reaching 2x at level 20. Stage nodes add 10% per level, reaching 3x at level 20. Maxing all eight requires 160 coins and therefore 160 successful prestige actions, before any alternative coin grants.
+Balance implication
+Prestige is not merely a reset that makes every later cycle faster. Its reward is permanent account progression plus a much larger nominal route income, with steeper reinvestment costs. Evaluate the coin benefit and the effect on total network income before recommending a reset.
+Evidence  gm1.a, fk5, vw2 confirm callback, du1 income callback, a0 cost callback, zn3.B, lk5 and kx5.g. Partially decompiled callbacks were inspected in simplified instruction form.
+
+16   GAME DESIGN DOCUMENT
+Monetization and Reward Delivery
+Recovered monetization surfaces
+The package includes billing support, rewarded ad actions, income packs, an idle income purchase flag, manager and vehicle packs, research slot expansion, timer rushes, event shops, battle pass controls, monthly passes, a growth fund, welcome packs, chain offers and festive offers. Specific availability is controlled by account and service state.
+Offer or action
+Economic influence
+Validation requirement
+Income packs
+Changes the global earnings rate
+Confirm stacking and scope from an owned account
+Premium idle flag
+3x offline rate and 24 hour cap
+Test cap, restore and collection interactions
+Rewarded offline x2
+Multiplies the pending claim
+Grant exactly once after earned reward
+Instant cash
+Converts time or income into an immediate reward
+Show the income basis and reward amount
+Research slots and rush
+Changes parallelism and time pressure
+Check gem charge and job completion atomically
+Manager packs
+Collection power and duplicate supply
+Expose odds and guaranteed rewards
+Event passes and funds
+Event reward entitlement
+Deliver unclaimed rewards after event end
+
+Price and value accounting
+Real money prices are not fixed by an APK analysis. Storefront, region, tax, current products and offer eligibility can change them. Keep price, currency, entitlement, effective income minutes and availability window as separate fields in a live economy catalog.
+Proposed reward integrity requirements
+Use a unique transaction or claim ID. Persist the entitlement before displaying success. Make redelivery safe after interruption. Never consume an ad charge, gem balance or purchase entitlement twice. Track offer shown, initiated, completed, granted and failed states separately. The package has rewarded action and purchase redelivery systems, but their live correctness was not exercised here.
+Evidence  xw2 controller inventory, vx2 action registration, km6 shop controller and package billing permissions. No real money prices are asserted as recovered balance values.
+
+17   GAME DESIGN DOCUMENT
+Events Retention and Player Interface
+Parallel progression systems
+Traffic Rush, Dive Rush and Island Event each have dedicated lifecycle, play, research, reward settlement and leaderboard logic. This architecture supports separate event progression and postevent settlement. Battle pass, dig event and lucky draw snapshots indicate additional quest and reward structures. Packaged code alone does not establish which event is currently live or its recurrence.
+Retention design
+Daily rewards encourage a daily return. Offline cash rewards absence up to the cap. Timed research creates a return appointment. Managers supply collection goals. Prestige adds repeatable route goals. Event leaderboards and passes add finite objectives. Mailbox delivery supports rewards that cannot be claimed immediately.
+Proposed onboarding sequence
+Step
+Player action
+Success signal
+First cycle
+Watch a complete boarding and departure
+Player understands where cash comes from
+First upgrade
+Buy one clearly limiting service upgrade
+Cycle visibly improves
+Second decision
+Compare a pay upgrade with a speed upgrade
+Player sees income per minute change
+First expansion
+Open another destination
+Network income and active route distinction are clear
+Manager introduction
+Assign one role compatible manager
+Route benefit is visible
+Research introduction
+Start one useful timed job
+Completion and slot state are clear
+First return
+Collect offline earnings
+Rate and cap are explained
+Prestige introduction
+Compare reset cost with permanent reward
+Player understands which progress resets
+
+Interface requirements for a rebuild
+The main screen should show cash, total network income, active route, boarding status and the three upgrade groups. The route map should show mode access, unlock cost, capacity, rank and route earnings. Research needs slots, price, timer and unlock prerequisites. Managers need role filters, assignment state and affinity. Offline claims need elapsed credited time, cap and reward breakdown.
+Evidence  vx2 and xw2 controllers; recovered UI state classes. The onboarding sequence and interface requirements above are proposed, not a frame by frame reconstruction of the installed game.
+
+18   GAME DESIGN DOCUMENT
+Playtime Model and Completion Definitions
+What counts as completion
+The game has several different completion targets: unlock every mode, unlock all 40 destinations, max every main card once, earn a chosen prestige rank, complete research, collect managers, or finish a particular event. No finite universal total playtime follows from these systems. A first network clear is finite; prestige and repeated live content extend play beyond it.
+Reference run assumptions
+The reference model starts with zero cash, no upgrades and Dublin unlocked. It maximizes one destination before unlocking the next in packaged order. It buys the next local upgrade with the best immediate cost divided by incremental income. Already unlocked routes continue contributing to network income. It buys certificates when needed, enforces their cash and income gates, and waits their base timers while income continues accruing.
+The model omits managers, prestige, general research, free grants, ads, events, purchases and manual interaction time. A constant network income multiplier is varied only for sensitivity. It is not an assertion about purchasable stacking rules. All 10,800 local card purchases are represented.
+Throughput approximation
+For every route the model estimates a cycle using the maximum of check in work, door work and stowing work, plus walking and a small changeover allowance, then applies body modifiers. Raw card effects and fare based payouts are recovered. The unified throughput approximation is not the exact airplane seat simulation or a verified reproduction of all nonplane overlap rules.
+Interpretation limits
+These are deterministic reference estimates, not measured player hours, a speedrun bound or a forecast of a typical account. Sequentially maxing every route is one chosen policy. Expanding earlier, selecting different research, receiving rewards or prestiging can materially change the result. Throughput error also changes every affordability wait.
+Evidence  The accompanying analysis model and balance workbook. Model outputs are labeled separately from extracted package values throughout this document.
+
+19   GAME DESIGN DOCUMENT
+Playtime Results and Session Cadence
+Upgrade balance
+Income sensitivity
+First pass max time
+Current
+1x
+422.8 online hours
+Current
+2x
+226.2 online hours
+Current
+6x
+97.2 online hours
+New
+1x
+356.4 online hours
+New
+2x
+194.0 online hours
+New
+6x
+88.2 online hours
+
+The Current x1 reference reaches all route upgrades at approximately 423 continuous online hours. New x1 reaches the same target at approximately 356 hours, about 15.7% less under this policy. These are conditional model outputs; they should not be presented as the actual length of Traffic Flow.
+Current x1 reference milestones
+Milestone
+Cumulative reference hours
+plane:SIN  unlock
+63.3
+bus:OXF  unlock
+73.4
+train:MAN  unlock
+162.3
+ship:ROT  unlock
+252.7
+truck:CHI  unlock
+345.1
+truck:WAW  unlock
+415.8
+truck:WAW  all upgrades 30
+422.8
+
+Illustrative calendar conversion
+Three evenly spaced 10 minute sessions per day provide 30 active minutes. Three standard capped offline claims credit 360 minutes at 25%, equivalent to another 90 active minutes at unchanged income. That is roughly two equivalent online hours per day. Dividing the 423 hour reference by two gives about 211 days.
+The 211 day result is only a cadence conversion. It does not simulate purchases being delayed until the next visit, changing income during absence, reward boosts or account power. It is neither a target nor a claim about observed retention. The workbook lets the reader change session frequency, duration, cap and offline efficiency.
+Required measurement
+A defensible player playtime distribution needs clean account cohorts by balance variant, time to each route and certificate, active minutes, offline credited minutes, spend, ad usage, research and manager power. Report median and upper percentiles for each defined completion target.
+
+20   GAME DESIGN DOCUMENT
+Balance Assessment and Tuning Priorities
+Priority
+Finding
+Proposed action and acceptance test
+1
+Two economy variants can distort comparisons
+Record the assigned variant on every economy event. Reproduce first prices and prestige costs for both.
+1
+Prestige costs outgrow rank income
+Test reset payback against coin value. Track time to rebuild and coin earning rate by rank before changing either multiplier.
+1
+Standard idle cap is only two hours
+Test longer free caps against return cadence and progression. Compare earned offline cash with the amount lost to the cap.
+2
+Late upgrades have weak relative benefit
+Display actual income gain and payback. Compare route expansion with maxing the last card levels.
+2
+Certificate income gates add a second lock
+Expose both cash and income prerequisites. Track players who can afford the cash price but fail the income threshold.
+2
+Research curve adds a large late multiplier
+Audit affordability around levels 20 to 80. Target meaningful research choices without indefinite dead zones.
+2
+Manager collection time is underdetermined
+Capture live odds, pack cadence and guarantees. Model duplicate supply by rarity and role.
+3
+Events may interrupt the calm core loop
+Introduce events after core comprehension. Measure main network progression displacement and event abandonment.
+
+Suggested tuning experiments
+These are proposed tests, not recovered game rules: aim for a visible first service improvement in the opening minute; keep several useful early purchases within the first five minutes; explain the offline cap before the first return; and present prestige with a clear before and after earnings comparison. Set later targets using real cohorts instead of assuming one global time budget.
+Marginal return rule
+For a candidate purchase, payback minutes = cash cost divided by incremental total income per minute. If the increment is zero, mark it as a prerequisite or collection purchase. Compare card, route and research returns on the same network basis. For prestige, include lost route income during the rebuild and the value of the coin rather than counting only the final rank multiplier.
+
+21   GAME DESIGN DOCUMENT
+Implementation Analytics and Verification
+Recovered technical profile
+This is a native Android package with Kotlin and Compose related dependencies and custom game controllers. It is not a Unity asset bundle project. The XAPK contains one base APK and 19 configuration APKs, including language, density and armeabi v7a native support splits. The manifest records Android API 29 minimum and API 36 target, internet, notifications, vibration and billing permissions.
+Proposed economy telemetry
+Event
+Essential fields
+Upgrade purchased
+Route key, card, old level, price, wallet before and after, variant, rank
+Destination unlocked
+Route, price, network income, account active minutes
+Research started and completed
+Node, level, cost, duration, slot, rush spend
+Prestige confirmed
+Route, old rank, coin delta, wallet, income before reset
+Offline claim
+Absence, credited seconds, cap, efficiency, base claim, bonus and final grant
+Manager pull and upgrade
+Pack source, rarity, manager, duplicates, pity or guarantee state
+Reward delivered
+Claim ID, trigger, entitlement, amount, grant result
+Session and milestone
+Active duration, cumulative duration, mode, route and account power
+
+Verification matrix for an Android playthrough
+Verify a clean installation, first cycle timing and every Dublin first price. Compare level 0, 1, 29 and 30 effects and costs. Verify each certificate at just below and exactly at its income threshold. Test offline intervals of 300 seconds, 301 seconds, two hours and beyond the cap. Check a manager move and duplicate upgrade. Confirm prestige eligibility, cash retention, coin gain and rank multipliers in both variants.
+Exercise reward delivery after app interruption, duplicate purchase callbacks, restore, event settlement and mailbox claims. These are required runtime checks for a production reproduction; no executable gameplay validation was performed during this static review.
+
+22   GAME DESIGN DOCUMENT
+Evidence Register and Open Questions
+Evidence ID
+Package location or class
+What it establishes
+E01
+XAPK manifest.json
+Package, version, platform requirements and splits
+E02
+k52, fm1 and pv7
+40 routes, fares, costs, bodies and dimensions
+E03
+kk0 and z46
+Nine effects, level cap and upgrade cost logic
+E04
+e73.a0, dh3.w and uh3
+Trip payments, predicted cycle and network income
+E05
+jx5, zx5, ay5 and rx5
+Research nodes, cost curve, timers and slots
+E06
+xf4, nk0 and lh4
+71 manager definitions, effects, duplicates and assignment
+E07
+gm1, fk5, vw2, du1 and a0
+Prestige eligibility, reset, coin, income and cost scaling
+E08
+o3.t and vx2
+Offline cap, efficiency and rewarded collection action
+E09
+a40, d40, j40 and b40
+Balance variants and assignment origin
+E10
+xw2 and vx2
+Feature controllers, event families and reward actions
+
+External corroboration
+Developer published Google Play listing: https://play.google.com/store/apps/details?id=com.coolcatsgames.idletransport . Used for the broad game identity and presentation description. Store pages can describe different builds, so package definitions take precedence for version 0.8.1.
+Open values before a production balance signoff
+Confirm the live variant assignment, starting grants, manager draw odds and guarantees, all shop entitlement stacking, exact route simulation timing, research effect wiring, event schedules and reward catalogs, first time feature gates and measured completion cohorts. Packaged event presence is not evidence of a current live event.
+Package fingerprint
+SHA256  affd1b284b746423aa1acc03a9ae0fe2700ffcf90afce6062006d7720c7590b2
+The evidence bundle contains extracted balance CSVs, structured JSON, selected decoded economy classes and the reference model. Decompiled class names are identifiers, not original developer source names. No package text was treated as an instruction to run the app, contact its services or alter this analysis.

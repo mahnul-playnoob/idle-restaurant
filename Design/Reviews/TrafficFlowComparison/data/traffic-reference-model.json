@@ -1,0 +1,5934 @@
+{
+  "routes": [
+    {
+      "mode": "plane",
+      "body": "plane",
+      "id": "DUB",
+      "name": "Dublin",
+      "premium_rows": 2,
+      "economy_rows": 12,
+      "fare": 0.4348,
+      "unlock_cost": 0.0,
+      "bearing": -33.0,
+      "ring": 0.33,
+      "travel_parameter": 2.5,
+      "premium_seats": 4,
+      "economy_seats": 48,
+      "capacity": 52,
+      "base_trip_pay": 344.36160000000007,
+      "key": "plane:DUB",
+      "cost_scale_current": 0.9474571254384647,
+      "cost_scale_new": 0.47372856271923236,
+      "stage_gate": 1.2877725896902916,
+      "stage_transit": 0.9539056219928086,
+      "stage_seating": 0.8108197786938873,
+      "proxy_income_level0": 85.59821029082775,
+      "proxy_income_level30": 2104.7207245194913,
+      "all_upgrade_cost_current": 844045,
+      "all_upgrade_cost_new": 422016
+    },
+    {
+      "mode": "plane",
+      "body": "plane",
+      "id": "PMI",
+      "name": "Palma",
+      "premium_rows": 0,
+      "economy_rows": 19,
+      "fare": 1.3939900699738657,
+      "unlock_cost": 20000.0,
+      "bearing": 6.0,
+      "ring": 0.45,
+      "travel_parameter": 4.0,
+      "premium_seats": 0,
+      "economy_seats": 76,
+      "capacity": 76,
+      "base_trip_pay": 1165.3756984981517,
+      "key": "plane:PMI",
+      "cost_scale_current": 3.1976677983548183,
+      "cost_scale_new": 1.7764821101971213,
+      "stage_gate": 1.272345194921994,
+      "stage_transit": 0.8011062338397739,
+      "stage_seating": 0.9424779221644398,
+      "proxy_income_level0": 202.9564086551988,
+      "proxy_income_level30": 5170.696926803327,
+      "all_upgrade_cost_current": 2895259,
+      "all_upgrade_cost_new": 1608475
+    },
+    {
+      "mode": "plane",
+      "body": "plane",
+      "id": "DXB",
+      "name": "Dubai",
+      "premium_rows": 4,
+      "economy_rows": 16,
+      "fare": 2.3676859462512154,
+      "unlock_cost": 98000.0,
+      "bearing": 24.0,
+      "ring": 0.82,
+      "travel_parameter": 7.0,
+      "premium_seats": 8,
+      "economy_seats": 64,
+      "capacity": 72,
+      "base_trip_pay": 2916.9890857814976,
+      "key": "plane:DXB",
+      "cost_scale_current": 8.42940761288534,
+      "cost_scale_new": 5.489329720509106,
+      "stage_gate": 0.9539066269693273,
+      "stage_transit": 1.287773946408592,
+      "stage_seating": 0.8108206329239281,
+      "proxy_income_level0": 533.9537041518391,
+      "proxy_income_level30": 13494.724830353924,
+      "all_upgrade_cost_current": 7632236,
+      "all_upgrade_cost_new": 4970208
+    },
+    {
+      "mode": "plane",
+      "body": "plane",
+      "id": "EDI",
+      "name": "Edinburgh",
+      "premium_rows": 2,
+      "economy_rows": 10,
+      "fare": 6.699153932643653,
+      "unlock_cost": 380000.0,
+      "bearing": -56.0,
+      "ring": 0.19,
+      "travel_parameter": 1.8,
+      "premium_seats": 4,
+      "economy_seats": 40,
+      "capacity": 44,
+      "base_trip_pay": 4716.204368581131,
+      "key": "plane:EDI",
+      "cost_scale_current": 20.747904665431804,
+      "cost_scale_new": 15.842963539089633,
+      "stage_gate": 0.8011045660741088,
+      "stage_transit": 1.2723425461177025,
+      "stage_seating": 0.9424759600871869,
+      "proxy_income_level0": 1368.2055029246098,
+      "proxy_income_level30": 33073.79907015379,
+      "all_upgrade_cost_current": 18785716,
+      "all_upgrade_cost_new": 14344658
+    },
+    {
+      "mode": "plane",
+      "body": "planeL",
+      "id": "NCE",
+      "name": "Nice",
+      "premium_rows": 2,
+      "economy_rows": 13,
+      "fare": 15.259923716626473,
+      "unlock_cost": 1400000.0,
+      "bearing": 29.0,
+      "ring": 0.3,
+      "travel_parameter": 3.4,
+      "premium_seats": 8,
+      "economy_seats": 78,
+      "capacity": 86,
+      "base_trip_pay": 21150.254271244296,
+      "key": "plane:NCE",
+      "cost_scale_current": 49.9027944086143,
+      "cost_scale_new": 44.4730897194309,
+      "stage_gate": 0.9539066269693273,
+      "stage_transit": 1.287773946408592,
+      "stage_seating": 0.8108206329239281,
+      "proxy_income_level0": 3268.4676667044187,
+      "proxy_income_level30": 83618.20229090669,
+      "all_upgrade_cost_current": 45183454,
+      "all_upgrade_cost_new": 40267249
+    },
+    {
+      "mode": "plane",
+      "body": "planeL",
+      "id": "KEF",
+      "name": "Reykjavik",
+      "premium_rows": 2,
+      "economy_rows": 15,
+      "fare": 39.08721364396193,
+      "unlock_cost": 5000000.0,
+      "bearing": -26.0,
+      "ring": 0.6,
+      "travel_parameter": 4.6,
+      "premium_seats": 8,
+      "economy_seats": 90,
+      "capacity": 98,
+      "base_trip_pay": 59334.39031153421,
+      "key": "plane:KEF",
+      "cost_scale_current": 119.04919382988813,
+      "cost_scale_new": 123.37933321253871,
+      "stage_gate": 0.7793243939757559,
+      "stage_transit": 0.9168522282067717,
+      "stage_seating": 1.2377505080791418,
+      "proxy_income_level0": 8089.214766398665,
+      "proxy_income_level30": 208582.62137245483,
+      "all_upgrade_cost_current": 107791199,
+      "all_upgrade_cost_new": 111711858
+    },
+    {
+      "mode": "plane",
+      "body": "planeL",
+      "id": "CAI",
+      "name": "Cairo",
+      "premium_rows": 3,
+      "economy_rows": 16,
+      "fare": 88.11049656553867,
+      "unlock_cost": 17400000.0,
+      "bearing": 12.0,
+      "ring": 0.66,
+      "travel_parameter": 5.8,
+      "premium_seats": 12,
+      "economy_seats": 96,
+      "capacity": 108,
+      "base_trip_pay": 162828.1976531155,
+      "key": "plane:CAI",
+      "cost_scale_current": 283.1802519225682,
+      "cost_scale_new": 340.56223896547147,
+      "stage_gate": 0.9168550134678088,
+      "stage_transit": 0.7793267614476375,
+      "stage_seating": 1.237754268181542,
+      "proxy_income_level0": 20214.549677605894,
+      "proxy_income_level30": 524007.150440538,
+      "all_upgrade_cost_current": 256401837,
+      "all_upgrade_cost_new": 308357593
+    },
+    {
+      "mode": "plane",
+      "body": "planeL",
+      "id": "SIN",
+      "name": "Singapore",
+      "premium_rows": 4,
+      "economy_rows": 17,
+      "fare": 204.6256005527505,
+      "unlock_cost": 61000000.0,
+      "bearing": -7.0,
+      "ring": 1.0,
+      "travel_parameter": 9.0,
+      "premium_seats": 16,
+      "economy_seats": 102,
+      "capacity": 118,
+      "base_trip_pay": 445674.5580038907,
+      "key": "plane:SIN",
+      "cost_scale_current": 672.90445638648,
+      "cost_scale_new": 938.0250395476114,
+      "stage_gate": 0.7793243939757559,
+      "stage_transit": 0.9168522282067717,
+      "stage_seating": 1.2377505080791418,
+      "proxy_income_level0": 50789.123419246804,
+      "proxy_income_level30": 1322443.070475614,
+      "all_upgrade_cost_current": 609270635,
+      "all_upgrade_cost_new": 849319848
+    },
+    {
+      "mode": "bus",
+      "body": "bus",
+      "id": "OXF",
+      "name": "Oxford",
+      "premium_rows": 0,
+      "economy_rows": 11,
+      "fare": 4141.713936576898,
+      "unlock_cost": 0.0,
+      "bearing": -58.0,
+      "ring": 0.35,
+      "travel_parameter": 0.8,
+      "premium_seats": 0,
+      "economy_seats": 44,
+      "capacity": 44,
+      "base_trip_pay": 2004589.5453032188,
+      "key": "bus:OXF",
+      "cost_scale_current": 9635.505729550921,
+      "cost_scale_new": 4817.752864775461,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 436011.1374832588,
+      "proxy_income_level30": 10978859.32131463,
+      "all_upgrade_cost_current": 8715031008,
+      "all_upgrade_cost_new": 4357515508
+    },
+    {
+      "mode": "bus",
+      "body": "bus",
+      "id": "BTN",
+      "name": "Brighton",
+      "premium_rows": 2,
+      "economy_rows": 13,
+      "fare": 7752.530070989346,
+      "unlock_cost": 285000000.0,
+      "bearing": 48.0,
+      "ring": 0.2,
+      "travel_parameter": 0.9,
+      "premium_seats": 4,
+      "economy_seats": 52,
+      "capacity": 56,
+      "base_trip_pay": 6481115.139347094,
+      "key": "bus:BTN",
+      "cost_scale_current": 22888.115936185193,
+      "cost_scale_new": 13250.715292383396,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 1116086.32326558,
+      "proxy_income_level30": 28454399.76360396,
+      "all_upgrade_cost_current": 20701626431,
+      "all_upgrade_cost_new": 11984881524
+    },
+    {
+      "mode": "bus",
+      "body": "busL",
+      "id": "CAM",
+      "name": "Cambridge",
+      "premium_rows": 3,
+      "economy_rows": 18,
+      "fare": 17789.567927496588,
+      "unlock_cost": 1000000000.0,
+      "bearing": -4.0,
+      "ring": 0.5,
+      "travel_parameter": 1.0,
+      "premium_seats": 6,
+      "economy_seats": 72,
+      "capacity": 78,
+      "base_trip_pay": 21134006.697865948,
+      "key": "bus:CAM",
+      "cost_scale_current": 54362.615134807005,
+      "cost_scale_new": 36441.8830697242,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 2587238.79386272,
+      "proxy_income_level30": 70156388.03979078,
+      "all_upgrade_cost_current": 49206153350,
+      "all_upgrade_cost_new": 32985258019
+    },
+    {
+      "mode": "bus",
+      "body": "busL",
+      "id": "BRS",
+      "name": "Bristol",
+      "premium_rows": 4,
+      "economy_rows": 22,
+      "fare": 42888.03592718036,
+      "unlock_cost": 3500000000.0,
+      "bearing": -24.0,
+      "ring": 0.8,
+      "travel_parameter": 1.2,
+      "premium_seats": 8,
+      "economy_seats": 88,
+      "capacity": 96,
+      "base_trip_pay": 64160501.74706183,
+      "key": "bus:BRS",
+      "cost_scale_current": 129114.12319150595,
+      "cost_scale_new": 100218.16766897234,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 6412637.582739235,
+      "proxy_income_level30": 175622601.06896913,
+      "all_upgrade_cost_current": 116867250219,
+      "all_upgrade_cost_new": 90712165235
+    },
+    {
+      "mode": "bus",
+      "body": "busXL",
+      "id": "BHX",
+      "name": "Birmingham",
+      "premium_rows": 5,
+      "economy_rows": 28,
+      "fare": 105693.13281266138,
+      "unlock_cost": 12200000000.0,
+      "bearing": 32.0,
+      "ring": 0.65,
+      "travel_parameter": 1.2,
+      "premium_seats": 10,
+      "economy_seats": 112,
+      "capacity": 122,
+      "base_trip_pay": 199971407.28155535,
+      "key": "bus:BHX",
+      "cost_scale_current": 306648.54866313946,
+      "cost_scale_new": 275603.5808496217,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 15652603.970189689,
+      "proxy_income_level30": 438935173.8918166,
+      "all_upgrade_cost_current": 278028275457,
+      "all_upgrade_cost_new": 249880811841
+    },
+    {
+      "mode": "bus",
+      "body": "busXL",
+      "id": "MAN",
+      "name": "Manchester",
+      "premium_rows": 6,
+      "economy_rows": 33,
+      "fare": 261044.32721322903,
+      "unlock_cost": 43000000000.0,
+      "bearing": 11.0,
+      "ring": 0.95,
+      "travel_parameter": 1.6,
+      "premium_seats": 12,
+      "economy_seats": 132,
+      "capacity": 144,
+      "base_trip_pay": 585783470.266486,
+      "key": "bus:MAN",
+      "cost_scale_current": 728292.4233033938,
+      "cost_scale_new": 757914.160682396,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 38939954.48234166,
+      "proxy_income_level30": 1097641256.681057,
+      "all_upgrade_cost_current": 660319076555,
+      "all_upgrade_cost_new": 687176143368
+    },
+    {
+      "mode": "bus",
+      "body": "busXL",
+      "id": "LIV",
+      "name": "Liverpool",
+      "premium_rows": 6,
+      "economy_rows": 34,
+      "fare": 656789.277307246,
+      "unlock_cost": 150000000000.0,
+      "bearing": 25.0,
+      "ring": 0.8,
+      "travel_parameter": 1.7,
+      "premium_seats": 12,
+      "economy_seats": 136,
+      "capacity": 148,
+      "base_trip_pay": 1502733866.478979,
+      "key": "bus:LIV",
+      "cost_scale_current": 1729696.2590118665,
+      "cost_scale_new": 2084269.0181671132,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 97229400.86111327,
+      "proxy_income_level30": 2742849248.6534595,
+      "all_upgrade_cost_current": 1564459297562,
+      "all_upgrade_cost_new": 1885159910067
+    },
+    {
+      "mode": "bus",
+      "body": "busXL",
+      "id": "LON",
+      "name": "London",
+      "premium_rows": 6,
+      "economy_rows": 35,
+      "fare": 1652016.138171632,
+      "unlock_cost": 520000000000.0,
+      "bearing": -12.0,
+      "ring": 1.0,
+      "travel_parameter": 1.8,
+      "premium_seats": 12,
+      "economy_seats": 140,
+      "capacity": 152,
+      "base_trip_pay": 3852501634.2162466,
+      "key": "bus:LON",
+      "cost_scale_current": 4108030.0205854643,
+      "cost_scale_new": 5731745.715489133,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 242786617.86040622,
+      "proxy_income_level30": 6854109384.276991,
+      "all_upgrade_cost_current": 3715592102875,
+      "all_upgrade_cost_new": 5184195103117
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "MAN",
+      "name": "Manchester",
+      "premium_rows": 2,
+      "economy_rows": 18,
+      "fare": 24959013.728712145,
+      "unlock_cost": 0.0,
+      "bearing": -67.0,
+      "ring": 0.2,
+      "travel_parameter": 1.4,
+      "premium_seats": 4,
+      "economy_seats": 72,
+      "capacity": 76,
+      "base_trip_pay": 26356718497.520027,
+      "key": "train:MAN",
+      "cost_scale_current": 58825870.52053275,
+      "cost_scale_new": 29412935.260266375,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 2125013988.260983,
+      "proxy_income_level30": 68130201944.29934,
+      "all_upgrade_cost_current": 53206266472095,
+      "all_upgrade_cost_new": 26603133236054
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "PAR",
+      "name": "Paris",
+      "premium_rows": 3,
+      "economy_rows": 20,
+      "fare": 57785246.18961891,
+      "unlock_cost": 1740000000000.0,
+      "bearing": 69.0,
+      "ring": 0.33,
+      "travel_parameter": 1.8,
+      "premium_seats": 6,
+      "economy_seats": 80,
+      "capacity": 86,
+      "base_trip_pay": 73733974137.95374,
+      "key": "train:PAR",
+      "cost_scale_current": 139711457.64557928,
+      "cost_scale_new": 80885579.54538953,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 5283946280.836706,
+      "proxy_income_level30": 171015800445.52438,
+      "all_upgrade_cost_current": 126364896582370,
+      "all_upgrade_cost_new": 73158623254712
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "BRU",
+      "name": "Brussels",
+      "premium_rows": 3,
+      "economy_rows": 21,
+      "fare": 145285474.83605427,
+      "unlock_cost": 6000000000000.0,
+      "bearing": 20.0,
+      "ring": 0.45,
+      "travel_parameter": 1.9,
+      "premium_seats": 6,
+      "economy_seats": 84,
+      "capacity": 90,
+      "base_trip_pay": 191776826783.59164,
+      "key": "train:BRU",
+      "cost_scale_current": 331814725.2673963,
+      "cost_scale_new": 222435353.41388395,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 13158072737.228704,
+      "proxy_income_level30": 427242667393.99115,
+      "all_upgrade_cost_current": 300341074739787,
+      "all_upgrade_cost_new": 201336673803779
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "EDI",
+      "name": "Edinburgh",
+      "premium_rows": 4,
+      "economy_rows": 22,
+      "fare": 340668374.7858074,
+      "unlock_cost": 21000000000000.0,
+      "bearing": -35.0,
+      "ring": 0.57,
+      "travel_parameter": 2.2,
+      "premium_seats": 8,
+      "economy_seats": 88,
+      "capacity": 96,
+      "base_trip_pay": 509639888679.5678,
+      "key": "train:EDI",
+      "cost_scale_current": 788059984.1590514,
+      "cost_scale_new": 611697233.8450898,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 32868124950.984444,
+      "proxy_income_level30": 1071915289727.5945,
+      "all_upgrade_cost_current": 713310063051053,
+      "all_upgrade_cost_new": 553675863783144
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "AMS",
+      "name": "Amsterdam",
+      "premium_rows": 4,
+      "economy_rows": 24,
+      "fare": 863165945.1699775,
+      "unlock_cost": 75000000000000.0,
+      "bearing": -2.0,
+      "ring": 0.7,
+      "travel_parameter": 2.4,
+      "premium_seats": 8,
+      "economy_seats": 96,
+      "capacity": 104,
+      "base_trip_pay": 1367254857149.2444,
+      "key": "train:AMS",
+      "cost_scale_current": 1871642472.4020803,
+      "cost_scale_new": 1682167407.553037,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 81643711858.14064,
+      "proxy_income_level30": 2676253816215.1626,
+      "all_upgrade_cost_current": 1696957416376283,
+      "all_upgrade_cost_new": 1525166531495737
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "FRA",
+      "name": "Frankfurt",
+      "premium_rows": 5,
+      "economy_rows": 25,
+      "fare": 2048898008.0583234,
+      "unlock_cost": 260000000000000.0,
+      "bearing": 26.0,
+      "ring": 0.82,
+      "travel_parameter": 2.9,
+      "premium_seats": 10,
+      "economy_seats": 100,
+      "capacity": 110,
+      "base_trip_pay": 3606060494182.6494,
+      "key": "train:FRA",
+      "cost_scale_current": 4445150880.435854,
+      "cost_scale_new": 4625960388.024235,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 203993177384.59128,
+      "proxy_income_level30": 6709439022102.096,
+      "all_upgrade_cost_current": 4030273871583037,
+      "all_upgrade_cost_new": 4194207977256370
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "LYS",
+      "name": "Lyon",
+      "premium_rows": 6,
+      "economy_rows": 26,
+      "fare": 4898113871.080753,
+      "unlock_cost": 900000000000000.0,
+      "bearing": -21.0,
+      "ring": 0.95,
+      "travel_parameter": 3.1,
+      "premium_seats": 12,
+      "economy_seats": 104,
+      "capacity": 116,
+      "base_trip_pay": 9482748454412.34,
+      "key": "train:LYS",
+      "cost_scale_current": 10557233348.049816,
+      "cost_scale_new": 12721391087.371809,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 509602896572.302,
+      "proxy_income_level30": 16812258274881.674,
+      "all_upgrade_cost_current": 9571900451369693,
+      "all_upgrade_cost_new": 11534071955865042
+    },
+    {
+      "mode": "train",
+      "body": "train",
+      "id": "ROM",
+      "name": "Rome",
+      "premium_rows": 6,
+      "economy_rows": 27,
+      "fare": 12341691619.874676,
+      "unlock_cost": 3200000000000000.0,
+      "bearing": 10.0,
+      "ring": 1.0,
+      "travel_parameter": 3.4,
+      "premium_seats": 12,
+      "economy_seats": 108,
+      "capacity": 120,
+      "base_trip_pay": 24436549407351.863,
+      "key": "train:ROM",
+      "cost_scale_current": 25073429207.240047,
+      "cost_scale_new": 34983825513.9346,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 1270842818855.1543,
+      "proxy_income_level30": 42004828337273.47,
+      "all_upgrade_cost_current": 22678177882704922,
+      "all_upgrade_cost_new": 31641839313843496
+    },
+    {
+      "mode": "ship",
+      "body": "shipS",
+      "id": "ROT",
+      "name": "Rotterdam",
+      "premium_rows": 2,
+      "economy_rows": 12,
+      "fare": 134749628439.51047,
+      "unlock_cost": 0.0,
+      "bearing": 71.0,
+      "ring": 0.2,
+      "travel_parameter": 3.0,
+      "premium_seats": 4,
+      "economy_seats": 72,
+      "capacity": 76,
+      "base_trip_pay": 142295607632123.06,
+      "key": "ship:ROT",
+      "cost_scale_current": 359044681519.28033,
+      "cost_scale_new": 179522340759.64017,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 18069620043563.53,
+      "proxy_income_level30": 463777436092570.94,
+      "all_upgrade_cost_current": 324745334514602577,
+      "all_upgrade_cost_new": 162372667257301292
+    },
+    {
+      "mode": "ship",
+      "body": "shipS",
+      "id": "BIO",
+      "name": "Bilbao",
+      "premium_rows": 3,
+      "economy_rows": 16,
+      "fare": 322258836217.5898,
+      "unlock_cost": 1.06e+16,
+      "bearing": -66.0,
+      "ring": 0.35,
+      "travel_parameter": 4.4,
+      "premium_seats": 6,
+      "economy_seats": 96,
+      "capacity": 102,
+      "base_trip_pay": 467919830187940.4,
+      "key": "ship:BIO",
+      "cost_scale_current": 852731118668.928,
+      "cost_scale_new": 493686437119.3291,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 44783416914564.55,
+      "proxy_income_level30": 1167673954001511.0,
+      "all_upgrade_cost_current": 771270169527025611,
+      "all_upgrade_cost_new": 446524834985000828
+    },
+    {
+      "mode": "ship",
+      "body": "ship",
+      "id": "OSL",
+      "name": "Oslo",
+      "premium_rows": 3,
+      "economy_rows": 14,
+      "fare": 695354738823.1453,
+      "unlock_cost": 3.7e+16,
+      "bearing": 28.0,
+      "ring": 0.5,
+      "travel_parameter": 5.0,
+      "premium_seats": 12,
+      "economy_seats": 112,
+      "capacity": 124,
+      "base_trip_pay": 1407397991378046.0,
+      "key": "ship:OSL",
+      "cost_scale_current": 2025236406892.1406,
+      "cost_scale_new": 1357637702116.8113,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 111724854439790.89,
+      "proxy_income_level30": 2939499947374592.5,
+      "all_upgrade_cost_current": 1833136484699300811,
+      "all_upgrade_cost_new": 1228861576991289065
+    },
+    {
+      "mode": "ship",
+      "body": "ship",
+      "id": "LIS",
+      "name": "Lisbon",
+      "premium_rows": 4,
+      "economy_rows": 18,
+      "fare": 1700191979216.4163,
+      "unlock_cost": 1.3e+17,
+      "bearing": -34.0,
+      "ring": 0.65,
+      "travel_parameter": 5.2,
+      "premium_seats": 16,
+      "economy_seats": 144,
+      "capacity": 160,
+      "base_trip_pay": 4488506825131339.5,
+      "key": "ship:LIS",
+      "cost_scale_current": 4809936466415.429,
+      "cost_scale_new": 3733503680869.0596,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 277860740205483.53,
+      "proxy_income_level30": 7375480375752414.0,
+      "all_upgrade_cost_current": 4353699151203014533,
+      "all_upgrade_cost_new": 3379369336769336859
+    },
+    {
+      "mode": "ship",
+      "body": "shipXL",
+      "id": "KEF",
+      "name": "Reykjavik",
+      "premium_rows": 5,
+      "economy_rows": 40,
+      "fare": 3961015663500.355,
+      "unlock_cost": 4.5e+17,
+      "bearing": -3.0,
+      "ring": 0.8,
+      "travel_parameter": 6.0,
+      "premium_seats": 10,
+      "economy_seats": 160,
+      "capacity": 170,
+      "base_trip_pay": 9585657905670860.0,
+      "key": "ship:KEF",
+      "cost_scale_current": 11423599107776.74,
+      "cost_scale_new": 10267135122447.828,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 536801137126665.1,
+      "proxy_income_level30": 1.6268237223346432e+16,
+      "all_upgrade_cost_current": 10357406135784000527,
+      "all_upgrade_cost_new": 9308877816079157364
+    },
+    {
+      "mode": "ship",
+      "body": "shipXL",
+      "id": "NYC",
+      "name": "New York",
+      "premium_rows": 7,
+      "economy_rows": 46,
+      "fare": 9417557802244.63,
+      "unlock_cost": 1.6e+18,
+      "bearing": 21.0,
+      "ring": 0.95,
+      "travel_parameter": 9.0,
+      "premium_seats": 14,
+      "economy_seats": 184,
+      "capacity": 198,
+      "base_trip_pay": 2.7762960401017176e+16,
+      "key": "ship:NYC",
+      "cost_scale_current": 27131047881003.684,
+      "cost_scale_new": 28234621586800.543,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 1338735300123307.5,
+      "proxy_income_level30": 4.078180200086667e+16,
+      "all_upgrade_cost_current": 24598839572517761117,
+      "all_upgrade_cost_new": 25599413994280256695
+    },
+    {
+      "mode": "ship",
+      "body": "shipXL",
+      "id": "RIO",
+      "name": "Rio de Janeiro",
+      "premium_rows": 7,
+      "economy_rows": 48,
+      "fare": 23725321793067.1,
+      "unlock_cost": 5.6e+18,
+      "bearing": 8.0,
+      "ring": 0.72,
+      "travel_parameter": 9.5,
+      "premium_seats": 14,
+      "economy_seats": 192,
+      "capacity": 206,
+      "base_trip_pay": 7.203007696375173e+16,
+      "key": "ship:RIO",
+      "cost_scale_current": 64436238717411.8,
+      "cost_scale_new": 77645209363782.72,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 3340695732362079.0,
+      "proxy_income_level30": 1.0189232191279611e+17,
+      "all_upgrade_cost_current": 58280679186233843108,
+      "all_upgrade_cost_new": 70227803908979374917
+    },
+    {
+      "mode": "ship",
+      "body": "shipXL",
+      "id": "SYD",
+      "name": "Sydney",
+      "premium_rows": 8,
+      "economy_rows": 48,
+      "fare": 57479533535754.63,
+      "unlock_cost": 1.95e+19,
+      "bearing": -17.0,
+      "ring": 1.0,
+      "travel_parameter": 10.0,
+      "premium_seats": 16,
+      "economy_seats": 192,
+      "capacity": 208,
+      "base_trip_pay": 1.820951622412707e+17,
+      "key": "ship:SYD",
+      "cost_scale_current": 153036066953875.5,
+      "cost_scale_new": 213524325750497.22,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 8365575831584708.0,
+      "proxy_income_level30": 2.5522745287086128e+17,
+      "all_upgrade_cost_current": 138416613067325704894,
+      "all_upgrade_cost_new": 193126460749778972609
+    },
+    {
+      "mode": "truck",
+      "body": "truck",
+      "id": "CHI",
+      "name": "Chicago",
+      "premium_rows": 1,
+      "economy_rows": 10,
+      "fare": 692709202393547.4,
+      "unlock_cost": 0.0,
+      "bearing": -52.0,
+      "ring": 0.2,
+      "travel_parameter": 0.8,
+      "premium_seats": 2,
+      "economy_seats": 40,
+      "capacity": 42,
+      "base_trip_pay": 3.962296637691091e+17,
+      "key": "truck:CHI",
+      "cost_scale_current": 2191434823972647.8,
+      "cost_scale_new": 1095717411986323.9,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 1.2611429127900272e+17,
+      "proxy_income_level30": 2.576509638822396e+18,
+      "all_upgrade_cost_current": 1982088223578745240624,
+      "all_upgrade_cost_new": 991044111789372620312
+    },
+    {
+      "mode": "truck",
+      "body": "truck",
+      "id": "MIA",
+      "name": "Miami",
+      "premium_rows": 2,
+      "economy_rows": 12,
+      "fare": 1515752874389037.8,
+      "unlock_cost": 6.5e+19,
+      "bearing": 45.0,
+      "ring": 0.28,
+      "travel_parameter": 1.0,
+      "premium_seats": 4,
+      "economy_seats": 48,
+      "capacity": 52,
+      "base_trip_pay": 1.200476276516118e+18,
+      "key": "truck:MIA",
+      "cost_scale_current": 5204657706935281.0,
+      "cost_scale_new": 3013222882962512.5,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 3.147362053458019e+17,
+      "proxy_income_level30": 6.557127835591627e+18,
+      "all_upgrade_cost_current": 4707459530999739380192,
+      "all_upgrade_cost_new": 2725371307420884894384
+    },
+    {
+      "mode": "truck",
+      "body": "truckUS",
+      "id": "DAL",
+      "name": "Dallas",
+      "premium_rows": 2,
+      "economy_rows": 13,
+      "fare": 3807749592674415.0,
+      "unlock_cost": 2.3e+20,
+      "bearing": -12.0,
+      "ring": 0.38,
+      "travel_parameter": 1.2,
+      "premium_seats": 4,
+      "economy_seats": 52,
+      "capacity": 56,
+      "base_trip_pay": 3.1832786594758113e+18,
+      "key": "truck:DAL",
+      "cost_scale_current": 1.2361062053971508e+16,
+      "cost_scale_new": 8286362928147065.0,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 7.990959582979747e+17,
+      "proxy_income_level30": 1.6750034258089593e+19,
+      "all_upgrade_cost_current": 11188577177288538964480,
+      "all_upgrade_cost_new": 7500375836298651861056
+    },
+    {
+      "mode": "truck",
+      "body": "truckSemi",
+      "id": "SEA",
+      "name": "Seattle",
+      "premium_rows": 2,
+      "economy_rows": 12,
+      "fare": 9650803367998424.0,
+      "unlock_cost": 8e+20,
+      "bearing": 18.0,
+      "ring": 0.48,
+      "travel_parameter": 1.6,
+      "premium_seats": 4,
+      "economy_seats": 72,
+      "capacity": 76,
+      "base_trip_pay": 1.0191248356606337e+19,
+      "key": "truck:SEA",
+      "cost_scale_current": 2.9357522378182516e+16,
+      "cost_scale_new": 2.2787498052404624e+16,
+      "stage_gate": 0.8008565310492505,
+      "stage_transit": 1.271948608137045,
+      "stage_seating": 0.9421841541755888,
+      "proxy_income_level0": 1.924474725546933e+18,
+      "proxy_income_level30": 4.122582904949329e+19,
+      "all_upgrade_cost_current": 26572870796060445403392,
+      "all_upgrade_cost_new": 20626033549821469523968
+    },
+    {
+      "mode": "truck",
+      "body": "truckSemiUS",
+      "id": "HAM",
+      "name": "Hamburg",
+      "premium_rows": 3,
+      "economy_rows": 13,
+      "fare": 2.2607278129474256e+16,
+      "unlock_cost": 2.8e+21,
+      "bearing": -33.0,
+      "ring": 0.58,
+      "travel_parameter": 2.0,
+      "premium_seats": 6,
+      "economy_seats": 78,
+      "capacity": 84,
+      "base_trip_pay": 2.834952677436072e+19,
+      "key": "truck:HAM",
+      "cost_scale_current": 6.9724115648183624e+16,
+      "cost_scale_new": 6.2665619644112936e+16,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 4.856699577598973e+18,
+      "proxy_income_level30": 1.0497136388992226e+20,
+      "all_upgrade_cost_current": 63216590184348409211904,
+      "all_upgrade_cost_new": 56816881201896486114304
+    },
+    {
+      "mode": "truck",
+      "body": "truckSemi",
+      "id": "MIL",
+      "name": "Milan",
+      "premium_rows": 3,
+      "economy_rows": 13,
+      "fare": 5.616029672019638e+16,
+      "unlock_cost": 9.7e+21,
+      "bearing": 5.0,
+      "ring": 0.68,
+      "travel_parameter": 2.2,
+      "premium_seats": 6,
+      "economy_seats": 78,
+      "capacity": 84,
+      "base_trip_pay": 7.042501208712627e+19,
+      "key": "truck:MIL",
+      "cost_scale_current": 1.6559477466443622e+17,
+      "cost_scale_new": 1.7233045402131088e+17,
+      "stage_gate": 0.9181011997913401,
+      "stage_transit": 0.780386019822639,
+      "stage_seating": 1.239436619718309,
+      "proxy_income_level0": 1.2099685947207455e+19,
+      "proxy_income_level30": 2.607665951389275e+20,
+      "all_upgrade_cost_current": 150139401687827578440704,
+      "all_upgrade_cost_new": 156246423305215604088832
+    },
+    {
+      "mode": "truck",
+      "body": "truckSemiUS",
+      "id": "MAD",
+      "name": "Madrid",
+      "premium_rows": 4,
+      "economy_rows": 14,
+      "fare": 1.3364090277879787e+17,
+      "unlock_cost": 3.4e+22,
+      "bearing": -24.0,
+      "ring": 0.78,
+      "travel_parameter": 2.6,
+      "premium_seats": 8,
+      "economy_seats": 84,
+      "capacity": 92,
+      "base_trip_pay": 1.9404659083481455e+20,
+      "key": "truck:MAD",
+      "cost_scale_current": 3.932875898280361e+17,
+      "cost_scale_new": 4.7390874855860525e+17,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 3.0493209949527716e+19,
+      "proxy_income_level30": 6.624268108090946e+20,
+      "all_upgrade_cost_current": 355717036048865816786944,
+      "all_upgrade_cost_new": 428636498468218308497408
+    },
+    {
+      "mode": "truck",
+      "body": "truckHV",
+      "id": "WAW",
+      "name": "Warsaw",
+      "premium_rows": 3,
+      "economy_rows": 17,
+      "fare": 2.996251622444721e+17,
+      "unlock_cost": 1.2e+23,
+      "bearing": 24.0,
+      "ring": 0.88,
+      "travel_parameter": 3.0,
+      "premium_seats": 6,
+      "economy_seats": 102,
+      "capacity": 108,
+      "base_trip_pay": 4.5483099628710874e+20,
+      "key": "truck:WAW",
+      "cost_scale_current": 9.340580258415859e+17,
+      "cost_scale_new": 1.303249058536165e+18,
+      "stage_gate": 1.2864103952355168,
+      "stage_transit": 0.9528965890633457,
+      "stage_seating": 0.8099621007038439,
+      "proxy_income_level0": 5.48356705302199e+19,
+      "proxy_income_level30": 1.5502285535376706e+21,
+      "all_upgrade_cost_current": 844827960616056481312768,
+      "all_upgrade_cost_new": 1178750370787600977092608
+    }
+  ],
+  "bodies": {
+    "plane": {
+      "check_mul": 1,
+      "stow_mul": 1,
+      "walk_mul": 1,
+      "prediction_mul": 1.08,
+      "door_mul": 1,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 1
+    },
+    "planeL": {
+      "check_mul": 1,
+      "stow_mul": 1,
+      "walk_mul": 1,
+      "prediction_mul": 1.08,
+      "door_mul": 1,
+      "columns": 6.0,
+      "premium_columns": 4.0,
+      "segments": 1
+    },
+    "bus": {
+      "check_mul": 1.26,
+      "stow_mul": 1.37,
+      "walk_mul": 0.45,
+      "prediction_mul": 1.19,
+      "door_mul": 1.26,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 1.0
+    },
+    "busL": {
+      "check_mul": 1.23,
+      "stow_mul": 1.45,
+      "walk_mul": 0.45,
+      "prediction_mul": 1.19,
+      "door_mul": 1.47,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 2.0
+    },
+    "busXL": {
+      "check_mul": 1.28,
+      "stow_mul": 1.48,
+      "walk_mul": 0.45,
+      "prediction_mul": 1.14,
+      "door_mul": 1.55,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 2.0
+    },
+    "train": {
+      "check_mul": 1.39,
+      "stow_mul": 2.27,
+      "walk_mul": 2.4,
+      "prediction_mul": 1.31,
+      "door_mul": 2.03,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 3.0
+    },
+    "ship": {
+      "check_mul": 1.3,
+      "stow_mul": 1.6,
+      "walk_mul": 1.3,
+      "prediction_mul": 1.14,
+      "door_mul": 1.39,
+      "columns": 8.0,
+      "premium_columns": 4.0,
+      "segments": 1.0
+    },
+    "shipS": {
+      "check_mul": 1.28,
+      "stow_mul": 1.61,
+      "walk_mul": 1.3,
+      "prediction_mul": 1.16,
+      "door_mul": 1.39,
+      "columns": 6.0,
+      "premium_columns": 2.0,
+      "segments": 1.0
+    },
+    "shipXL": {
+      "check_mul": 1.12,
+      "stow_mul": 1.54,
+      "walk_mul": 1.3,
+      "prediction_mul": 1.2,
+      "door_mul": 1.47,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 2.0
+    },
+    "truck": {
+      "check_mul": 0.77,
+      "stow_mul": 1.0,
+      "walk_mul": 1.0,
+      "prediction_mul": 1.23,
+      "door_mul": 0.86,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 1.0
+    },
+    "truckUS": {
+      "check_mul": 0.8,
+      "stow_mul": 1.04,
+      "walk_mul": 1.0,
+      "prediction_mul": 1.2,
+      "door_mul": 0.92,
+      "columns": 4.0,
+      "premium_columns": 2.0,
+      "segments": 1.0
+    },
+    "truckSemi": {
+      "check_mul": 0.8,
+      "stow_mul": 1.03,
+      "walk_mul": 1.0,
+      "prediction_mul": 1.2,
+      "door_mul": 0.91,
+      "columns": 6.0,
+      "premium_columns": 2.0,
+      "segments": 1.0
+    },
+    "truckSemiUS": {
+      "check_mul": 0.82,
+      "stow_mul": 1.04,
+      "walk_mul": 1.0,
+      "prediction_mul": 1.2,
+      "door_mul": 0.94,
+      "columns": 6.0,
+      "premium_columns": 2.0,
+      "segments": 1.0
+    },
+    "truckHV": {
+      "check_mul": 0.72,
+      "stow_mul": 1.01,
+      "walk_mul": 1.0,
+      "prediction_mul": 1.37,
+      "door_mul": 0.92,
+      "columns": 6.0,
+      "premium_columns": 2.0,
+      "segments": 2.0
+    },
+    "truckRT": {
+      "check_mul": 0.73,
+      "stow_mul": 1.0,
+      "walk_mul": 1.0,
+      "prediction_mul": 1.35,
+      "door_mul": 0.95,
+      "columns": 6.0,
+      "premium_columns": 2.0,
+      "segments": 2.0
+    }
+  },
+  "curves": [
+    [
+      0,
+      0.25,
+      0.0,
+      1.0,
+      9.0,
+      3.5,
+      1.0,
+      3.0,
+      0.0,
+      1.0,
+      50,
+      50,
+      100,
+      40,
+      50,
+      80,
+      40,
+      40,
+      100
+    ],
+    [
+      1,
+      0.26125,
+      0.0217178634318137,
+      1.2,
+      8.639999999999999,
+      3.0434782608695654,
+      1.2,
+      2.857142857142857,
+      0.0217178634318137,
+      1.2,
+      77,
+      77,
+      154,
+      62,
+      77,
+      123,
+      62,
+      62,
+      154
+    ],
+    [
+      2,
+      0.2725,
+      0.0425124473381846,
+      1.4,
+      8.307692307692308,
+      2.692307692307692,
+      1.4,
+      2.727272727272727,
+      0.0425124473381846,
+      1.4,
+      109,
+      109,
+      218,
+      87,
+      109,
+      174,
+      87,
+      87,
+      218
+    ],
+    [
+      3,
+      0.28375,
+      0.06244140258766173,
+      1.6,
+      8.0,
+      2.413793103448276,
+      1.6,
+      2.608695652173913,
+      0.06244140258766173,
+      1.6,
+      146,
+      146,
+      293,
+      117,
+      146,
+      234,
+      117,
+      117,
+      293
+    ],
+    [
+      4,
+      0.295,
+      0.08155767817781046,
+      1.8,
+      7.7142857142857135,
+      2.1875,
+      1.8,
+      2.5,
+      0.08155767817781046,
+      1.8,
+      190,
+      190,
+      381,
+      152,
+      190,
+      305,
+      152,
+      152,
+      381
+    ],
+    [
+      5,
+      0.30625,
+      0.09990999099909992,
+      2.0,
+      7.448275862068966,
+      2.0,
+      2.0,
+      2.4,
+      0.09990999099909992,
+      2.0,
+      242,
+      242,
+      483,
+      193,
+      242,
+      387,
+      193,
+      193,
+      483
+    ],
+    [
+      6,
+      0.3175,
+      0.11754324038122133,
+      2.2,
+      7.2,
+      1.842105263157895,
+      2.2,
+      2.3076923076923075,
+      0.11754324038122133,
+      2.2,
+      301,
+      301,
+      602,
+      241,
+      301,
+      482,
+      241,
+      241,
+      602
+    ],
+    [
+      7,
+      0.32875,
+      0.1344988748485373,
+      2.4000000000000004,
+      6.967741935483871,
+      1.707317073170732,
+      2.4000000000000004,
+      2.222222222222222,
+      0.1344988748485373,
+      2.4000000000000004,
+      370,
+      370,
+      741,
+      296,
+      370,
+      592,
+      296,
+      296,
+      741
+    ],
+    [
+      8,
+      0.33999999999999997,
+      0.15081521739130432,
+      2.6,
+      6.75,
+      1.5909090909090908,
+      2.6,
+      2.142857142857143,
+      0.15081521739130432,
+      2.6,
+      450,
+      450,
+      900,
+      360,
+      450,
+      720,
+      360,
+      360,
+      900
+    ],
+    [
+      9,
+      0.35125,
+      0.16652775462577096,
+      2.8,
+      6.545454545454546,
+      1.4893617021276597,
+      2.8,
+      2.0689655172413794,
+      0.16652775462577096,
+      2.8,
+      542,
+      542,
+      1085,
+      434,
+      542,
+      868,
+      434,
+      434,
+      1085
+    ],
+    [
+      10,
+      0.3625,
+      0.1816693944353519,
+      3.0,
+      6.352941176470588,
+      1.4,
+      3.0,
+      2.0,
+      0.1816693944353519,
+      3.0,
+      648,
+      648,
+      1297,
+      519,
+      648,
+      1037,
+      519,
+      519,
+      1297
+    ],
+    [
+      11,
+      0.37375,
+      0.19627069602957725,
+      3.2,
+      6.171428571428572,
+      1.3207547169811322,
+      3.2,
+      1.9354838709677418,
+      0.19627069602957725,
+      3.2,
+      770,
+      770,
+      1541,
+      616,
+      770,
+      1233,
+      616,
+      616,
+      1541
+    ],
+    [
+      12,
+      0.385,
+      0.2103600758054327,
+      3.4000000000000004,
+      6.0,
+      1.25,
+      3.4000000000000004,
+      1.875,
+      0.2103600758054327,
+      3.4000000000000004,
+      910,
+      910,
+      1820,
+      728,
+      910,
+      1456,
+      728,
+      728,
+      1820
+    ],
+    [
+      13,
+      0.39625,
+      0.22396399192922545,
+      3.6,
+      5.837837837837839,
+      1.1864406779661016,
+      3.6,
+      1.8181818181818183,
+      0.22396399192922545,
+      3.6,
+      1070,
+      1070,
+      2140,
+      856,
+      1070,
+      1712,
+      856,
+      856,
+      2140
+    ],
+    [
+      14,
+      0.4075,
+      0.23710711016173325,
+      3.8000000000000003,
+      5.684210526315789,
+      1.129032258064516,
+      3.8000000000000003,
+      1.764705882352941,
+      0.23710711016173325,
+      3.8000000000000003,
+      1253,
+      1253,
+      2506,
+      1003,
+      1253,
+      2005,
+      1003,
+      1003,
+      2506
+    ],
+    [
+      15,
+      0.41874999999999996,
+      0.24981245311327827,
+      4.0,
+      5.538461538461538,
+      1.0769230769230769,
+      4.0,
+      1.7142857142857142,
+      0.24981245311327827,
+      4.0,
+      1462,
+      1462,
+      2924,
+      1170,
+      1462,
+      2339,
+      1170,
+      1170,
+      2924
+    ],
+    [
+      16,
+      0.43,
+      0.2621015348288075,
+      4.2,
+      5.4,
+      1.0294117647058825,
+      4.2,
+      1.6666666666666665,
+      0.2621015348288075,
+      4.2,
+      1700,
+      1700,
+      3400,
+      1360,
+      1700,
+      2720,
+      1360,
+      1360,
+      3400
+    ],
+    [
+      17,
+      0.44125000000000003,
+      0.2739944823580659,
+      4.4,
+      5.268292682926829,
+      0.9859154929577465,
+      4.4,
+      1.6216216216216215,
+      0.2739944823580659,
+      4.4,
+      1971,
+      1971,
+      3942,
+      1577,
+      1971,
+      3154,
+      1577,
+      1577,
+      3942
+    ],
+    [
+      18,
+      0.4525,
+      0.28551014575593026,
+      4.6,
+      5.142857142857143,
+      0.945945945945946,
+      4.6,
+      1.5789473684210527,
+      0.28551014575593026,
+      4.6,
+      2280,
+      2280,
+      4559,
+      1824,
+      2280,
+      3647,
+      1824,
+      1824,
+      4559
+    ],
+    [
+      19,
+      0.46375,
+      0.29666619777746517,
+      4.800000000000001,
+      5.023255813953488,
+      0.9090909090909091,
+      4.800000000000001,
+      1.5384615384615383,
+      0.29666619777746517,
+      4.800000000000001,
+      2630,
+      2630,
+      5260,
+      2104,
+      2630,
+      4208,
+      2104,
+      2104,
+      5260
+    ],
+    [
+      20,
+      0.475,
+      0.30747922437673125,
+      5.0,
+      4.909090909090908,
+      0.875,
+      5.0,
+      1.5,
+      0.30747922437673125,
+      5.0,
+      3027,
+      3027,
+      6055,
+      2422,
+      3027,
+      4844,
+      2422,
+      2422,
+      6055
+    ],
+    [
+      21,
+      0.48624999999999996,
+      0.3179648069840404,
+      5.2,
+      4.8,
+      0.8433734939759036,
+      5.2,
+      1.4634146341463417,
+      0.3179648069840404,
+      5.2,
+      3478,
+      3478,
+      6956,
+      2782,
+      3478,
+      5565,
+      2782,
+      2782,
+      6956
+    ],
+    [
+      22,
+      0.4975,
+      0.32813759742004833,
+      5.4,
+      4.695652173913044,
+      0.813953488372093,
+      5.4,
+      1.4285714285714286,
+      0.32813759742004833,
+      5.4,
+      3989,
+      3989,
+      7977,
+      3191,
+      3989,
+      6382,
+      3191,
+      3191,
+      7977
+    ],
+    [
+      23,
+      0.50875,
+      0.3380113862041574,
+      5.6000000000000005,
+      4.595744680851063,
+      0.7865168539325844,
+      5.6000000000000005,
+      1.3953488372093021,
+      0.3380113862041574,
+      5.6000000000000005,
+      4567,
+      4567,
+      9133,
+      3653,
+      4567,
+      7307,
+      3653,
+      3653,
+      9133
+    ],
+    [
+      24,
+      0.52,
+      0.3475991649269311,
+      5.800000000000001,
+      4.5,
+      0.7608695652173914,
+      5.800000000000001,
+      1.3636363636363635,
+      0.3475991649269311,
+      5.800000000000001,
+      5220,
+      5220,
+      10441,
+      4176,
+      5220,
+      8353,
+      4176,
+      4176,
+      10441
+    ],
+    [
+      25,
+      0.53125,
+      0.35691318327974286,
+      6.0,
+      4.408163265306122,
+      0.7368421052631579,
+      6.0,
+      1.3333333333333333,
+      0.35691318327974286,
+      6.0,
+      5959,
+      5959,
+      11918,
+      4767,
+      5959,
+      9535,
+      4767,
+      4767,
+      11918
+    ],
+    [
+      26,
+      0.5425,
+      0.36596500126806997,
+      6.2,
+      4.32,
+      0.7142857142857142,
+      6.2,
+      1.3043478260869565,
+      0.36596500126806997,
+      6.2,
+      6793,
+      6793,
+      13587,
+      5435,
+      6793,
+      10869,
+      5435,
+      5435,
+      13587
+    ],
+    [
+      27,
+      0.55375,
+      0.3747655370764037,
+      6.4,
+      4.235294117647059,
+      0.6930693069306931,
+      6.4,
+      1.276595744680851,
+      0.3747655370764037,
+      6.4,
+      7735,
+      7735,
+      15470,
+      6188,
+      7735,
+      12376,
+      6188,
+      6188,
+      15470
+    ],
+    [
+      28,
+      0.565,
+      0.38332511100148003,
+      6.6000000000000005,
+      4.153846153846153,
+      0.673076923076923,
+      6.6000000000000005,
+      1.2499999999999998,
+      0.38332511100148003,
+      6.6000000000000005,
+      8797,
+      8797,
+      17594,
+      7037,
+      8797,
+      14075,
+      7037,
+      7037,
+      17594
+    ],
+    [
+      29,
+      0.5762499999999999,
+      0.3916534858255263,
+      6.800000000000001,
+      4.075471698113208,
+      0.6542056074766356,
+      6.800000000000001,
+      1.2244897959183672,
+      0.3916534858255263,
+      6.800000000000001,
+      9994,
+      9994,
+      19987,
+      7995,
+      9994,
+      15990,
+      7995,
+      7995,
+      19987
+    ],
+    [
+      30,
+      0.5874999999999999,
+      0.39975990396158456,
+      7.0,
+      4.0,
+      0.6363636363636364,
+      7.0,
+      1.2,
+      0.39975990396158456,
+      7.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "research": [
+    {
+      "key": "arr",
+      "tab": 0,
+      "name": "Departure Bonus",
+      "max_level": 100,
+      "base_cost": 3000,
+      "duration_parameter_minutes": 2,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "rsp",
+      "tab": 0,
+      "name": "Research speed",
+      "max_level": 100,
+      "base_cost": 5000,
+      "duration_parameter_minutes": 3,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "tds",
+      "tab": 1,
+      "name": "Gate discount",
+      "max_level": 100,
+      "base_cost": 8000,
+      "duration_parameter_minutes": 12,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "bds",
+      "tab": 2,
+      "name": "Transit discount",
+      "max_level": 100,
+      "base_cost": 8000,
+      "duration_parameter_minutes": 12,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "ccr",
+      "tab": 3,
+      "name": "Premium crew",
+      "max_level": 100,
+      "base_cost": 4000,
+      "duration_parameter_minutes": 4,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "cds",
+      "tab": 3,
+      "name": "Seating discount",
+      "max_level": 100,
+      "base_cost": 8000,
+      "duration_parameter_minutes": 12,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "cbus",
+      "tab": 0,
+      "name": "Bus certificate",
+      "max_level": 1,
+      "base_cost": 1800000,
+      "duration_parameter_minutes": 240,
+      "vehicle_tag": "BUS",
+      "income_need": 757000
+    },
+    {
+      "key": "ctrn",
+      "tab": 0,
+      "name": "Train certificate",
+      "max_level": 1,
+      "base_cost": 6800000000,
+      "duration_parameter_minutes": 480,
+      "vehicle_tag": "TRAIN",
+      "income_need": 4510000000
+    },
+    {
+      "key": "cshp",
+      "tab": 0,
+      "name": "Ship certificate",
+      "max_level": 1,
+      "base_cost": 30000000000000,
+      "duration_parameter_minutes": 720,
+      "vehicle_tag": "SHIP",
+      "income_need": 27400000000000
+    },
+    {
+      "key": "ctrk",
+      "tab": 0,
+      "name": "Truck certificate",
+      "max_level": 1,
+      "base_cost": 180000000000000000,
+      "duration_parameter_minutes": 960,
+      "vehicle_tag": "TRUCK",
+      "income_need": 169000000000000000
+    },
+    {
+      "key": "gchk",
+      "tab": 1,
+      "name": "Network check-in",
+      "max_level": 100,
+      "base_cost": 6000,
+      "duration_parameter_minutes": 6,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "gcin",
+      "tab": 1,
+      "name": "Network gate pay",
+      "max_level": 100,
+      "base_cost": 6000,
+      "duration_parameter_minutes": 6,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "gwlk",
+      "tab": 2,
+      "name": "Network walking",
+      "max_level": 100,
+      "base_cost": 6000,
+      "duration_parameter_minutes": 6,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "gdor",
+      "tab": 2,
+      "name": "Network boarding",
+      "max_level": 100,
+      "base_cost": 6000,
+      "duration_parameter_minutes": 6,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "gdin",
+      "tab": 2,
+      "name": "Network door pay",
+      "max_level": 100,
+      "base_cost": 6000,
+      "duration_parameter_minutes": 6,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "gsea",
+      "tab": 3,
+      "name": "Network stowing",
+      "max_level": 100,
+      "base_cost": 6000,
+      "duration_parameter_minutes": 6,
+      "vehicle_tag": null,
+      "income_need": null
+    },
+    {
+      "key": "gsin",
+      "tab": 3,
+      "name": "Network seat pay",
+      "max_level": 100,
+      "base_cost": 6000,
+      "duration_parameter_minutes": 6,
+      "vehicle_tag": null,
+      "income_need": null
+    }
+  ],
+  "managers": [
+    {
+      "id": "mgr_common_001",
+      "number": 1,
+      "name": "R. VANCE",
+      "role": "Gate",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_002",
+      "number": 2,
+      "name": "M. OSEI",
+      "role": "Gate",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_003",
+      "number": 3,
+      "name": "D. KOWALCZYK",
+      "role": "Gate",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_rare_001",
+      "number": 4,
+      "name": "L. TRAN",
+      "role": "Gate",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_002",
+      "number": 5,
+      "name": "S. MOREAU",
+      "role": "Gate",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_epic_001",
+      "number": 6,
+      "name": "T. IBARRA",
+      "role": "Gate",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_002",
+      "number": 7,
+      "name": "N. ADEYEMI",
+      "role": "Gate",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_legendary_001",
+      "number": 8,
+      "name": "H. STERLING",
+      "role": "Gate",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_common_004",
+      "number": 9,
+      "name": "K. NAKATA",
+      "role": "Boarding",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_005",
+      "number": 10,
+      "name": "J. MORETTI",
+      "role": "Boarding",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_006",
+      "number": 11,
+      "name": "P. LINDQVIST",
+      "role": "Boarding",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_rare_003",
+      "number": 12,
+      "name": "A. OKAFOR",
+      "role": "Boarding",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_004",
+      "number": 13,
+      "name": "E. SANTOS",
+      "role": "Boarding",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_epic_003",
+      "number": 14,
+      "name": "V. PETROV",
+      "role": "Boarding",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_004",
+      "number": 15,
+      "name": "C. DUBOIS",
+      "role": "Boarding",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_legendary_002",
+      "number": 16,
+      "name": "R. WINGATE",
+      "role": "Boarding",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_common_007",
+      "number": 17,
+      "name": "J. WHITLOCK",
+      "role": "Cabin",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_008",
+      "number": 18,
+      "name": "S. PARKER",
+      "role": "Cabin",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_009",
+      "number": 19,
+      "name": "I. BJORK",
+      "role": "Cabin",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_rare_005",
+      "number": 20,
+      "name": "A. FERREIRA",
+      "role": "Cabin",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_006",
+      "number": 21,
+      "name": "M. CHEN",
+      "role": "Cabin",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_epic_005",
+      "number": 22,
+      "name": "O. HARRISON",
+      "role": "Cabin",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_006",
+      "number": 23,
+      "name": "G. ROSSI",
+      "role": "Cabin",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_legendary_003",
+      "number": 24,
+      "name": "Y. KIMURA",
+      "role": "Cabin",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_common_010",
+      "number": 25,
+      "name": "B. NDIAYE",
+      "role": "Gate",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_011",
+      "number": 26,
+      "name": "W. HOLMQVIST",
+      "role": "Gate",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_012",
+      "number": 27,
+      "name": "Z. RAHMAN",
+      "role": "Gate",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_rare_007",
+      "number": 28,
+      "name": "E. KOVACS",
+      "role": "Gate",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_008",
+      "number": 29,
+      "name": "P. ADEBAYO",
+      "role": "Gate",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_legendary_004",
+      "number": 30,
+      "name": "G. MERCADO",
+      "role": "Gate",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_005",
+      "number": 31,
+      "name": "T. HALVORSEN",
+      "role": "Gate",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_006",
+      "number": 32,
+      "name": "R. DESAI",
+      "role": "Gate",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_common_013",
+      "number": 33,
+      "name": "L. FONTAINE",
+      "role": "Boarding",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_014",
+      "number": 34,
+      "name": "A. MBEKI",
+      "role": "Boarding",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_015",
+      "number": 35,
+      "name": "J. VOLKOV",
+      "role": "Boarding",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_rare_009",
+      "number": 36,
+      "name": "C. NWOSU",
+      "role": "Boarding",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_010",
+      "number": 37,
+      "name": "M. SILVEIRA",
+      "role": "Boarding",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_legendary_007",
+      "number": 38,
+      "name": "D. BRANNIGAN",
+      "role": "Boarding",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_008",
+      "number": 39,
+      "name": "O. LINDGREN",
+      "role": "Boarding",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_009",
+      "number": 40,
+      "name": "S. YAMASHITA",
+      "role": "Boarding",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_common_016",
+      "number": 41,
+      "name": "N. ROUX",
+      "role": "Cabin",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_017",
+      "number": 42,
+      "name": "K. BAUTISTA",
+      "role": "Cabin",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_018",
+      "number": 43,
+      "name": "H. ELMASRI",
+      "role": "Cabin",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_rare_011",
+      "number": 44,
+      "name": "V. NOVAK",
+      "role": "Cabin",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_012",
+      "number": 45,
+      "name": "A. THORNE",
+      "role": "Cabin",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_legendary_010",
+      "number": 46,
+      "name": "J. CARVALHO",
+      "role": "Cabin",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_011",
+      "number": 47,
+      "name": "I. KALLIO",
+      "role": "Cabin",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_012",
+      "number": 48,
+      "name": "M. TAKEDA",
+      "role": "Cabin",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_epic_007",
+      "number": 49,
+      "name": "D. ACOSTA",
+      "role": "Gate",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_008",
+      "number": 50,
+      "name": "N. KAUR",
+      "role": "Gate",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_009",
+      "number": 51,
+      "name": "T. OKONKWO",
+      "role": "Boarding",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_010",
+      "number": 52,
+      "name": "B. SZABO",
+      "role": "Boarding",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_011",
+      "number": 53,
+      "name": "A. BOATENG",
+      "role": "Cabin",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_012",
+      "number": 54,
+      "name": "E. FALCONE",
+      "role": "Cabin",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_mythic_001",
+      "number": 55,
+      "name": "C. NOVA",
+      "role": "Gate",
+      "rarity": "Mythic"
+    },
+    {
+      "id": "mgr_mythic_002",
+      "number": 56,
+      "name": "R. APEX",
+      "role": "Boarding",
+      "rarity": "Mythic"
+    },
+    {
+      "id": "mgr_mythic_003",
+      "number": 57,
+      "name": "UNIT-07",
+      "role": "Cabin",
+      "rarity": "Mythic"
+    },
+    {
+      "id": "mgr_mythic_004",
+      "number": 58,
+      "name": "Q. ZANTH",
+      "role": "Gate",
+      "rarity": "Mythic"
+    },
+    {
+      "id": "mgr_common_019",
+      "number": 59,
+      "name": "B. HOLLAND",
+      "role": "Gate",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_020",
+      "number": 60,
+      "name": "F. DELGADO",
+      "role": "Boarding",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_common_021",
+      "number": 61,
+      "name": "A. SZYMANSKA",
+      "role": "Cabin",
+      "rarity": "Common"
+    },
+    {
+      "id": "mgr_rare_013",
+      "number": 62,
+      "name": "V. BARROSO",
+      "role": "Gate",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_014",
+      "number": 63,
+      "name": "D. MKHIZE",
+      "role": "Boarding",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_rare_015",
+      "number": 64,
+      "name": "N. OKPARA",
+      "role": "Cabin",
+      "rarity": "Rare"
+    },
+    {
+      "id": "mgr_epic_013",
+      "number": 65,
+      "name": "S. HADDAD",
+      "role": "Gate",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_014",
+      "number": 66,
+      "name": "M. ESCOBAR",
+      "role": "Boarding",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_epic_015",
+      "number": 67,
+      "name": "L. ABIOLA",
+      "role": "Cabin",
+      "rarity": "Epic"
+    },
+    {
+      "id": "mgr_legendary_013",
+      "number": 68,
+      "name": "W. MBATHA",
+      "role": "Gate",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_014",
+      "number": 69,
+      "name": "N. BRENNAN",
+      "role": "Boarding",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_legendary_015",
+      "number": 70,
+      "name": "E. VARGAS",
+      "role": "Cabin",
+      "rarity": "Legendary"
+    },
+    {
+      "id": "mgr_mythic_005",
+      "number": 71,
+      "name": "M. BASALT",
+      "role": "Cabin",
+      "rarity": "Mythic"
+    }
+  ],
+  "simulations": {
+    "Current x1": [
+      {
+        "route": "plane:DUB",
+        "milestone": "unlock",
+        "hours": 0.0,
+        "status": "proxy",
+        "income": 0
+      },
+      {
+        "route": "plane:DUB",
+        "milestone": "all upgrades 30",
+        "hours": 13.389722012405382,
+        "status": "proxy",
+        "income": 2104.7207245194913
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "unlock",
+        "hours": 13.548096151762724,
+        "status": "proxy",
+        "income": 2104.7207245194913
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "all upgrades 30",
+        "hours": 23.148160977448434,
+        "status": "proxy",
+        "income": 7275.4176513228185
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "unlock",
+        "hours": 23.372661262052212,
+        "status": "proxy",
+        "income": 7275.4176513228185
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "all upgrades 30",
+        "hours": 31.70410172428408,
+        "status": "proxy",
+        "income": 20770.142481676743
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "unlock",
+        "hours": 32.0090266105202,
+        "status": "proxy",
+        "income": 20770.142481676743
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 39.6577152584169,
+        "status": "proxy",
+        "income": 53843.94155183053
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "unlock",
+        "hours": 40.09106639618367,
+        "status": "proxy",
+        "income": 53843.94155183053
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "all upgrades 30",
+        "hours": 47.35282576676135,
+        "status": "proxy",
+        "income": 137462.14384273722
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "unlock",
+        "hours": 47.95905327786921,
+        "status": "proxy",
+        "income": 137462.14384273722
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 54.79059177480507,
+        "status": "proxy",
+        "income": 346044.76521519205
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "unlock",
+        "hours": 55.62863363860746,
+        "status": "proxy",
+        "income": 346044.76521519205
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "all upgrades 30",
+        "hours": 62.128214993116,
+        "status": "proxy",
+        "income": 870051.9156557301
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "unlock",
+        "hours": 63.29672763974404,
+        "status": "proxy",
+        "income": 870051.9156557301
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "all upgrades 30",
+        "hours": 69.39960115137966,
+        "status": "proxy",
+        "income": 2192494.986131344
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "unlock",
+        "hours": 73.41328419293268,
+        "status": "proxy",
+        "income": 2192494.986131344
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "all upgrades 30",
+        "hours": 88.56821276367208,
+        "status": "proxy",
+        "income": 13171354.307445973
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "unlock",
+        "hours": 88.9288438642503,
+        "status": "proxy",
+        "income": 13171354.307445973
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "all upgrades 30",
+        "hours": 100.40644087744494,
+        "status": "proxy",
+        "income": 41625754.071049936
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "unlock",
+        "hours": 100.80683402439475,
+        "status": "proxy",
+        "income": 41625754.071049936
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "all upgrades 30",
+        "hours": 110.13325499153787,
+        "status": "proxy",
+        "income": 111782142.11084071
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "unlock",
+        "hours": 110.6551034033843,
+        "status": "proxy",
+        "income": 111782142.11084071
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "all upgrades 30",
+        "hours": 119.19866752647273,
+        "status": "proxy",
+        "income": 287404743.17980987
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "unlock",
+        "hours": 119.90614831152757,
+        "status": "proxy",
+        "income": 287404743.17980987
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "all upgrades 30",
+        "hours": 127.99580263295798,
+        "status": "proxy",
+        "income": 726339917.0716264
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "unlock",
+        "hours": 128.9824848320529,
+        "status": "proxy",
+        "income": 726339917.0716264
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 136.60218784983533,
+        "status": "proxy",
+        "income": 1823981173.7526834
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "unlock",
+        "hours": 137.97281603173505,
+        "status": "proxy",
+        "income": 1823981173.7526834
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "all upgrades 30",
+        "hours": 145.39050594832042,
+        "status": "proxy",
+        "income": 4566830422.406143
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "unlock",
+        "hours": 147.28824811631193,
+        "status": "proxy",
+        "income": 4566830422.406143
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "all upgrades 30",
+        "hours": 154.3313352532646,
+        "status": "proxy",
+        "income": 11420939806.683134
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "unlock",
+        "hours": 162.3412585463781,
+        "status": "proxy",
+        "income": 11420939806.683134
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 175.70714410990257,
+        "status": "proxy",
+        "income": 79551141750.98247
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "unlock",
+        "hours": 176.07168947482992,
+        "status": "proxy",
+        "income": 79551141750.98247
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "all upgrades 30",
+        "hours": 187.23641737597896,
+        "status": "proxy",
+        "income": 250566942196.50687
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "unlock",
+        "hours": 187.63551232092016,
+        "status": "proxy",
+        "income": 250566942196.50687
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "all upgrades 30",
+        "hours": 197.0858754244578,
+        "status": "proxy",
+        "income": 677809609590.498
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "unlock",
+        "hours": 197.6022446158174,
+        "status": "proxy",
+        "income": 677809609590.498
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 206.21707412780225,
+        "status": "proxy",
+        "income": 1749724899318.0925
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "unlock",
+        "hours": 206.93147214573477,
+        "status": "proxy",
+        "income": 1749724899318.0925
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "all upgrades 30",
+        "hours": 214.93613594638674,
+        "status": "proxy",
+        "income": 4425978715533.255
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "unlock",
+        "hours": 215.9152037666013,
+        "status": "proxy",
+        "income": 4425978715533.255
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "all upgrades 30",
+        "hours": 223.46568343942755,
+        "status": "proxy",
+        "income": 11135417737635.352
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "unlock",
+        "hours": 224.8127366307329,
+        "status": "proxy",
+        "income": 11135417737635.352
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "all upgrades 30",
+        "hours": 231.95219399213212,
+        "status": "proxy",
+        "income": 27947676012517.023
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "unlock",
+        "hours": 233.86052201588075,
+        "status": "proxy",
+        "income": 27947676012517.023
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "all upgrades 30",
+        "hours": 240.7102307249542,
+        "status": "proxy",
+        "income": 69952504349790.49
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "unlock",
+        "hours": 252.71737843188257,
+        "status": "proxy",
+        "income": 69952504349790.49
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "all upgrades 30",
+        "hours": 264.89521699041984,
+        "status": "proxy",
+        "income": 533729940442361.44
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "unlock",
+        "hours": 265.2262208432677,
+        "status": "proxy",
+        "income": 533729940442361.44
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "all upgrades 30",
+        "hours": 275.9028236899652,
+        "status": "proxy",
+        "income": 1701403894443872.5
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "unlock",
+        "hours": 276.2652694729333,
+        "status": "proxy",
+        "income": 1701403894443872.5
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "all upgrades 30",
+        "hours": 284.74257659956845,
+        "status": "proxy",
+        "income": 4640903841818465.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "unlock",
+        "hours": 285.2094396806655,
+        "status": "proxy",
+        "income": 4640903841818465.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "all upgrades 30",
+        "hours": 292.88889239868934,
+        "status": "proxy",
+        "income": 1.2016384217570878e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "unlock",
+        "hours": 293.51304021755095,
+        "status": "proxy",
+        "income": 1.2016384217570878e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 301.67544594084296,
+        "status": "proxy",
+        "income": 2.828462144091731e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "unlock",
+        "hours": 302.6182433094544,
+        "status": "proxy",
+        "income": 2.828462144091731e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "all upgrades 30",
+        "hours": 310.6458480061205,
+        "status": "proxy",
+        "income": 6.906642344178398e+16
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "unlock",
+        "hours": 311.99720411640186,
+        "status": "proxy",
+        "income": 6.906642344178398e+16
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "all upgrades 30",
+        "hours": 319.76334229050985,
+        "status": "proxy",
+        "income": 1.709587453545801e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "unlock",
+        "hours": 321.66438572251406,
+        "status": "proxy",
+        "income": 1.709587453545801e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "all upgrades 30",
+        "hours": 329.07811039409074,
+        "status": "proxy",
+        "income": 4.2618619822544134e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "unlock",
+        "hours": 345.085149570893,
+        "status": "proxy",
+        "income": 4.2618619822544134e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "all upgrades 30",
+        "hours": 355.803934917396,
+        "status": "proxy",
+        "income": 3.002695837047837e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "unlock",
+        "hours": 356.16472182094014,
+        "status": "proxy",
+        "income": 3.002695837047837e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "all upgrades 30",
+        "hours": 367.1383292978393,
+        "status": "proxy",
+        "income": 9.559823672639463e+18
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "unlock",
+        "hours": 367.5393129837941,
+        "status": "proxy",
+        "income": 9.559823672639463e+18
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "all upgrades 30",
+        "hours": 377.0637343111191,
+        "status": "proxy",
+        "income": 2.630985793072906e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "unlock",
+        "hours": 377.57051520550624,
+        "status": "proxy",
+        "income": 2.630985793072906e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "all upgrades 30",
+        "hours": 386.2403923006129,
+        "status": "proxy",
+        "income": 6.7535686980222345e+19
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "unlock",
+        "hours": 386.9313850002256,
+        "status": "proxy",
+        "income": 6.7535686980222345e+19
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "all upgrades 30",
+        "hours": 396.0058234176979,
+        "status": "proxy",
+        "income": 1.725070508701446e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "unlock",
+        "hours": 396.94298317929145,
+        "status": "proxy",
+        "income": 1.725070508701446e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "all upgrades 30",
+        "hours": 404.6398194894227,
+        "status": "proxy",
+        "income": 4.332736460090721e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "unlock",
+        "hours": 405.9476919434394,
+        "status": "proxy",
+        "income": 4.332736460090721e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "all upgrades 30",
+        "hours": 413.97108938107,
+        "status": "proxy",
+        "income": 1.0957004568181667e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "unlock",
+        "hours": 415.79640576891546,
+        "status": "proxy",
+        "income": 1.0957004568181667e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "all upgrades 30",
+        "hours": 422.7567456846488,
+        "status": "proxy",
+        "income": 2.6459290103558376e+21
+      }
+    ],
+    "Current x2": [
+      {
+        "route": "plane:DUB",
+        "milestone": "unlock",
+        "hours": 0.0,
+        "status": "proxy",
+        "income": 0
+      },
+      {
+        "route": "plane:DUB",
+        "milestone": "all upgrades 30",
+        "hours": 6.694861006202691,
+        "status": "proxy",
+        "income": 4209.441449038983
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "unlock",
+        "hours": 6.774048075881362,
+        "status": "proxy",
+        "income": 4209.441449038983
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "all upgrades 30",
+        "hours": 11.574080488724217,
+        "status": "proxy",
+        "income": 14550.835302645637
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "unlock",
+        "hours": 11.686330631026106,
+        "status": "proxy",
+        "income": 14550.835302645637
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "all upgrades 30",
+        "hours": 15.85205086214204,
+        "status": "proxy",
+        "income": 41540.284963353486
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "unlock",
+        "hours": 16.0045133052601,
+        "status": "proxy",
+        "income": 41540.284963353486
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 19.82885762920845,
+        "status": "proxy",
+        "income": 107687.88310366106
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "unlock",
+        "hours": 20.045533198091835,
+        "status": "proxy",
+        "income": 107687.88310366106
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "all upgrades 30",
+        "hours": 23.676412883380674,
+        "status": "proxy",
+        "income": 274924.28768547444
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "unlock",
+        "hours": 23.979526638934605,
+        "status": "proxy",
+        "income": 274924.28768547444
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 27.395295887402536,
+        "status": "proxy",
+        "income": 692089.5304303841
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "unlock",
+        "hours": 27.81431681930373,
+        "status": "proxy",
+        "income": 692089.5304303841
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "all upgrades 30",
+        "hours": 31.064107496558,
+        "status": "proxy",
+        "income": 1740103.8313114601
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "unlock",
+        "hours": 31.64836381987202,
+        "status": "proxy",
+        "income": 1740103.8313114601
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "all upgrades 30",
+        "hours": 34.69980057568983,
+        "status": "proxy",
+        "income": 4384989.972262688
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "unlock",
+        "hours": 38.70664209646634,
+        "status": "proxy",
+        "income": 4384989.972262688
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "all upgrades 30",
+        "hours": 45.49015999544146,
+        "status": "proxy",
+        "income": 26342708.614891946
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "unlock",
+        "hours": 45.670475545730575,
+        "status": "proxy",
+        "income": 26342708.614891946
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "all upgrades 30",
+        "hours": 51.40927405232789,
+        "status": "proxy",
+        "income": 83251508.14209987
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "unlock",
+        "hours": 51.6094706258028,
+        "status": "proxy",
+        "income": 83251508.14209987
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "all upgrades 30",
+        "hours": 56.27268110937436,
+        "status": "proxy",
+        "income": 223564284.22168142
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "unlock",
+        "hours": 56.53360531529757,
+        "status": "proxy",
+        "income": 223564284.22168142
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "all upgrades 30",
+        "hours": 60.805387376841786,
+        "status": "proxy",
+        "income": 574809486.3596197
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "unlock",
+        "hours": 61.159127769369206,
+        "status": "proxy",
+        "income": 574809486.3596197
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "all upgrades 30",
+        "hours": 65.20395493008442,
+        "status": "proxy",
+        "income": 1452679834.1432528
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "unlock",
+        "hours": 65.69729602963189,
+        "status": "proxy",
+        "income": 1452679834.1432528
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 69.50714753852303,
+        "status": "proxy",
+        "income": 3647962347.505367
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "unlock",
+        "hours": 70.1924616294729,
+        "status": "proxy",
+        "income": 3647962347.505367
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "all upgrades 30",
+        "hours": 73.90130658776557,
+        "status": "proxy",
+        "income": 9133660844.812286
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "unlock",
+        "hours": 74.85017767176133,
+        "status": "proxy",
+        "income": 9133660844.812286
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "all upgrades 30",
+        "hours": 78.37172124023768,
+        "status": "proxy",
+        "income": 22841879613.36627
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "unlock",
+        "hours": 86.37668288679443,
+        "status": "proxy",
+        "income": 22841879613.36627
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 91.95087277781076,
+        "status": "proxy",
+        "income": 159102283501.96494
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "unlock",
+        "hours": 92.13314546027443,
+        "status": "proxy",
+        "income": 159102283501.96494
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "all upgrades 30",
+        "hours": 97.71550941084895,
+        "status": "proxy",
+        "income": 501133884393.01373
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "unlock",
+        "hours": 97.91505688331955,
+        "status": "proxy",
+        "income": 501133884393.01373
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "all upgrades 30",
+        "hours": 102.64023843508838,
+        "status": "proxy",
+        "income": 1355619219180.996
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "unlock",
+        "hours": 102.89842303076817,
+        "status": "proxy",
+        "income": 1355619219180.996
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 107.2058377867606,
+        "status": "proxy",
+        "income": 3499449798636.185
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "unlock",
+        "hours": 107.56303679572686,
+        "status": "proxy",
+        "income": 3499449798636.185
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "all upgrades 30",
+        "hours": 111.56536869605284,
+        "status": "proxy",
+        "income": 8851957431066.51
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "unlock",
+        "hours": 112.05490260616013,
+        "status": "proxy",
+        "income": 8851957431066.51
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "all upgrades 30",
+        "hours": 115.83014244257325,
+        "status": "proxy",
+        "income": 22270835475270.703
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "unlock",
+        "hours": 116.50366903822592,
+        "status": "proxy",
+        "income": 22270835475270.703
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "all upgrades 30",
+        "hours": 120.07339771892553,
+        "status": "proxy",
+        "income": 55895352025034.05
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "unlock",
+        "hours": 121.02756173079985,
+        "status": "proxy",
+        "income": 55895352025034.05
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "all upgrades 30",
+        "hours": 124.45241608533657,
+        "status": "proxy",
+        "income": 139905008699580.98
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "unlock",
+        "hours": 136.45598993880077,
+        "status": "proxy",
+        "income": 139905008699580.98
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "all upgrades 30",
+        "hours": 140.98613818381912,
+        "status": "proxy",
+        "income": 1067459880884722.9
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "unlock",
+        "hours": 141.15164011024305,
+        "status": "proxy",
+        "income": 1067459880884722.9
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "all upgrades 30",
+        "hours": 146.4899415335917,
+        "status": "proxy",
+        "income": 3402807788887745.0
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "unlock",
+        "hours": 146.67116442507574,
+        "status": "proxy",
+        "income": 3402807788887745.0
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "all upgrades 30",
+        "hours": 150.90981798839329,
+        "status": "proxy",
+        "income": 9281807683636930.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "unlock",
+        "hours": 151.14324952894185,
+        "status": "proxy",
+        "income": 9281807683636930.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "all upgrades 30",
+        "hours": 154.98297588795373,
+        "status": "proxy",
+        "income": 2.4032768435141756e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "unlock",
+        "hours": 155.29504979738456,
+        "status": "proxy",
+        "income": 2.4032768435141756e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 159.37625265903054,
+        "status": "proxy",
+        "income": 5.656924288183462e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "unlock",
+        "hours": 159.84765134333625,
+        "status": "proxy",
+        "income": 5.656924288183462e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "all upgrades 30",
+        "hours": 163.86145369166934,
+        "status": "proxy",
+        "income": 1.3813284688356797e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "unlock",
+        "hours": 164.53713174681,
+        "status": "proxy",
+        "income": 1.3813284688356797e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "all upgrades 30",
+        "hours": 168.420200833864,
+        "status": "proxy",
+        "income": 3.419174907091602e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "unlock",
+        "hours": 169.3707225498661,
+        "status": "proxy",
+        "income": 3.419174907091602e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "all upgrades 30",
+        "hours": 173.07758488565443,
+        "status": "proxy",
+        "income": 8.523723964508827e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "unlock",
+        "hours": 189.0811044740556,
+        "status": "proxy",
+        "income": 8.523723964508827e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "all upgrades 30",
+        "hours": 192.7298738085432,
+        "status": "proxy",
+        "income": 6.005391674095674e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "unlock",
+        "hours": 192.91026726031527,
+        "status": "proxy",
+        "income": 6.005391674095674e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "all upgrades 30",
+        "hours": 198.39707099876483,
+        "status": "proxy",
+        "income": 1.9119647345278927e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "unlock",
+        "hours": 198.59756284174225,
+        "status": "proxy",
+        "income": 1.9119647345278927e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "all upgrades 30",
+        "hours": 203.35977350540472,
+        "status": "proxy",
+        "income": 5.261971586145812e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "unlock",
+        "hours": 203.6131639525983,
+        "status": "proxy",
+        "income": 5.261971586145812e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "all upgrades 30",
+        "hours": 207.9481025001516,
+        "status": "proxy",
+        "income": 1.3507137396044469e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "unlock",
+        "hours": 208.293598849958,
+        "status": "proxy",
+        "income": 1.3507137396044469e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "all upgrades 30",
+        "hours": 212.83081805869415,
+        "status": "proxy",
+        "income": 3.450141017402892e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "unlock",
+        "hours": 213.29939793949092,
+        "status": "proxy",
+        "income": 3.450141017402892e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "all upgrades 30",
+        "hours": 217.14781609455653,
+        "status": "proxy",
+        "income": 8.665472920181442e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "unlock",
+        "hours": 217.8017523215649,
+        "status": "proxy",
+        "income": 8.665472920181442e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "all upgrades 30",
+        "hours": 221.8134510403802,
+        "status": "proxy",
+        "income": 2.1914009136363335e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "unlock",
+        "hours": 222.72610923430292,
+        "status": "proxy",
+        "income": 2.1914009136363335e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "all upgrades 30",
+        "hours": 226.20627919216955,
+        "status": "proxy",
+        "income": 5.291858020711675e+21
+      }
+    ],
+    "Current x6": [
+      {
+        "route": "plane:DUB",
+        "milestone": "unlock",
+        "hours": 0.0,
+        "status": "proxy",
+        "income": 0
+      },
+      {
+        "route": "plane:DUB",
+        "milestone": "all upgrades 30",
+        "hours": 2.231620335400897,
+        "status": "proxy",
+        "income": 12628.324347116948
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "unlock",
+        "hours": 2.258016025293787,
+        "status": "proxy",
+        "income": 12628.324347116948
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "all upgrades 30",
+        "hours": 3.858026829574738,
+        "status": "proxy",
+        "income": 43652.50590793691
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "unlock",
+        "hours": 3.895443543675368,
+        "status": "proxy",
+        "income": 43652.50590793691
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "all upgrades 30",
+        "hours": 5.284016954047346,
+        "status": "proxy",
+        "income": 124620.85489006045
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "unlock",
+        "hours": 5.334837768420033,
+        "status": "proxy",
+        "income": 124620.85489006045
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 6.609619209736138,
+        "status": "proxy",
+        "income": 323063.6493109832
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "unlock",
+        "hours": 6.681844399363934,
+        "status": "proxy",
+        "income": 323063.6493109832
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "all upgrades 30",
+        "hours": 7.892137627793544,
+        "status": "proxy",
+        "income": 824772.8630564234
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "unlock",
+        "hours": 7.993175546311521,
+        "status": "proxy",
+        "income": 824772.8630564234
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 9.13176529580085,
+        "status": "proxy",
+        "income": 2076268.5912911524
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "unlock",
+        "hours": 9.271438939767915,
+        "status": "proxy",
+        "income": 2076268.5912911524
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "all upgrades 30",
+        "hours": 10.354702498852678,
+        "status": "proxy",
+        "income": 5220311.49393438
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "unlock",
+        "hours": 10.549454606624016,
+        "status": "proxy",
+        "income": 5220311.49393438
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "all upgrades 30",
+        "hours": 11.566600191896622,
+        "status": "proxy",
+        "income": 13154969.916788064
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "unlock",
+        "hours": 15.568880698822124,
+        "status": "proxy",
+        "income": 13154969.916788064
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "all upgrades 30",
+        "hours": 16.99811297681164,
+        "status": "proxy",
+        "income": 79028125.84467584
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "unlock",
+        "hours": 17.058218160241342,
+        "status": "proxy",
+        "income": 79028125.84467584
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "all upgrades 30",
+        "hours": 18.971150995773776,
+        "status": "proxy",
+        "income": 249754524.4262996
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "unlock",
+        "hours": 19.03788318693208,
+        "status": "proxy",
+        "income": 249754524.4262996
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "all upgrades 30",
+        "hours": 20.592286681455956,
+        "status": "proxy",
+        "income": 670692852.6650443
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "unlock",
+        "hours": 20.67926141676369,
+        "status": "proxy",
+        "income": 670692852.6650443
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "all upgrades 30",
+        "hours": 22.103188770611787,
+        "status": "proxy",
+        "income": 1724428459.078859
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "unlock",
+        "hours": 22.22110223478759,
+        "status": "proxy",
+        "income": 1724428459.078859
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "all upgrades 30",
+        "hours": 23.569377955025978,
+        "status": "proxy",
+        "income": 4358039502.429759
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "unlock",
+        "hours": 23.733824988208468,
+        "status": "proxy",
+        "income": 4358039502.429759
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 25.003775491172174,
+        "status": "proxy",
+        "income": 10943887042.5161
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "unlock",
+        "hours": 25.2322135214888,
+        "status": "proxy",
+        "income": 10943887042.5161
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "all upgrades 30",
+        "hours": 26.468495174253043,
+        "status": "proxy",
+        "income": 27400982534.43686
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "unlock",
+        "hours": 26.78478553558496,
+        "status": "proxy",
+        "income": 27400982534.43686
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "all upgrades 30",
+        "hours": 27.958633391743763,
+        "status": "proxy",
+        "income": 68525638840.0988
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "unlock",
+        "hours": 35.960287273929346,
+        "status": "proxy",
+        "income": 68525638840.0988
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 36.706812663633045,
+        "status": "proxy",
+        "income": 477306850505.89484
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "unlock",
+        "hours": 36.767570224454275,
+        "status": "proxy",
+        "income": 477306850505.89484
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "all upgrades 30",
+        "hours": 38.62835820797912,
+        "status": "proxy",
+        "income": 1503401653179.041
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "unlock",
+        "hours": 38.694874032135985,
+        "status": "proxy",
+        "income": 1503401653179.041
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "all upgrades 30",
+        "hours": 40.269934549392225,
+        "status": "proxy",
+        "income": 4066857657542.988
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "unlock",
+        "hours": 40.35599608128549,
+        "status": "proxy",
+        "income": 4066857657542.988
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 41.79180099994957,
+        "status": "proxy",
+        "income": 10498349395908.555
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "unlock",
+        "hours": 41.91086733627165,
+        "status": "proxy",
+        "income": 10498349395908.555
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "all upgrades 30",
+        "hours": 43.24497796971366,
+        "status": "proxy",
+        "income": 26555872293199.53
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "unlock",
+        "hours": 43.40815593974943,
+        "status": "proxy",
+        "income": 26555872293199.53
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "all upgrades 30",
+        "hours": 44.66656921855381,
+        "status": "proxy",
+        "income": 66812506425812.11
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "unlock",
+        "hours": 44.89107808377137,
+        "status": "proxy",
+        "income": 66812506425812.11
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "all upgrades 30",
+        "hours": 46.08098764400452,
+        "status": "proxy",
+        "income": 167686056075102.16
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "unlock",
+        "hours": 46.39904231462929,
+        "status": "proxy",
+        "income": 167686056075102.16
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "all upgrades 30",
+        "hours": 47.540660432808195,
+        "status": "proxy",
+        "income": 419715026098742.94
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "unlock",
+        "hours": 59.54185171729626,
+        "status": "proxy",
+        "income": 419715026098742.94
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "all upgrades 30",
+        "hours": 59.65921504415454,
+        "status": "proxy",
+        "income": 3202379642654168.5
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "unlock",
+        "hours": 59.71438235296252,
+        "status": "proxy",
+        "income": 3202379642654168.5
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "all upgrades 30",
+        "hours": 61.49381616074538,
+        "status": "proxy",
+        "income": 1.0208423366663234e+16
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "unlock",
+        "hours": 61.55422379124006,
+        "status": "proxy",
+        "income": 1.0208423366663234e+16
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "all upgrades 30",
+        "hours": 62.967108312346,
+        "status": "proxy",
+        "income": 2.784542305091079e+16
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "unlock",
+        "hours": 63.044918825862176,
+        "status": "proxy",
+        "income": 2.784542305091079e+16
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "all upgrades 30",
+        "hours": 64.32482761219954,
+        "status": "proxy",
+        "income": 7.209830530542526e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "unlock",
+        "hours": 64.42885224867648,
+        "status": "proxy",
+        "income": 7.209830530542526e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 65.78925320255853,
+        "status": "proxy",
+        "income": 1.6970772864550387e+17
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "unlock",
+        "hours": 65.94638609732709,
+        "status": "proxy",
+        "income": 1.6970772864550387e+17
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "all upgrades 30",
+        "hours": 67.28432021343814,
+        "status": "proxy",
+        "income": 4.143985406507039e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "unlock",
+        "hours": 67.50954623181836,
+        "status": "proxy",
+        "income": 4.143985406507039e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "all upgrades 30",
+        "hours": 68.80390259416968,
+        "status": "proxy",
+        "income": 1.0257524721274806e+18
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "unlock",
+        "hours": 69.12074316617039,
+        "status": "proxy",
+        "income": 1.0257524721274806e+18
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "all upgrades 30",
+        "hours": 70.35636394476663,
+        "status": "proxy",
+        "income": 2.557117189352648e+18
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "unlock",
+        "hours": 86.35753714090035,
+        "status": "proxy",
+        "income": 2.557117189352648e+18
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "all upgrades 30",
+        "hours": 86.35753714090035,
+        "status": "proxy",
+        "income": 1.8016175022287024e+19
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "unlock",
+        "hours": 86.35753714090035,
+        "status": "proxy",
+        "income": 1.8016175022287024e+19
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "all upgrades 30",
+        "hours": 87.9207705304655,
+        "status": "proxy",
+        "income": 5.735894203583678e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "unlock",
+        "hours": 87.98760114479131,
+        "status": "proxy",
+        "income": 5.735894203583678e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "all upgrades 30",
+        "hours": 89.57500469934539,
+        "status": "proxy",
+        "income": 1.5785914758437434e+20
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "unlock",
+        "hours": 89.65946818174325,
+        "status": "proxy",
+        "income": 1.5785914758437434e+20
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "all upgrades 30",
+        "hours": 91.10444769759425,
+        "status": "proxy",
+        "income": 4.052141218813341e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "unlock",
+        "hours": 91.21961314752973,
+        "status": "proxy",
+        "income": 4.052141218813341e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "all upgrades 30",
+        "hours": 92.73201955044178,
+        "status": "proxy",
+        "income": 1.0350423052208677e+21
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "unlock",
+        "hours": 92.88821284404071,
+        "status": "proxy",
+        "income": 1.0350423052208677e+21
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "all upgrades 30",
+        "hours": 94.17101889572926,
+        "status": "proxy",
+        "income": 2.599641876054433e+21
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "unlock",
+        "hours": 94.38899763806538,
+        "status": "proxy",
+        "income": 2.599641876054433e+21
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "all upgrades 30",
+        "hours": 95.72623054433708,
+        "status": "proxy",
+        "income": 6.574202740909e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "unlock",
+        "hours": 96.03044994231134,
+        "status": "proxy",
+        "income": 6.574202740909e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "all upgrades 30",
+        "hours": 97.19050659493344,
+        "status": "proxy",
+        "income": 1.5875574062135024e+22
+      }
+    ],
+    "New x1": [
+      {
+        "route": "plane:DUB",
+        "milestone": "unlock",
+        "hours": 0.0,
+        "status": "proxy",
+        "income": 0
+      },
+      {
+        "route": "plane:DUB",
+        "milestone": "all upgrades 30",
+        "hours": 6.694423551277686,
+        "status": "proxy",
+        "income": 2104.7207245194913
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "unlock",
+        "hours": 6.852797690635027,
+        "status": "proxy",
+        "income": 2104.7207245194913
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "all upgrades 30",
+        "hours": 12.186152576883655,
+        "status": "proxy",
+        "income": 7275.4176513228185
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "unlock",
+        "hours": 12.410652861487437,
+        "status": "proxy",
+        "income": 7275.4176513228185
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "all upgrades 30",
+        "hours": 17.83619265349366,
+        "status": "proxy",
+        "income": 20770.142481676743
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "unlock",
+        "hours": 18.141117539729787,
+        "status": "proxy",
+        "income": 20770.142481676743
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 23.98161010971442,
+        "status": "proxy",
+        "income": 53843.94155183053
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "unlock",
+        "hours": 24.41496124748119,
+        "status": "proxy",
+        "income": 53843.94155183053
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "all upgrades 30",
+        "hours": 30.886602722396667,
+        "status": "proxy",
+        "income": 137462.14384273722
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "unlock",
+        "hours": 31.492830233504527,
+        "status": "proxy",
+        "income": 137462.14384273722
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 38.57285048784449,
+        "status": "proxy",
+        "income": 346044.76521519205
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "unlock",
+        "hours": 39.410892351646886,
+        "status": "proxy",
+        "income": 346044.76521519205
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "all upgrades 30",
+        "hours": 47.2275105118069,
+        "status": "proxy",
+        "income": 870051.9156557301
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "unlock",
+        "hours": 48.39602315843493,
+        "status": "proxy",
+        "income": 870051.9156557301
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "all upgrades 30",
+        "hours": 56.90339455056145,
+        "status": "proxy",
+        "income": 2192494.986131344
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "unlock",
+        "hours": 60.91707759211446,
+        "status": "proxy",
+        "income": 2192494.986131344
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "all upgrades 30",
+        "hours": 67.70059549762246,
+        "status": "proxy",
+        "income": 13171354.307445973
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "unlock",
+        "hours": 68.06122659820068,
+        "status": "proxy",
+        "income": 13171354.307445973
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "all upgrades 30",
+        "hours": 74.70600114638289,
+        "status": "proxy",
+        "income": 41625754.071049936
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "unlock",
+        "hours": 75.1063942933327,
+        "status": "proxy",
+        "income": 41625754.071049936
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "all upgrades 30",
+        "hours": 81.35834412116775,
+        "status": "proxy",
+        "income": 111782142.11084071
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "unlock",
+        "hours": 81.88019253301418,
+        "status": "proxy",
+        "income": 111782142.11084071
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "all upgrades 30",
+        "hours": 88.51169279472218,
+        "status": "proxy",
+        "income": 287404743.17980987
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "unlock",
+        "hours": 89.219173579777,
+        "status": "proxy",
+        "income": 287404743.17980987
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "all upgrades 30",
+        "hours": 96.48983475995364,
+        "status": "proxy",
+        "income": 726339917.0716264
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "unlock",
+        "hours": 97.47651695904857,
+        "status": "proxy",
+        "income": 726339917.0716264
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 105.40613510779473,
+        "status": "proxy",
+        "income": 1823981173.7526834
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "unlock",
+        "hours": 106.77676328969447,
+        "status": "proxy",
+        "income": 1823981173.7526834
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "all upgrades 30",
+        "hours": 115.71501542437274,
+        "status": "proxy",
+        "income": 4566830422.406143
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "unlock",
+        "hours": 117.61275759236426,
+        "status": "proxy",
+        "income": 4566830422.406143
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "all upgrades 30",
+        "hours": 127.43965377345235,
+        "status": "proxy",
+        "income": 11420939806.683134
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "unlock",
+        "hours": 135.44957706656584,
+        "status": "proxy",
+        "income": 11420939806.683134
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 141.02376695758454,
+        "status": "proxy",
+        "income": 79551141750.98247
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "unlock",
+        "hours": 141.3883123225119,
+        "status": "proxy",
+        "income": 79551141750.98247
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "all upgrades 30",
+        "hours": 147.8521020643819,
+        "status": "proxy",
+        "income": 250566942196.50687
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "unlock",
+        "hours": 148.2511970093231,
+        "status": "proxy",
+        "income": 250566942196.50687
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "all upgrades 30",
+        "hours": 154.58634339298942,
+        "status": "proxy",
+        "income": 677809609590.498
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "unlock",
+        "hours": 155.102712584349,
+        "status": "proxy",
+        "income": 677809609590.498
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 161.78959872049944,
+        "status": "proxy",
+        "income": 1749724899318.0925
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "unlock",
+        "hours": 162.50399673843197,
+        "status": "proxy",
+        "income": 1749724899318.0925
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "all upgrades 30",
+        "hours": 169.69831122553296,
+        "status": "proxy",
+        "income": 4425978715533.255
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "unlock",
+        "hours": 170.67737904574753,
+        "status": "proxy",
+        "income": 4425978715533.255
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "all upgrades 30",
+        "hours": 178.5349795674314,
+        "status": "proxy",
+        "income": 11135417737635.352
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "unlock",
+        "hours": 179.88203275873676,
+        "status": "proxy",
+        "income": 11135417737635.352
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "all upgrades 30",
+        "hours": 188.4850280939447,
+        "status": "proxy",
+        "income": 27947676012517.023
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "unlock",
+        "hours": 190.39335611769332,
+        "status": "proxy",
+        "income": 27947676012517.023
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "all upgrades 30",
+        "hours": 199.9504459085994,
+        "status": "proxy",
+        "income": 69952504349790.49
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "unlock",
+        "hours": 211.9575936155278,
+        "status": "proxy",
+        "income": 69952504349790.49
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "all upgrades 30",
+        "hours": 216.48774186054615,
+        "status": "proxy",
+        "income": 533729940442361.44
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "unlock",
+        "hours": 216.81874571339398,
+        "status": "proxy",
+        "income": 533729940442361.44
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "all upgrades 30",
+        "hours": 222.99993683510613,
+        "status": "proxy",
+        "income": 1701403894443872.5
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "unlock",
+        "hours": 223.36238261807424,
+        "status": "proxy",
+        "income": 1701403894443872.5
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "all upgrades 30",
+        "hours": 229.0452311627563,
+        "status": "proxy",
+        "income": 4640903841818465.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "unlock",
+        "hours": 229.51209424385337,
+        "status": "proxy",
+        "income": 4640903841818465.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "all upgrades 30",
+        "hours": 235.47293493062665,
+        "status": "proxy",
+        "income": 1.2016384217570878e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "unlock",
+        "hours": 236.09708274948827,
+        "status": "proxy",
+        "income": 1.2016384217570878e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 243.43317023773264,
+        "status": "proxy",
+        "income": 2.828462144091731e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "unlock",
+        "hours": 244.37596760634406,
+        "status": "proxy",
+        "income": 2.828462144091731e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "all upgrades 30",
+        "hours": 252.73010054853324,
+        "status": "proxy",
+        "income": 6.906642344178398e+16
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "unlock",
+        "hours": 254.08145665881457,
+        "status": "proxy",
+        "income": 6.906642344178398e+16
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "all upgrades 30",
+        "hours": 263.4395979234083,
+        "status": "proxy",
+        "income": 1.709587453545801e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "unlock",
+        "hours": 265.3406413554125,
+        "status": "proxy",
+        "income": 1.709587453545801e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "all upgrades 30",
+        "hours": 275.684677198123,
+        "status": "proxy",
+        "income": 4.2618619822544134e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "unlock",
+        "hours": 291.69171637492525,
+        "status": "proxy",
+        "income": 4.2618619822544134e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "all upgrades 30",
+        "hours": 295.3404857094129,
+        "status": "proxy",
+        "income": 3.002695837047837e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "unlock",
+        "hours": 295.70127261295704,
+        "status": "proxy",
+        "income": 3.002695837047837e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "all upgrades 30",
+        "hours": 302.0544137837935,
+        "status": "proxy",
+        "income": 9.559823672639463e+18
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "unlock",
+        "hours": 302.45539746974833,
+        "status": "proxy",
+        "income": 9.559823672639463e+18
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "all upgrades 30",
+        "hours": 308.8401896060713,
+        "status": "proxy",
+        "income": 2.630985793072906e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "unlock",
+        "hours": 309.34697050045844,
+        "status": "proxy",
+        "income": 2.630985793072906e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "all upgrades 30",
+        "hours": 316.0765849711313,
+        "status": "proxy",
+        "income": 6.7535686980222345e+19
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "unlock",
+        "hours": 316.767577670744,
+        "status": "proxy",
+        "income": 6.7535686980222345e+19
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "all upgrades 30",
+        "hours": 324.92336854835935,
+        "status": "proxy",
+        "income": 1.725070508701446e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "unlock",
+        "hours": 325.8605283099529,
+        "status": "proxy",
+        "income": 1.725070508701446e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "all upgrades 30",
+        "hours": 333.87043863798345,
+        "status": "proxy",
+        "income": 4.332736460090721e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "unlock",
+        "hours": 335.17831109200023,
+        "status": "proxy",
+        "income": 4.332736460090721e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "all upgrades 30",
+        "hours": 344.84644793943596,
+        "status": "proxy",
+        "income": 1.0957004568181667e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "unlock",
+        "hours": 346.67176432728144,
+        "status": "proxy",
+        "income": 1.0957004568181667e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "all upgrades 30",
+        "hours": 356.38321285757786,
+        "status": "proxy",
+        "income": 2.6459290103558376e+21
+      }
+    ],
+    "New x2": [
+      {
+        "route": "plane:DUB",
+        "milestone": "unlock",
+        "hours": 0.0,
+        "status": "proxy",
+        "income": 0
+      },
+      {
+        "route": "plane:DUB",
+        "milestone": "all upgrades 30",
+        "hours": 3.347211775638843,
+        "status": "proxy",
+        "income": 4209.441449038983
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "unlock",
+        "hours": 3.4263988453175136,
+        "status": "proxy",
+        "income": 4209.441449038983
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "all upgrades 30",
+        "hours": 6.093076288441828,
+        "status": "proxy",
+        "income": 14550.835302645637
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "unlock",
+        "hours": 6.205326430743718,
+        "status": "proxy",
+        "income": 14550.835302645637
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "all upgrades 30",
+        "hours": 8.91809632674683,
+        "status": "proxy",
+        "income": 41540.284963353486
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "unlock",
+        "hours": 9.070558769864894,
+        "status": "proxy",
+        "income": 41540.284963353486
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 11.99080505485721,
+        "status": "proxy",
+        "income": 107687.88310366106
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "unlock",
+        "hours": 12.207480623740596,
+        "status": "proxy",
+        "income": 107687.88310366106
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "all upgrades 30",
+        "hours": 15.443301361198333,
+        "status": "proxy",
+        "income": 274924.28768547444
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "unlock",
+        "hours": 15.746415116752264,
+        "status": "proxy",
+        "income": 274924.28768547444
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 19.286425243922245,
+        "status": "proxy",
+        "income": 692089.5304303841
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "unlock",
+        "hours": 19.705446175823443,
+        "status": "proxy",
+        "income": 692089.5304303841
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "all upgrades 30",
+        "hours": 23.61375525590345,
+        "status": "proxy",
+        "income": 1740103.8313114601
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "unlock",
+        "hours": 24.198011579217464,
+        "status": "proxy",
+        "income": 1740103.8313114601
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "all upgrades 30",
+        "hours": 28.451697275280726,
+        "status": "proxy",
+        "income": 4384989.972262688
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "unlock",
+        "hours": 32.45853879605723,
+        "status": "proxy",
+        "income": 4384989.972262688
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "all upgrades 30",
+        "hours": 35.17039534164435,
+        "status": "proxy",
+        "income": 26342708.614891946
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "unlock",
+        "hours": 35.35071089193346,
+        "status": "proxy",
+        "income": 26342708.614891946
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "all upgrades 30",
+        "hours": 38.67309816602459,
+        "status": "proxy",
+        "income": 83251508.14209987
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "unlock",
+        "hours": 38.87329473949949,
+        "status": "proxy",
+        "income": 83251508.14209987
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "all upgrades 30",
+        "hours": 41.999269653417024,
+        "status": "proxy",
+        "income": 223564284.22168142
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "unlock",
+        "hours": 42.260193859340234,
+        "status": "proxy",
+        "income": 223564284.22168142
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "all upgrades 30",
+        "hours": 45.57594399019423,
+        "status": "proxy",
+        "income": 574809486.3596197
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "unlock",
+        "hours": 45.92968438272165,
+        "status": "proxy",
+        "income": 574809486.3596197
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "all upgrades 30",
+        "hours": 49.56501497280996,
+        "status": "proxy",
+        "income": 1452679834.1432528
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "unlock",
+        "hours": 50.058356072357434,
+        "status": "proxy",
+        "income": 1452679834.1432528
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 54.02316514673051,
+        "status": "proxy",
+        "income": 3647962347.505367
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "unlock",
+        "hours": 54.708479237680386,
+        "status": "proxy",
+        "income": 3647962347.505367
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "all upgrades 30",
+        "hours": 59.17760530501951,
+        "status": "proxy",
+        "income": 9133660844.812286
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "unlock",
+        "hours": 60.126476389015274,
+        "status": "proxy",
+        "income": 9133660844.812286
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "all upgrades 30",
+        "hours": 65.03992447955932,
+        "status": "proxy",
+        "income": 22841879613.36627
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "unlock",
+        "hours": 73.04488612611607,
+        "status": "proxy",
+        "income": 22841879613.36627
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 74.9530742063903,
+        "status": "proxy",
+        "income": 159102283501.96494
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "unlock",
+        "hours": 75.13534688885397,
+        "status": "proxy",
+        "income": 159102283501.96494
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "all upgrades 30",
+        "hours": 78.36724175978898,
+        "status": "proxy",
+        "income": 501133884393.01373
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "unlock",
+        "hours": 78.56678923225958,
+        "status": "proxy",
+        "income": 501133884393.01373
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "all upgrades 30",
+        "hours": 81.73436242409274,
+        "status": "proxy",
+        "income": 1355619219180.996
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "unlock",
+        "hours": 81.99254701977253,
+        "status": "proxy",
+        "income": 1355619219180.996
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 85.33599008784775,
+        "status": "proxy",
+        "income": 3499449798636.185
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "unlock",
+        "hours": 85.69318909681401,
+        "status": "proxy",
+        "income": 3499449798636.185
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "all upgrades 30",
+        "hours": 89.29034634036451,
+        "status": "proxy",
+        "income": 8851957431066.51
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "unlock",
+        "hours": 89.77988025047179,
+        "status": "proxy",
+        "income": 8851957431066.51
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "all upgrades 30",
+        "hours": 93.70868051131372,
+        "status": "proxy",
+        "income": 22270835475270.703
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "unlock",
+        "hours": 94.38220710696639,
+        "status": "proxy",
+        "income": 22270835475270.703
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "all upgrades 30",
+        "hours": 98.68370477457036,
+        "status": "proxy",
+        "income": 55895352025034.05
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "unlock",
+        "hours": 99.63786878644467,
+        "status": "proxy",
+        "income": 55895352025034.05
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "all upgrades 30",
+        "hours": 104.41641368189771,
+        "status": "proxy",
+        "income": 139905008699580.98
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "unlock",
+        "hours": 116.41998753536191,
+        "status": "proxy",
+        "income": 139905008699580.98
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "all upgrades 30",
+        "hours": 117.42231325502712,
+        "status": "proxy",
+        "income": 1067459880884722.9
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "unlock",
+        "hours": 117.58781518145103,
+        "status": "proxy",
+        "income": 1067459880884722.9
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "all upgrades 30",
+        "hours": 120.67841074230711,
+        "status": "proxy",
+        "income": 3402807788887745.0
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "unlock",
+        "hours": 120.85963363379116,
+        "status": "proxy",
+        "income": 3402807788887745.0
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "all upgrades 30",
+        "hours": 123.70105790613219,
+        "status": "proxy",
+        "income": 9281807683636930.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "unlock",
+        "hours": 123.93448944668073,
+        "status": "proxy",
+        "income": 9281807683636930.0
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "all upgrades 30",
+        "hours": 126.91490979006737,
+        "status": "proxy",
+        "income": 2.4032768435141756e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "unlock",
+        "hours": 127.22698369949816,
+        "status": "proxy",
+        "income": 2.4032768435141756e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 130.89502744362036,
+        "status": "proxy",
+        "income": 5.656924288183462e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "unlock",
+        "hours": 131.36642612792608,
+        "status": "proxy",
+        "income": 5.656924288183462e+16
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "all upgrades 30",
+        "hours": 135.54349259902065,
+        "status": "proxy",
+        "income": 1.3813284688356797e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "unlock",
+        "hours": 136.21917065416133,
+        "status": "proxy",
+        "income": 1.3813284688356797e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "all upgrades 30",
+        "hours": 140.89824128645824,
+        "status": "proxy",
+        "income": 3.419174907091602e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "unlock",
+        "hours": 141.84876300246032,
+        "status": "proxy",
+        "income": 3.419174907091602e+17
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "all upgrades 30",
+        "hours": 147.0207809238155,
+        "status": "proxy",
+        "income": 8.523723964508827e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "unlock",
+        "hours": 163.02430051221663,
+        "status": "proxy",
+        "income": 8.523723964508827e+17
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "all upgrades 30",
+        "hours": 163.50377690213512,
+        "status": "proxy",
+        "income": 6.005391674095674e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "unlock",
+        "hours": 163.68417035390718,
+        "status": "proxy",
+        "income": 6.005391674095674e+18
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "all upgrades 30",
+        "hours": 166.8607409393254,
+        "status": "proxy",
+        "income": 1.9119647345278927e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "unlock",
+        "hours": 167.06123278230282,
+        "status": "proxy",
+        "income": 1.9119647345278927e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "all upgrades 30",
+        "hours": 170.2536288504643,
+        "status": "proxy",
+        "income": 5.261971586145812e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "unlock",
+        "hours": 170.50701929765788,
+        "status": "proxy",
+        "income": 5.261971586145812e+19
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "all upgrades 30",
+        "hours": 173.8718265329943,
+        "status": "proxy",
+        "income": 1.3507137396044469e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "unlock",
+        "hours": 174.21732288280066,
+        "status": "proxy",
+        "income": 1.3507137396044469e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "all upgrades 30",
+        "hours": 178.29521832160833,
+        "status": "proxy",
+        "income": 3.450141017402892e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "unlock",
+        "hours": 178.7637982024051,
+        "status": "proxy",
+        "income": 3.450141017402892e+20
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "all upgrades 30",
+        "hours": 182.76875336642038,
+        "status": "proxy",
+        "income": 8.665472920181442e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "unlock",
+        "hours": 183.42268959342877,
+        "status": "proxy",
+        "income": 8.665472920181442e+20
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "all upgrades 30",
+        "hours": 188.25675801714664,
+        "status": "proxy",
+        "income": 2.1914009136363335e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "unlock",
+        "hours": 189.16941621106938,
+        "status": "proxy",
+        "income": 2.1914009136363335e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "all upgrades 30",
+        "hours": 194.0251404762176,
+        "status": "proxy",
+        "income": 5.291858020711675e+21
+      }
+    ],
+    "New x6": [
+      {
+        "route": "plane:DUB",
+        "milestone": "unlock",
+        "hours": 0.0,
+        "status": "proxy",
+        "income": 0
+      },
+      {
+        "route": "plane:DUB",
+        "milestone": "all upgrades 30",
+        "hours": 1.1157372585462824,
+        "status": "proxy",
+        "income": 12628.324347116948
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "unlock",
+        "hours": 1.1421329484391725,
+        "status": "proxy",
+        "income": 12628.324347116948
+      },
+      {
+        "route": "plane:PMI",
+        "milestone": "all upgrades 30",
+        "hours": 2.0310254294806116,
+        "status": "proxy",
+        "income": 43652.50590793691
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "unlock",
+        "hours": 2.0684421435812417,
+        "status": "proxy",
+        "income": 43652.50590793691
+      },
+      {
+        "route": "plane:DXB",
+        "milestone": "all upgrades 30",
+        "hours": 2.9726987755822867,
+        "status": "proxy",
+        "income": 124620.85489006045
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "unlock",
+        "hours": 3.0235195899549736,
+        "status": "proxy",
+        "income": 124620.85489006045
+      },
+      {
+        "route": "plane:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 3.996935018285748,
+        "status": "proxy",
+        "income": 323063.6493109832
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "unlock",
+        "hours": 4.069160207913543,
+        "status": "proxy",
+        "income": 323063.6493109832
+      },
+      {
+        "route": "plane:NCE",
+        "milestone": "all upgrades 30",
+        "hours": 5.147767120399454,
+        "status": "proxy",
+        "income": 824772.8630564234
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "unlock",
+        "hours": 5.248805038917431,
+        "status": "proxy",
+        "income": 824772.8630564234
+      },
+      {
+        "route": "plane:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 6.428808414640755,
+        "status": "proxy",
+        "income": 2076268.5912911524
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "unlock",
+        "hours": 6.568482058607819,
+        "status": "proxy",
+        "income": 2076268.5912911524
+      },
+      {
+        "route": "plane:CAI",
+        "milestone": "all upgrades 30",
+        "hours": 7.871251751967831,
+        "status": "proxy",
+        "income": 5220311.49393438
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "unlock",
+        "hours": 8.06600385973917,
+        "status": "proxy",
+        "income": 5220311.49393438
+      },
+      {
+        "route": "plane:SIN",
+        "milestone": "all upgrades 30",
+        "hours": 9.483899091760248,
+        "status": "proxy",
+        "income": 13154969.916788064
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "unlock",
+        "hours": 13.48617959868575,
+        "status": "proxy",
+        "income": 13154969.916788064
+      },
+      {
+        "route": "bus:OXF",
+        "milestone": "all upgrades 30",
+        "hours": 13.742870684248569,
+        "status": "proxy",
+        "income": 79028125.84467584
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "unlock",
+        "hours": 13.802975867678272,
+        "status": "proxy",
+        "income": 79028125.84467584
+      },
+      {
+        "route": "bus:BTN",
+        "milestone": "all upgrades 30",
+        "hours": 14.91043829237528,
+        "status": "proxy",
+        "income": 249754524.4262996
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "unlock",
+        "hours": 14.977170483533582,
+        "status": "proxy",
+        "income": 249754524.4262996
+      },
+      {
+        "route": "bus:CAM",
+        "milestone": "all upgrades 30",
+        "hours": 16.019162121506096,
+        "status": "proxy",
+        "income": 670692852.6650443
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "unlock",
+        "hours": 16.10613685681383,
+        "status": "proxy",
+        "income": 670692852.6650443
+      },
+      {
+        "route": "bus:BRS",
+        "milestone": "all upgrades 30",
+        "hours": 17.211386900431865,
+        "status": "proxy",
+        "income": 1724428459.078859
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "unlock",
+        "hours": 17.32930036460767,
+        "status": "proxy",
+        "income": 1724428459.078859
+      },
+      {
+        "route": "bus:BHX",
+        "milestone": "all upgrades 30",
+        "hours": 18.541077227970423,
+        "status": "proxy",
+        "income": 4358039502.429759
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "unlock",
+        "hours": 18.70552426115291,
+        "status": "proxy",
+        "income": 4358039502.429759
+      },
+      {
+        "route": "bus:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 20.027127285943966,
+        "status": "proxy",
+        "income": 10943887042.5161
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "unlock",
+        "hours": 20.25556531626059,
+        "status": "proxy",
+        "income": 10943887042.5161
+      },
+      {
+        "route": "bus:LIV",
+        "milestone": "all upgrades 30",
+        "hours": 21.745274005373673,
+        "status": "proxy",
+        "income": 27400982534.43686
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "unlock",
+        "hours": 22.06156436670559,
+        "status": "proxy",
+        "income": 27400982534.43686
+      },
+      {
+        "route": "bus:LON",
+        "milestone": "all upgrades 30",
+        "hours": 23.699380396886966,
+        "status": "proxy",
+        "income": 68525638840.0988
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "unlock",
+        "hours": 31.701034279072548,
+        "status": "proxy",
+        "income": 68525638840.0988
+      },
+      {
+        "route": "train:MAN",
+        "milestone": "all upgrades 30",
+        "hours": 31.701034279072548,
+        "status": "proxy",
+        "income": 477306850505.89484
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "unlock",
+        "hours": 31.701034279072548,
+        "status": "proxy",
+        "income": 477306850505.89484
+      },
+      {
+        "route": "train:PAR",
+        "milestone": "all upgrades 30",
+        "hours": 32.66423655175786,
+        "status": "proxy",
+        "income": 1503401653179.041
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "unlock",
+        "hours": 32.730752375914726,
+        "status": "proxy",
+        "income": 1503401653179.041
+      },
+      {
+        "route": "train:BRU",
+        "milestone": "all upgrades 30",
+        "hours": 33.78661010652575,
+        "status": "proxy",
+        "income": 4066857657542.988
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "unlock",
+        "hours": 33.872671638419014,
+        "status": "proxy",
+        "income": 4066857657542.988
+      },
+      {
+        "route": "train:EDI",
+        "milestone": "all upgrades 30",
+        "hours": 34.98715266111076,
+        "status": "proxy",
+        "income": 10498349395908.555
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "unlock",
+        "hours": 35.10621899743285,
+        "status": "proxy",
+        "income": 10498349395908.555
+      },
+      {
+        "route": "train:AMS",
+        "milestone": "all upgrades 30",
+        "hours": 36.30527141194973,
+        "status": "proxy",
+        "income": 26555872293199.53
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "unlock",
+        "hours": 36.468449381985494,
+        "status": "proxy",
+        "income": 26555872293199.53
+      },
+      {
+        "route": "train:FRA",
+        "milestone": "all upgrades 30",
+        "hours": 37.77804946893277,
+        "status": "proxy",
+        "income": 66812506425812.11
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "unlock",
+        "hours": 38.00255833415033,
+        "status": "proxy",
+        "income": 66812506425812.11
+      },
+      {
+        "route": "train:LYS",
+        "milestone": "all upgrades 30",
+        "hours": 39.436390890018316,
+        "status": "proxy",
+        "income": 167686056075102.16
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "unlock",
+        "hours": 39.754445560643084,
+        "status": "proxy",
+        "income": 167686056075102.16
+      },
+      {
+        "route": "train:ROM",
+        "milestone": "all upgrades 30",
+        "hours": 41.3472938591274,
+        "status": "proxy",
+        "income": 419715026098742.94
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "unlock",
+        "hours": 53.34848514361546,
+        "status": "proxy",
+        "income": 419715026098742.94
+      },
+      {
+        "route": "ship:ROT",
+        "milestone": "all upgrades 30",
+        "hours": 53.34848514361546,
+        "status": "proxy",
+        "income": 3202379642654168.5
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "unlock",
+        "hours": 53.34848514361546,
+        "status": "proxy",
+        "income": 3202379642654168.5
+      },
+      {
+        "route": "ship:BIO",
+        "milestone": "all upgrades 30",
+        "hours": 53.979463217460356,
+        "status": "proxy",
+        "income": 1.0208423366663234e+16
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "unlock",
+        "hours": 54.039870847955044,
+        "status": "proxy",
+        "income": 1.0208423366663234e+16
+      },
+      {
+        "route": "ship:OSL",
+        "milestone": "all upgrades 30",
+        "hours": 54.98701227206863,
+        "status": "proxy",
+        "income": 2.784542305091079e+16
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "unlock",
+        "hours": 55.06482278558481,
+        "status": "proxy",
+        "income": 2.784542305091079e+16
+      },
+      {
+        "route": "ship:LIS",
+        "milestone": "all upgrades 30",
+        "hours": 56.058296233380325,
+        "status": "proxy",
+        "income": 7.209830530542526e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "unlock",
+        "hours": 56.162320869857254,
+        "status": "proxy",
+        "income": 7.209830530542526e+16
+      },
+      {
+        "route": "ship:KEF",
+        "milestone": "all upgrades 30",
+        "hours": 57.38500211789792,
+        "status": "proxy",
+        "income": 1.6970772864550387e+17
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "unlock",
+        "hours": 57.542135012666485,
+        "status": "proxy",
+        "income": 1.6970772864550387e+17
+      },
+      {
+        "route": "ship:NYC",
+        "milestone": "all upgrades 30",
+        "hours": 58.9344905030313,
+        "status": "proxy",
+        "income": 4.143985406507039e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "unlock",
+        "hours": 59.159716521411525,
+        "status": "proxy",
+        "income": 4.143985406507039e+17
+      },
+      {
+        "route": "ship:RIO",
+        "milestone": "all upgrades 30",
+        "hours": 60.71940673217718,
+        "status": "proxy",
+        "income": 1.0257524721274806e+18
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "unlock",
+        "hours": 61.03624730417788,
+        "status": "proxy",
+        "income": 1.0257524721274806e+18
+      },
+      {
+        "route": "ship:SYD",
+        "milestone": "all upgrades 30",
+        "hours": 62.760253277963,
+        "status": "proxy",
+        "income": 2.557117189352648e+18
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "unlock",
+        "hours": 78.76142647409672,
+        "status": "proxy",
+        "income": 2.557117189352648e+18
+      },
+      {
+        "route": "truck:CHI",
+        "milestone": "all upgrades 30",
+        "hours": 78.76142647409672,
+        "status": "proxy",
+        "income": 1.8016175022287024e+19
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "unlock",
+        "hours": 78.76142647409672,
+        "status": "proxy",
+        "income": 1.8016175022287024e+19
+      },
+      {
+        "route": "truck:MIA",
+        "milestone": "all upgrades 30",
+        "hours": 79.17478262484858,
+        "status": "proxy",
+        "income": 5.735894203583678e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "unlock",
+        "hours": 79.24161323917437,
+        "status": "proxy",
+        "income": 5.735894203583678e+19
+      },
+      {
+        "route": "truck:DAL",
+        "milestone": "all upgrades 30",
+        "hours": 80.3057452618948,
+        "status": "proxy",
+        "income": 1.5785914758437434e+20
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "unlock",
+        "hours": 80.39020874429266,
+        "status": "proxy",
+        "income": 1.5785914758437434e+20
+      },
+      {
+        "route": "truck:SEA",
+        "milestone": "all upgrades 30",
+        "hours": 81.5118111560714,
+        "status": "proxy",
+        "income": 4.052141218813341e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "unlock",
+        "hours": 81.62697660600686,
+        "status": "proxy",
+        "income": 4.052141218813341e+20
+      },
+      {
+        "route": "truck:HAM",
+        "milestone": "all upgrades 30",
+        "hours": 82.98627508560949,
+        "status": "proxy",
+        "income": 1.0350423052208677e+21
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "unlock",
+        "hours": 83.14246837920841,
+        "status": "proxy",
+        "income": 1.0350423052208677e+21
+      },
+      {
+        "route": "truck:MIL",
+        "milestone": "all upgrades 30",
+        "hours": 84.47745343388016,
+        "status": "proxy",
+        "income": 2.599641876054433e+21
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "unlock",
+        "hours": 84.69543217621627,
+        "status": "proxy",
+        "income": 2.599641876054433e+21
+      },
+      {
+        "route": "truck:MAD",
+        "milestone": "all upgrades 30",
+        "hours": 86.30678831745573,
+        "status": "proxy",
+        "income": 6.574202740909e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "unlock",
+        "hours": 86.61100771542996,
+        "status": "proxy",
+        "income": 6.574202740909e+21
+      },
+      {
+        "route": "truck:WAW",
+        "milestone": "all upgrades 30",
+        "hours": 88.22958247047944,
+        "status": "proxy",
+        "income": 1.5875574062135024e+22
+      }
+    ]
+  }
+}
