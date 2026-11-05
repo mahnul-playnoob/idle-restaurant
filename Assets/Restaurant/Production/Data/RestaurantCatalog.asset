@@ -1,0 +1,1663 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16444ae68d18a4f7c8df04a4fe82a201, type: 3}
+  m_Name: RestaurantCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::IdleRestaurant.RestaurantCatalog
+  guestPrefab: {fileID: 8494921164287841076, guid: b0438976bf5ce46aea0948195a33edf5, type: 3}
+  chefPrefab: {fileID: 1142248946699378932, guid: 4abc58affb2a1402782bfca95ee3cea2, type: 3}
+  hostPrefab: {fileID: 2743219940372241233, guid: 1a686d88c402f4f2f94d9e7031697e81, type: 3}
+  outlets:
+  - id: 0
+    district: 0
+    capacity: 52
+    premium: 4
+    economyRows: 12
+    segments: 1
+    title: Sunny Counter
+    menu: Burger, fries, lemonade
+    source: plane:DUB
+    body: plane
+    fare: 0.4348
+    unlock: 0
+    currentScale: 0.9474571254384647
+    newScale: 0.47372856271923236
+    weights:
+    - 1.2877725896902916
+    - 0.9539056219928086
+    - 0.8108197786938873
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 2296868877430453595, guid: 9bd68f0adf6d84719a13eff1ce245af1, type: 3}
+    food: {fileID: 7874916763833131935, guid: 59f845c3547694467aee57a26c36b112, type: 3}
+  - id: 1
+    district: 0
+    capacity: 76
+    premium: 0
+    economyRows: 19
+    segments: 1
+    title: Toast and Bean
+    menu: Toast, omelette, coffee
+    source: plane:PMI
+    body: plane
+    fare: 1.3939900699738657
+    unlock: 20000
+    currentScale: 3.1976677983548183
+    newScale: 1.7764821101971213
+    weights:
+    - 1.272345194921994
+    - 0.8011062338397739
+    - 0.9424779221644398
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 880613833486764541, guid: 0089b4c09e10a49aea347458403f5ae2, type: 3}
+    food: {fileID: 1937834210855033185, guid: 4ad9e33fe6dc74b439da975c9f0871ed, type: 3}
+  - id: 2
+    district: 0
+    capacity: 72
+    premium: 8
+    economyRows: 16
+    segments: 1
+    title: Basil and Bun
+    menu: Burger, pasta, garden salad
+    source: plane:DXB
+    body: plane
+    fare: 2.3676859462512154
+    unlock: 98000
+    currentScale: 8.42940761288534
+    newScale: 5.489329720509106
+    weights:
+    - 0.9539066269693273
+    - 1.287773946408592
+    - 0.8108206329239281
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 1072774455240554276, guid: abb6e4ed0ffdf48b29241c25c0179bc2, type: 3}
+    food: {fileID: 4984715485668323284, guid: 3cac607b700654f2b840e95a3f875ab8, type: 3}
+  - id: 3
+    district: 0
+    capacity: 44
+    premium: 4
+    economyRows: 10
+    segments: 1
+    title: Taco Terrace
+    menu: Tacos, nachos, salsa
+    source: plane:EDI
+    body: plane
+    fare: 6.699153932643653
+    unlock: 380000
+    currentScale: 20.747904665431804
+    newScale: 15.842963539089633
+    weights:
+    - 0.8011045660741088
+    - 1.2723425461177025
+    - 0.9424759600871869
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 2038530039951551132, guid: f516dfd19f4054821b2d2a6f47647780, type: 3}
+    food: {fileID: 6112099584351547017, guid: 2057ef4295e3e4efbb0384eb95be1a07, type: 3}
+  - id: 4
+    district: 0
+    capacity: 86
+    premium: 8
+    economyRows: 13
+    segments: 1
+    title: Noodle Nook
+    menu: Ramen, dumplings, tea
+    source: plane:NCE
+    body: planeL
+    fare: 15.259923716626473
+    unlock: 1400000
+    currentScale: 49.9027944086143
+    newScale: 44.4730897194309
+    weights:
+    - 0.9539066269693273
+    - 1.287773946408592
+    - 0.8108206329239281
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 2334122065229499310, guid: 4ab053d67d4324cf391814b4ef73e9db, type: 3}
+    food: {fileID: 2935695567686283923, guid: c210d0d9e73f84cd7b94ed455947f9fc, type: 3}
+  - id: 5
+    district: 0
+    capacity: 98
+    premium: 8
+    economyRows: 15
+    segments: 1
+    title: Slice Street
+    menu: Pizza, garlic bread, soda
+    source: plane:KEF
+    body: planeL
+    fare: 39.08721364396193
+    unlock: 5000000
+    currentScale: 119.04919382988813
+    newScale: 123.37933321253871
+    weights:
+    - 0.7793243939757559
+    - 0.9168522282067717
+    - 1.2377505080791418
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 953465619070172495, guid: 42a890c246f37414496b50e47b217af7, type: 3}
+    food: {fileID: 4600234343958712694, guid: 3cf542f2d932f4701ba8f34a1b7fdf1b, type: 3}
+  - id: 6
+    district: 0
+    capacity: 108
+    premium: 12
+    economyRows: 16
+    segments: 1
+    title: Rice Corner
+    menu: Rice bowls, skewers, pickles
+    source: plane:CAI
+    body: planeL
+    fare: 88.11049656553867
+    unlock: 17400000
+    currentScale: 283.1802519225682
+    newScale: 340.56223896547147
+    weights:
+    - 0.9168550134678088
+    - 0.7793267614476375
+    - 1.237754268181542
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 1507386739160361920, guid: 5deb6179cfd374e21a421473c9d98fc5, type: 3}
+    food: {fileID: 8225209601366022082, guid: 21159ba7f79474b98869b1a19db1fbe0, type: 3}
+  - id: 7
+    district: 0
+    capacity: 118
+    premium: 16
+    economyRows: 17
+    segments: 1
+    title: Night Market
+    menu: Mixed street food, fruit coolers
+    source: plane:SIN
+    body: planeL
+    fare: 204.6256005527505
+    unlock: 61000000
+    currentScale: 672.90445638648
+    newScale: 938.0250395476114
+    weights:
+    - 0.7793243939757559
+    - 0.9168522282067717
+    - 1.2377505080791418
+    check: 1
+    stow: 1
+    walk: 1
+    door: 1
+    prediction: 1.08
+    environment: {fileID: 3517725002676518624, guid: 9ddd32c69ceef4690ba42772f0d8249e, type: 3}
+    food: {fileID: 2170226687008452822, guid: a70792f0bb3fb4ff39fe799b0392e09c, type: 3}
+  - id: 8
+    district: 1
+    capacity: 44
+    premium: 0
+    economyRows: 11
+    segments: 1
+    title: Morning Table
+    menu: Pancakes, eggs, latte
+    source: bus:OXF
+    body: bus
+    fare: 4141.713936576898
+    unlock: 0
+    currentScale: 9635.505729550921
+    newScale: 4817.752864775461
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.26
+    stow: 1.37
+    walk: 0.45
+    door: 1.26
+    prediction: 1.19
+    environment: {fileID: 1437250869071113878, guid: c6ee558f5d2924e6aabddff0511ba8e7, type: 3}
+    food: {fileID: 6244049682474373, guid: 5e57a2965a70d487ebbf37fabcd6e105, type: 3}
+  - id: 9
+    district: 1
+    capacity: 56
+    premium: 4
+    economyRows: 13
+    segments: 1
+    title: Maple Diner
+    menu: Waffles, bacon, syrup
+    source: bus:BTN
+    body: bus
+    fare: 7752.530070989346
+    unlock: 285000000
+    currentScale: 22888.115936185193
+    newScale: 13250.715292383396
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.26
+    stow: 1.37
+    walk: 0.45
+    door: 1.26
+    prediction: 1.19
+    environment: {fileID: 1897445961340815675, guid: 9a5411d4a42c441b09e2194ebcef0a61, type: 3}
+    food: {fileID: 6632721512771525237, guid: 499f6537ca6b34f77b599e6562fc47be, type: 3}
+  - id: 10
+    district: 1
+    capacity: 78
+    premium: 6
+    economyRows: 18
+    segments: 2
+    title: Copper Pan
+    menu: Pasta, meatballs, salad
+    source: bus:CAM
+    body: busL
+    fare: 17789.567927496588
+    unlock: 1000000000
+    currentScale: 54362.615134807005
+    newScale: 36441.8830697242
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 1.23
+    stow: 1.45
+    walk: 0.45
+    door: 1.47
+    prediction: 1.19
+    environment: {fileID: 1083654837540447462, guid: 480d4d622c6dd496bbcb9fc177413f6d, type: 3}
+    food: {fileID: 2014052685838717616, guid: b0f9074ffbc704ef8a041987b1719576, type: 3}
+  - id: 11
+    district: 1
+    capacity: 96
+    premium: 8
+    economyRows: 22
+    segments: 2
+    title: Family Kitchen
+    menu: Soup, sandwich, pie
+    source: bus:BRS
+    body: busL
+    fare: 42888.03592718036
+    unlock: 3500000000
+    currentScale: 129114.12319150595
+    newScale: 100218.16766897234
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 1.23
+    stow: 1.45
+    walk: 0.45
+    door: 1.47
+    prediction: 1.19
+    environment: {fileID: 6170482401532429121, guid: 0cdbf2fc0b8984693a836a8fccb877bd, type: 3}
+    food: {fileID: 7821168828251267662, guid: 823d83a9417544478ad04bfa90131306, type: 3}
+  - id: 12
+    district: 1
+    capacity: 122
+    premium: 10
+    economyRows: 28
+    segments: 2
+    title: Sunday Roast
+    menu: Roast chicken, potatoes
+    source: bus:BHX
+    body: busXL
+    fare: 105693.13281266138
+    unlock: 12200000000
+    currentScale: 306648.54866313946
+    newScale: 275603.5808496217
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 1.28
+    stow: 1.48
+    walk: 0.45
+    door: 1.55
+    prediction: 1.14
+    environment: {fileID: 4539092646815585726, guid: 7bb4fb606c85d43ef959645644c3f766, type: 3}
+    food: {fileID: 8442751876583092269, guid: c50d4b9f579294c2582b275d53375e0e, type: 3}
+  - id: 13
+    district: 1
+    capacity: 144
+    premium: 12
+    economyRows: 33
+    segments: 2
+    title: Riverside Diner
+    menu: Fish, fries, tartar sauce
+    source: bus:MAN
+    body: busXL
+    fare: 261044.32721322903
+    unlock: 43000000000
+    currentScale: 728292.4233033938
+    newScale: 757914.160682396
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 1.28
+    stow: 1.48
+    walk: 0.45
+    door: 1.55
+    prediction: 1.14
+    environment: {fileID: 8938474270916521898, guid: 10a25b52c933e49c6837b9b41e1dba32, type: 3}
+    food: {fileID: 7816702990871368305, guid: 9765b908e5cf94175a9acff668ff8185, type: 3}
+  - id: 14
+    district: 1
+    capacity: 148
+    premium: 12
+    economyRows: 34
+    segments: 2
+    title: City Brunch
+    menu: Brunch bowls, pastries
+    source: bus:LIV
+    body: busXL
+    fare: 656789.277307246
+    unlock: 150000000000
+    currentScale: 1729696.2590118665
+    newScale: 2084269.0181671132
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.28
+    stow: 1.48
+    walk: 0.45
+    door: 1.55
+    prediction: 1.14
+    environment: {fileID: 6889418813549156986, guid: 5d5860ce97207449d9a7f3fd76ef1527, type: 3}
+    food: {fileID: 402061413770834768, guid: f078b749cd136402ab19bdd6c094680d, type: 3}
+  - id: 15
+    district: 1
+    capacity: 152
+    premium: 12
+    economyRows: 35
+    segments: 2
+    title: Grand Comfort
+    menu: Mixed comfort tasting menu
+    source: bus:LON
+    body: busXL
+    fare: 1652016.138171632
+    unlock: 520000000000
+    currentScale: 4108030.0205854643
+    newScale: 5731745.715489133
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.28
+    stow: 1.48
+    walk: 0.45
+    door: 1.55
+    prediction: 1.14
+    environment: {fileID: 2068324633306799282, guid: d80b4f801ed904aa08fead17c172abbc, type: 3}
+    food: {fileID: 1497640189645579458, guid: cd15102a0c7da43dbaf4d7b11775bc20, type: 3}
+  - id: 16
+    district: 2
+    capacity: 76
+    premium: 4
+    economyRows: 18
+    segments: 3
+    title: Miso Lane
+    menu: Miso ramen, tea
+    source: train:MAN
+    body: train
+    fare: 24959013.728712145
+    unlock: 0
+    currentScale: 58825870.52053275
+    newScale: 29412935.260266375
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 3342326283218861108, guid: 9516f8431fd264e63ae64b012bf68152, type: 3}
+    food: {fileID: 4980765265295110633, guid: ef4bb0b59b099456fac46bc45a8ecb49, type: 3}
+  - id: 17
+    district: 2
+    capacity: 86
+    premium: 6
+    economyRows: 20
+    segments: 3
+    title: Dumpling House
+    menu: Dumplings, bao
+    source: train:PAR
+    body: train
+    fare: 57785246.18961891
+    unlock: 1740000000000
+    currentScale: 139711457.64557928
+    newScale: 80885579.54538953
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 6947753599374948226, guid: 0754086851f6a4268a9dfb88801c7b9f, type: 3}
+    food: {fileID: 2606715747094227756, guid: b6d504d4a2d994f9a82b8158156d52db, type: 3}
+  - id: 18
+    district: 2
+    capacity: 90
+    premium: 6
+    economyRows: 21
+    segments: 3
+    title: Wok Garden
+    menu: Stir fry, noodles
+    source: train:BRU
+    body: train
+    fare: 145285474.83605427
+    unlock: 6000000000000
+    currentScale: 331814725.2673963
+    newScale: 222435353.41388395
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 311913010330363357, guid: 5e1909a6def3a43ed996e360b0f5e823, type: 3}
+    food: {fileID: 1916919438452977320, guid: b965b3bdce2fd4967ad0d1b29a7e60e5, type: 3}
+  - id: 19
+    district: 2
+    capacity: 96
+    premium: 8
+    economyRows: 22
+    segments: 3
+    title: Sushi Studio
+    menu: Sushi, sashimi
+    source: train:EDI
+    body: train
+    fare: 340668374.7858074
+    unlock: 21000000000000
+    currentScale: 788059984.1590514
+    newScale: 611697233.8450898
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 5882773608440746280, guid: 7a04694a1f4cd4575b1773927d96b8aa, type: 3}
+    food: {fileID: 1753821546719890450, guid: a8a55cb00532c42a193a8749dc0ee513, type: 3}
+  - id: 20
+    district: 2
+    capacity: 104
+    premium: 8
+    economyRows: 24
+    segments: 3
+    title: Curry Courtyard
+    menu: Curry, rice, naan
+    source: train:AMS
+    body: train
+    fare: 863165945.1699775
+    unlock: 75000000000000
+    currentScale: 1871642472.4020803
+    newScale: 1682167407.553037
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 4724577635722993004, guid: 5352405dd248243999a3bbeacdcf8b29, type: 3}
+    food: {fileID: 2566293003688274897, guid: 0dbdf64bd7cc242678d675caa2b785f8, type: 3}
+  - id: 21
+    district: 2
+    capacity: 110
+    premium: 10
+    economyRows: 25
+    segments: 3
+    title: Seoul Table
+    menu: Bibimbap, kimchi
+    source: train:FRA
+    body: train
+    fare: 2048898008.0583234
+    unlock: 260000000000000
+    currentScale: 4445150880.435854
+    newScale: 4625960388.024235
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 1224541981736586993, guid: d028733db21354a4d9f96e368043d1b4, type: 3}
+    food: {fileID: 2479335432595424509, guid: 97b1c17e9e4234eb1a0d289800550167, type: 3}
+  - id: 22
+    district: 2
+    capacity: 116
+    premium: 12
+    economyRows: 26
+    segments: 3
+    title: Bamboo Feast
+    menu: Mixed steamed dishes
+    source: train:LYS
+    body: train
+    fare: 4898113871.080753
+    unlock: 900000000000000
+    currentScale: 10557233348.049816
+    newScale: 12721391087.371809
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 5365344194887177919, guid: df66e8f47f03f438993a014b35a6018d, type: 3}
+    food: {fileID: 5528612300659600142, guid: 1e593921ef35c484eb45f02de3336482, type: 3}
+  - id: 23
+    district: 2
+    capacity: 120
+    premium: 12
+    economyRows: 27
+    segments: 3
+    title: East Market
+    menu: Pan Asian tasting menu
+    source: train:ROM
+    body: train
+    fare: 12341691619.874676
+    unlock: 3200000000000000
+    currentScale: 25073429207.240047
+    newScale: 34983825513.9346
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.39
+    stow: 2.27
+    walk: 2.4
+    door: 2.03
+    prediction: 1.31
+    environment: {fileID: 8209442360539691060, guid: 20455b059b3de4db48c6565af6f8117f, type: 3}
+    food: {fileID: 1452184151919569144, guid: 6c30fdce3c3694c34a04f663a67d02b4, type: 3}
+  - id: 24
+    district: 3
+    capacity: 76
+    premium: 4
+    economyRows: 12
+    segments: 1
+    title: Olive Room
+    menu: Salad, focaccia
+    source: ship:ROT
+    body: shipS
+    fare: 134749628439.51047
+    unlock: 0
+    currentScale: 359044681519.28033
+    newScale: 179522340759.64017
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.28
+    stow: 1.61
+    walk: 1.3
+    door: 1.39
+    prediction: 1.16
+    environment: {fileID: 1774922577496402125, guid: 0742dc153a30a4dc6bcaca64e2a5d79d, type: 3}
+    food: {fileID: 6319830614611952240, guid: 299558a7eb6604aaba9a5c41c8973fa2, type: 3}
+  - id: 25
+    district: 3
+    capacity: 102
+    premium: 6
+    economyRows: 16
+    segments: 1
+    title: Lemon Grove
+    menu: Lemon chicken, couscous
+    source: ship:BIO
+    body: shipS
+    fare: 322258836217.5898
+    unlock: 10600000000000000
+    currentScale: 852731118668.928
+    newScale: 493686437119.3291
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.28
+    stow: 1.61
+    walk: 1.3
+    door: 1.39
+    prediction: 1.16
+    environment: {fileID: 8513857808082800183, guid: f08f0c46742e34b32920ad3d928ea614, type: 3}
+    food: {fileID: 4070001710357230692, guid: fa0251eec2f624048b86adb301d9d6ca, type: 3}
+  - id: 26
+    district: 3
+    capacity: 124
+    premium: 12
+    economyRows: 14
+    segments: 1
+    title: Tomato Terrace
+    menu: Pasta, bruschetta
+    source: ship:OSL
+    body: ship
+    fare: 695354738823.1453
+    unlock: 37000000000000000
+    currentScale: 2025236406892.1406
+    newScale: 1357637702116.8113
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 1.3
+    stow: 1.6
+    walk: 1.3
+    door: 1.39
+    prediction: 1.14
+    environment: {fileID: 2921886399927001588, guid: ad450ce664d1745989ebb293cc2797ad, type: 3}
+    food: {fileID: 955103435026246694, guid: c7df4e039d1d94495b3710b2743698bd, type: 3}
+  - id: 27
+    district: 3
+    capacity: 160
+    premium: 16
+    economyRows: 18
+    segments: 1
+    title: Saffron Table
+    menu: Paella, grilled vegetables
+    source: ship:LIS
+    body: ship
+    fare: 1700191979216.4163
+    unlock: 1.3e+17
+    currentScale: 4809936466415.429
+    newScale: 3733503680869.0596
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 1.3
+    stow: 1.6
+    walk: 1.3
+    door: 1.39
+    prediction: 1.14
+    environment: {fileID: 2173533914722663932, guid: 830bcb626c86d465383057ced8172267, type: 3}
+    food: {fileID: 3731680712420846724, guid: 869fec90622034afea114dca43a18858, type: 3}
+  - id: 28
+    district: 3
+    capacity: 170
+    premium: 10
+    economyRows: 40
+    segments: 2
+    title: Harbour Bistro
+    menu: Seafood, rice
+    source: ship:KEF
+    body: shipXL
+    fare: 3961015663500.355
+    unlock: 4.5e+17
+    currentScale: 11423599107776.74
+    newScale: 10267135122447.828
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 1.12
+    stow: 1.54
+    walk: 1.3
+    door: 1.47
+    prediction: 1.2
+    environment: {fileID: 1235039168954085431, guid: ed62af74da1094982ae9835120b9d997, type: 3}
+    food: {fileID: 4968521416357938847, guid: a628ae2a9b9aa4e24841ea110b73cd28, type: 3}
+  - id: 29
+    district: 3
+    capacity: 198
+    premium: 14
+    economyRows: 46
+    segments: 2
+    title: Garden Courtyard
+    menu: Mezze, flatbread
+    source: ship:NYC
+    body: shipXL
+    fare: 9417557802244.63
+    unlock: 1.6e+18
+    currentScale: 27131047881003.684
+    newScale: 28234621586800.543
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 1.12
+    stow: 1.54
+    walk: 1.3
+    door: 1.47
+    prediction: 1.2
+    environment: {fileID: 7140223661949120898, guid: bc81a15e14eae490e9aee046421d380e, type: 3}
+    food: {fileID: 1395805934405248863, guid: 81c97008353a743119ec2f27ddb54b2e, type: 3}
+  - id: 30
+    district: 3
+    capacity: 206
+    premium: 14
+    economyRows: 48
+    segments: 2
+    title: Sunset Dining
+    menu: Mediterranean platters
+    source: ship:RIO
+    body: shipXL
+    fare: 23725321793067.1
+    unlock: 5.6e+18
+    currentScale: 64436238717411.8
+    newScale: 77645209363782.72
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.12
+    stow: 1.54
+    walk: 1.3
+    door: 1.47
+    prediction: 1.2
+    environment: {fileID: 7152036705667947110, guid: a36ca2f7eb705455b8a54ffe55fe6fc9, type: 3}
+    food: {fileID: 8970250297919983766, guid: 1bd8797f679c24792b6f732e1fd96c92, type: 3}
+  - id: 31
+    district: 3
+    capacity: 208
+    premium: 16
+    economyRows: 48
+    segments: 2
+    title: Grand Riviera
+    menu: Chef tasting menu
+    source: ship:SYD
+    body: shipXL
+    fare: 57479533535754.63
+    unlock: 1.95e+19
+    currentScale: 153036066953875.5
+    newScale: 213524325750497.22
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 1.12
+    stow: 1.54
+    walk: 1.3
+    door: 1.47
+    prediction: 1.2
+    environment: {fileID: 7038577816234472805, guid: 038be505807e14faab1b8d0208f144d8, type: 3}
+    food: {fileID: 1108732979821271930, guid: d5b388cc4ae3a4c4c8a6b2dbcf29ec05, type: 3}
+  - id: 32
+    district: 4
+    capacity: 42
+    premium: 2
+    economyRows: 10
+    segments: 1
+    title: Sweet Start
+    menu: Cookies, cocoa
+    source: truck:CHI
+    body: truck
+    fare: 692709202393547.4
+    unlock: 0
+    currentScale: 2191434823972647.8
+    newScale: 1095717411986323.9
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 0.77
+    stow: 1
+    walk: 1
+    door: 0.86
+    prediction: 1.23
+    environment: {fileID: 1408014114678179362, guid: 72a2854f7a2fe4612a4d2fa24bf6583d, type: 3}
+    food: {fileID: 1887952633014490658, guid: a7df7eb567e0f4190ac359fef172ed6f, type: 3}
+  - id: 33
+    district: 4
+    capacity: 52
+    premium: 4
+    economyRows: 12
+    segments: 1
+    title: Berry Corner
+    menu: Berry tarts, tea
+    source: truck:MIA
+    body: truck
+    fare: 1515752874389037.8
+    unlock: 6.5e+19
+    currentScale: 5204657706935281
+    newScale: 3013222882962512.5
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 0.77
+    stow: 1
+    walk: 1
+    door: 0.86
+    prediction: 1.23
+    environment: {fileID: 5181659816452421157, guid: 96a2b0ba6452248d19cc334600db98c9, type: 3}
+    food: {fileID: 9133397652319703918, guid: fec49cfce1a5b4b20ad282c368190bcb, type: 3}
+  - id: 34
+    district: 4
+    capacity: 56
+    premium: 4
+    economyRows: 13
+    segments: 1
+    title: Crepe Club
+    menu: Crepes, fruit
+    source: truck:DAL
+    body: truckUS
+    fare: 3807749592674415
+    unlock: 2.3e+20
+    currentScale: 12361062053971508
+    newScale: 8286362928147065
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 0.8
+    stow: 1.04
+    walk: 1
+    door: 0.92
+    prediction: 1.2
+    environment: {fileID: 8426672107306056792, guid: c7728a8510709404ba173ecbb7326b17, type: 3}
+    food: {fileID: 158592258616816517, guid: d6e8c75748c784671b6c8fc6e12f1931, type: 3}
+  - id: 35
+    district: 4
+    capacity: 76
+    premium: 4
+    economyRows: 12
+    segments: 1
+    title: Cocoa House
+    menu: Chocolate cake, latte
+    source: truck:SEA
+    body: truckSemi
+    fare: 9650803367998424
+    unlock: 8e+20
+    currentScale: 29357522378182516
+    newScale: 22787498052404624
+    weights:
+    - 0.8008565310492505
+    - 1.271948608137045
+    - 0.9421841541755888
+    check: 0.8
+    stow: 1.03
+    walk: 1
+    door: 0.91
+    prediction: 1.2
+    environment: {fileID: 4835150784654101904, guid: 10196a266478c4f929d458339d5f6567, type: 3}
+    food: {fileID: 4245477790046655982, guid: 479d7a684c3b0412e8fd2358da665a86, type: 3}
+  - id: 36
+    district: 4
+    capacity: 84
+    premium: 6
+    economyRows: 13
+    segments: 1
+    title: Gelato Garden
+    menu: Gelato, waffle cones
+    source: truck:HAM
+    body: truckSemiUS
+    fare: 22607278129474256
+    unlock: 2.8e+21
+    currentScale: 69724115648183624
+    newScale: 62665619644112936
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 0.82
+    stow: 1.04
+    walk: 1
+    door: 0.94
+    prediction: 1.2
+    environment: {fileID: 751720637548399986, guid: ecdf2484310a5453299c51a9cc7845e4, type: 3}
+    food: {fileID: 3278959623226127840, guid: 09cca40d2df464f32b1e983eed25ee46, type: 3}
+  - id: 37
+    district: 4
+    capacity: 84
+    premium: 6
+    economyRows: 13
+    segments: 1
+    title: Mochi Studio
+    menu: Mochi, matcha
+    source: truck:MIL
+    body: truckSemi
+    fare: 56160296720196380
+    unlock: 9.7e+21
+    currentScale: 1.6559477466443622e+17
+    newScale: 1.7233045402131088e+17
+    weights:
+    - 0.9181011997913401
+    - 0.780386019822639
+    - 1.239436619718309
+    check: 0.8
+    stow: 1.03
+    walk: 1
+    door: 0.91
+    prediction: 1.2
+    environment: {fileID: 1199766889444826362, guid: e3328838e61bb449690dbcbdb725053f, type: 3}
+    food: {fileID: 2722518885267029488, guid: e71204661206b40cf8c77ead87d4a431, type: 3}
+  - id: 38
+    district: 4
+    capacity: 92
+    premium: 8
+    economyRows: 14
+    segments: 1
+    title: Pastry Atelier
+    menu: Croissants, mille feuille
+    source: truck:MAD
+    body: truckSemiUS
+    fare: 1.3364090277879787e+17
+    unlock: 3.4e+22
+    currentScale: 3.932875898280361e+17
+    newScale: 4.7390874855860525e+17
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 0.82
+    stow: 1.04
+    walk: 1
+    door: 0.94
+    prediction: 1.2
+    environment: {fileID: 1363927239615552245, guid: 63b3743e5d1a64bd5adef9c5b637e73d, type: 3}
+    food: {fileID: 3069808423971723440, guid: 49c22beb7f46e4a29a84b10535f21010, type: 3}
+  - id: 39
+    district: 4
+    capacity: 108
+    premium: 6
+    economyRows: 17
+    segments: 2
+    title: Celebration Cafe
+    menu: Dessert tasting menu
+    source: truck:WAW
+    body: truckHV
+    fare: 2.996251622444721e+17
+    unlock: 1.2e+23
+    currentScale: 9.340580258415859e+17
+    newScale: 1.303249058536165e+18
+    weights:
+    - 1.2864103952355168
+    - 0.9528965890633457
+    - 0.8099621007038439
+    check: 0.72
+    stow: 1.01
+    walk: 1
+    door: 0.92
+    prediction: 1.37
+    environment: {fileID: 1500103113875972819, guid: 20bf55382b0894e5f86ecb9528c29f37, type: 3}
+    food: {fileID: 7045389339264085367, guid: 964fa5ff971044e84b5547e27ab36bbb, type: 3}
+  research:
+  - key: arr
+    title: Service celebration
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 3000
+    income: 0
+    minutes: 2
+    effect: 0.003
+  - key: rsp
+    title: Research efficiency
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 5000
+    income: 0
+    minutes: 3
+    effect: 0.01
+  - key: tds
+    title: Street purchasing
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 8000
+    income: 0
+    minutes: 12
+    effect: 0.0045
+  - key: bds
+    title: Regional purchasing
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 8000
+    income: 0
+    minutes: 12
+    effect: 0.0045
+  - key: ccr
+    title: Premium hospitality
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 4000
+    income: 0
+    minutes: 4
+    effect: 0.006
+  - key: cds
+    title: Cafe purchasing
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 8000
+    income: 0
+    minutes: 12
+    effect: 0.0045
+  - key: cbus
+    title: Comfort licence
+    evidence: Source licence values
+    max: 1
+    district: 1
+    cost: 1800000
+    income: 757000
+    minutes: 240
+    effect: 0.003
+  - key: ctrn
+    title: Asian licence
+    evidence: Source licence values
+    max: 1
+    district: 2
+    cost: 6800000000
+    income: 4510000000
+    minutes: 480
+    effect: 0.003
+  - key: cshp
+    title: Mediterranean licence
+    evidence: Source licence values
+    max: 1
+    district: 3
+    cost: 30000000000000
+    income: 27400000000000
+    minutes: 720
+    effect: 0.003
+  - key: ctrk
+    title: Dessert licence
+    evidence: Source licence values
+    max: 1
+    district: 4
+    cost: 1.8e+17
+    income: 1.69e+17
+    minutes: 960
+    effect: 0.003
+  - key: gchk
+    title: Order workflow
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 6000
+    income: 0
+    minutes: 6
+    effect: 0.003
+  - key: gcin
+    title: Order value
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 6000
+    income: 0
+    minutes: 6
+    effect: 0.003
+  - key: gwlk
+    title: Kitchen delivery
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 6000
+    income: 0
+    minutes: 6
+    effect: 0.003
+  - key: gdor
+    title: Kitchen throughput
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 6000
+    income: 0
+    minutes: 6
+    effect: 0.003
+  - key: gdin
+    title: Kitchen value
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 6000
+    income: 0
+    minutes: 6
+    effect: 0.003
+  - key: gsea
+    title: Table service
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 6000
+    income: 0
+    minutes: 6
+    effect: 0.003
+  - key: gsin
+    title: Dining value
+    evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
+    max: 100
+    district: -1
+    cost: 6000
+    income: 0
+    minutes: 6
+    effect: 0.003
+  managers:
+  - id: mgr_common_001
+    title: Ari Vale
+    role: 0
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_002
+    title: Bea Vale
+    role: 0
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_003
+    title: Cleo Vale
+    role: 0
+    rarity: 0
+    affinity: -1
+  - id: mgr_rare_001
+    title: Dara Vale
+    role: 0
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_002
+    title: Eli Vale
+    role: 0
+    rarity: 1
+    affinity: -1
+  - id: mgr_epic_001
+    title: Faye Vale
+    role: 0
+    rarity: 2
+    affinity: 0
+  - id: mgr_epic_002
+    title: Gia Vale
+    role: 0
+    rarity: 2
+    affinity: 2
+  - id: mgr_legendary_001
+    title: Hugo Vale
+    role: 0
+    rarity: 3
+    affinity: 0
+  - id: mgr_common_004
+    title: Iris Vale
+    role: 1
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_005
+    title: Jules Vale
+    role: 1
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_006
+    title: Kai Vale
+    role: 1
+    rarity: 0
+    affinity: -1
+  - id: mgr_rare_003
+    title: Lena Vale
+    role: 1
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_004
+    title: Milo Vale
+    role: 1
+    rarity: 1
+    affinity: -1
+  - id: mgr_epic_003
+    title: Nia Vale
+    role: 1
+    rarity: 2
+    affinity: 3
+  - id: mgr_epic_004
+    title: Oren Vale
+    role: 1
+    rarity: 2
+    affinity: 1
+  - id: mgr_legendary_002
+    title: Pia Vale
+    role: 1
+    rarity: 3
+    affinity: 0
+  - id: mgr_common_007
+    title: Quinn Vale
+    role: 2
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_008
+    title: Remy Vale
+    role: 2
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_009
+    title: Sage Vale
+    role: 2
+    rarity: 0
+    affinity: -1
+  - id: mgr_rare_005
+    title: Theo Vale
+    role: 2
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_006
+    title: Uma Vale
+    role: 2
+    rarity: 1
+    affinity: -1
+  - id: mgr_epic_005
+    title: Vera Vale
+    role: 2
+    rarity: 2
+    affinity: 2
+  - id: mgr_epic_006
+    title: Wren Vale
+    role: 2
+    rarity: 2
+    affinity: 3
+  - id: mgr_legendary_003
+    title: Yara Vale
+    role: 2
+    rarity: 3
+    affinity: 0
+  - id: mgr_common_010
+    title: Ari Reed
+    role: 0
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_011
+    title: Bea Reed
+    role: 0
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_012
+    title: Cleo Reed
+    role: 0
+    rarity: 0
+    affinity: -1
+  - id: mgr_rare_007
+    title: Dara Reed
+    role: 0
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_008
+    title: Eli Reed
+    role: 0
+    rarity: 1
+    affinity: -1
+  - id: mgr_legendary_004
+    title: Faye Reed
+    role: 0
+    rarity: 3
+    affinity: 1
+  - id: mgr_legendary_005
+    title: Gia Reed
+    role: 0
+    rarity: 3
+    affinity: 3
+  - id: mgr_legendary_006
+    title: Hugo Reed
+    role: 0
+    rarity: 3
+    affinity: 2
+  - id: mgr_common_013
+    title: Iris Reed
+    role: 1
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_014
+    title: Jules Reed
+    role: 1
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_015
+    title: Kai Reed
+    role: 1
+    rarity: 0
+    affinity: -1
+  - id: mgr_rare_009
+    title: Lena Reed
+    role: 1
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_010
+    title: Milo Reed
+    role: 1
+    rarity: 1
+    affinity: -1
+  - id: mgr_legendary_007
+    title: Nia Reed
+    role: 1
+    rarity: 3
+    affinity: 1
+  - id: mgr_legendary_008
+    title: Oren Reed
+    role: 1
+    rarity: 3
+    affinity: 3
+  - id: mgr_legendary_009
+    title: Pia Reed
+    role: 1
+    rarity: 3
+    affinity: 2
+  - id: mgr_common_016
+    title: Quinn Reed
+    role: 2
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_017
+    title: Remy Reed
+    role: 2
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_018
+    title: Sage Reed
+    role: 2
+    rarity: 0
+    affinity: -1
+  - id: mgr_rare_011
+    title: Theo Reed
+    role: 2
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_012
+    title: Uma Reed
+    role: 2
+    rarity: 1
+    affinity: -1
+  - id: mgr_legendary_010
+    title: Vera Reed
+    role: 2
+    rarity: 3
+    affinity: 1
+  - id: mgr_legendary_011
+    title: Wren Reed
+    role: 2
+    rarity: 3
+    affinity: 3
+  - id: mgr_legendary_012
+    title: Yara Reed
+    role: 2
+    rarity: 3
+    affinity: 2
+  - id: mgr_epic_007
+    title: Ari Bloom
+    role: 0
+    rarity: 2
+    affinity: 1
+  - id: mgr_epic_008
+    title: Bea Bloom
+    role: 0
+    rarity: 2
+    affinity: 3
+  - id: mgr_epic_009
+    title: Cleo Bloom
+    role: 1
+    rarity: 2
+    affinity: 0
+  - id: mgr_epic_010
+    title: Dara Bloom
+    role: 1
+    rarity: 2
+    affinity: 2
+  - id: mgr_epic_011
+    title: Eli Bloom
+    role: 2
+    rarity: 2
+    affinity: 0
+  - id: mgr_epic_012
+    title: Faye Bloom
+    role: 2
+    rarity: 2
+    affinity: 1
+  - id: mgr_mythic_001
+    title: Gia Bloom
+    role: 0
+    rarity: 4
+    affinity: 0
+  - id: mgr_mythic_002
+    title: Hugo Bloom
+    role: 1
+    rarity: 4
+    affinity: 1
+  - id: mgr_mythic_003
+    title: Iris Bloom
+    role: 2
+    rarity: 4
+    affinity: 2
+  - id: mgr_mythic_004
+    title: Jules Bloom
+    role: 0
+    rarity: 4
+    affinity: 3
+  - id: mgr_common_019
+    title: Kai Bloom
+    role: 0
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_020
+    title: Lena Bloom
+    role: 1
+    rarity: 0
+    affinity: -1
+  - id: mgr_common_021
+    title: Milo Bloom
+    role: 2
+    rarity: 0
+    affinity: -1
+  - id: mgr_rare_013
+    title: Nia Bloom
+    role: 0
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_014
+    title: Oren Bloom
+    role: 1
+    rarity: 1
+    affinity: -1
+  - id: mgr_rare_015
+    title: Pia Bloom
+    role: 2
+    rarity: 1
+    affinity: -1
+  - id: mgr_epic_013
+    title: Quinn Bloom
+    role: 0
+    rarity: 2
+    affinity: 4
+  - id: mgr_epic_014
+    title: Remy Bloom
+    role: 1
+    rarity: 2
+    affinity: 4
+  - id: mgr_epic_015
+    title: Sage Bloom
+    role: 2
+    rarity: 2
+    affinity: 4
+  - id: mgr_legendary_013
+    title: Theo Bloom
+    role: 0
+    rarity: 3
+    affinity: 4
+  - id: mgr_legendary_014
+    title: Uma Bloom
+    role: 1
+    rarity: 3
+    affinity: 4
+  - id: mgr_legendary_015
+    title: Vera Bloom
+    role: 2
+    rarity: 3
+    affinity: 4
+  - id: mgr_mythic_005
+    title: Wren Bloom
+    role: 2
+    rarity: 4
+    affinity: 4
+  offers:
+  - id: demo.income2
+    title: 2x income forever
+    type: NonConsumable
+    reward: income2
+    amount: 0
+  - id: demo.income3
+    title: 3x income forever
+    type: NonConsumable
+    reward: income3
+    amount: 0
+  - id: demo.offline
+    title: Offline hospitality
+    type: NonConsumable
+    reward: offline
+    amount: 0
+  - id: demo.gems100
+    title: 100 gems
+    type: Consumable
+    reward: gems
+    amount: 100
+  - id: demo.gems255
+    title: 255 gems
+    type: Consumable
+    reward: gems
+    amount: 255
+  - id: demo.gems520
+    title: 520 gems
+    type: Consumable
+    reward: gems
+    amount: 520
+  - id: demo.gems1100
+    title: 1100 gems
+    type: Consumable
+    reward: gems
+    amount: 1100
+  - id: demo.gems2750
+    title: 2750 gems
+    type: Consumable
+    reward: gems
+    amount: 2750
+  waveGemDailyCap: 100
+  useNewCosts: 0
+  initialCash: 100
+  maxUpgrade: 30
+  maxRank: 0
+  visibleGuests: 18
+  musicClip: {fileID: 8300000, guid: 99f1c55bd5fc44d0382018418df5adb1, type: 3}
+  coinClip: {fileID: 8300000, guid: ea71d9c9bb8e94a728e73541ac73fe19, type: 3}
+  tapClip: {fileID: 8300000, guid: 3db1165c00ea4475ebda61243a341483, type: 3}
+  upgradeClip: {fileID: 8300000, guid: d077e867e089f480994832578a6b2080, type: 3}
+  musicVolume: 0.4
+  upgradeBases:
+  - 45
+  - 45
+  - 90
+  - 40
+  - 50
+  - 90
+  - 55
+  - 55
+  - 120
+  starterCurrent:
+  - 50
+  - 50
+  - 100
+  - 40
+  - 50
+  - 80
+  - 40
+  - 40
+  - 100
+  starterNew:
+  - 25
+  - 25
+  - 50
+  - 20
+  - 25
+  - 40
+  - 20
+  - 20
+  - 50
+  referenceCostPowers:
+  - 1
+  - 1.1
+  - 1.2100000000000002
+  - 1.3310000000000004
+  - 1.4641000000000006
+  - 1.6105100000000006
+  - 1.7715610000000008
+  - 1.9487171000000012
+  - 2.1435888100000016
+  - 2.357947691000002
+  - 2.5937424601000023
+  - 2.8531167061100025
+  - 3.138428376721003
+  - 3.452271214393104
+  - 3.7974983358324144
+  - 4.177248169415656
+  - 4.594972986357222
+  - 5.054470284992945
+  - 5.55991731349224
+  - 6.115909044841464
+  - 6.727499949325611
+  - 7.400249944258173
+  - 8.14027493868399
+  - 8.95430243255239
+  - 9.84973267580763
+  - 10.834705943388395
+  - 11.918176537727234
+  - 13.10999419149996
+  - 14.420993610649957
+  - 15.863092971714952
+  - 17.44940226888645
+  costSlope: 0.4
+  costGrowth: 1.1
+  payGrowth: 0.2
+  premiumValue: 60
+  standardValue: 10
+  completionFraction: 0.1
+  stageShares:
+  - 0.3
+  - 0.3
+  - 0.4
+  offlineFraction: 0.25
+  offlineCapSeconds: 7200
+  premiumOfflineFraction: 0.75
+  premiumOfflineCapSeconds: 86400
+  offlineThresholdSeconds: 300
+  transferSeconds: 0.28
+  turnaroundSeconds: 4
+  rowClearSeconds: 0.5
+  rewardedBoostSeconds: 600
+  rewardedCooldownSeconds: 60
+  sourceVersion: Traffic Flow 0.8.1

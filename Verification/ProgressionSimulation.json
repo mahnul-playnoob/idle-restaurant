@@ -1,0 +1,2405 @@
+{
+  "assumptions": "Continuous online analytical estimate. Greedy cost-to-income purchases; max outlet before next; source licences; no optional research/managers/prestige/offline. Reconstructed income predictor, not actual gameplay time.",
+  "rows": [
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 0,
+      "source": "plane:DUB",
+      "unlockHours": 0.0,
+      "maxHours": 14.231074161583679,
+      "networkPerMinute": 2084.5383330050759,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 1,
+      "source": "plane:PMI",
+      "unlockHours": 14.390981671105369,
+      "maxHours": 24.032880152694258,
+      "networkPerMinute": 7255.2352598084035,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 2,
+      "source": "plane:DXB",
+      "unlockHours": 24.25800494532248,
+      "maxHours": 33.069320060124873,
+      "networkPerMinute": 20449.110036357495,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 3,
+      "source": "plane:EDI",
+      "unlockHours": 33.379031989987496,
+      "maxHours": 40.99598591273179,
+      "networkPerMinute": 53059.971472349513,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 4,
+      "source": "plane:NCE",
+      "unlockHours": 41.4357398870718,
+      "maxHours": 48.78608266970577,
+      "networkPerMinute": 135325.63578842042,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 5,
+      "source": "plane:KEF",
+      "unlockHours": 49.401881242147894,
+      "maxHours": 56.733028803891941,
+      "networkPerMinute": 341374.28276911203,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 6,
+      "source": "plane:CAI",
+      "unlockHours": 57.582536264288841,
+      "maxHours": 64.390295846047621,
+      "networkPerMinute": 853203.53153040877,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 7,
+      "source": "plane:SIN",
+      "unlockHours": 65.581883350195724,
+      "maxHours": 71.9888399213787,
+      "networkPerMinute": 2132786.151428354,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 8,
+      "source": "bus:OXF",
+      "unlockHours": 76.002906029216049,
+      "maxHours": 91.880853131624789,
+      "networkPerMinute": 13111645.472742982,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 9,
+      "source": "bus:BTN",
+      "unlockHours": 92.243126502261191,
+      "maxHours": 104.04316003928018,
+      "networkPerMinute": 41141123.655165754,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 10,
+      "source": "bus:CAM",
+      "unlockHours": 104.44826970051264,
+      "maxHours": 113.92224942162512,
+      "networkPerMinute": 111297511.69495654,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 11,
+      "source": "bus:BRS",
+      "unlockHours": 114.44637015393056,
+      "maxHours": 123.11542018302616,
+      "networkPerMinute": 286920112.76392567,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 12,
+      "source": "bus:BHX",
+      "unlockHours": 123.82409595822577,
+      "maxHours": 132.00060946532457,
+      "networkPerMinute": 725855286.65574229,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 13,
+      "source": "bus:MAN",
+      "unlockHours": 132.98795044064292,
+      "maxHours": 140.62707377578786,
+      "networkPerMinute": 1823496543.3367991,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 14,
+      "source": "bus:LIV",
+      "unlockHours": 141.99806622934375,
+      "maxHours": 149.36748441516954,
+      "networkPerMinute": 4566345791.9902592,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 15,
+      "source": "bus:LON",
+      "unlockHours": 151.26542799225666,
+      "maxHours": 158.32938902852914,
+      "networkPerMinute": 11420455176.26725,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 16,
+      "source": "train:MAN",
+      "unlockHours": 166.33931274274056,
+      "maxHours": 180.2236369126293,
+      "networkPerMinute": 79550657120.566589,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 17,
+      "source": "train:PAR",
+      "unlockHours": 180.58818449840282,
+      "maxHours": 191.79765115676656,
+      "networkPerMinute": 250566457566.09097,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 18,
+      "source": "train:BRU",
+      "unlockHours": 192.19674687361294,
+      "maxHours": 201.71504314865672,
+      "networkPerMinute": 677809124960.08215,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 19,
+      "source": "train:EDI",
+      "unlockHours": 202.23141270921789,
+      "maxHours": 210.93209240825325,
+      "networkPerMinute": 1749724414687.6768,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 20,
+      "source": "train:AMS",
+      "unlockHours": 211.64649062405636,
+      "maxHours": 219.68439862599769,
+      "networkPerMinute": 4425978230902.84,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 21,
+      "source": "train:FRA",
+      "unlockHours": 220.66346655341707,
+      "maxHours": 228.39849065605182,
+      "networkPerMinute": 11135417253004.936,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 22,
+      "source": "train:LYS",
+      "unlockHours": 229.745543905983,
+      "maxHours": 236.93061393035308,
+      "networkPerMinute": 27947675527886.609,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 23,
+      "source": "train:ROM",
+      "unlockHours": 238.83894198719332,
+      "maxHours": 245.88840913846832,
+      "networkPerMinute": 69952503865160.078,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 24,
+      "source": "ship:ROT",
+      "unlockHours": 257.89555684544627,
+      "maxHours": 271.08245093815242,
+      "networkPerMinute": 485786255966596.38,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 25,
+      "source": "ship:BIO",
+      "unlockHours": 271.44612254165452,
+      "maxHours": 284.00375953391125,
+      "networkPerMinute": 1526953438260768.3,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 26,
+      "source": "ship:OSL",
+      "unlockHours": 284.4076138042609,
+      "maxHours": 294.03288461340691,
+      "networkPerMinute": 4150713634606902.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 27,
+      "source": "ship:LIS",
+      "unlockHours": 294.55488320386661,
+      "maxHours": 303.508256305099,
+      "networkPerMinute": 10713968062305882.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 28,
+      "source": "ship:KEF",
+      "unlockHours": 304.20827705897693,
+      "maxHours": 312.95672849893793,
+      "networkPerMinute": 26982205285652316.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 29,
+      "source": "ship:NYC",
+      "unlockHours": 313.94503417611867,
+      "maxHours": 322.21952952956184,
+      "networkPerMinute": 67764007286518992.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 30,
+      "source": "ship:RIO",
+      "unlockHours": 323.59685854345418,
+      "maxHours": 331.4628111976408,
+      "networkPerMinute": 1.696563291993151E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 31,
+      "source": "ship:SYD",
+      "unlockHours": 333.37844854246504,
+      "maxHours": 340.83703820805124,
+      "networkPerMinute": 4.2488378207017638E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 32,
+      "source": "truck:CHI",
+      "unlockHours": 356.84409896237179,
+      "maxHours": 367.59842305175425,
+      "networkPerMinute": 2.9596709895817457E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 33,
+      "source": "truck:MIA",
+      "unlockHours": 367.96445472795972,
+      "maxHours": 379.189264588379,
+      "networkPerMinute": 9.34035731135328E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 34,
+      "source": "truck:DAL",
+      "unlockHours": 379.5996700156611,
+      "maxHours": 389.38281710283366,
+      "networkPerMinute": 2.5273270999086653E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 35,
+      "source": "truck:SEA",
+      "unlockHours": 389.91038369023011,
+      "maxHours": 398.89409992737126,
+      "networkPerMinute": 6.4930267926484984E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 36,
+      "source": "truck:HAM",
+      "unlockHours": 399.61281968869281,
+      "maxHours": 408.15489478944016,
+      "networkPerMinute": 1.6451097847481854E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 37,
+      "source": "truck:MIL",
+      "unlockHours": 409.13760529402464,
+      "maxHours": 417.08806345489245,
+      "networkPerMinute": 4.1346275484565255E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 38,
+      "source": "truck:MAD",
+      "unlockHours": 418.4586020584922,
+      "maxHours": 426.36391376095253,
+      "networkPerMinute": 1.0378493534124664E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "outlet": 39,
+      "source": "truck:WAW",
+      "unlockHours": 428.29097571211526,
+      "maxHours": 435.61125579058455,
+      "networkPerMinute": 2.5880779069501368E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 0,
+      "source": "plane:DUB",
+      "unlockHours": 0.0,
+      "maxHours": 7.11553708079184,
+      "networkPerMinute": 4169.0766660101517,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 1,
+      "source": "plane:PMI",
+      "unlockHours": 7.1954908355526843,
+      "maxHours": 12.016440076347129,
+      "networkPerMinute": 14510.470519616807,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 2,
+      "source": "plane:DXB",
+      "unlockHours": 12.12900247266124,
+      "maxHours": 16.534660030062437,
+      "networkPerMinute": 40898.22007271499,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 3,
+      "source": "plane:EDI",
+      "unlockHours": 16.689515994993748,
+      "maxHours": 20.497992956365895,
+      "networkPerMinute": 106119.94294469903,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 4,
+      "source": "plane:NCE",
+      "unlockHours": 20.7178699435359,
+      "maxHours": 24.393041334852885,
+      "networkPerMinute": 270651.27157684084,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 5,
+      "source": "plane:KEF",
+      "unlockHours": 24.700940621073947,
+      "maxHours": 28.36651440194597,
+      "networkPerMinute": 682748.56553822407,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 6,
+      "source": "plane:CAI",
+      "unlockHours": 28.79126813214442,
+      "maxHours": 32.195147923023811,
+      "networkPerMinute": 1706407.0630608175,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 7,
+      "source": "plane:SIN",
+      "unlockHours": 32.790941675097862,
+      "maxHours": 35.994419960689349,
+      "networkPerMinute": 4265572.3028567079,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 8,
+      "source": "bus:OXF",
+      "unlockHours": 40.001453014608025,
+      "maxHours": 47.060543097102979,
+      "networkPerMinute": 26223290.945485964,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 9,
+      "source": "bus:BTN",
+      "unlockHours": 47.24167978242118,
+      "maxHours": 53.141696550930675,
+      "networkPerMinute": 82282247.310331509,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 10,
+      "source": "bus:CAM",
+      "unlockHours": 53.344251381546904,
+      "maxHours": 58.081241242103147,
+      "networkPerMinute": 222595023.38991308,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 11,
+      "source": "bus:BRS",
+      "unlockHours": 58.343301608255864,
+      "maxHours": 62.677826622803664,
+      "networkPerMinute": 573840225.52785134,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 12,
+      "source": "bus:BHX",
+      "unlockHours": 63.032164510403469,
+      "maxHours": 67.120421263952863,
+      "networkPerMinute": 1451710573.3114846,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 13,
+      "source": "bus:MAN",
+      "unlockHours": 67.614091751612051,
+      "maxHours": 71.4336534191844,
+      "networkPerMinute": 3646993086.6735983,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 14,
+      "source": "bus:LIV",
+      "unlockHours": 72.119149645962338,
+      "maxHours": 75.803858738875249,
+      "networkPerMinute": 9132691583.9805183,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 15,
+      "source": "bus:LON",
+      "unlockHours": 76.752830527418809,
+      "maxHours": 80.284811045555045,
+      "networkPerMinute": 22840910352.5345,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 16,
+      "source": "train:MAN",
+      "unlockHours": 88.289772902660758,
+      "maxHours": 94.110799723888633,
+      "networkPerMinute": 159101314241.13318,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 17,
+      "source": "train:PAR",
+      "unlockHours": 94.2930735167754,
+      "maxHours": 99.897806845957263,
+      "networkPerMinute": 501132915132.18195,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 18,
+      "source": "train:BRU",
+      "unlockHours": 100.09735470438045,
+      "maxHours": 104.85650284190234,
+      "networkPerMinute": 1355618249920.1643,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 19,
+      "source": "train:EDI",
+      "unlockHours": 105.11468762218293,
+      "maxHours": 109.46502747170061,
+      "networkPerMinute": 3499448829375.3535,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 20,
+      "source": "train:AMS",
+      "unlockHours": 109.82222657960216,
+      "maxHours": 113.84118058057282,
+      "networkPerMinute": 8851956461805.68,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 21,
+      "source": "train:FRA",
+      "unlockHours": 114.33071454428251,
+      "maxHours": 118.19822659559989,
+      "networkPerMinute": 22270834506009.871,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 22,
+      "source": "train:LYS",
+      "unlockHours": 118.87175322056548,
+      "maxHours": 122.46428823275052,
+      "networkPerMinute": 55895351055773.219,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 23,
+      "source": "train:ROM",
+      "unlockHours": 123.41845226117064,
+      "maxHours": 126.94318583680814,
+      "networkPerMinute": 139905007730320.16,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 24,
+      "source": "ship:ROT",
+      "unlockHours": 138.94675969029711,
+      "maxHours": 143.76353918868,
+      "networkPerMinute": 971572511933192.75,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 25,
+      "source": "ship:BIO",
+      "unlockHours": 143.94537499043105,
+      "maxHours": 150.22419348655953,
+      "networkPerMinute": 3053906876521536.5,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 26,
+      "source": "ship:OSL",
+      "unlockHours": 150.42612062173433,
+      "maxHours": 155.23875602630733,
+      "networkPerMinute": 8301427269213804.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 27,
+      "source": "ship:LIS",
+      "unlockHours": 155.49975532153718,
+      "maxHours": 159.97644187215337,
+      "networkPerMinute": 21427936124611764.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 28,
+      "source": "ship:KEF",
+      "unlockHours": 160.32645224909234,
+      "maxHours": 164.70067796907284,
+      "networkPerMinute": 53964410571304632.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 29,
+      "source": "ship:NYC",
+      "unlockHours": 165.19483080766321,
+      "maxHours": 169.33207848438482,
+      "networkPerMinute": 1.3552801457303798E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 30,
+      "source": "ship:RIO",
+      "unlockHours": 170.020742991331,
+      "maxHours": 173.95371931842428,
+      "networkPerMinute": 3.3931265839863021E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 31,
+      "source": "ship:SYD",
+      "unlockHours": 174.91153799083639,
+      "maxHours": 178.64083282362949,
+      "networkPerMinute": 8.4976756414035277E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 32,
+      "source": "truck:CHI",
+      "unlockHours": 194.6443632007898,
+      "maxHours": 198.33329612445203,
+      "networkPerMinute": 5.9193419791634913E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 33,
+      "source": "truck:MIA",
+      "unlockHours": 198.51631196255479,
+      "maxHours": 204.1287168927644,
+      "networkPerMinute": 1.8680714622706561E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 34,
+      "source": "truck:DAL",
+      "unlockHours": 204.33391960640546,
+      "maxHours": 209.22549314999176,
+      "networkPerMinute": 5.0546541998173307E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 35,
+      "source": "truck:SEA",
+      "unlockHours": 209.48927644368996,
+      "maxHours": 213.98113456226056,
+      "networkPerMinute": 1.2986053585296997E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 36,
+      "source": "truck:HAM",
+      "unlockHours": 214.34049444292131,
+      "maxHours": 218.61153199329502,
+      "networkPerMinute": 3.2902195694963707E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 37,
+      "source": "truck:MIL",
+      "unlockHours": 219.10288724558723,
+      "maxHours": 223.07811632602116,
+      "networkPerMinute": 8.269255096913051E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 38,
+      "source": "truck:MAD",
+      "unlockHours": 223.76338562782104,
+      "maxHours": 227.71604147905117,
+      "networkPerMinute": 2.0756987068249329E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "outlet": 39,
+      "source": "truck:WAW",
+      "unlockHours": 228.67957245463256,
+      "maxHours": 232.33971249386721,
+      "networkPerMinute": 5.1761558139002736E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 0,
+      "source": "plane:DUB",
+      "unlockHours": 0.0,
+      "maxHours": 2.3718456935972827,
+      "networkPerMinute": 12507.229998030454,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 1,
+      "source": "plane:PMI",
+      "unlockHours": 2.3984969451842306,
+      "maxHours": 4.0054800254490424,
+      "networkPerMinute": 43531.411558850414,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 2,
+      "source": "plane:DXB",
+      "unlockHours": 4.0430008242204121,
+      "maxHours": 5.511553343354147,
+      "networkPerMinute": 122694.66021814494,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 3,
+      "source": "plane:EDI",
+      "unlockHours": 5.56317199833125,
+      "maxHours": 6.8326643187886367,
+      "networkPerMinute": 318359.82883409708,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 4,
+      "source": "plane:NCE",
+      "unlockHours": 6.9059566478453052,
+      "maxHours": 8.1310137782842951,
+      "networkPerMinute": 811953.81473052246,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 5,
+      "source": "plane:KEF",
+      "unlockHours": 8.2336468736913169,
+      "maxHours": 9.4555048006486526,
+      "networkPerMinute": 2048245.696614672,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 6,
+      "source": "plane:CAI",
+      "unlockHours": 9.59708937738147,
+      "maxHours": 10.731715974341272,
+      "networkPerMinute": 5119221.1891824529,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 7,
+      "source": "plane:SIN",
+      "unlockHours": 10.930313891699289,
+      "maxHours": 11.99813998689647,
+      "networkPerMinute": 12796716.908570126,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 8,
+      "source": "bus:OXF",
+      "unlockHours": 16.000484338202696,
+      "maxHours": 17.469532028120359,
+      "networkPerMinute": 78669872.8364579,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 9,
+      "source": "bus:BTN",
+      "unlockHours": 17.529910923226428,
+      "maxHours": 19.496583179396229,
+      "networkPerMinute": 246846741.93099451,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 10,
+      "source": "bus:CAM",
+      "unlockHours": 19.564101456268304,
+      "maxHours": 21.143098076453708,
+      "networkPerMinute": 667785070.16973925,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 11,
+      "source": "bus:BRS",
+      "unlockHours": 21.230451531837947,
+      "maxHours": 22.675293203353888,
+      "networkPerMinute": 1721520676.583554,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 12,
+      "source": "bus:BHX",
+      "unlockHours": 22.793405832553823,
+      "maxHours": 24.156158083736941,
+      "networkPerMinute": 4355131719.934454,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 13,
+      "source": "bus:MAN",
+      "unlockHours": 24.320714912956664,
+      "maxHours": 25.593902135480789,
+      "networkPerMinute": 10940979260.020798,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 14,
+      "source": "bus:LIV",
+      "unlockHours": 25.822400877740105,
+      "maxHours": 27.0506372420444,
+      "networkPerMinute": 27398074751.941559,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 15,
+      "source": "bus:LON",
+      "unlockHours": 27.366961171558916,
+      "maxHours": 28.544288010937734,
+      "networkPerMinute": 68522731057.6035,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 16,
+      "source": "train:MAN",
+      "unlockHours": 36.5459419633063,
+      "maxHours": 37.302082214106328,
+      "networkPerMinute": 477303942723.39966,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 17,
+      "source": "train:PAR",
+      "unlockHours": 37.362840145068581,
+      "maxHours": 39.231084588129271,
+      "networkPerMinute": 1503398745396.5459,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 18,
+      "source": "train:BRU",
+      "unlockHours": 39.297600540937,
+      "maxHours": 40.883983253444256,
+      "networkPerMinute": 4066854749760.4927,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 19,
+      "source": "train:EDI",
+      "unlockHours": 40.970044846871119,
+      "maxHours": 42.42015813004371,
+      "networkPerMinute": 10498346488126.061,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 20,
+      "source": "train:AMS",
+      "unlockHours": 42.539224499344229,
+      "maxHours": 43.878875833001075,
+      "networkPerMinute": 26555869385417.039,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 21,
+      "source": "train:FRA",
+      "unlockHours": 44.042053820904307,
+      "maxHours": 45.33122450467669,
+      "networkPerMinute": 66812503518029.609,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 22,
+      "source": "train:LYS",
+      "unlockHours": 45.55573337966522,
+      "maxHours": 46.7532450503936,
+      "networkPerMinute": 167686053167319.69,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 23,
+      "source": "train:ROM",
+      "unlockHours": 47.071299726533638,
+      "maxHours": 48.2462109184128,
+      "networkPerMinute": 419715023190960.5,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 24,
+      "source": "ship:ROT",
+      "unlockHours": 60.247402202909122,
+      "maxHours": 60.376348476090769,
+      "networkPerMinute": 2914717535799578.5,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 25,
+      "source": "ship:BIO",
+      "unlockHours": 60.436960410007792,
+      "maxHours": 62.529899908717304,
+      "networkPerMinute": 9.16172062956461E+15,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 26,
+      "source": "ship:OSL",
+      "unlockHours": 62.597208953775571,
+      "maxHours": 64.20142075530002,
+      "networkPerMinute": 24904281807641416.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 27,
+      "source": "ship:LIS",
+      "unlockHours": 64.288420520376633,
+      "maxHours": 65.78064937058214,
+      "networkPerMinute": 64283808373835288.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 28,
+      "source": "ship:KEF",
+      "unlockHours": 65.897319496228462,
+      "maxHours": 67.355394736221953,
+      "networkPerMinute": 1.6189323171391389E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 29,
+      "source": "ship:NYC",
+      "unlockHours": 67.520112349085409,
+      "maxHours": 68.899194907992737,
+      "networkPerMinute": 4.0658404371911386E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 30,
+      "source": "ship:RIO",
+      "unlockHours": 69.128749743641464,
+      "maxHours": 70.439741852672668,
+      "networkPerMinute": 1.0179379751958906E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 31,
+      "source": "ship:SYD",
+      "unlockHours": 70.759014743476712,
+      "maxHours": 72.002113021074308,
+      "networkPerMinute": 2.5493026924210586E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 32,
+      "source": "truck:CHI",
+      "unlockHours": 88.00328981346108,
+      "maxHours": 88.00328981346108,
+      "networkPerMinute": 1.7758025937490479E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 33,
+      "source": "truck:MIA",
+      "unlockHours": 88.00328981346108,
+      "maxHours": 89.617710744063871,
+      "networkPerMinute": 5.6042143868119679E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 34,
+      "source": "truck:DAL",
+      "unlockHours": 89.686111648610876,
+      "maxHours": 91.316636163139577,
+      "networkPerMinute": 1.516396259945199E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 35,
+      "source": "truck:SEA",
+      "unlockHours": 91.404563927705652,
+      "maxHours": 92.901849967229211,
+      "networkPerMinute": 3.8958160755890992E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 36,
+      "source": "truck:HAM",
+      "unlockHours": 93.021636594116131,
+      "maxHours": 94.445315777574109,
+      "networkPerMinute": 9.8706587084891108E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 37,
+      "source": "truck:MIL",
+      "unlockHours": 94.609100861671521,
+      "maxHours": 95.934177221816114,
+      "networkPerMinute": 2.480776529073915E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 38,
+      "source": "truck:MAD",
+      "unlockHours": 96.162600322416068,
+      "maxHours": 97.480152272826359,
+      "networkPerMinute": 6.2270961204747976E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "outlet": 39,
+      "source": "truck:WAW",
+      "unlockHours": 97.8013292646868,
+      "maxHours": 99.021375944431867,
+      "networkPerMinute": 1.5528467441700821E+22,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 0,
+      "source": "plane:DUB",
+      "unlockHours": 0.0,
+      "maxHours": 7.115087860226069,
+      "networkPerMinute": 2084.5383330050759,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 1,
+      "source": "plane:PMI",
+      "unlockHours": 7.2749953697477574,
+      "maxHours": 12.631591068009206,
+      "networkPerMinute": 7255.2352598084035,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 2,
+      "source": "plane:DXB",
+      "unlockHours": 12.856715860637427,
+      "maxHours": 18.594756055514676,
+      "networkPerMinute": 20449.110036357495,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 3,
+      "source": "plane:EDI",
+      "unlockHours": 18.9044679853773,
+      "maxHours": 24.72072831358529,
+      "networkPerMinute": 53059.971472349513,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 4,
+      "source": "plane:NCE",
+      "unlockHours": 25.160482287925298,
+      "maxHours": 31.711068827497218,
+      "networkPerMinute": 135325.63578842042,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 5,
+      "source": "plane:KEF",
+      "unlockHours": 32.326867399939353,
+      "maxHours": 39.924668810999513,
+      "networkPerMinute": 341374.28276911203,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 6,
+      "source": "plane:CAI",
+      "unlockHours": 40.774176271396414,
+      "maxHours": 48.96142008870622,
+      "networkPerMinute": 853203.53153040877,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 7,
+      "source": "plane:SIN",
+      "unlockHours": 50.15300759285433,
+      "maxHours": 59.08426906408355,
+      "networkPerMinute": 2132786.151428354,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 8,
+      "source": "bus:OXF",
+      "unlockHours": 63.0983351719209,
+      "maxHours": 70.157425262555279,
+      "networkPerMinute": 13111645.472742982,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 9,
+      "source": "bus:BTN",
+      "unlockHours": 70.519698633191666,
+      "maxHours": 77.3511427425116,
+      "networkPerMinute": 41141123.655165754,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 10,
+      "source": "bus:CAM",
+      "unlockHours": 77.756252403744057,
+      "maxHours": 84.107117981856348,
+      "networkPerMinute": 111297511.69495654,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 11,
+      "source": "bus:BRS",
+      "unlockHours": 84.631238714161782,
+      "maxHours": 91.360140927413539,
+      "networkPerMinute": 286920112.76392567,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 12,
+      "source": "bus:BHX",
+      "unlockHours": 92.068816702613134,
+      "maxHours": 99.4175434816837,
+      "networkPerMinute": 725855286.65574229,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 13,
+      "source": "bus:MAN",
+      "unlockHours": 100.40488445700205,
+      "maxHours": 108.35471280300676,
+      "networkPerMinute": 1823496543.3367991,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 14,
+      "source": "bus:LIV",
+      "unlockHours": 109.72570525656265,
+      "maxHours": 118.60579037356266,
+      "networkPerMinute": 4566345791.9902592,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 15,
+      "source": "bus:LON",
+      "unlockHours": 120.50373395064976,
+      "maxHours": 130.35975452527774,
+      "networkPerMinute": 11420455176.26725,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 16,
+      "source": "train:MAN",
+      "unlockHours": 138.36967823948913,
+      "maxHours": 144.19070506071969,
+      "networkPerMinute": 79550657120.566589,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 17,
+      "source": "train:PAR",
+      "unlockHours": 144.55525264649322,
+      "maxHours": 151.04494377373581,
+      "networkPerMinute": 250566457566.09097,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 18,
+      "source": "train:BRU",
+      "unlockHours": 151.44403949058221,
+      "maxHours": 157.8247255620976,
+      "networkPerMinute": 677809124960.08215,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 19,
+      "source": "train:EDI",
+      "unlockHours": 158.34109512265877,
+      "maxHours": 165.09461872676769,
+      "networkPerMinute": 1749724414687.6768,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 20,
+      "source": "train:AMS",
+      "unlockHours": 165.80901694257079,
+      "maxHours": 173.03321016598181,
+      "networkPerMinute": 4425978230902.84,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 21,
+      "source": "train:FRA",
+      "unlockHours": 174.01227809340119,
+      "maxHours": 182.06192951393848,
+      "networkPerMinute": 11135417253004.936,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 22,
+      "source": "train:LYS",
+      "unlockHours": 183.40898276386963,
+      "maxHours": 192.06694103349992,
+      "networkPerMinute": 27947675527886.609,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 23,
+      "source": "train:ROM",
+      "unlockHours": 193.97526909034016,
+      "maxHours": 203.81107283094713,
+      "networkPerMinute": 69952503865160.078,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 24,
+      "source": "ship:ROT",
+      "unlockHours": 215.81822053792504,
+      "maxHours": 220.63500003630796,
+      "networkPerMinute": 485786255966596.38,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 25,
+      "source": "ship:BIO",
+      "unlockHours": 220.99867163981008,
+      "maxHours": 228.2688825299937,
+      "networkPerMinute": 1526953438260768.3,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 26,
+      "source": "ship:OSL",
+      "unlockHours": 228.67273680034333,
+      "maxHours": 235.12513440642564,
+      "networkPerMinute": 4150713634606902.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 27,
+      "source": "ship:LIS",
+      "unlockHours": 235.64713299688535,
+      "maxHours": 242.59679889435549,
+      "networkPerMinute": 10713968062305882.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 28,
+      "source": "ship:KEF",
+      "unlockHours": 243.29681964823348,
+      "maxHours": 251.1596247238339,
+      "networkPerMinute": 26982205285652316.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 29,
+      "source": "ship:NYC",
+      "unlockHours": 252.14793040101463,
+      "maxHours": 260.75899644427619,
+      "networkPerMinute": 67764007286518992.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 30,
+      "source": "ship:RIO",
+      "unlockHours": 262.13632545816853,
+      "maxHours": 271.61474246134634,
+      "networkPerMinute": 1.696563291993151E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 31,
+      "source": "ship:SYD",
+      "unlockHours": 273.53037980617057,
+      "maxHours": 283.9370137526235,
+      "networkPerMinute": 4.2488378207017638E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 32,
+      "source": "truck:CHI",
+      "unlockHours": 299.94407450694405,
+      "maxHours": 303.63300743060637,
+      "networkPerMinute": 2.9596709895817457E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 33,
+      "source": "truck:MIA",
+      "unlockHours": 303.99903910681189,
+      "maxHours": 310.49761323652825,
+      "networkPerMinute": 9.34035731135328E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 34,
+      "source": "truck:DAL",
+      "unlockHours": 310.90801866381037,
+      "maxHours": 317.46625022917277,
+      "networkPerMinute": 2.5273270999086653E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 35,
+      "source": "truck:SEA",
+      "unlockHours": 317.99381681656916,
+      "maxHours": 324.96703525169715,
+      "networkPerMinute": 6.4930267926484984E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 36,
+      "source": "truck:HAM",
+      "unlockHours": 325.68575501301871,
+      "maxHours": 333.36307618458994,
+      "networkPerMinute": 1.6451097847481854E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 37,
+      "source": "truck:MIL",
+      "unlockHours": 334.34578668917436,
+      "maxHours": 342.6196351081004,
+      "networkPerMinute": 4.1346275484565255E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 38,
+      "source": "truck:MAD",
+      "unlockHours": 343.99017371170009,
+      "maxHours": 353.51601808811932,
+      "networkPerMinute": 1.0378493534124664E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "outlet": 39,
+      "source": "truck:WAW",
+      "unlockHours": 355.44308003928205,
+      "maxHours": 365.65673685347338,
+      "networkPerMinute": 2.5880779069501368E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 0,
+      "source": "plane:DUB",
+      "unlockHours": 0.0,
+      "maxHours": 3.5575439301130345,
+      "networkPerMinute": 4169.0766660101517,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 1,
+      "source": "plane:PMI",
+      "unlockHours": 3.6374976848738787,
+      "maxHours": 6.3157955340046028,
+      "networkPerMinute": 14510.470519616807,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 2,
+      "source": "plane:DXB",
+      "unlockHours": 6.4283579303187137,
+      "maxHours": 9.2973780277573379,
+      "networkPerMinute": 40898.22007271499,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 3,
+      "source": "plane:EDI",
+      "unlockHours": 9.45223399268865,
+      "maxHours": 12.360364156792645,
+      "networkPerMinute": 106119.94294469903,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 4,
+      "source": "plane:NCE",
+      "unlockHours": 12.580241143962649,
+      "maxHours": 15.855534413748609,
+      "networkPerMinute": 270651.27157684084,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 5,
+      "source": "plane:KEF",
+      "unlockHours": 16.163433699969676,
+      "maxHours": 19.962334405499757,
+      "networkPerMinute": 682748.56553822407,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 6,
+      "source": "plane:CAI",
+      "unlockHours": 20.387088135698207,
+      "maxHours": 24.48071004435311,
+      "networkPerMinute": 1706407.0630608175,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 7,
+      "source": "plane:SIN",
+      "unlockHours": 25.076503796427165,
+      "maxHours": 29.542134532041775,
+      "networkPerMinute": 4265572.3028567079,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 8,
+      "source": "bus:OXF",
+      "unlockHours": 33.549167585960454,
+      "maxHours": 36.28586027295421,
+      "networkPerMinute": 26223290.945485964,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 9,
+      "source": "bus:BTN",
+      "unlockHours": 36.466996958272404,
+      "maxHours": 39.88271901293237,
+      "networkPerMinute": 82282247.310331509,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 10,
+      "source": "bus:CAM",
+      "unlockHours": 40.0852738435486,
+      "maxHours": 43.260706632604744,
+      "networkPerMinute": 222595023.38991308,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 11,
+      "source": "bus:BRS",
+      "unlockHours": 43.522766998757461,
+      "maxHours": 46.88721810538334,
+      "networkPerMinute": 573840225.52785134,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 12,
+      "source": "bus:BHX",
+      "unlockHours": 47.241555992983145,
+      "maxHours": 50.915919382518418,
+      "networkPerMinute": 1451710573.3114846,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 13,
+      "source": "bus:MAN",
+      "unlockHours": 51.4095898701776,
+      "maxHours": 55.384504043179952,
+      "networkPerMinute": 3646993086.6735983,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 14,
+      "source": "bus:LIV",
+      "unlockHours": 56.070000269957895,
+      "maxHours": 60.5100428284579,
+      "networkPerMinute": 9132691583.9805183,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 15,
+      "source": "bus:LON",
+      "unlockHours": 61.459014617001451,
+      "maxHours": 66.387024904315439,
+      "networkPerMinute": 22840910352.5345,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 16,
+      "source": "train:MAN",
+      "unlockHours": 74.391986761421137,
+      "maxHours": 76.367477867610532,
+      "networkPerMinute": 159101314241.13318,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 17,
+      "source": "train:PAR",
+      "unlockHours": 76.549751660497307,
+      "maxHours": 79.7945972241186,
+      "networkPerMinute": 501132915132.18195,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 18,
+      "source": "train:BRU",
+      "unlockHours": 79.994145082541792,
+      "maxHours": 83.184488118299484,
+      "networkPerMinute": 1355618249920.1643,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 19,
+      "source": "train:EDI",
+      "unlockHours": 83.442672898580071,
+      "maxHours": 86.819434700634531,
+      "networkPerMinute": 3499448829375.3535,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 20,
+      "source": "train:AMS",
+      "unlockHours": 87.176633808536081,
+      "maxHours": 90.788730420241592,
+      "networkPerMinute": 8851956461805.68,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 21,
+      "source": "train:FRA",
+      "unlockHours": 91.278264383951282,
+      "maxHours": 95.303090094219925,
+      "networkPerMinute": 22270834506009.871,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 22,
+      "source": "train:LYS",
+      "unlockHours": 95.976616719185515,
+      "maxHours": 100.30559585400064,
+      "networkPerMinute": 55895351055773.219,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 23,
+      "source": "train:ROM",
+      "unlockHours": 101.25975988242077,
+      "maxHours": 106.17766175272426,
+      "networkPerMinute": 139905007730320.16,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 24,
+      "source": "ship:ROT",
+      "unlockHours": 118.18123560621322,
+      "maxHours": 119.30963058170157,
+      "networkPerMinute": 971572511933192.75,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 25,
+      "source": "ship:BIO",
+      "unlockHours": 119.49146638345263,
+      "maxHours": 123.12657182854444,
+      "networkPerMinute": 3053906876521536.5,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 26,
+      "source": "ship:OSL",
+      "unlockHours": 123.32849896371926,
+      "maxHours": 126.55469776676041,
+      "networkPerMinute": 8301427269213804.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 27,
+      "source": "ship:LIS",
+      "unlockHours": 126.81569706199026,
+      "maxHours": 130.29053001072535,
+      "networkPerMinute": 21427936124611764.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 28,
+      "source": "ship:KEF",
+      "unlockHours": 130.64054038766434,
+      "maxHours": 134.57194292546453,
+      "networkPerMinute": 53964410571304632.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 29,
+      "source": "ship:NYC",
+      "unlockHours": 135.06609576405492,
+      "maxHours": 139.37162878568583,
+      "networkPerMinute": 1.3552801457303798E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 30,
+      "source": "ship:RIO",
+      "unlockHours": 140.060293292632,
+      "maxHours": 144.79950179422056,
+      "networkPerMinute": 3.3931265839863021E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 31,
+      "source": "ship:SYD",
+      "unlockHours": 145.75732046663268,
+      "maxHours": 150.96063743985911,
+      "networkPerMinute": 8.4976756414035277E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 32,
+      "source": "truck:CHI",
+      "unlockHours": 166.96416781701939,
+      "maxHours": 167.45765524301933,
+      "networkPerMinute": 5.9193419791634913E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 33,
+      "source": "truck:MIA",
+      "unlockHours": 167.64067108112206,
+      "maxHours": 170.88995814598027,
+      "networkPerMinute": 1.8680714622706561E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 34,
+      "source": "truck:DAL",
+      "unlockHours": 171.09516085962133,
+      "maxHours": 174.3742766423025,
+      "networkPerMinute": 5.0546541998173307E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 35,
+      "source": "truck:SEA",
+      "unlockHours": 174.63805993600073,
+      "maxHours": 178.12466915356472,
+      "networkPerMinute": 1.2986053585296997E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 36,
+      "source": "truck:HAM",
+      "unlockHours": 178.48402903422547,
+      "maxHours": 182.32268962001112,
+      "networkPerMinute": 3.2902195694963707E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 37,
+      "source": "truck:MIL",
+      "unlockHours": 182.81404487230333,
+      "maxHours": 186.95096908176632,
+      "networkPerMinute": 8.269255096913051E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 38,
+      "source": "truck:MAD",
+      "unlockHours": 187.63623838356619,
+      "maxHours": 192.39916057177578,
+      "networkPerMinute": 2.0756987068249329E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "outlet": 39,
+      "source": "truck:WAW",
+      "unlockHours": 193.36269154735717,
+      "maxHours": 198.46951995445281,
+      "networkPerMinute": 5.1761558139002736E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 0,
+      "source": "plane:DUB",
+      "unlockHours": 0.0,
+      "maxHours": 1.1858479767043448,
+      "networkPerMinute": 12507.229998030454,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 1,
+      "source": "plane:PMI",
+      "unlockHours": 1.212499228291293,
+      "maxHours": 2.1052651780015341,
+      "networkPerMinute": 43531.411558850414,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 2,
+      "source": "plane:DXB",
+      "unlockHours": 2.1427859767729047,
+      "maxHours": 3.0991260092524424,
+      "networkPerMinute": 122694.66021814494,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 3,
+      "source": "plane:EDI",
+      "unlockHours": 3.1507446642295451,
+      "maxHours": 4.1201213855975345,
+      "networkPerMinute": 318359.82883409708,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 4,
+      "source": "plane:NCE",
+      "unlockHours": 4.193413714654203,
+      "maxHours": 5.2851781379161915,
+      "networkPerMinute": 811953.81473052246,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 5,
+      "source": "plane:KEF",
+      "unlockHours": 5.3878112333232142,
+      "maxHours": 6.6541114684999165,
+      "networkPerMinute": 2048245.696614672,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 6,
+      "source": "plane:CAI",
+      "unlockHours": 6.7956960452327317,
+      "maxHours": 8.1602366814510354,
+      "networkPerMinute": 5119221.1891824529,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 7,
+      "source": "plane:SIN",
+      "unlockHours": 8.358834598809052,
+      "maxHours": 9.84737817734726,
+      "networkPerMinute": 12796716.908570126,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 8,
+      "source": "bus:OXF",
+      "unlockHours": 13.849722528653484,
+      "maxHours": 14.134789742240949,
+      "networkPerMinute": 78669872.8364579,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 9,
+      "source": "bus:BTN",
+      "unlockHours": 14.195168637347015,
+      "maxHours": 15.333742655566974,
+      "networkPerMinute": 246846741.93099451,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 10,
+      "source": "bus:CAM",
+      "unlockHours": 15.401260932439049,
+      "maxHours": 16.459738528791132,
+      "networkPerMinute": 667785070.16973925,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 11,
+      "source": "bus:BRS",
+      "unlockHours": 16.547091984175371,
+      "maxHours": 17.668575686383978,
+      "networkPerMinute": 1721520676.583554,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 12,
+      "source": "bus:BHX",
+      "unlockHours": 17.786688315583909,
+      "maxHours": 19.011476112095618,
+      "networkPerMinute": 4355131719.934454,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 13,
+      "source": "bus:MAN",
+      "unlockHours": 19.176032941315341,
+      "maxHours": 20.501004332316139,
+      "networkPerMinute": 10940979260.020798,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 14,
+      "source": "bus:LIV",
+      "unlockHours": 20.729503074575454,
+      "maxHours": 22.209517260742139,
+      "networkPerMinute": 27398074751.941559,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 15,
+      "source": "bus:LON",
+      "unlockHours": 22.525841190256656,
+      "maxHours": 24.168511286027972,
+      "networkPerMinute": 68522731057.6035,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 16,
+      "source": "train:MAN",
+      "unlockHours": 32.170165238396535,
+      "maxHours": 32.170165238396535,
+      "networkPerMinute": 477303942723.39966,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 17,
+      "source": "train:PAR",
+      "unlockHours": 32.170165238396535,
+      "maxHours": 33.137713674552749,
+      "networkPerMinute": 1503398745396.5459,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 18,
+      "source": "train:BRU",
+      "unlockHours": 33.204229627360483,
+      "maxHours": 34.267677305946435,
+      "networkPerMinute": 4066854749760.4927,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 19,
+      "source": "train:EDI",
+      "unlockHours": 34.3537388993733,
+      "maxHours": 35.47932616672486,
+      "networkPerMinute": 10498346488126.061,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 20,
+      "source": "train:AMS",
+      "unlockHours": 35.598392536025379,
+      "maxHours": 36.80242473992724,
+      "networkPerMinute": 26555869385417.039,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 21,
+      "source": "train:FRA",
+      "unlockHours": 36.965602727830472,
+      "maxHours": 38.307211297919963,
+      "networkPerMinute": 66812503518029.609,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 22,
+      "source": "train:LYS",
+      "unlockHours": 38.5317201729085,
+      "maxHours": 39.974713217846926,
+      "networkPerMinute": 167686053167319.69,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 23,
+      "source": "train:ROM",
+      "unlockHours": 40.292767893986962,
+      "maxHours": 41.932068517421449,
+      "networkPerMinute": 419715023190960.5,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 24,
+      "source": "ship:ROT",
+      "unlockHours": 53.933259801917764,
+      "maxHours": 53.933259801917764,
+      "networkPerMinute": 2914717535799578.5,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 25,
+      "source": "ship:BIO",
+      "unlockHours": 53.933259801917764,
+      "maxHours": 54.680951949944685,
+      "networkPerMinute": 9.16172062956461E+15,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 26,
+      "source": "ship:OSL",
+      "unlockHours": 54.748260995002958,
+      "maxHours": 55.8236605960167,
+      "networkPerMinute": 24904281807641416.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 27,
+      "source": "ship:LIS",
+      "unlockHours": 55.910660361093313,
+      "maxHours": 57.068938010671609,
+      "networkPerMinute": 64283808373835288.0,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 28,
+      "source": "ship:KEF",
+      "unlockHours": 57.185608136317938,
+      "maxHours": 58.496075648918008,
+      "networkPerMinute": 1.6189323171391389E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 29,
+      "source": "ship:NYC",
+      "unlockHours": 58.660793261781464,
+      "maxHours": 60.095970935658357,
+      "networkPerMinute": 4.0658404371911386E+17,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 30,
+      "source": "ship:RIO",
+      "unlockHours": 60.325525771307078,
+      "maxHours": 61.905261938503308,
+      "networkPerMinute": 1.0179379751958906E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 31,
+      "source": "ship:SYD",
+      "unlockHours": 62.224534829307345,
+      "maxHours": 63.958973820382965,
+      "networkPerMinute": 2.5493026924210586E+18,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 32,
+      "source": "truck:CHI",
+      "unlockHours": 79.960150612769723,
+      "maxHours": 79.960150612769723,
+      "networkPerMinute": 1.7758025937490479E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 33,
+      "source": "truck:MIA",
+      "unlockHours": 79.960150612769723,
+      "maxHours": 80.375255951958152,
+      "networkPerMinute": 5.6042143868119679E+19,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 34,
+      "source": "truck:DAL",
+      "unlockHours": 80.443656856505157,
+      "maxHours": 81.536695450732182,
+      "networkPerMinute": 1.516396259945199E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 35,
+      "source": "truck:SEA",
+      "unlockHours": 81.624623215298257,
+      "maxHours": 82.786826287819466,
+      "networkPerMinute": 3.8958160755890992E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 36,
+      "source": "truck:HAM",
+      "unlockHours": 82.906612914706386,
+      "maxHours": 84.186166443301644,
+      "networkPerMinute": 9.8706587084891108E+20,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 37,
+      "source": "truck:MIL",
+      "unlockHours": 84.349951527399057,
+      "maxHours": 85.728926263886777,
+      "networkPerMinute": 2.480776529073915E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 38,
+      "source": "truck:MAD",
+      "unlockHours": 85.957349364486745,
+      "maxHours": 87.544990093889922,
+      "networkPerMinute": 6.2270961204747976E+21,
+      "status": "conditional model"
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "outlet": 39,
+      "source": "truck:WAW",
+      "unlockHours": 87.866167085750376,
+      "maxHours": 89.568443221448916,
+      "networkPerMinute": 1.5528467441700821E+22,
+      "status": "conditional model"
+    }
+  ]
+}

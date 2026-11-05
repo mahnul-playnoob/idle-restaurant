@@ -1,0 +1,47 @@
+{
+  "classification": "Conditional estimates only. Original proxy omitted some recovered body/premium effects. Neither series certifies measured playtime parity.",
+  "scenarios": [
+    {
+      "variant": "Current",
+      "multiplier": 1,
+      "supplied_reference_proxy_hours": 422.7567,
+      "restaurant_model_hours": 435.61125579058455,
+      "difference_percent": 3.040650991595051
+    },
+    {
+      "variant": "Current",
+      "multiplier": 2,
+      "supplied_reference_proxy_hours": 226.2063,
+      "restaurant_model_hours": 232.3397124938672,
+      "difference_percent": 2.7114242591241844
+    },
+    {
+      "variant": "Current",
+      "multiplier": 6,
+      "supplied_reference_proxy_hours": 97.1905,
+      "restaurant_model_hours": 99.02137594443187,
+      "difference_percent": 1.8838013431681677
+    },
+    {
+      "variant": "New",
+      "multiplier": 1,
+      "supplied_reference_proxy_hours": 356.3832,
+      "restaurant_model_hours": 365.6567368534734,
+      "difference_percent": 2.6021251432372106
+    },
+    {
+      "variant": "New",
+      "multiplier": 2,
+      "supplied_reference_proxy_hours": 194.0251,
+      "restaurant_model_hours": 198.4695199544528,
+      "difference_percent": 2.290641754315703
+    },
+    {
+      "variant": "New",
+      "multiplier": 6,
+      "supplied_reference_proxy_hours": 88.2296,
+      "restaurant_model_hours": 89.56844322144892,
+      "difference_percent": 1.517453577312966
+    }
+  ]
+}

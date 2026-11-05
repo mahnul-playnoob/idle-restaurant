@@ -1,0 +1,236 @@
+{
+  "status": "Playable development build; release acceptance incomplete",
+  "target": {
+    "platform": "Android",
+    "minOS": "11",
+    "minAPI": 30,
+    "orientation": "portrait",
+    "fpsTarget": 30,
+    "class": "midrange; physical models not yet selected"
+  },
+  "criteria": [
+    {
+      "id": "REF-01",
+      "requirement": "All 40 source route capacities, fares, unlock costs and scale values retained",
+      "method": "automated catalog comparison",
+      "status": "source stage tables audited for all 40 outlets; costs/effects verified; other field audit recorded in SourceAudit.json"
+    },
+    {
+      "id": "ECO-01",
+      "requirement": "All 21,600 next-level costs across 40 outlets, 9 cards, 30 levels and both variants match reference arithmetic",
+      "method": "independent Python golden fixture versus C#",
+      "status": "pass: 21600 exact cost comparisons"
+    },
+    {
+      "id": "ECO-02",
+      "requirement": "279 upgrade effect values, level caps and starter override replacement pass",
+      "method": "C# golden comparison",
+      "status": "pass: 279 exact raw effects; level caps and starter override checked"
+    },
+    {
+      "id": "SIM-01",
+      "requirement": "Customer count conserved; each guest pays each stage once; full-wave bonus once",
+      "method": "headless full-wave tests at zero and max upgrades",
+      "status": "80 base/max wave payout cases pass; timing parity pending"
+    },
+    {
+      "id": "PRO-01",
+      "requirement": "All 40 outlets navigable; licences, 17 research nodes, 71 manager definitions and 8 prestige tracks are editable",
+      "method": "Editor automated checks and actual gameplay",
+      "status": "pending"
+    },
+    {
+      "id": "SAVE-01",
+      "requirement": "Atomic save/reload, backup recovery, offline cap, one-time offline claims and purchase idempotence pass",
+      "method": "file round-trip and corrupted primary tests",
+      "status": "atomic save, backup recovery, preservation of two damaged files, capped offline claims and duplicate grants pass; mobile suspend/kill pending"
+    },
+    {
+      "id": "UI-01",
+      "requirement": "Real touch-path upgrade, map, settings, tutorial and reward controls work; affordability is explicit",
+      "method": "Editor event-system pointer tests and Android device session",
+      "status": "Editor raycast path passes; Android input pending"
+    },
+    {
+      "id": "ART-01",
+      "requirement": "Five districts have distinct environment geometry, themed map icons, food, staff animations and responsive feedback",
+      "method": "inspect recordings from every district",
+      "status": "five environments inspected in Editor; original app icon, 40 replaceable foods and 40 environment prefabs; final art acceptance pending"
+    },
+    {
+      "id": "MOB-01",
+      "requirement": "Android 11 minimum; portrait safe-area layouts; 30 FPS target on midrange phones",
+      "method": "APK metadata plus physical Android profiling",
+      "status": "pending"
+    },
+    {
+      "id": "MON-01",
+      "requirement": "Real ad/billing integrations configured and tested; release never silently grants simulated rewards",
+      "method": "provider/store sandbox tests",
+      "status": "demo checkout passes; production configuration intentionally pending"
+    },
+    {
+      "id": "REL-01",
+      "requirement": "Signed store bundle, privacy/store setup, no critical logs, placeholders or undisclosed gaps",
+      "method": "release checklist and physical-device acceptance",
+      "status": "pending"
+    }
+  ],
+  "parity": [
+    {
+      "classification": "Verified",
+      "rule": "9 upgrade raw effects and 30-level cap",
+      "evidence": "kk0.java; z46.java",
+      "implementation": "279 exact Java raw-effect comparisons pass; level cap checked."
+    },
+    {
+      "classification": "Verified",
+      "rule": "Current/New cost formula and starter replacement",
+      "evidence": "k52.java; z46.java",
+      "implementation": "Current selected by default. 21,600 exact Java fixture comparisons pass, including reference evaluation order and double precision."
+    },
+    {
+      "classification": "Verified",
+      "rule": "40 capacities, fares and unlock prices; body modifiers",
+      "evidence": "analysis_data.json extracted tables",
+      "implementation": "Original source keys retained in each outlet. Full catalog comparison pending."
+    },
+    {
+      "classification": "Verified",
+      "rule": "Some stage-weight table extraction",
+      "evidence": "analyze.py fallback patterns",
+      "implementation": "All 40 literal source stage-weight triples now independently audited; no differences."
+    },
+    {
+      "classification": "Verified",
+      "rule": "30/30/40 stage pay and 10% service bonus",
+      "evidence": "tb0.java; e73.a0",
+      "implementation": "Premium and standard guest values preserved."
+    },
+    {
+      "classification": "Reconstructed",
+      "rule": "Concurrent customer pipeline, geometry and wave timing",
+      "evidence": "ib0.f simple-mode dump partially recovered; provided video",
+      "implementation": "Deterministic reconstructed three-stage runtime. Nonselected outlets earn estimated passive income, matching recovered source architecture. Exact customer timing/path and playtime not certified."
+    },
+    {
+      "classification": "Verified",
+      "rule": "Research costs, quantized timers, slots and licence requirements",
+      "evidence": "zx5.java; ay5.java; rx5.java",
+      "implementation": "17 nodes, one initial slot, paid extra slots."
+    },
+    {
+      "classification": "Verified / partial",
+      "rule": "Research effect coefficients and category mapping",
+      "evidence": "Source effects not fully recovered",
+      "implementation": "Network +0.3%/level, discounts -0.45%/level by stage, service bonus +0.3%/level, premium stow 1.6-0.006L, research speed +1%/level recovered. Overall timing still reconstructed."
+    },
+    {
+      "classification": "Verified / partial",
+      "rule": "71 manager roles/rarities, level tables, standard pack odds",
+      "evidence": "xf4.java; lh4.java; bl3.java",
+      "implementation": "71 source roles, rarities and affinities retained with original names. Junior odds and cumulative thresholds implemented. Senior/mythic acquisition and affinity application still require complete parity validation."
+    },
+    {
+      "classification": "Verified / partial",
+      "rule": "Rank income x15.625; Current cost x27 / New x42.875; local reset, shared cash",
+      "evidence": "gm1.java; fk5.java",
+      "implementation": "Rank income/cost multipliers and local upgrade reset implemented; five district income research at +5%/level and three stage income at +10%/level, 1 coin and source timer. Safe-state mapping reconstructed. Unverified rank-20 ceiling removed; repeat ranks continue while numeric values remain finite."
+    },
+    {
+      "classification": "Verified / partial",
+      "rule": "Offline 25%/2h and premium 75%/24h; threshold 300s",
+      "evidence": "GDD/package; effect ordering unresolved",
+      "implementation": "Idempotent claim implementation; offline rate uses reconstructed income estimate."
+    },
+    {
+      "classification": "Unknown",
+      "rule": "Initial wallet, full ad caps/durations, live offers",
+      "evidence": "Video demonstrates individual rewards only",
+      "implementation": "Starting cash 100 and 10-minute rewarded boost remain proposals. Service gems recovered separately: capacity \u00d73.4 thresholds 360/660 yield 1/2/3, capped at 100 daily, settled after five seconds."
+    },
+    {
+      "classification": "Proposed",
+      "rule": "Five district environments and 40 restaurant identities",
+      "evidence": "Original restaurant art direction",
+      "implementation": "Theme changes must not modify capacity or prices."
+    },
+    {
+      "classification": "External dependency",
+      "rule": "Google Play products, ad units, consent, signing and physical devices",
+      "evidence": "Requires publisher account configuration",
+      "implementation": "Local testing is not a production purchase, advertisement or backend."
+    }
+  ],
+  "playtime": {
+    "classification": "conditional reference-model estimates, not measured completion time",
+    "CurrentHours": {
+      "x1": 422.7567,
+      "x2": 226.2063,
+      "x6": 97.1905
+    },
+    "NewHours": {
+      "x1": 356.3832,
+      "x2": 194.0251,
+      "x6": 88.2296
+    },
+    "assumptions": "Continuous online, greedy purchases, max each route before next, no managers/research/prestige. Runtime timing reconstructed.",
+    "restaurantModelHours": {
+      "Current": {
+        "x1": 435.6113,
+        "x2": 232.3397,
+        "x6": 99.0214
+      },
+      "New": {
+        "x1": 365.6567,
+        "x2": 198.4695,
+        "x6": 89.5684
+      }
+    },
+    "comparisonNote": "Restaurant analytical estimates are 1.5\u20133.1% above the supplied proxy under identical greedy policies, partly from recovered stow/premium effects. Neither model establishes actual playtime parity."
+  },
+  "progress": {
+    "coreChecks": "17 groups passed, zero failures",
+    "upgradeCosts": "21600 exact Java fixture comparisons passed",
+    "editorUI": "Six rendered GraphicRaycaster purchase/navigation checks passed after rendering/audio fixes",
+    "device": "No phone connected; not tested on Android hardware",
+    "monetization": "User authorized demo IDs/buttons; local demo grants only. Purchasing 5.4.4 and LevelPlay 9.6.0 installed, production services not configured.",
+    "recording": "Verified 15 seconds, 720x1280, 30 FPS with decoded audible audio; includes two real upgrade-button purchases",
+    "upgradeEffects": "279 exact Java fixture comparisons passed",
+    "outletReloads": "Ten reloads: native mesh count unchanged (1551 before and after); Editor evidence only",
+    "androidBuild": "Succeeded, zero errors; APK v2 signature and API30/ARM64 metadata verified; physical-device testing pending"
+  },
+  "remainingGaps": [
+    {
+      "kind": "Device verification",
+      "gap": "No Android phone was connected. Installation, touch input, suspend/kill recovery, thermal behavior, frame rate and memory on target hardware are unverified.",
+      "next": "Install the APK on a midrange Android 11+ ARM64 phone and record a representative session."
+    },
+    {
+      "kind": "Reference parity",
+      "gap": "The three-stage customer timing/path runtime is reconstructed, including expected-duration express effects. Exact Traffic Flow service-cycle timing and total playtime are not certified.",
+      "next": "Compare full unboosted reference cycles with visible upgrade levels; validate the recovered runtime rules."
+    },
+    {
+      "kind": "Manager content",
+      "gap": "71 original manager definitions exist, but the playable recruitment UI currently offers the standard common/rare/epic pack. Senior/legendary and mythic acquisition and the kitchen affinity modifier are incomplete.",
+      "next": "Finish these from verified rules, with unverified prices/acquisition explicitly marked before balancing."
+    },
+    {
+      "kind": "Offers and services",
+      "gap": "Eight demo products and local rewarded-ad tests work. Monthly membership, welcome offers and source live-offer behavior are not fully implemented. Real billing, advertisements, consent and online analytics are unconfigured.",
+      "next": "Keep demo mode for review; supply publisher configuration and verified offer contents before production integration."
+    },
+    {
+      "kind": "Release presentation",
+      "gap": "The original burger icon is assigned and verified inside the APK. It uses legacy icon slots; adaptive icon setup and final store listing materials remain. Build logs contain icon import/deprecation and TMP code-generation warnings.",
+      "next": "Finalize adaptive icons, store screenshots/copy and publisher privacy information."
+    },
+    {
+      "kind": "Release packaging",
+      "gap": "The APK is a debug-signed development build. No release keystore, store listing or signed release bundle has been prepared.",
+      "next": "Confirm the production application identifier and publisher signing/store setup."
+    }
+  ],
+  "fixtureScope": "Cost fixtures cover rank 0 with no research discount; rank and stage-discount behavior have separate checks, not exhaustive fixtures."
+}

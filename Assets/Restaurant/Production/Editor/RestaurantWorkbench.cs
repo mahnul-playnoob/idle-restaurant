@@ -1,0 +1,12 @@
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.UIElements;
+using IdleRestaurant;
+public sealed class RestaurantWorkbench:EditorWindow {
+ [MenuItem("Restaurant/Production/Content and Economy Workbench")]
+ public static void Open()=>GetWindow<RestaurantWorkbench>("Restaurant Workbench");
+ public void CreateGUI(){var root=rootVisualElement;root.style.paddingLeft=16;root.style.paddingRight=16;root.style.paddingTop=16;root.Add(new Label("Idle Restaurant Tycoon • content and progression"));root.Add(new Label("Balance is editable in RestaurantCatalog. Source keys remain attached to themed outlets."));var catalog=AssetDatabase.LoadAssetAtPath<RestaurantCatalog>(RestaurantProductionBuilder.CatalogPath);var inspect=new Button(()=>Selection.activeObject=catalog){text="Inspect editable catalog"};root.Add(inspect);root.Add(new Button(RestaurantProgressionSimulator.Run){text="Simulate all 40 outlets and export pacing estimates"});root.Add(new Button(RestaurantValidation.Run){text="Run economy, simulation and save checks"});root.Add(new Button(RestaurantProductionBuilder.Prepare){text="Create / reopen production scene"});root.Add(new Button(RestaurantProductionBuilder.BakeEnvironments){text="Bake 40 editable environment prefabs"});
+  var outlet=new IntegerField("Outlet index (0–39)"){value=0};root.Add(outlet);var report=new Label();report.style.whiteSpace=WhiteSpace.Normal;root.Add(report);root.Add(new Button(()=>{int i=Mathf.Clamp(outlet.value,0,39);var g=new RestaurantGame(catalog);g.State.outlets[i].open=true;double total=0;for(int c=0;c<9;c++)for(int l=0;l<30;l++)total+=Economy.Cost(catalog,catalog.outlets[i],c,l,0);report.text=catalog.outlets[i].title+"\nSource: "+catalog.outlets[i].source+"\nCapacity: "+catalog.outlets[i].capacity+"\nAll base upgrades: "+Economy.Money(total)+"\nReconstructed income: "+Economy.Money(g.EstimatedIncome(i))+" / min";}){text="Preview progression at selected outlet"});
+  root.Add(new Label("Development controls below operate only while playing in the Editor."));root.Add(new Button(()=>{var app=FindAnyObjectByType<RestaurantApp>();if(!app)return;app.Game.State.cash=1e30;app.Game.State.gems=5000;for(int i=0;i<40;i++)app.Game.State.outlets[i].open=true;app.Save();app.Notify("EDITOR TEST: all outlets open");}){text="Test all outlets / grant development funds"});root.Add(new Button(()=>{var app=FindAnyObjectByType<RestaurantApp>();if(!app)return;for(int i=0;i<9;i++)app.Game.State.outlets[app.Game.State.selected].upgrades[i]=30;app.Save();}){text="Max selected outlet for prestige testing"});
+ }
+}

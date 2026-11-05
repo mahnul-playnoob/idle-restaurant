@@ -13,7 +13,7 @@ namespace RestaurantPreview
         {
             if(mats.TryGetValue(hex,out var m) && m)return m;
             var shader=Shader.Find("Universal Render Pipeline/Lit");if(!shader)throw new Exception("URP Lit missing");
-            m=new Material(shader){name="Restaurant "+hex};m.SetColor("_BaseColor",C(hex));m.SetFloat("_Smoothness",.22f);mats[hex]=m;return m;
+            m=new Material(shader){name="Restaurant "+hex,enableInstancing=true};m.SetColor("_BaseColor",C(hex));m.SetFloat("_Smoothness",.22f);mats[hex]=m;return m;
         }
         public static Transform Group(string name,Transform parent,Vector3 pos)
         {
@@ -22,7 +22,7 @@ namespace RestaurantPreview
         public static Transform Shape(PrimitiveType kind,Transform p,Vector3 pos,Vector3 size,string color)
         {
             var g=GameObject.CreatePrimitive(kind);g.name=kind.ToString();g.transform.SetParent(p,false);g.transform.localPosition=pos;g.transform.localScale=size;
-            var col=g.GetComponent<Collider>();if(col)UnityEngine.Object.Destroy(col);
+            var col=g.GetComponent<Collider>();if(col){if(Application.isPlaying)UnityEngine.Object.Destroy(col);else UnityEngine.Object.DestroyImmediate(col);}
             g.GetComponent<Renderer>().sharedMaterial=Mat(color);return g.transform;
         }
         public static Transform Ball(Transform p,Vector3 pos,Vector3 size,string c)=>Shape(PrimitiveType.Sphere,p,pos,size,c);
@@ -30,7 +30,7 @@ namespace RestaurantPreview
         public static Transform Box(Transform p,Vector3 pos,Vector3 size,string color,float radius=.06f)
         {
             var g=new GameObject("Rounded block",typeof(MeshFilter),typeof(MeshRenderer));g.transform.SetParent(p,false);g.transform.localPosition=pos;
-            g.GetComponent<MeshFilter>().sharedMesh=RoundedMesh(size.x,size.y,size.z,Mathf.Min(radius,Mathf.Min(size.x,size.z)*.48f));g.GetComponent<MeshRenderer>().sharedMaterial=Mat(color);return g.transform;
+            var generated=RoundedMesh(size.x,size.y,size.z,Mathf.Min(radius,Mathf.Min(size.x,size.z)*.48f));g.GetComponent<MeshFilter>().sharedMesh=generated;if(Application.isPlaying)g.AddComponent<IdleRestaurant.RestaurantRuntimeMeshOwner>().mesh=generated;g.GetComponent<MeshRenderer>().sharedMaterial=Mat(color);return g.transform;
         }
         static Mesh RoundedMesh(float w,float h,float d,float r)
         {
@@ -63,7 +63,7 @@ namespace RestaurantPreview
                 for(int j=0;j<sides;j++){float a=j*Mathf.PI*2/sides;v.Add(points[i]+radius*(Mathf.Cos(a)*right+Mathf.Sin(a)*up));}
             }
             for(int i=0;i<points.Count-1;i++)for(int j=0;j<sides;j++){int a=i*sides+j,b=i*sides+(j+1)%sides,c=(i+1)*sides+j,d=(i+1)*sides+(j+1)%sides;t.AddRange(new[]{a,c,b,b,c,d});}
-            var mesh=new Mesh{name="Food and face curve"};mesh.SetVertices(v);mesh.SetTriangles(t,0);mesh.RecalculateNormals();g.GetComponent<MeshFilter>().sharedMesh=mesh;g.GetComponent<MeshRenderer>().sharedMaterial=Mat(color);return g.transform;
+            var mesh=new Mesh{name="Food and face curve"};mesh.SetVertices(v);mesh.SetTriangles(t,0);mesh.RecalculateNormals();g.GetComponent<MeshFilter>().sharedMesh=mesh;if(Application.isPlaying)g.AddComponent<IdleRestaurant.RestaurantRuntimeMeshOwner>().mesh=mesh;g.GetComponent<MeshRenderer>().sharedMaterial=Mat(color);return g.transform;
         }
         public static Transform Plate(Transform p,Vector3 pos)
         {
@@ -113,6 +113,12 @@ namespace RestaurantPreview
     {
         public Transform root,body,head,leftArm,rightArm,leftLeg,rightLeg,tray;
         public Vector3 last;
+        public Person(Transform parent,Vector3 position,GameObject prefab)
+        {
+            var instance=UnityEngine.Object.Instantiate(prefab,parent);root=instance.transform;root.localPosition=position;last=position;
+            var rig=instance.GetComponent<IdleRestaurant.RestaurantActorRig>();if(!rig||!rig.Valid)throw new Exception("Replacement character needs a complete RestaurantActorRig");
+            body=rig.body;head=rig.head;leftArm=rig.leftArm;rightArm=rig.rightArm;leftLeg=rig.leftLeg;rightLeg=rig.rightLeg;tray=rig.tray;
+        }
         public Person(Transform parent,Vector3 position,string shirt,string hair,bool chef=false,bool server=false)
         {
             root=Models.Group(chef?"Chef":server?"Server":"Guest",parent,position);last=position;

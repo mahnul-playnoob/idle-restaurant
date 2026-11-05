@@ -1,0 +1,1732 @@
+{
+  "outlets": [
+    {
+      "id": 0,
+      "district": 0,
+      "title": "Sunny Counter",
+      "menu": "Burger, fries, lemonade",
+      "source": "plane:DUB",
+      "body": "plane",
+      "capacity": 52,
+      "premium": 4,
+      "economyRows": 12,
+      "segments": 1,
+      "fare": 0.4348,
+      "unlock": 0.0,
+      "currentScale": 0.9474571254384647,
+      "newScale": 0.47372856271923236,
+      "weights": [
+        1.2877725896902916,
+        0.9539056219928086,
+        0.8108197786938873
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 1,
+      "district": 0,
+      "title": "Toast and Bean",
+      "menu": "Toast, omelette, coffee",
+      "source": "plane:PMI",
+      "body": "plane",
+      "capacity": 76,
+      "premium": 0,
+      "economyRows": 19,
+      "segments": 1,
+      "fare": 1.3939900699738657,
+      "unlock": 20000.0,
+      "currentScale": 3.1976677983548183,
+      "newScale": 1.7764821101971213,
+      "weights": [
+        1.272345194921994,
+        0.8011062338397739,
+        0.9424779221644398
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 2,
+      "district": 0,
+      "title": "Basil and Bun",
+      "menu": "Burger, pasta, garden salad",
+      "source": "plane:DXB",
+      "body": "plane",
+      "capacity": 72,
+      "premium": 8,
+      "economyRows": 16,
+      "segments": 1,
+      "fare": 2.3676859462512154,
+      "unlock": 98000.0,
+      "currentScale": 8.42940761288534,
+      "newScale": 5.489329720509106,
+      "weights": [
+        0.9539066269693273,
+        1.287773946408592,
+        0.8108206329239281
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 3,
+      "district": 0,
+      "title": "Taco Terrace",
+      "menu": "Tacos, nachos, salsa",
+      "source": "plane:EDI",
+      "body": "plane",
+      "capacity": 44,
+      "premium": 4,
+      "economyRows": 10,
+      "segments": 1,
+      "fare": 6.699153932643653,
+      "unlock": 380000.0,
+      "currentScale": 20.747904665431804,
+      "newScale": 15.842963539089633,
+      "weights": [
+        0.8011045660741088,
+        1.2723425461177025,
+        0.9424759600871869
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 4,
+      "district": 0,
+      "title": "Noodle Nook",
+      "menu": "Ramen, dumplings, tea",
+      "source": "plane:NCE",
+      "body": "planeL",
+      "capacity": 86,
+      "premium": 8,
+      "economyRows": 13,
+      "segments": 1,
+      "fare": 15.259923716626473,
+      "unlock": 1400000.0,
+      "currentScale": 49.9027944086143,
+      "newScale": 44.4730897194309,
+      "weights": [
+        0.9539066269693273,
+        1.287773946408592,
+        0.8108206329239281
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 5,
+      "district": 0,
+      "title": "Slice Street",
+      "menu": "Pizza, garlic bread, soda",
+      "source": "plane:KEF",
+      "body": "planeL",
+      "capacity": 98,
+      "premium": 8,
+      "economyRows": 15,
+      "segments": 1,
+      "fare": 39.08721364396193,
+      "unlock": 5000000.0,
+      "currentScale": 119.04919382988813,
+      "newScale": 123.37933321253871,
+      "weights": [
+        0.7793243939757559,
+        0.9168522282067717,
+        1.2377505080791418
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 6,
+      "district": 0,
+      "title": "Rice Corner",
+      "menu": "Rice bowls, skewers, pickles",
+      "source": "plane:CAI",
+      "body": "planeL",
+      "capacity": 108,
+      "premium": 12,
+      "economyRows": 16,
+      "segments": 1,
+      "fare": 88.11049656553867,
+      "unlock": 17400000.0,
+      "currentScale": 283.1802519225682,
+      "newScale": 340.56223896547147,
+      "weights": [
+        0.9168550134678088,
+        0.7793267614476375,
+        1.237754268181542
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 7,
+      "district": 0,
+      "title": "Night Market",
+      "menu": "Mixed street food, fruit coolers",
+      "source": "plane:SIN",
+      "body": "planeL",
+      "capacity": 118,
+      "premium": 16,
+      "economyRows": 17,
+      "segments": 1,
+      "fare": 204.6256005527505,
+      "unlock": 61000000.0,
+      "currentScale": 672.90445638648,
+      "newScale": 938.0250395476114,
+      "weights": [
+        0.7793243939757559,
+        0.9168522282067717,
+        1.2377505080791418
+      ],
+      "check": 1,
+      "walk": 1,
+      "door": 1,
+      "prediction": 1.08,
+      "stow": 1
+    },
+    {
+      "id": 8,
+      "district": 1,
+      "title": "Morning Table",
+      "menu": "Pancakes, eggs, latte",
+      "source": "bus:OXF",
+      "body": "bus",
+      "capacity": 44,
+      "premium": 0,
+      "economyRows": 11,
+      "segments": 1,
+      "fare": 4141.713936576898,
+      "unlock": 0.0,
+      "currentScale": 9635.505729550921,
+      "newScale": 4817.752864775461,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.26,
+      "walk": 0.45,
+      "door": 1.26,
+      "prediction": 1.19,
+      "stow": 1.37
+    },
+    {
+      "id": 9,
+      "district": 1,
+      "title": "Maple Diner",
+      "menu": "Waffles, bacon, syrup",
+      "source": "bus:BTN",
+      "body": "bus",
+      "capacity": 56,
+      "premium": 4,
+      "economyRows": 13,
+      "segments": 1,
+      "fare": 7752.530070989346,
+      "unlock": 285000000.0,
+      "currentScale": 22888.115936185193,
+      "newScale": 13250.715292383396,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.26,
+      "walk": 0.45,
+      "door": 1.26,
+      "prediction": 1.19,
+      "stow": 1.37
+    },
+    {
+      "id": 10,
+      "district": 1,
+      "title": "Copper Pan",
+      "menu": "Pasta, meatballs, salad",
+      "source": "bus:CAM",
+      "body": "busL",
+      "capacity": 78,
+      "premium": 6,
+      "economyRows": 18,
+      "segments": 2,
+      "fare": 17789.567927496588,
+      "unlock": 1000000000.0,
+      "currentScale": 54362.615134807005,
+      "newScale": 36441.8830697242,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 1.23,
+      "walk": 0.45,
+      "door": 1.47,
+      "prediction": 1.19,
+      "stow": 1.45
+    },
+    {
+      "id": 11,
+      "district": 1,
+      "title": "Family Kitchen",
+      "menu": "Soup, sandwich, pie",
+      "source": "bus:BRS",
+      "body": "busL",
+      "capacity": 96,
+      "premium": 8,
+      "economyRows": 22,
+      "segments": 2,
+      "fare": 42888.03592718036,
+      "unlock": 3500000000.0,
+      "currentScale": 129114.12319150595,
+      "newScale": 100218.16766897234,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 1.23,
+      "walk": 0.45,
+      "door": 1.47,
+      "prediction": 1.19,
+      "stow": 1.45
+    },
+    {
+      "id": 12,
+      "district": 1,
+      "title": "Sunday Roast",
+      "menu": "Roast chicken, potatoes",
+      "source": "bus:BHX",
+      "body": "busXL",
+      "capacity": 122,
+      "premium": 10,
+      "economyRows": 28,
+      "segments": 2,
+      "fare": 105693.13281266138,
+      "unlock": 12200000000.0,
+      "currentScale": 306648.54866313946,
+      "newScale": 275603.5808496217,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 1.28,
+      "walk": 0.45,
+      "door": 1.55,
+      "prediction": 1.14,
+      "stow": 1.48
+    },
+    {
+      "id": 13,
+      "district": 1,
+      "title": "Riverside Diner",
+      "menu": "Fish, fries, tartar sauce",
+      "source": "bus:MAN",
+      "body": "busXL",
+      "capacity": 144,
+      "premium": 12,
+      "economyRows": 33,
+      "segments": 2,
+      "fare": 261044.32721322903,
+      "unlock": 43000000000.0,
+      "currentScale": 728292.4233033938,
+      "newScale": 757914.160682396,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 1.28,
+      "walk": 0.45,
+      "door": 1.55,
+      "prediction": 1.14,
+      "stow": 1.48
+    },
+    {
+      "id": 14,
+      "district": 1,
+      "title": "City Brunch",
+      "menu": "Brunch bowls, pastries",
+      "source": "bus:LIV",
+      "body": "busXL",
+      "capacity": 148,
+      "premium": 12,
+      "economyRows": 34,
+      "segments": 2,
+      "fare": 656789.277307246,
+      "unlock": 150000000000.0,
+      "currentScale": 1729696.2590118665,
+      "newScale": 2084269.0181671132,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.28,
+      "walk": 0.45,
+      "door": 1.55,
+      "prediction": 1.14,
+      "stow": 1.48
+    },
+    {
+      "id": 15,
+      "district": 1,
+      "title": "Grand Comfort",
+      "menu": "Mixed comfort tasting menu",
+      "source": "bus:LON",
+      "body": "busXL",
+      "capacity": 152,
+      "premium": 12,
+      "economyRows": 35,
+      "segments": 2,
+      "fare": 1652016.138171632,
+      "unlock": 520000000000.0,
+      "currentScale": 4108030.0205854643,
+      "newScale": 5731745.715489133,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.28,
+      "walk": 0.45,
+      "door": 1.55,
+      "prediction": 1.14,
+      "stow": 1.48
+    },
+    {
+      "id": 16,
+      "district": 2,
+      "title": "Miso Lane",
+      "menu": "Miso ramen, tea",
+      "source": "train:MAN",
+      "body": "train",
+      "capacity": 76,
+      "premium": 4,
+      "economyRows": 18,
+      "segments": 3,
+      "fare": 24959013.728712145,
+      "unlock": 0.0,
+      "currentScale": 58825870.52053275,
+      "newScale": 29412935.260266375,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 17,
+      "district": 2,
+      "title": "Dumpling House",
+      "menu": "Dumplings, bao",
+      "source": "train:PAR",
+      "body": "train",
+      "capacity": 86,
+      "premium": 6,
+      "economyRows": 20,
+      "segments": 3,
+      "fare": 57785246.18961891,
+      "unlock": 1740000000000.0,
+      "currentScale": 139711457.64557928,
+      "newScale": 80885579.54538953,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 18,
+      "district": 2,
+      "title": "Wok Garden",
+      "menu": "Stir fry, noodles",
+      "source": "train:BRU",
+      "body": "train",
+      "capacity": 90,
+      "premium": 6,
+      "economyRows": 21,
+      "segments": 3,
+      "fare": 145285474.83605427,
+      "unlock": 6000000000000.0,
+      "currentScale": 331814725.2673963,
+      "newScale": 222435353.41388395,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 19,
+      "district": 2,
+      "title": "Sushi Studio",
+      "menu": "Sushi, sashimi",
+      "source": "train:EDI",
+      "body": "train",
+      "capacity": 96,
+      "premium": 8,
+      "economyRows": 22,
+      "segments": 3,
+      "fare": 340668374.7858074,
+      "unlock": 21000000000000.0,
+      "currentScale": 788059984.1590514,
+      "newScale": 611697233.8450898,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 20,
+      "district": 2,
+      "title": "Curry Courtyard",
+      "menu": "Curry, rice, naan",
+      "source": "train:AMS",
+      "body": "train",
+      "capacity": 104,
+      "premium": 8,
+      "economyRows": 24,
+      "segments": 3,
+      "fare": 863165945.1699775,
+      "unlock": 75000000000000.0,
+      "currentScale": 1871642472.4020803,
+      "newScale": 1682167407.553037,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 21,
+      "district": 2,
+      "title": "Seoul Table",
+      "menu": "Bibimbap, kimchi",
+      "source": "train:FRA",
+      "body": "train",
+      "capacity": 110,
+      "premium": 10,
+      "economyRows": 25,
+      "segments": 3,
+      "fare": 2048898008.0583234,
+      "unlock": 260000000000000.0,
+      "currentScale": 4445150880.435854,
+      "newScale": 4625960388.024235,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 22,
+      "district": 2,
+      "title": "Bamboo Feast",
+      "menu": "Mixed steamed dishes",
+      "source": "train:LYS",
+      "body": "train",
+      "capacity": 116,
+      "premium": 12,
+      "economyRows": 26,
+      "segments": 3,
+      "fare": 4898113871.080753,
+      "unlock": 900000000000000.0,
+      "currentScale": 10557233348.049816,
+      "newScale": 12721391087.371809,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 23,
+      "district": 2,
+      "title": "East Market",
+      "menu": "Pan Asian tasting menu",
+      "source": "train:ROM",
+      "body": "train",
+      "capacity": 120,
+      "premium": 12,
+      "economyRows": 27,
+      "segments": 3,
+      "fare": 12341691619.874676,
+      "unlock": 3200000000000000.0,
+      "currentScale": 25073429207.240047,
+      "newScale": 34983825513.9346,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.39,
+      "walk": 2.4,
+      "door": 2.03,
+      "prediction": 1.31,
+      "stow": 2.27
+    },
+    {
+      "id": 24,
+      "district": 3,
+      "title": "Olive Room",
+      "menu": "Salad, focaccia",
+      "source": "ship:ROT",
+      "body": "shipS",
+      "capacity": 76,
+      "premium": 4,
+      "economyRows": 12,
+      "segments": 1,
+      "fare": 134749628439.51047,
+      "unlock": 0.0,
+      "currentScale": 359044681519.28033,
+      "newScale": 179522340759.64017,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.28,
+      "walk": 1.3,
+      "door": 1.39,
+      "prediction": 1.16,
+      "stow": 1.61
+    },
+    {
+      "id": 25,
+      "district": 3,
+      "title": "Lemon Grove",
+      "menu": "Lemon chicken, couscous",
+      "source": "ship:BIO",
+      "body": "shipS",
+      "capacity": 102,
+      "premium": 6,
+      "economyRows": 16,
+      "segments": 1,
+      "fare": 322258836217.5898,
+      "unlock": 1.06e+16,
+      "currentScale": 852731118668.928,
+      "newScale": 493686437119.3291,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.28,
+      "walk": 1.3,
+      "door": 1.39,
+      "prediction": 1.16,
+      "stow": 1.61
+    },
+    {
+      "id": 26,
+      "district": 3,
+      "title": "Tomato Terrace",
+      "menu": "Pasta, bruschetta",
+      "source": "ship:OSL",
+      "body": "ship",
+      "capacity": 124,
+      "premium": 12,
+      "economyRows": 14,
+      "segments": 1,
+      "fare": 695354738823.1453,
+      "unlock": 3.7e+16,
+      "currentScale": 2025236406892.1406,
+      "newScale": 1357637702116.8113,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 1.3,
+      "walk": 1.3,
+      "door": 1.39,
+      "prediction": 1.14,
+      "stow": 1.6
+    },
+    {
+      "id": 27,
+      "district": 3,
+      "title": "Saffron Table",
+      "menu": "Paella, grilled vegetables",
+      "source": "ship:LIS",
+      "body": "ship",
+      "capacity": 160,
+      "premium": 16,
+      "economyRows": 18,
+      "segments": 1,
+      "fare": 1700191979216.4163,
+      "unlock": 1.3e+17,
+      "currentScale": 4809936466415.429,
+      "newScale": 3733503680869.0596,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 1.3,
+      "walk": 1.3,
+      "door": 1.39,
+      "prediction": 1.14,
+      "stow": 1.6
+    },
+    {
+      "id": 28,
+      "district": 3,
+      "title": "Harbour Bistro",
+      "menu": "Seafood, rice",
+      "source": "ship:KEF",
+      "body": "shipXL",
+      "capacity": 170,
+      "premium": 10,
+      "economyRows": 40,
+      "segments": 2,
+      "fare": 3961015663500.355,
+      "unlock": 4.5e+17,
+      "currentScale": 11423599107776.74,
+      "newScale": 10267135122447.828,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 1.12,
+      "walk": 1.3,
+      "door": 1.47,
+      "prediction": 1.2,
+      "stow": 1.54
+    },
+    {
+      "id": 29,
+      "district": 3,
+      "title": "Garden Courtyard",
+      "menu": "Mezze, flatbread",
+      "source": "ship:NYC",
+      "body": "shipXL",
+      "capacity": 198,
+      "premium": 14,
+      "economyRows": 46,
+      "segments": 2,
+      "fare": 9417557802244.63,
+      "unlock": 1.6e+18,
+      "currentScale": 27131047881003.684,
+      "newScale": 28234621586800.543,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 1.12,
+      "walk": 1.3,
+      "door": 1.47,
+      "prediction": 1.2,
+      "stow": 1.54
+    },
+    {
+      "id": 30,
+      "district": 3,
+      "title": "Sunset Dining",
+      "menu": "Mediterranean platters",
+      "source": "ship:RIO",
+      "body": "shipXL",
+      "capacity": 206,
+      "premium": 14,
+      "economyRows": 48,
+      "segments": 2,
+      "fare": 23725321793067.1,
+      "unlock": 5.6e+18,
+      "currentScale": 64436238717411.8,
+      "newScale": 77645209363782.72,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.12,
+      "walk": 1.3,
+      "door": 1.47,
+      "prediction": 1.2,
+      "stow": 1.54
+    },
+    {
+      "id": 31,
+      "district": 3,
+      "title": "Grand Riviera",
+      "menu": "Chef tasting menu",
+      "source": "ship:SYD",
+      "body": "shipXL",
+      "capacity": 208,
+      "premium": 16,
+      "economyRows": 48,
+      "segments": 2,
+      "fare": 57479533535754.63,
+      "unlock": 1.95e+19,
+      "currentScale": 153036066953875.5,
+      "newScale": 213524325750497.22,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 1.12,
+      "walk": 1.3,
+      "door": 1.47,
+      "prediction": 1.2,
+      "stow": 1.54
+    },
+    {
+      "id": 32,
+      "district": 4,
+      "title": "Sweet Start",
+      "menu": "Cookies, cocoa",
+      "source": "truck:CHI",
+      "body": "truck",
+      "capacity": 42,
+      "premium": 2,
+      "economyRows": 10,
+      "segments": 1,
+      "fare": 692709202393547.4,
+      "unlock": 0.0,
+      "currentScale": 2191434823972647.8,
+      "newScale": 1095717411986323.9,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 0.77,
+      "walk": 1.0,
+      "door": 0.86,
+      "prediction": 1.23,
+      "stow": 1.0
+    },
+    {
+      "id": 33,
+      "district": 4,
+      "title": "Berry Corner",
+      "menu": "Berry tarts, tea",
+      "source": "truck:MIA",
+      "body": "truck",
+      "capacity": 52,
+      "premium": 4,
+      "economyRows": 12,
+      "segments": 1,
+      "fare": 1515752874389037.8,
+      "unlock": 6.5e+19,
+      "currentScale": 5204657706935281.0,
+      "newScale": 3013222882962512.5,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 0.77,
+      "walk": 1.0,
+      "door": 0.86,
+      "prediction": 1.23,
+      "stow": 1.0
+    },
+    {
+      "id": 34,
+      "district": 4,
+      "title": "Crepe Club",
+      "menu": "Crepes, fruit",
+      "source": "truck:DAL",
+      "body": "truckUS",
+      "capacity": 56,
+      "premium": 4,
+      "economyRows": 13,
+      "segments": 1,
+      "fare": 3807749592674415.0,
+      "unlock": 2.3e+20,
+      "currentScale": 1.2361062053971508e+16,
+      "newScale": 8286362928147065.0,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 0.8,
+      "walk": 1.0,
+      "door": 0.92,
+      "prediction": 1.2,
+      "stow": 1.04
+    },
+    {
+      "id": 35,
+      "district": 4,
+      "title": "Cocoa House",
+      "menu": "Chocolate cake, latte",
+      "source": "truck:SEA",
+      "body": "truckSemi",
+      "capacity": 76,
+      "premium": 4,
+      "economyRows": 12,
+      "segments": 1,
+      "fare": 9650803367998424.0,
+      "unlock": 8e+20,
+      "currentScale": 2.9357522378182516e+16,
+      "newScale": 2.2787498052404624e+16,
+      "weights": [
+        0.8008565310492505,
+        1.271948608137045,
+        0.9421841541755888
+      ],
+      "check": 0.8,
+      "walk": 1.0,
+      "door": 0.91,
+      "prediction": 1.2,
+      "stow": 1.03
+    },
+    {
+      "id": 36,
+      "district": 4,
+      "title": "Gelato Garden",
+      "menu": "Gelato, waffle cones",
+      "source": "truck:HAM",
+      "body": "truckSemiUS",
+      "capacity": 84,
+      "premium": 6,
+      "economyRows": 13,
+      "segments": 1,
+      "fare": 2.2607278129474256e+16,
+      "unlock": 2.8e+21,
+      "currentScale": 6.9724115648183624e+16,
+      "newScale": 6.2665619644112936e+16,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 0.82,
+      "walk": 1.0,
+      "door": 0.94,
+      "prediction": 1.2,
+      "stow": 1.04
+    },
+    {
+      "id": 37,
+      "district": 4,
+      "title": "Mochi Studio",
+      "menu": "Mochi, matcha",
+      "source": "truck:MIL",
+      "body": "truckSemi",
+      "capacity": 84,
+      "premium": 6,
+      "economyRows": 13,
+      "segments": 1,
+      "fare": 5.616029672019638e+16,
+      "unlock": 9.7e+21,
+      "currentScale": 1.6559477466443622e+17,
+      "newScale": 1.7233045402131088e+17,
+      "weights": [
+        0.9181011997913401,
+        0.780386019822639,
+        1.239436619718309
+      ],
+      "check": 0.8,
+      "walk": 1.0,
+      "door": 0.91,
+      "prediction": 1.2,
+      "stow": 1.03
+    },
+    {
+      "id": 38,
+      "district": 4,
+      "title": "Pastry Atelier",
+      "menu": "Croissants, mille feuille",
+      "source": "truck:MAD",
+      "body": "truckSemiUS",
+      "capacity": 92,
+      "premium": 8,
+      "economyRows": 14,
+      "segments": 1,
+      "fare": 1.3364090277879787e+17,
+      "unlock": 3.4e+22,
+      "currentScale": 3.932875898280361e+17,
+      "newScale": 4.7390874855860525e+17,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 0.82,
+      "walk": 1.0,
+      "door": 0.94,
+      "prediction": 1.2,
+      "stow": 1.04
+    },
+    {
+      "id": 39,
+      "district": 4,
+      "title": "Celebration Cafe",
+      "menu": "Dessert tasting menu",
+      "source": "truck:WAW",
+      "body": "truckHV",
+      "capacity": 108,
+      "premium": 6,
+      "economyRows": 17,
+      "segments": 2,
+      "fare": 2.996251622444721e+17,
+      "unlock": 1.2e+23,
+      "currentScale": 9.340580258415859e+17,
+      "newScale": 1.303249058536165e+18,
+      "weights": [
+        1.2864103952355168,
+        0.9528965890633457,
+        0.8099621007038439
+      ],
+      "check": 0.72,
+      "walk": 1.0,
+      "door": 0.92,
+      "prediction": 1.37,
+      "stow": 1.01
+    }
+  ],
+  "research": [
+    {
+      "key": "arr",
+      "title": "Service celebration",
+      "max": 100,
+      "district": -1,
+      "cost": 3000,
+      "income": 0,
+      "minutes": 2,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "rsp",
+      "title": "Research efficiency",
+      "max": 100,
+      "district": -1,
+      "cost": 5000,
+      "income": 0,
+      "minutes": 3,
+      "effect": 0.01,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "tds",
+      "title": "Street purchasing",
+      "max": 100,
+      "district": -1,
+      "cost": 8000,
+      "income": 0,
+      "minutes": 12,
+      "effect": 0.0045,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "bds",
+      "title": "Regional purchasing",
+      "max": 100,
+      "district": -1,
+      "cost": 8000,
+      "income": 0,
+      "minutes": 12,
+      "effect": 0.0045,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "ccr",
+      "title": "Premium hospitality",
+      "max": 100,
+      "district": -1,
+      "cost": 4000,
+      "income": 0,
+      "minutes": 4,
+      "effect": 0.006,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "cds",
+      "title": "Cafe purchasing",
+      "max": 100,
+      "district": -1,
+      "cost": 8000,
+      "income": 0,
+      "minutes": 12,
+      "effect": 0.0045,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "cbus",
+      "title": "Comfort licence",
+      "max": 1,
+      "district": 1,
+      "cost": 1800000,
+      "income": 757000,
+      "minutes": 240,
+      "effect": 0.003,
+      "evidence": "Source licence values"
+    },
+    {
+      "key": "ctrn",
+      "title": "Asian licence",
+      "max": 1,
+      "district": 2,
+      "cost": 6800000000,
+      "income": 4510000000,
+      "minutes": 480,
+      "effect": 0.003,
+      "evidence": "Source licence values"
+    },
+    {
+      "key": "cshp",
+      "title": "Mediterranean licence",
+      "max": 1,
+      "district": 3,
+      "cost": 30000000000000,
+      "income": 27400000000000,
+      "minutes": 720,
+      "effect": 0.003,
+      "evidence": "Source licence values"
+    },
+    {
+      "key": "ctrk",
+      "title": "Dessert licence",
+      "max": 1,
+      "district": 4,
+      "cost": 180000000000000000,
+      "income": 169000000000000000,
+      "minutes": 960,
+      "effect": 0.003,
+      "evidence": "Source licence values"
+    },
+    {
+      "key": "gchk",
+      "title": "Order workflow",
+      "max": 100,
+      "district": -1,
+      "cost": 6000,
+      "income": 0,
+      "minutes": 6,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "gcin",
+      "title": "Order value",
+      "max": 100,
+      "district": -1,
+      "cost": 6000,
+      "income": 0,
+      "minutes": 6,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "gwlk",
+      "title": "Kitchen delivery",
+      "max": 100,
+      "district": -1,
+      "cost": 6000,
+      "income": 0,
+      "minutes": 6,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "gdor",
+      "title": "Kitchen throughput",
+      "max": 100,
+      "district": -1,
+      "cost": 6000,
+      "income": 0,
+      "minutes": 6,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "gdin",
+      "title": "Kitchen value",
+      "max": 100,
+      "district": -1,
+      "cost": 6000,
+      "income": 0,
+      "minutes": 6,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "gsea",
+      "title": "Table service",
+      "max": 100,
+      "district": -1,
+      "cost": 6000,
+      "income": 0,
+      "minutes": 6,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    },
+    {
+      "key": "gsin",
+      "title": "Dining value",
+      "max": 100,
+      "district": -1,
+      "cost": 6000,
+      "income": 0,
+      "minutes": 6,
+      "effect": 0.003,
+      "evidence": "Effect recovered from mx5, c0 and zc; source costs/timers retained"
+    }
+  ],
+  "managers": [
+    {
+      "id": "mgr_common_001",
+      "title": "Ari Vale",
+      "role": 0,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_002",
+      "title": "Bea Vale",
+      "role": 0,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_003",
+      "title": "Cleo Vale",
+      "role": 0,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_001",
+      "title": "Dara Vale",
+      "role": 0,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_002",
+      "title": "Eli Vale",
+      "role": 0,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_epic_001",
+      "title": "Faye Vale",
+      "role": 0,
+      "rarity": 2,
+      "affinity": 0
+    },
+    {
+      "id": "mgr_epic_002",
+      "title": "Gia Vale",
+      "role": 0,
+      "rarity": 2,
+      "affinity": 2
+    },
+    {
+      "id": "mgr_legendary_001",
+      "title": "Hugo Vale",
+      "role": 0,
+      "rarity": 3,
+      "affinity": 0
+    },
+    {
+      "id": "mgr_common_004",
+      "title": "Iris Vale",
+      "role": 1,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_005",
+      "title": "Jules Vale",
+      "role": 1,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_006",
+      "title": "Kai Vale",
+      "role": 1,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_003",
+      "title": "Lena Vale",
+      "role": 1,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_004",
+      "title": "Milo Vale",
+      "role": 1,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_epic_003",
+      "title": "Nia Vale",
+      "role": 1,
+      "rarity": 2,
+      "affinity": 3
+    },
+    {
+      "id": "mgr_epic_004",
+      "title": "Oren Vale",
+      "role": 1,
+      "rarity": 2,
+      "affinity": 1
+    },
+    {
+      "id": "mgr_legendary_002",
+      "title": "Pia Vale",
+      "role": 1,
+      "rarity": 3,
+      "affinity": 0
+    },
+    {
+      "id": "mgr_common_007",
+      "title": "Quinn Vale",
+      "role": 2,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_008",
+      "title": "Remy Vale",
+      "role": 2,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_009",
+      "title": "Sage Vale",
+      "role": 2,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_005",
+      "title": "Theo Vale",
+      "role": 2,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_006",
+      "title": "Uma Vale",
+      "role": 2,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_epic_005",
+      "title": "Vera Vale",
+      "role": 2,
+      "rarity": 2,
+      "affinity": 2
+    },
+    {
+      "id": "mgr_epic_006",
+      "title": "Wren Vale",
+      "role": 2,
+      "rarity": 2,
+      "affinity": 3
+    },
+    {
+      "id": "mgr_legendary_003",
+      "title": "Yara Vale",
+      "role": 2,
+      "rarity": 3,
+      "affinity": 0
+    },
+    {
+      "id": "mgr_common_010",
+      "title": "Ari Reed",
+      "role": 0,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_011",
+      "title": "Bea Reed",
+      "role": 0,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_012",
+      "title": "Cleo Reed",
+      "role": 0,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_007",
+      "title": "Dara Reed",
+      "role": 0,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_008",
+      "title": "Eli Reed",
+      "role": 0,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_legendary_004",
+      "title": "Faye Reed",
+      "role": 0,
+      "rarity": 3,
+      "affinity": 1
+    },
+    {
+      "id": "mgr_legendary_005",
+      "title": "Gia Reed",
+      "role": 0,
+      "rarity": 3,
+      "affinity": 3
+    },
+    {
+      "id": "mgr_legendary_006",
+      "title": "Hugo Reed",
+      "role": 0,
+      "rarity": 3,
+      "affinity": 2
+    },
+    {
+      "id": "mgr_common_013",
+      "title": "Iris Reed",
+      "role": 1,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_014",
+      "title": "Jules Reed",
+      "role": 1,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_015",
+      "title": "Kai Reed",
+      "role": 1,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_009",
+      "title": "Lena Reed",
+      "role": 1,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_010",
+      "title": "Milo Reed",
+      "role": 1,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_legendary_007",
+      "title": "Nia Reed",
+      "role": 1,
+      "rarity": 3,
+      "affinity": 1
+    },
+    {
+      "id": "mgr_legendary_008",
+      "title": "Oren Reed",
+      "role": 1,
+      "rarity": 3,
+      "affinity": 3
+    },
+    {
+      "id": "mgr_legendary_009",
+      "title": "Pia Reed",
+      "role": 1,
+      "rarity": 3,
+      "affinity": 2
+    },
+    {
+      "id": "mgr_common_016",
+      "title": "Quinn Reed",
+      "role": 2,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_017",
+      "title": "Remy Reed",
+      "role": 2,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_018",
+      "title": "Sage Reed",
+      "role": 2,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_011",
+      "title": "Theo Reed",
+      "role": 2,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_012",
+      "title": "Uma Reed",
+      "role": 2,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_legendary_010",
+      "title": "Vera Reed",
+      "role": 2,
+      "rarity": 3,
+      "affinity": 1
+    },
+    {
+      "id": "mgr_legendary_011",
+      "title": "Wren Reed",
+      "role": 2,
+      "rarity": 3,
+      "affinity": 3
+    },
+    {
+      "id": "mgr_legendary_012",
+      "title": "Yara Reed",
+      "role": 2,
+      "rarity": 3,
+      "affinity": 2
+    },
+    {
+      "id": "mgr_epic_007",
+      "title": "Ari Bloom",
+      "role": 0,
+      "rarity": 2,
+      "affinity": 1
+    },
+    {
+      "id": "mgr_epic_008",
+      "title": "Bea Bloom",
+      "role": 0,
+      "rarity": 2,
+      "affinity": 3
+    },
+    {
+      "id": "mgr_epic_009",
+      "title": "Cleo Bloom",
+      "role": 1,
+      "rarity": 2,
+      "affinity": 0
+    },
+    {
+      "id": "mgr_epic_010",
+      "title": "Dara Bloom",
+      "role": 1,
+      "rarity": 2,
+      "affinity": 2
+    },
+    {
+      "id": "mgr_epic_011",
+      "title": "Eli Bloom",
+      "role": 2,
+      "rarity": 2,
+      "affinity": 0
+    },
+    {
+      "id": "mgr_epic_012",
+      "title": "Faye Bloom",
+      "role": 2,
+      "rarity": 2,
+      "affinity": 1
+    },
+    {
+      "id": "mgr_mythic_001",
+      "title": "Gia Bloom",
+      "role": 0,
+      "rarity": 4,
+      "affinity": 0
+    },
+    {
+      "id": "mgr_mythic_002",
+      "title": "Hugo Bloom",
+      "role": 1,
+      "rarity": 4,
+      "affinity": 1
+    },
+    {
+      "id": "mgr_mythic_003",
+      "title": "Iris Bloom",
+      "role": 2,
+      "rarity": 4,
+      "affinity": 2
+    },
+    {
+      "id": "mgr_mythic_004",
+      "title": "Jules Bloom",
+      "role": 0,
+      "rarity": 4,
+      "affinity": 3
+    },
+    {
+      "id": "mgr_common_019",
+      "title": "Kai Bloom",
+      "role": 0,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_020",
+      "title": "Lena Bloom",
+      "role": 1,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_common_021",
+      "title": "Milo Bloom",
+      "role": 2,
+      "rarity": 0,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_013",
+      "title": "Nia Bloom",
+      "role": 0,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_014",
+      "title": "Oren Bloom",
+      "role": 1,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_rare_015",
+      "title": "Pia Bloom",
+      "role": 2,
+      "rarity": 1,
+      "affinity": -1
+    },
+    {
+      "id": "mgr_epic_013",
+      "title": "Quinn Bloom",
+      "role": 0,
+      "rarity": 2,
+      "affinity": 4
+    },
+    {
+      "id": "mgr_epic_014",
+      "title": "Remy Bloom",
+      "role": 1,
+      "rarity": 2,
+      "affinity": 4
+    },
+    {
+      "id": "mgr_epic_015",
+      "title": "Sage Bloom",
+      "role": 2,
+      "rarity": 2,
+      "affinity": 4
+    },
+    {
+      "id": "mgr_legendary_013",
+      "title": "Theo Bloom",
+      "role": 0,
+      "rarity": 3,
+      "affinity": 4
+    },
+    {
+      "id": "mgr_legendary_014",
+      "title": "Uma Bloom",
+      "role": 1,
+      "rarity": 3,
+      "affinity": 4
+    },
+    {
+      "id": "mgr_legendary_015",
+      "title": "Vera Bloom",
+      "role": 2,
+      "rarity": 3,
+      "affinity": 4
+    },
+    {
+      "id": "mgr_mythic_005",
+      "title": "Wren Bloom",
+      "role": 2,
+      "rarity": 4,
+      "affinity": 4
+    }
+  ]
+}

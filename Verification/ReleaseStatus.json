@@ -1,0 +1,58 @@
+{
+  "status": "Playable development milestone; not complete or store-ready",
+  "artifact": {
+    "artifact": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Builds/IdleRestaurant-Android.apk",
+    "bytes": 99446449,
+    "megabytes": 99.45,
+    "sha256": "2f23cf617bed2f2f2a6cb54d79e51cec04c9c3cf43550f5a6ff9ac0334927df6",
+    "signature": "APK v2 verified; one signer; development debug signing",
+    "package": "com.mahnul.idlerestaurant",
+    "versionName": "0.2.0",
+    "versionCode": 2,
+    "minimumAndroid": "11 (API 30)",
+    "targetApi": 36,
+    "architecture": "ARM64",
+    "physicalDeviceTested": false,
+    "storeReady": false
+  },
+  "evidence": {
+    "core": "17 groups pass, including 21600 base-rank Current/New costs and 279 raw effects",
+    "ui": "Six Editor GraphicRaycaster interaction checks pass",
+    "memory": "10 same-outlet reloads retained 1551 native meshes before and after",
+    "video": "15 seconds, 720x1280, 30 FPS, decoded audio verified",
+    "catalog": "641 catalog field comparisons and all 40 stage-weight triples have no differences"
+  },
+  "placeholders": "Core environment, food, character, UI and sound assets are original editable assets, not downloaded reference art. Demo service dialogs replace unavailable production integrations. Visual completion is not claimed.",
+  "remaining": [
+    {
+      "kind": "Device verification",
+      "gap": "No Android phone was connected. Installation, touch input, suspend/kill recovery, thermal behavior, frame rate and memory on target hardware are unverified.",
+      "next": "Install the APK on a midrange Android 11+ ARM64 phone and record a representative session."
+    },
+    {
+      "kind": "Reference parity",
+      "gap": "The three-stage customer timing/path runtime is reconstructed, including expected-duration express effects. Exact Traffic Flow service-cycle timing and total playtime are not certified.",
+      "next": "Compare full unboosted reference cycles with visible upgrade levels; validate the recovered runtime rules."
+    },
+    {
+      "kind": "Manager content",
+      "gap": "71 original manager definitions exist, but the playable recruitment UI currently offers the standard common/rare/epic pack. Senior/legendary and mythic acquisition and the kitchen affinity modifier are incomplete.",
+      "next": "Finish these from verified rules, with unverified prices/acquisition explicitly marked before balancing."
+    },
+    {
+      "kind": "Offers and services",
+      "gap": "Eight demo products and local rewarded-ad tests work. Monthly membership, welcome offers and source live-offer behavior are not fully implemented. Real billing, advertisements, consent and online analytics are unconfigured.",
+      "next": "Keep demo mode for review; supply publisher configuration and verified offer contents before production integration."
+    },
+    {
+      "kind": "Release presentation",
+      "gap": "The original burger icon is assigned and verified inside the APK. It uses legacy icon slots; adaptive icon setup and final store listing materials remain. Build logs contain icon import/deprecation and TMP code-generation warnings.",
+      "next": "Finalize adaptive icons, store screenshots/copy and publisher privacy information."
+    },
+    {
+      "kind": "Release packaging",
+      "gap": "The APK is a debug-signed development build. No release keystore, store listing or signed release bundle has been prepared.",
+      "next": "Confirm the production application identifier and publisher signing/store setup."
+    }
+  ]
+}
