@@ -9,11 +9,10 @@ namespace IdleRestaurant {
  }
  [Serializable] public class ResearchDefinition { public string key,title,evidence; public int max=100,district=-1; public double cost,income,minutes; public double effect=.01; }
  [Serializable] public class ManagerDefinition { public string id,title; public int role,rarity,affinity=-1; }
- [Serializable] public class OfferDefinition {public string id,title,type,reward;public int amount;}
  [CreateAssetMenu(menuName="Restaurant/Game Catalog")] public class RestaurantCatalog:ScriptableObject {
   public GameObject guestPrefab,chefPrefab,hostPrefab;
   public OutletDefinition[] outlets; public ResearchDefinition[] research; public ManagerDefinition[] managers;
-  public OfferDefinition[] offers={new OfferDefinition{id="demo.income2",title="2x income forever",type="NonConsumable",reward="income2"},new OfferDefinition{id="demo.income3",title="3x income forever",type="NonConsumable",reward="income3"},new OfferDefinition{id="demo.offline",title="Offline hospitality",type="NonConsumable",reward="offline"},new OfferDefinition{id="demo.gems100",title="100 gems",type="Consumable",reward="gems",amount=100},new OfferDefinition{id="demo.gems255",title="255 gems",type="Consumable",reward="gems",amount=255},new OfferDefinition{id="demo.gems520",title="520 gems",type="Consumable",reward="gems",amount=520},new OfferDefinition{id="demo.gems1100",title="1100 gems",type="Consumable",reward="gems",amount=1100},new OfferDefinition{id="demo.gems2750",title="2750 gems",type="Consumable",reward="gems",amount=2750}};
+  public FamilyBalance familyBalance;
   public int waveGemDailyCap=100;
   public bool useNewCosts;
   [Tooltip("Proposed starting grant. Not verified in the source package.")] public double initialCash=100;

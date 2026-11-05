@@ -1,0 +1,31 @@
+{
+  "utc": "2026-11-05T08:08:16.990275Z",
+  "Status": "PASS",
+  "checks": [
+    "Welcome panel starts service through actual UI raycast",
+    "Mid-meal state serialized, restored and rebound to chair/guest actors",
+    "First paid meal at 24.5s, order upgrade bought through UI raycast",
+    "Kitchen tab and delivery upgrade through UI raycast",
+    "Six guests ordered, collected, ate and returned plates; one wave and one ticket",
+    "First service completed in 42.9s",
+    "Map unlocked through tutorial and opened via UI raycast"
+  ],
+  "phases": [
+    "Entering",
+    "Unspawned",
+    "Queued",
+    "ToOrder",
+    "Ordering",
+    "ToPickup",
+    "WaitingFood",
+    "Receiving",
+    "ToSeat",
+    "Sitting",
+    "Eating",
+    "Standing",
+    "Leaving",
+    "Exited"
+  ],
+  "error": "",
+  "scope": "Actual Editor simulation, CharacterControllers and GraphicRaycaster; physical phone still required"
+}

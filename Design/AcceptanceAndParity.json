@@ -1,5 +1,5 @@
 {
-  "status": "Playable development build; release acceptance incomplete",
+  "status": "Historical reference-parity register, superseded for active family balance",
   "target": {
     "platform": "Android",
     "minOS": "11",
@@ -232,5 +232,7 @@
       "next": "Confirm the production application identifier and publisher signing/store setup."
     }
   ],
-  "fixtureScope": "Cost fixtures cover rank 0 with no research discount; rank and stage-discount behavior have separate checks, not exhaustive fixtures."
+  "fixtureScope": "Cost fixtures cover rank 0 with no research discount; rank and stage-discount behavior have separate checks, not exhaustive fixtures.",
+  "activeSpecification": "FamilyGameGuide.html",
+  "scopeChange": "User requested a free, forgiving family game without IAP. Active family balance intentionally replaces historical monetized progression."
 }

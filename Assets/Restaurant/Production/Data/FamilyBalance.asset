@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf1c76b823974973be2fe5ab6298a95, type: 3}
+  m_Name: FamilyBalance
+  m_EditorClassIdentifier: Assembly-CSharp::IdleRestaurant.FamilyBalance
+  startingCoins: 0
+  mealCoins: 12
+  outletIncomeGrowth: 1.65
+  unlockBase: 200
+  unlockGrowth: 1.9
+  upgradeCoins:
+  - 10
+  - 18
+  - 22
+  - 15
+  - 25
+  - 30
+  - 18
+  - 28
+  - 35
+  orderSpeedPerLevel: 0.05
+  cookSpeedPerLevel: 0.06
+  tableSpeedPerLevel: 0.04
+  walkSpeedPerLevel: 0.018
+  payPerLevel: 0.12
+  menuPerLevel: 0.06
+  tipChancePerLevel: 0.02
+  tipFraction: 0.15
+  mealShares:
+  - 0.25
+  - 0.25
+  - 0.5
+  extraSlotTickets: 0000000008000000100000001800000028000000
+  researchCoins: 80
+  researchGrowth: 1.2
+  researchSeconds: 15
+  researchStepSeconds: 10
+  upgradeGrowth: 1.075
+  upgradeSlope: 0.12
+  rankIncomeGrowth: 1.1
+  orderSeconds: 1.6
+  cookSeconds: 2.4
+  mealSeconds: 3.8
+  walkSpeed: 1.8
+  firstServiceGuests: 6
+  normalServiceGuests: 8
+  maxVisibleGuests: 18
+  serviceBonus: 0.15
+  firstServiceGift: 100
+  offlineRate: 1
+  offlineCapSeconds: 86400
+  starEveryServices: 5
+  trainingTicketBase: 2
+  starResearchSeconds: 10
+  starResearchStepSeconds: 5
+  recruitTickets: 8
+  seniorTickets: 24
+  masterTickets: 80
+  enterInterval: 0.8
+  sitSeconds: 0.55
+  standSeconds: 0.5
+  pickupSeconds: 0.4

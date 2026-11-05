@@ -1,58 +1,74 @@
 {
-  "status": "Playable development milestone; not complete or store-ready",
-  "artifact": {
-    "artifact": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Builds/IdleRestaurant-Android.apk",
-    "bytes": 99446449,
-    "megabytes": 99.45,
-    "sha256": "2f23cf617bed2f2f2a6cb54d79e51cec04c9c3cf43550f5a6ff9ac0334927df6",
-    "signature": "APK v2 verified; one signer; development debug signing",
+  "version": "0.3.0",
+  "status": "Installable free-family testing candidate; store release acceptance remains incomplete",
+  "androidBuild": {
+    "startedUtc": "2026-11-05T09:21:20.54062Z",
+    "finishedUtc": "2026-11-05T09:21:51.9215Z",
+    "result": "Succeeded",
+    "errors": 0,
+    "warnings": 2,
+    "bytes": 552751560,
+    "seconds": 31.370838,
+    "development": false,
+    "version": "0.3.0",
+    "versionCode": 3,
+    "generatedCppDebugInfo": false
+  },
+  "apk": {
+    "utc": "2026-11-05T09:24:36.945214+00:00",
+    "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Builds/IdleRestaurant-Android.apk",
+    "bytes": 62221264,
+    "sha256": "df9645c2f5a36aaa5c42726cba240963542083cc13cb9bc24f52c10f9b007deb",
     "package": "com.mahnul.idlerestaurant",
-    "versionName": "0.2.0",
-    "versionCode": 2,
-    "minimumAndroid": "11 (API 30)",
-    "targetApi": 36,
-    "architecture": "ARM64",
-    "physicalDeviceTested": false,
-    "storeReady": false
+    "version": "0.3.0",
+    "versionCode": 3,
+    "minimumAndroid": "11",
+    "minAPI": 30,
+    "targetAPI": 36,
+    "abi": [
+      "arm64-v8a"
+    ],
+    "debuggable": false,
+    "signatureV2Verified": true,
+    "signing": "Android debug certificate; installable testing APK, not a store-signed bundle",
+    "sameSigningCertificateAsPreviousAPK": true,
+    "billingPermission": false,
+    "advertisingIdPermission": false,
+    "permissions": [
+      "package: com.mahnul.idlerestaurant",
+      "uses-permission: name='android.permission.INTERNET'",
+      "uses-permission: name='android.permission.VIBRATE'",
+      "permission: com.mahnul.idlerestaurant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "uses-permission: name='com.mahnul.idlerestaurant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'"
+    ],
+    "physicalPhoneTested": false,
+    "apkZipIntegrity": "pass",
+    "adsAndPurchasePackagesRemoved": true
   },
-  "evidence": {
-    "core": "17 groups pass, including 21600 base-rank Current/New costs and 279 raw effects",
-    "ui": "Six Editor GraphicRaycaster interaction checks pass",
-    "memory": "10 same-outlet reloads retained 1551 native meshes before and after",
-    "video": "15 seconds, 720x1280, 30 FPS, decoded audio verified",
-    "catalog": "641 catalog field comparisons and all 40 stage-weight triples have no differences"
-  },
-  "placeholders": "Core environment, food, character, UI and sound assets are original editable assets, not downloaded reference art. Demo service dialogs replace unavailable production integrations. Visual completion is not claimed.",
+  "completed": [
+    "No purchase or advertising packages or purchase UI",
+    "Welcome-to-map progressive tutorial with guided upgrades",
+    "Logical colliding guest service, reserved chairs, varied human and food animation",
+    "40 outlets in five distinct districts with themed map emblems",
+    "Earned coins and tickets; all 71 teammates available; ticket-based training",
+    "Useful research, offline collection, repeating goal books and non-destructive restaurant stars",
+    "Editable Unity source, tuning assets, current balance export, original replaceable assets",
+    "Actual Editor gameplay and UI checks; 220 busy-service guests; save recovery; stable mesh count across ten reloads",
+    "Verified 15-second real gameplay video with captured audio",
+    "Normal ARM64 APK built successfully, signed and inspected; no billing or advertising-ID permission",
+    "Recruitment skips the free starter and all owned teammates; completed teams cannot spend recruitment tickets"
+  ],
   "remaining": [
-    {
-      "kind": "Device verification",
-      "gap": "No Android phone was connected. Installation, touch input, suspend/kill recovery, thermal behavior, frame rate and memory on target hardware are unverified.",
-      "next": "Install the APK on a midrange Android 11+ ARM64 phone and record a representative session."
-    },
-    {
-      "kind": "Reference parity",
-      "gap": "The three-stage customer timing/path runtime is reconstructed, including expected-duration express effects. Exact Traffic Flow service-cycle timing and total playtime are not certified.",
-      "next": "Compare full unboosted reference cycles with visible upgrade levels; validate the recovered runtime rules."
-    },
-    {
-      "kind": "Manager content",
-      "gap": "71 original manager definitions exist, but the playable recruitment UI currently offers the standard common/rare/epic pack. Senior/legendary and mythic acquisition and the kitchen affinity modifier are incomplete.",
-      "next": "Finish these from verified rules, with unverified prices/acquisition explicitly marked before balancing."
-    },
-    {
-      "kind": "Offers and services",
-      "gap": "Eight demo products and local rewarded-ad tests work. Monthly membership, welcome offers and source live-offer behavior are not fully implemented. Real billing, advertisements, consent and online analytics are unconfigured.",
-      "next": "Keep demo mode for review; supply publisher configuration and verified offer contents before production integration."
-    },
-    {
-      "kind": "Release presentation",
-      "gap": "The original burger icon is assigned and verified inside the APK. It uses legacy icon slots; adaptive icon setup and final store listing materials remain. Build logs contain icon import/deprecation and TMP code-generation warnings.",
-      "next": "Finalize adaptive icons, store screenshots/copy and publisher privacy information."
-    },
-    {
-      "kind": "Release packaging",
-      "gap": "The APK is a debug-signed development build. No release keystore, store listing or signed release bundle has been prepared.",
-      "next": "Confirm the production application identifier and publisher signing/store setup."
-    }
-  ]
+    "No Android phone was connected: installation, real touch input, suspend/resume, thermal, battery and device performance remain unverified",
+    "No ten-year-old usability session has been conducted",
+    "Publisher must prepare release signing/AAB and complete current store declarations and presentation review",
+    "Generated C++ debug information is disabled for this test APK; enable symbolicated release diagnostics when preparing a public release"
+  ],
+  "placeholders": {
+    "temporaryArtOrAudioPlaceholders": "None intentionally retained in this pass. Original procedural food, environment, character and UI assets are the chosen base art.",
+    "mockPurchasesAdsOrBackend": "None in the active game; services are absent, not simulated integrations.",
+    "contentLimit": "40 authored environments; further play repeats and develops these outlets rather than generating infinite new environments."
+  },
+  "scope": "Free-family balance intentionally replaces the historical monetized Traffic Flow progression. Exact original timing/playtime is not claimed.",
+  "editorSavedProgress": "Existing persistent save left unchanged. Automatic review rejected an optional Editor-save reset because it could overwrite progress. New APK installs use the verified fresh-player tutorial."
 }

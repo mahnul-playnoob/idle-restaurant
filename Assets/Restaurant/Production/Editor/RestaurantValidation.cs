@@ -12,6 +12,7 @@ public static class RestaurantValidation {
  static void Require(bool condition,string message){if(!condition)throw new Exception(message);}
  [MenuItem("Restaurant/Production/Run Acceptance Checks")]
  public static void Run(){results=new List<Result>();var c=AssetDatabase.LoadAssetAtPath<RestaurantCatalog>(RestaurantProductionBuilder.CatalogPath);
+  var family=c.familyBalance;c.familyBalance=null;try{
   Check("Catalog shape",()=>Require(c.outlets.Length==40&&c.managers.Length==71&&c.research.Length==17,"Wrong content count"));
   Check("21600 reference cost fixtures",()=>{var golden=Newtonsoft.Json.JsonConvert.DeserializeObject<Golden>(File.ReadAllText("Design/CostGolden.json"));int k=0;bool previous=c.useNewCosts;try{foreach(bool variant in new[]{false,true}){c.useNewCosts=variant;for(int i=0;i<40;i++)for(int card=0;card<9;card++)for(int level=0;level<30;level++){double actual=Economy.Cost(c,c.outlets[i],card,level,0);Require(actual==golden.values[k],"Cost mismatch at "+i+"/"+card+"/"+level+"/"+variant+": "+actual+" != "+golden.values[k]);k++;}}}finally{c.useNewCosts=previous;}Require(k==21600,"Fixture count");});
   Check("279 exact upgrade effects",()=>{var fixture=Newtonsoft.Json.JsonConvert.DeserializeObject<Golden>(File.ReadAllText("Design/EffectGolden.json"));int n=0;for(int card=0;card<9;card++)for(int level=0;level<=30;level++)Require(Economy.Effect(card,level)==fixture.values[n++],"Effect differs at "+card+"/"+level);});
@@ -30,5 +31,6 @@ public static class RestaurantValidation {
   Check("Unlock dependency and cash",()=>{var g=new RestaurantGame(c);g.State.cash=1e30;Require(g.Open(2),"Cash-funded route unexpectedly blocked");Require(g.Open(1),"Second outlet blocked");Require(!g.CanOpen(8,out _),"Licence bypass");});
   Check("Prestige local reset, wallet retention and safe state",()=>{var g=new RestaurantGame(c);var s=g.State.outlets[0];for(int i=0;i<9;i++)s.upgrades[i]=30;s.clearClock=5;Require(!g.Prestige(),"Unsafe prestige allowed");s.clearClock=0;double cash=g.State.cash;Require(g.Prestige(),"Prestige denied");Require(s.rank==1&&g.State.prestigeCoins==1&&g.State.cash==cash&&s.upgrades[0]==0,"Incorrect reset");});
   var report=new Report{utc=DateTime.UtcNow.ToString("o"),checks=results.ToArray()};foreach(var r in results)if(r.status=="pass")report.passed++;else report.failed++;Directory.CreateDirectory("Verification");File.WriteAllText("Verification/CoreChecks.json",JsonUtility.ToJson(report,true));Debug.Log("RESTAURANT_ACCEPTANCE passed="+report.passed+" failed="+report.failed);
+  }finally{c.familyBalance=family;}
  }
 }

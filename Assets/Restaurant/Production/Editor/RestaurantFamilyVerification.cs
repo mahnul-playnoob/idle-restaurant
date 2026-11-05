@@ -1,0 +1,22 @@
+using System;using System.Collections;using System.Collections.Generic;using System.IO;using System.Linq;using UnityEngine;using UnityEngine.UI;using UnityEngine.EventSystems;using TMPro;using UnityEditor;using IdleRestaurant;
+public static class RestaurantFamilyVerification {
+ public static string Status="Not started";static RestaurantApp App=>UnityEngine.Object.FindAnyObjectByType<RestaurantApp>();
+ static void Check(bool ok,string why){if(!ok)throw new Exception(why);}
+ static Button Find(string text)=>UnityEngine.Object.FindObjectsByType<Button>(FindObjectsSortMode.None).First(x=>x.isActiveAndEnabled&&x.GetComponentInChildren<TMP_Text>().text.StartsWith(text,StringComparison.Ordinal));
+ static void Tap(Button b){Canvas.ForceUpdateCanvases();var r=(RectTransform)b.transform;var e=new PointerEventData(EventSystem.current){position=RectTransformUtility.WorldToScreenPoint(null,r.TransformPoint(r.rect.center)),button=PointerEventData.InputButton.Left};var hits=new List<RaycastResult>();EventSystem.current.RaycastAll(e,hits);Check(hits.Count>0&&hits[0].gameObject.GetComponentInParent<Button>()==b,"Blocked tap: "+b.name);ExecuteEvents.Execute(b.gameObject,e,ExecuteEvents.pointerClickHandler);}
+ [MenuItem("Restaurant/Family Game/Test first service and saved guest recovery")]
+ public static void Begin(){App.StartCoroutine(Run());}
+ static IEnumerator Run(){var a=App;Status="Testing onboarding";var checks=new List<string>();string error="";bool restored=false;var phases=new HashSet<GuestPhase>();double mealTime=0;float begin=Time.realtimeSinceStartup;
+ a.Game.State=new RestaurantGame(a.catalog).State;a.Navigate("play");a.world.Show(0);typeof(RestaurantApp).GetMethod("TutorialDialog",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic).Invoke(a,null);yield return new WaitForSecondsRealtime(.2f);try{Tap(Find("OPEN MY RESTAURANT"));Check(a.Game.Guide==1,"Welcome did not start service");checks.Add("Welcome panel starts service through actual UI raycast");}catch(Exception ex){error=ex.Message;}yield return null;
+ while(error==""&&Time.realtimeSinceStartup-begin<145){try{var g=a.Game;var s=g.State.outlets[0];if(s.service!=null)foreach(var guest in s.service)phases.Add(guest.phase);if(g.Guide==2&&Find("Faster orders").interactable){mealTime=g.State.seconds;Tap(Find("Faster orders"));Check(g.Guide==3,"First upgrade did not advance guide");checks.Add("First paid meal at "+mealTime.ToString("0.0")+"s, order upgrade bought through UI raycast");}
+ if(g.Guide==3&&Find("KITCHEN").interactable){Tap(Find("KITCHEN"));yieldPending=true;}
+ }catch(Exception ex){error=ex.Message;break;}
+ if(yieldPending){yieldPending=false;yield return null;try{Tap(Find("Faster delivery"));Check(a.Game.Guide==4,"Delivery upgrade did not advance guide");checks.Add("Kitchen tab and delivery upgrade through UI raycast");}catch(Exception ex){error=ex.Message;break;}}
+ try{var s=a.Game.State.outlets[0];if(!restored&&s.service!=null&&s.service.Any(x=>x.phase==GuestPhase.Eating)){var copy=Newtonsoft.Json.JsonConvert.DeserializeObject<SaveState>(Newtonsoft.Json.JsonConvert.SerializeObject(a.Game.State));a.Game.State=new RestaurantGame(a.catalog,copy).State;a.world.Show(0);restored=true;checks.Add("Mid-meal state serialized, restored and rebound to chair/guest actors");}
+ if(s.waves>=1&&a.Game.Guide>=5){Check(restored,"Save recovery was not exercised");Check(a.Game.State.guestsServed==6,"Duplicate or missing meal after reload");Check(a.Game.State.gems==1,"First service ticket must be awarded once");Check(phases.Contains(GuestPhase.Eating)&&phases.Contains(GuestPhase.Leaving),"Missing logical service phases");checks.Add("Six guests ordered, collected, ate and returned plates; one wave and one ticket");checks.Add("First service completed in "+a.Game.State.seconds.ToString("0.0")+"s");Tap(Find("MAP"));checks.Add("Map unlocked through tutorial and opened via UI raycast");Status="PASS";break;}
+ }catch(Exception ex){error=ex.Message;break;}yield return null;
+ }
+ if(Status!="PASS"){if(error=="")error="First service did not finish within 145s";Status="FAIL: "+error;}Directory.CreateDirectory("Verification");File.WriteAllText("Verification/FamilyPlay.json",Newtonsoft.Json.JsonConvert.SerializeObject(new{utc=DateTime.UtcNow,Status,checks,phases=phases.Select(x=>x.ToString()).ToArray(),error,scope="Actual Editor simulation, CharacterControllers and GraphicRaycaster; physical phone still required"},Newtonsoft.Json.Formatting.Indented));Debug.Log("FAMILY_PLAY "+Status);a.Save();
+ }
+ static bool yieldPending;
+}

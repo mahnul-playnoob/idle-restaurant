@@ -1,0 +1,21 @@
+using System;using System.Collections;using System.Collections.Generic;using System.IO;using System.Linq;using UnityEngine;using UnityEngine.UI;using UnityEngine.EventSystems;using TMPro;using UnityEditor;using IdleRestaurant;
+public static class RestaurantFamilyMenusVerification {
+ public static string Status="Not started";static void Need(bool ok,string why){if(!ok)throw new Exception(why);}static Button Find(string text)=>UnityEngine.Object.FindObjectsByType<Button>(FindObjectsSortMode.None).First(x=>x.isActiveAndEnabled&&x.GetComponentInChildren<TMP_Text>().text.StartsWith(text,StringComparison.Ordinal));
+ static void Tap(Button b){Canvas.ForceUpdateCanvases();var r=(RectTransform)b.transform;var e=new PointerEventData(EventSystem.current){position=RectTransformUtility.WorldToScreenPoint(null,r.TransformPoint(r.rect.center)),button=PointerEventData.InputButton.Left};var hits=new List<RaycastResult>();EventSystem.current.RaycastAll(e,hits);Need(hits.Count>0&&hits[0].gameObject.GetComponentInParent<Button>()==b,"Blocked UI target "+b.name);ExecuteEvents.Execute(b.gameObject,e,ExecuteEvents.pointerClickHandler);}
+ [MenuItem("Restaurant/Family Game/Test training goals settings and rewards UI")]
+ public static void Begin(){UnityEngine.Object.FindAnyObjectByType<RestaurantApp>().StartCoroutine(Run());}
+ static IEnumerator Run(){var a=UnityEngine.Object.FindAnyObjectByType<RestaurantApp>();var saved=Newtonsoft.Json.JsonConvert.SerializeObject(a.Game.State);var checks=new List<string>();string error="";Status="Running";a.Game.State=new RestaurantGame(a.catalog).State;var s=a.Game.State;s.introComplete=true;s.guideStep=6;s.outlets[1].open=true;s.cash=100000;s.gems=100;s.managerCopies[0]=s.managerLevels[0]=1;a.world.Show(0);a.Navigate("managers");yield return new WaitForSecondsRealtime(.15f);
+ try{Tap(GameObject.Find("Row 1").GetComponentsInChildren<Button>().First(x=>x.GetComponentInChildren<TMP_Text>().text=="TRAIN"));Need(s.managerLevels[0]==2&&s.gems==97,"Training debit or level failed");checks.Add("Training via actual UI: three earned tickets, level 1 to 2, no duplicate needed");Tap(Find("MENU"));}catch(Exception ex){error=ex.Message;}
+ yield return new WaitForSecondsRealtime(.15f);
+ if(error=="")try{Tap(GameObject.Find("Row 4").GetComponentInChildren<Button>());Need(s.largeText,"Larger text toggle failed");checks.Add("Settings and larger text toggle through raycast");}catch(Exception ex){error=ex.Message;}
+ yield return new WaitForSecondsRealtime(.15f);
+ if(error==""){a.Navigate("tasks");s.outlets[0].waves=60;}
+ yield return new WaitForSecondsRealtime(.15f);
+ if(error=="")for(int i=0;i<12;i++){var scroll=UnityEngine.Object.FindAnyObjectByType<ScrollRect>();float h=scroll.viewport.rect.height;scroll.content.anchoredPosition=new Vector2(0,Mathf.Clamp(i*145-100,0,scroll.content.rect.height-h));Canvas.ForceUpdateCanvases();yield return new WaitForSecondsRealtime(.15f);try{Tap(GameObject.Find("Row "+i).GetComponentInChildren<Button>());}catch(Exception ex){error=ex.Message;break;}}
+ yield return new WaitForSecondsRealtime(.15f);
+ if(error=="")try{Need(s.taskBook==1&&s.taskClaimed==0&&s.gems==217,"Goal book did not roll over or duplicate rewards");checks.Add("Twelve goals claimed through scrolling UI; next goal book opens and rewards total exactly 120 tickets");a.Navigate("rewards");}catch(Exception ex){error=ex.Message;}
+ yield return new WaitForSecondsRealtime(.15f);
+ if(error=="")try{Need(!UnityEngine.Object.FindObjectsByType<TMP_Text>(FindObjectsSortMode.None).Any(x=>x.text.Contains("DEMO")||x.text.Contains("CONFIRM PURCHASE")),"Payment test UI remains");Tap(Find("SEE MY GOALS"));checks.Add("Rewards screen opens goals and contains no demo purchase flow");}catch(Exception ex){error=ex.Message;}
+ a.Game.State=Newtonsoft.Json.JsonConvert.DeserializeObject<SaveState>(saved);a.Navigate("play");a.world.Show(a.Game.State.selected);a.Save();Status=error==""?"PASS":"FAIL: "+error;Directory.CreateDirectory("Verification");File.WriteAllText("Verification/FamilyMenus.json",Newtonsoft.Json.JsonConvert.SerializeObject(new{utc=DateTime.UtcNow,Status,checks,error,scope="Editor GraphicRaycaster pointer paths; physical Android still unverified"},Newtonsoft.Json.Formatting.Indented));Debug.Log("FAMILY_MENUS "+Status);
+ }
+}

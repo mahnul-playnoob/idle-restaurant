@@ -1,0 +1,4 @@
+<linker>
+  <!-- Save data uses reflection; keep game fields in compact mobile builds. -->
+  <assembly fullname="Assembly-CSharp" preserve="all" />
+</linker>

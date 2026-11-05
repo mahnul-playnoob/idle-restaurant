@@ -1,0 +1,63 @@
+{
+  "utc": "2026-11-05T08:14:51.418163Z",
+  "Status": "PASS",
+  "results": [
+    {
+      "outlet": 7,
+      "passed": true,
+      "seconds": 46.699999999999484,
+      "frames": 536,
+      "meals": 22,
+      "tickets": 1,
+      "expected": 130198.27783366051,
+      "earned": 133478.96566444953,
+      "guests": null
+    },
+    {
+      "outlet": 15,
+      "passed": true,
+      "seconds": 46.499999999999496,
+      "frames": 531,
+      "meals": 22,
+      "tickets": 1,
+      "expected": 7152811.71974204,
+      "earned": 7269433.6499552252,
+      "guests": null
+    },
+    {
+      "outlet": 23,
+      "passed": true,
+      "seconds": 46.3999999999995,
+      "frames": 531,
+      "meals": 22,
+      "tickets": 1,
+      "expected": 392960001.847673,
+      "earned": 399366958.399537,
+      "guests": null
+    },
+    {
+      "outlet": 31,
+      "passed": true,
+      "seconds": 46.549999999999493,
+      "frames": 537,
+      "meals": 22,
+      "tickets": 1,
+      "expected": 21588372391.506496,
+      "earned": 21940356723.976715,
+      "guests": null
+    },
+    {
+      "outlet": 39,
+      "passed": true,
+      "seconds": 46.349999999999504,
+      "frames": 536,
+      "meals": 22,
+      "tickets": 1,
+      "expected": 1186018475984.7964,
+      "earned": 1205355733745.4172,
+      "guests": null
+    }
+  ],
+  "error": "",
+  "scope": "Actual Editor guest movement and furniture colliders in all five districts, 22 guests each; base exact payouts, max-level payout includes deterministic tips"
+}

@@ -1025,7 +1025,7 @@ MonoBehaviour:
     cost: 3000
     income: 0
     minutes: 2
-    effect: 0.003
+    effect: 0.01
   - key: rsp
     title: Research efficiency
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1054,14 +1054,14 @@ MonoBehaviour:
     minutes: 12
     effect: 0.0045
   - key: ccr
-    title: Premium hospitality
+    title: Thoughtful service
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
     max: 100
     district: -1
     cost: 4000
     income: 0
     minutes: 4
-    effect: 0.006
+    effect: 0.01
   - key: cds
     title: Cafe purchasing
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1072,41 +1072,41 @@ MonoBehaviour:
     minutes: 12
     effect: 0.0045
   - key: cbus
-    title: Comfort licence
+    title: Comfort diner skills
     evidence: Source licence values
     max: 1
     district: 1
     cost: 1800000
-    income: 757000
+    income: 0
     minutes: 240
-    effect: 0.003
+    effect: 0.01
   - key: ctrn
-    title: Asian licence
+    title: Asian kitchen skills
     evidence: Source licence values
     max: 1
     district: 2
     cost: 6800000000
-    income: 4510000000
+    income: 0
     minutes: 480
-    effect: 0.003
+    effect: 0.01
   - key: cshp
-    title: Mediterranean licence
+    title: Bistro skills
     evidence: Source licence values
     max: 1
     district: 3
     cost: 30000000000000
-    income: 27400000000000
+    income: 0
     minutes: 720
-    effect: 0.003
+    effect: 0.01
   - key: ctrk
-    title: Dessert licence
+    title: Dessert cafe skills
     evidence: Source licence values
     max: 1
     district: 4
     cost: 1.8e+17
-    income: 1.69e+17
+    income: 0
     minutes: 960
-    effect: 0.003
+    effect: 0.01
   - key: gchk
     title: Order workflow
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1115,7 +1115,7 @@ MonoBehaviour:
     cost: 6000
     income: 0
     minutes: 6
-    effect: 0.003
+    effect: 0.01
   - key: gcin
     title: Order value
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1124,7 +1124,7 @@ MonoBehaviour:
     cost: 6000
     income: 0
     minutes: 6
-    effect: 0.003
+    effect: 0.01
   - key: gwlk
     title: Kitchen delivery
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1133,7 +1133,7 @@ MonoBehaviour:
     cost: 6000
     income: 0
     minutes: 6
-    effect: 0.003
+    effect: 0.01
   - key: gdor
     title: Kitchen throughput
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1142,7 +1142,7 @@ MonoBehaviour:
     cost: 6000
     income: 0
     minutes: 6
-    effect: 0.003
+    effect: 0.01
   - key: gdin
     title: Kitchen value
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1151,7 +1151,7 @@ MonoBehaviour:
     cost: 6000
     income: 0
     minutes: 6
-    effect: 0.003
+    effect: 0.01
   - key: gsea
     title: Table service
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     cost: 6000
     income: 0
     minutes: 6
-    effect: 0.003
+    effect: 0.01
   - key: gsin
     title: Dining value
     evidence: Effect recovered from mx5, c0 and zc; source costs/timers retained
@@ -1169,7 +1169,7 @@ MonoBehaviour:
     cost: 6000
     income: 0
     minutes: 6
-    effect: 0.003
+    effect: 0.01
   managers:
   - id: mgr_common_001
     title: Ari Vale
@@ -1526,47 +1526,7 @@ MonoBehaviour:
     role: 2
     rarity: 4
     affinity: 4
-  offers:
-  - id: demo.income2
-    title: 2x income forever
-    type: NonConsumable
-    reward: income2
-    amount: 0
-  - id: demo.income3
-    title: 3x income forever
-    type: NonConsumable
-    reward: income3
-    amount: 0
-  - id: demo.offline
-    title: Offline hospitality
-    type: NonConsumable
-    reward: offline
-    amount: 0
-  - id: demo.gems100
-    title: 100 gems
-    type: Consumable
-    reward: gems
-    amount: 100
-  - id: demo.gems255
-    title: 255 gems
-    type: Consumable
-    reward: gems
-    amount: 255
-  - id: demo.gems520
-    title: 520 gems
-    type: Consumable
-    reward: gems
-    amount: 520
-  - id: demo.gems1100
-    title: 1100 gems
-    type: Consumable
-    reward: gems
-    amount: 1100
-  - id: demo.gems2750
-    title: 2750 gems
-    type: Consumable
-    reward: gems
-    amount: 2750
+  familyBalance: {fileID: 11400000, guid: e5748078a4ffa48658984e5873a075fb, type: 2}
   waveGemDailyCap: 100
   useNewCosts: 0
   initialCash: 100
