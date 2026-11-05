@@ -1,0 +1,29 @@
+{
+  "version": "0.3.1",
+  "versionCode": 4,
+  "path": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Builds/IdleRestaurant-Android-v0.3.1.apk",
+  "latestPath": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Builds/IdleRestaurant-Android.apk",
+  "bytes": 62227844,
+  "sha256": "d70e78ad748df44728dd1ab1861086582a0737e3866e955fd713134b0dd049fd",
+  "zipIntegrity": "pass",
+  "minAPI": 30,
+  "targetAPI": 36,
+  "abi": [
+    "arm64-v8a"
+  ],
+  "permissions": [
+    "uses-permission: name='android.permission.INTERNET'",
+    "uses-permission: name='android.permission.VIBRATE'",
+    "uses-permission: name='com.mahnul.idlerestaurant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'"
+  ],
+  "billing": false,
+  "advertisingId": false,
+  "builtStringsVerified": {
+    "returnedPlate": true,
+    "Upgrade price bar": true
+  },
+  "previousAPKPreserved": "/Users/playnoob/Desktop/Mahnul/Projects/idle-restaurant/Builds/IdleRestaurant-Android-v0.3.0.apk",
+  "physicalAndroidTested": false,
+  "liveEditorChecksPassed": 14,
+  "signature": "Verified separately with apksigner; Android debug certificate, testing APK"
+}

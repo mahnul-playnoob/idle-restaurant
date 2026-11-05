@@ -19,6 +19,6 @@ namespace IdleRestaurant {
  [System.Serializable,UnityEngine.Scripting.Preserve]
  public sealed class ServiceGuest {
   public int id,variant,seat=-1,waypoint; public GuestPhase phase;public double clock,cookClock,arrivalDelay;
-  public bool ordered,foodReady,collected,mealPaid;public float x,z;public double tips;
+  public bool ordered,foodReady,collected,mealPaid,returnedPlate;public float x,z;public double tips;
  }
 }

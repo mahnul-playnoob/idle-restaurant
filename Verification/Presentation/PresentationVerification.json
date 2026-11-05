@@ -1,0 +1,48 @@
+{
+  "utc": "2026-11-05T13:00:18.527088Z",
+  "Status": "PASS",
+  "Checks": [
+    "Visible entry and exit match shared route geometry",
+    "First guest completes a meal and advances onboarding",
+    "Affordable upgrade is red with a yellow tutorial highlight",
+    "Price has its own darker bar and BUY label",
+    "Insufficient cash makes the upgrade grey and non-interactable",
+    "First guided upgrade buys once through the actual UI",
+    "Completed tutorial prompt dismisses before the next prompt",
+    "Next prompt reappears and highlights the Kitchen tab",
+    "Selecting Kitchen moves the yellow highlight to Faster delivery",
+    "Second guided upgrade advances to first-service completion",
+    "All six guests return their plates and exit before one service reward",
+    "Final onboarding prompt highlights Map",
+    "Navigation shows MAP selected instead of PLAY",
+    "Busy service completes 22 meals, 22 plate returns and exits; queue stays inside its 10-person lane"
+  ],
+  "Events": [
+    {
+      "label": "Welcome tapped",
+      "seconds": 0.8500000000000002,
+      "cash": 0.0,
+      "guide": 1,
+      "frame": 71
+    },
+    {
+      "label": "First upgrade prompt",
+      "seconds": 25.300000000000225,
+      "cash": 42.0,
+      "guide": 2,
+      "frame": 804
+    },
+    {
+      "label": "Busy service complete",
+      "seconds": 78.999999999997655,
+      "cash": 10108.561943607185,
+      "guide": 6,
+      "frame": 3695
+    }
+  ],
+  "firstMeal": 24.500000000000213,
+  "firstServiceSeconds": 41.49999999999978,
+  "peakQueue": 10,
+  "originalLiveStateRestored": true,
+  "scope": "Live Editor simulation, furniture collision and UI raycasts. Android physical touch/performance not tested."
+}
