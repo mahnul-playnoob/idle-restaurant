@@ -1,0 +1,298 @@
+[
+  {
+    "time_s": 0,
+    "frame": 0,
+    "title": "Recording begins mid-onboarding",
+    "observation": "Dublin, cash $598, income $84/min; explanation points to the gate. Group 2/5 is a passenger-group counter, not the tutorial step number.",
+    "image": "frames/frame_000000_0.000.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 2.9116666666666666,
+    "frame": 173,
+    "title": "Guided gate upgrade",
+    "observation": "Prompt asks for a gate upgrade; Faster Check-in is highlighted. Level 0, $50, 4.00s \u2192 3.83s.",
+    "image": "frames/frame_000173_2.912.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 8.913333333333334,
+    "frame": 531,
+    "title": "Gate purchase registered",
+    "observation": "Faster Check-in level 1. Cash $623 \u2192 $573 across adjacent sampled states; profile counter 500 \u2192 510. Next price $77.",
+    "image": "frames/frame_000531_8.913.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 12.43,
+    "frame": 692,
+    "title": "Guided transit upgrade",
+    "observation": "Faster Boarding is highlighted: $50, 3.50s \u2192 3.04s. Faster Walking is separately listed at $40.",
+    "image": "frames/frame_000692_12.430.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 16.93166666666667,
+    "frame": 961,
+    "title": "Boarding purchase registered",
+    "observation": "Faster Boarding reaches level 1, next price $77, next time 2.69s. Income display $84 \u2192 $86/min.",
+    "image": "frames/frame_000961_16.932.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 20.43166666666667,
+    "frame": 1171,
+    "title": "Next passenger group",
+    "observation": "Group counter advances to 3/5 while the tutorial still points toward seating.",
+    "image": "frames/frame_001171_20.432.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 20.93166666666667,
+    "frame": 1200,
+    "title": "Guided seating upgrade",
+    "observation": "Seat Income highlighted: $100, $1.74 \u2192 $2.09. Faster Seating and Instant Seating each start at $40.",
+    "image": "frames/frame_001200_20.932.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 23.7,
+    "frame": 1365,
+    "title": "Seating income purchased",
+    "observation": "Seat Income level 1; income display $93/min. Destination/route/vehicle explanation appears with Next.",
+    "image": "frames/frame_001365_23.700.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 25.983333333333334,
+    "frame": 1501,
+    "title": "Guidance dismissed",
+    "observation": "Normal upgrade controls and tabs visible. Clip does not show onboarding being replayed.",
+    "image": "frames/frame_001501_25.983.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 33.41833333333334,
+    "frame": 1941,
+    "title": "Shop opened",
+    "observation": "Permanent \u00d72 and \u00d73 income packs; \u00d73 offline income up to 24h; passes, gems, timed cash. Purchase prices display Loading; no transaction is demonstrated.",
+    "image": "frames/frame_001941_33.418.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 37.751666666666665,
+    "frame": 2190,
+    "title": "Hub map opened",
+    "observation": "Dublin route on radial network; Plane active, other transport categories locked. 52 seats = 48 economy + 4 premium. Max income display $1.8K/min; no runs yet.",
+    "image": "frames/frame_002190_37.752.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 43.75333333333333,
+    "frame": 2547,
+    "title": "Locked category feedback",
+    "observation": "Train category tells the player to unlock its certificate in Research.",
+    "image": "frames/frame_002547_43.753.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 51.155,
+    "frame": 2986,
+    "title": "Returns to live gameplay",
+    "observation": "Income and passenger processing continued while the player browsed menus; no scene reset observed.",
+    "image": "frames/frame_002986_51.155.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 53.156666666666666,
+    "frame": 3104,
+    "title": "Seat Income level 2",
+    "observation": "Cost $154; payout now $2.43, next $2.78; next price $218. Income display $100/min.",
+    "image": "frames/frame_003104_53.157.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 53.656666666666666,
+    "frame": 3133,
+    "title": "Instant Seating level 1",
+    "observation": "Cost $40; 2.2% chance, next 4.3%. Income display $102/min.",
+    "image": "frames/frame_003133_53.657.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 54.656666666666666,
+    "frame": 3192,
+    "title": "Faster Seating level 1",
+    "observation": "Cost $40; now 2.86s, next 2.73s. Income display $104/min.",
+    "image": "frames/frame_003192_54.657.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 55.973333333333336,
+    "frame": 3268,
+    "title": "Faster Check-in level 2",
+    "observation": "Listed purchase price $77; next price $109; current 3.67s.",
+    "image": "frames/frame_003268_55.973.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 56.473333333333336,
+    "frame": 3297,
+    "title": "Faster Check-in level 3",
+    "observation": "Cost $109; next $146; current 3.52s. Income display $107/min.",
+    "image": "frames/frame_003297_56.473.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 57.973333333333336,
+    "frame": 3386,
+    "title": "Instant Check-in level 1",
+    "observation": "Cost $50; 2.2%, next 4.3%. Income display remains $107/min.",
+    "image": "frames/frame_003386_57.973.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 59.70666666666666,
+    "frame": 3486,
+    "title": "Faster Walking level 1",
+    "observation": "Cost $40; 8.64s, next 8.31s. Cash about $23.",
+    "image": "frames/frame_003486_59.707.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 61.475,
+    "frame": 3588,
+    "title": "Daily reward screen",
+    "observation": "Day 1 reward $1.0K cash; seven-day cycle and login milestones displayed.",
+    "image": "frames/frame_003588_61.475.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 68.22666666666667,
+    "frame": 3986,
+    "title": "Daily reward already claimed",
+    "observation": "Cash about $1.1K; one login day recorded; timer to next daily reward visible. Exact claim onset can be located in gallery.",
+    "image": "frames/frame_003986_68.227.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 72.04333333333334,
+    "frame": 4212,
+    "title": "Research menu",
+    "observation": "Departure Bonus level 0: $823, 5 min, +0.3%. Research Speed $3.2K, 5 min, -1%. One free slot; second costs 120 gems; five slots displayed.",
+    "image": "frames/frame_004212_72.043.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 75.81166666666667,
+    "frame": 4437,
+    "title": "Research running",
+    "observation": "Departure Bonus level 0 \u2192 1, 4m57s remaining; rush costs 5 gems. Cash about $299. Other research displays No Slot.",
+    "image": "frames/frame_004437_75.812.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 82.81333333333333,
+    "frame": 4851,
+    "title": "Manager unlock rule",
+    "observation": "Activities explicitly states managers unlock with the second destination.",
+    "image": "frames/frame_004851_82.813.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 89.93166666666667,
+    "frame": 5275,
+    "title": "Settings inspected",
+    "observation": "Music/SFX sliders, vibration, notifications, cloud-save sign-in, restore purchases, language/support and version 0.8.1 visible. No save/reload experiment shown.",
+    "image": "frames/frame_005275_89.932.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 109.30166666666666,
+    "frame": 6425,
+    "title": "Faster Check-in level 4",
+    "observation": "Cost $146; next $190; 3.39s \u2192 3.27s. Income display stays $107/min.",
+    "image": "frames/frame_006425_109.302.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 109.80166666666666,
+    "frame": 6454,
+    "title": "Faster Check-in level 5",
+    "observation": "Cost $190; next $242; 3.27s \u2192 3.15s. Cash $6; spending is followed by a low-cash interval.",
+    "image": "frames/frame_006454_109.802.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 111.80166666666666,
+    "frame": 6574,
+    "title": "Final group in first visible cycle",
+    "observation": "Group 5/5. This counter later resets after departure.",
+    "image": "frames/frame_006574_111.802.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 155.82833333333335,
+    "frame": 9210,
+    "title": "Faster Seating level 2",
+    "observation": "Cost $62; next $87; 2.73s \u2192 2.61s. Income display increases to $109/min; cash about $8.",
+    "image": "frames/frame_009210_155.828.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 211.775,
+    "frame": 12562,
+    "title": "Departure results",
+    "observation": "52 passengers, including 4 premium; +$36 departure bonus and +1 gem. Result overlay has an automatic progress bar.",
+    "image": "frames/frame_012562_211.775.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 216.62666666666667,
+    "frame": 12848,
+    "title": "Next cycle starts",
+    "observation": "Cash $66 \u2192 $102; gems 0 \u2192 1. Empty seats and group 1/5. Upgrade levels retained.",
+    "image": "frames/frame_012848_216.627.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 221.81,
+    "frame": 13158,
+    "title": "Instant Check-in level 2",
+    "observation": "Listed cost $77; now 4.3%, next 6.2%; next price $109.",
+    "image": "frames/frame_013158_221.810.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 223.11,
+    "frame": 13235,
+    "title": "Last-run duration displayed",
+    "observation": "Map shows Last Run 3:46. This is the game\u2019s displayed cycle duration; it exceeds time from recording start to departure because recording began after the run started.",
+    "image": "frames/frame_013235_223.110.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 256.5683333333333,
+    "frame": 15236,
+    "title": "Instant Check-in level 3",
+    "observation": "Level 3 is visible: 6.2%, next 8.2%; next price $146. The listed purchase cost was $109; profile counter is 650 and cash $55.",
+    "image": "frames/frame_015236_256.568.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 263.82,
+    "frame": 15669,
+    "title": "Research still running",
+    "observation": "Departure Bonus has 1m49s remaining; rush 3 gems. Research completion and its effect are not shown.",
+    "image": "frames/frame_015669_263.820.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  },
+  {
+    "time_s": 266.57,
+    "frame": 15824,
+    "title": "Final observed state",
+    "observation": "Dublin $109/min, cash $68, one gem, Group 3/5. Gate: Faster Check-in 5, Instant Check-in 3, Check-in Income 0.",
+    "image": "frames/frame_015824_266.570.jpg",
+    "confidence": "visible sampled state; onset bracketed by neighboring samples"
+  }
+]
