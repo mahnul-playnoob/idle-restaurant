@@ -18,3 +18,10 @@ Media/*-silent.mp4
 
 /.utmp/
 /Media/Playable_FirstLook.png
+
+# Raw live-capture frames remain local; the encoded preview is versioned.
+/Verification/Experience/recording/
+
+# Unity performance-package build metadata (generated locally).
+/Assets/Resources/PerformanceTestRunInfo.json*
+/Assets/Resources/PerformanceTestRunSettings.json*

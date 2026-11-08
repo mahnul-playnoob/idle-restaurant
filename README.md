@@ -1,3 +1,5 @@
+> Version 0.3.2 experience pass: contextual guest tutorial, non-blocking spotlight, larger playfield and food, green upgrade feedback and automatic service rewards. [Changes and 24 live checks](Design/Updates/ExperiencePolish.html). Historical screenshots and reports below describe their respective earlier builds.
+
 # Idle Restaurant Tycoon — free family edition
 
 Unity **6000.3.26f1**, portrait Android **11+**, ARM64. Active scene: `Assets/Restaurant/Production/RestaurantGame.unity`. Version **0.3.1**.
@@ -10,7 +12,7 @@ See [the current game guide and balance](Design/FamilyGameGuide.html). The free 
 
 ## Play and edit
 
-Open the production scene and press Play. Red BUY cards are affordable, with a separate darker price bar. Grey price cards need more coins; SOON cards unlock through onboarding. Yellow guidance dismisses between completed steps and reappears for the next target. The guide can be skipped and Help remains available. Mouse/keyboard testing: 1/2/3 buy visible upgrades, M opens the map, Esc goes back.
+Open the production scene and press Play. Green BUY cards are affordable, with a separate darker price bar. Grey price cards need more coins; SOON cards unlock through onboarding. Yellow guidance dismisses between completed steps and reappears for the next target. The guide can be skipped and Help remains available. Mouse/keyboard testing: 1/2/3 buy visible upgrades, M opens the map, Esc goes back.
 
 - `Assets/Restaurant/Production/Data/FamilyBalance.asset`: active prices, growth, rewards, timers, service and offline tuning.
 - `Assets/Restaurant/Production/Data/RestaurantCatalog.asset`: outlets, food/environment slots, teammates, research and audio.
@@ -28,6 +30,6 @@ Repository: `mahnul-playnoob/idle-restaurant`, branch `main`.
 
 ## Presentation patch 0.3.1
 
-Visible ENTER/EXIT gateways align with customer paths. Customers return their plate before leaving, and the waiting queue stays within its lane. The cream/herb/tomato UI uses red affordable upgrades, grey unavailable cards, separate price strips and yellow tutorial targets. Navigation now reflects the active page.
+Visible ENTER/EXIT gateways align with customer paths. Customers return their plate before leaving, and the waiting queue stays within its lane. The cream/herb UI uses green affordable upgrades, grey unavailable cards, separate price strips and yellow tutorial targets. Navigation now reflects the active page.
 
 [Implementation and backlog mapping](Design/Updates/PresentationAndGuestFlow.html) · [Live verification](Verification/Presentation/PresentationVerification.json). All 14 Editor checks passed, including the six-guest tutorial and a 22-guest service. The new APK is `Builds/IdleRestaurant-Android-v0.3.1.apk` (also copied to the latest APK filename), version 0.3.1/code 4. ZIP integrity and signature v2 are verified; it is debug-signed for testing. Physical Android touch/performance remains unverified. Original save files were restored after validation.

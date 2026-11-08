@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace IdleRestaurant
 {
-    // The restaurant's UI palette: cream paper, dark herb ink, tomato actions, mustard guidance.
+    // The restaurant's UI palette: cream paper, dark herb ink, herb-green actions, mustard guidance.
     public sealed partial class RestaurantApp
     {
-        static Color UpgradeRed => Hex("#C64135");
-        static Color PriceRed => Hex("#923126");
+        static Color UpgradeGreen => Hex("#287548");
+        static Color PriceGreen => Hex("#1C5535");
         static Color Unavailable => Hex("#E0E1DB");
         static Color UnavailablePrice => Hex("#C3C7BF");
-        static Color GuideYellow => Hex("#F7C644");
+        Color GuideYellow => experience.focusColor;
 
         readonly UnityEngine.UI.Button[] navButtons = new UnityEngine.UI.Button[5];
         readonly UnityEngine.UI.Image[] priceBars = new UnityEngine.UI.Image[3];
@@ -27,7 +27,7 @@ namespace IdleRestaurant
         {
             int card = stage * 3 + slot;
             var button = Button(parent, "", new Vector2(slot / 3f + .005f, 0),
-                new Vector2((slot + 1) / 3f - .005f, 1), () => Buy(card), UpgradeRed);
+                new Vector2((slot + 1) / 3f - .005f, 1), () => Buy(card), UpgradeGreen);
             button.name = "Upgrade " + card;
             cards[slot] = button;
             cardImages[slot] = button.GetComponent<UnityEngine.UI.Image>();
@@ -41,7 +41,7 @@ namespace IdleRestaurant
             title.fontSizeMax = title.fontSize;
             title.alignment = TextAlignmentOptions.Center;
             var strip = Panel("Upgrade price bar", button.transform,
-                new Vector2(.035f, .04f), new Vector2(.965f, .29f), PriceRed);
+                new Vector2(.035f, .04f), new Vector2(.965f, .29f), PriceGreen);
             priceBars[slot] = strip.GetComponent<UnityEngine.UI.Image>();
             priceBars[slot].raycastTarget = false;
             priceLabels[slot] = Text(strip, "", Vector2.zero, Vector2.one, 25, Cream, TextAlignmentOptions.Center);
@@ -61,9 +61,9 @@ namespace IdleRestaurant
             bool guided = Game.State.introComplete || Game.Guide >= 4 ||
                 (Game.Guide == 2 && card == 0) || (Game.Guide == 3 && card == 3);
             bool affordable = !max && guided && Game.State.cash >= price;
-            cardImages[slot].color = affordable ? UpgradeRed : Unavailable;
+            cardImages[slot].color = affordable ? UpgradeGreen : Unavailable;
             cardLabels[slot].color = affordable ? Cream : Ink;
-            priceBars[slot].color = affordable ? PriceRed : UnavailablePrice;
+            priceBars[slot].color = affordable ? PriceGreen : UnavailablePrice;
             priceLabels[slot].color = affordable ? Cream : Ink;
             string effect = Game.Family ? FamilyEffect(card, level) : EffectText(card, level);
             string next = max ? "" : " → " + (Game.Family ? FamilyEffect(card, level + 1) : EffectText(card, level + 1));
@@ -103,7 +103,7 @@ namespace IdleRestaurant
             if (!guidePanel || Game == null) return;
             guideWanted = page == "play" && !Game.State.introComplete && Game.Guide > 0;
             // Kitchen selection is a distinct visual instruction even though it belongs to model step 3.
-            int key = guideWanted ? Game.Guide * 10 + (Game.Guide == 3 && stage == 1 ? 1 : 0) : -1;
+            int key = guideWanted ? Game.Guide * 10 + (Game.Guide == 1 ? GuestJourney() : Game.Guide == 3 && stage == 1 ? 1 : 0) : -1;
             if (key != guideKey)
             {
                 guideKey = key;
@@ -111,9 +111,9 @@ namespace IdleRestaurant
                 guideTextSwapped = false;
                 switch (Game.Guide)
                 {
-                    case 1: guidePendingText = "1 / 5   Follow a guest: order, collect food, eat."; break;
-                    case 2: guidePendingText = "2 / 5   Tap the red Faster orders upgrade."; break;
-                    case 3: guidePendingText = stage == 1 ? "3 / 5   Tap the red Faster delivery upgrade." : "3 / 5   Tap KITCHEN to improve food delivery."; break;
+                    case 1: guidePendingText = JourneyInstruction(GuestJourney()); break;
+                    case 2: guidePendingText = "2 / 5   Serve guests faster. Tap Faster orders."; break;
+                    case 3: guidePendingText = stage == 1 ? "3 / 5   Help guests collect meals faster. Tap Faster delivery." : "3 / 5   Tap KITCHEN to improve food delivery."; break;
                     case 4: guidePendingText = "4 / 5   More seats are ready. Finish this service."; break;
                     default: guidePendingText = "5 / 5   Service complete! Tap MAP to grow."; break;
                 }
