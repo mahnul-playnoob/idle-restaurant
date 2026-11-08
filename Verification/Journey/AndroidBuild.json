@@ -1,0 +1,15 @@
+{
+  "startedUtc": "2026-11-08T11:02:51.614075Z",
+  "finishedUtc": "2026-11-08T11:03:24.031802Z",
+  "result": "Succeeded",
+  "errors": 0,
+  "warnings": 1,
+  "bytes": 553525700,
+  "seconds": 32.404578,
+  "messages": [
+    {
+      "type": "Warning",
+      "content": "Assets/Restaurant/Production/Runtime/RestaurantApp.cs(15,242): warning CS0414: The field 'RestaurantApp.dirty' is assigned but its value is never used"
+    }
+  ]
+}

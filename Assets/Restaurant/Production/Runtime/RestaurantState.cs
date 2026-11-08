@@ -11,6 +11,7 @@ namespace IdleRestaurant {
  [UnityEngine.Scripting.Preserve,Serializable] public class ResearchState { public int level;public double finish; }
  [UnityEngine.Scripting.Preserve,Serializable] public class SaveState {
   public int version=2,selected,gems,prestigeCoins,tutorial,packDry,slots=1; public double cash,totalEarned,seconds,utc,boostUntil,adReady;
+  public int goalBoardVersion; public int[] goalKinds; public double[] goalBaselines,goalTargets;
   public int guideStep,guestsServed,serviceStars,recruitSequence; public bool introComplete;public bool music=true,sfx=true,haptics=true,reducedMotion,largeText,premiumOffline,income2,income3; public int quality=1;
   public OutletState[] outlets; public ResearchState[] research;public double[] prestigeFinish=new double[8]; public int[] managerCopies,managerLevels,prestige=new int[8];
   public string[] receipts=Array.Empty<string>(); public int dailyDay,dailyAds,taskClaimed,taskBook,waveGemDay,waveGemsEarned;public double pendingOffline;

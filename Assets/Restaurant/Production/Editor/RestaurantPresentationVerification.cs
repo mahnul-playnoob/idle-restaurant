@@ -13,7 +13,7 @@ using UnityEngine.EventSystems;
 public static class RestaurantPresentationVerification
 {
     public static string Status = "Not started";
-    static string Folder => Path.GetFullPath("Verification/Experience");
+    static string Folder => Path.GetFullPath("Verification/Journey/OnboardingRegression");
     static readonly BindingFlags Private = BindingFlags.Instance | BindingFlags.NonPublic;
     static readonly List<string> Checks = new List<string>();
     static readonly List<object> Events = new List<object>();

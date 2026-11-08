@@ -81,6 +81,7 @@ namespace IdleRestaurant
                 bool selected = page == NavigationPages[i] || (i == 4 && page == "rewards");
                 navButtons[i].GetComponent<UnityEngine.UI.Image>().color = selected ? Green : Hex("#E8E6DA");
                 navButtons[i].GetComponentInChildren<TMP_Text>().color = selected ? Cream : Ink;
+                if(navigationIcons[i])navigationIcons[i].color=selected?Cream:Green;
             }
         }
 

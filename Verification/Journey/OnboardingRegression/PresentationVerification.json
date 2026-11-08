@@ -1,0 +1,58 @@
+{
+  "utc": "2026-11-08T10:55:32.238483Z",
+  "Status": "PASS",
+  "Checks": [
+    "Visible entry and exit match shared route geometry",
+    "First guest journey explains at least four distinct activities beside the action",
+    "Responsive camera gives the restaurant half of the portrait screen",
+    "First guest completes a meal and advances onboarding",
+    "Affordable upgrade is green with a yellow tutorial highlight",
+    "Price has its own darker bar and BUY label",
+    "Spotlight focuses the upgrade without intercepting touch",
+    "Insufficient cash makes the upgrade grey and non-interactable",
+    "First guided upgrade buys once through the actual UI",
+    "Upgrade feedback explains the affected restaurant action",
+    "Completed tutorial prompt dismisses before the next prompt",
+    "Next prompt reappears and highlights the Kitchen tab",
+    "Selecting Kitchen moves the yellow highlight to Faster delivery",
+    "Second guided upgrade advances to first-service completion",
+    "All six guests return their plates and exit before one service reward",
+    "Service reward presents credited coins and ticket without a blocking claim tap",
+    "Final onboarding prompt highlights Map",
+    "Navigation shows MAP selected instead of PLAY",
+    "Busy service completes 22 meals, 22 plate returns and exits; queue stays inside its 10-person lane",
+    "Reward card dismisses automatically while the next service continues",
+    "Reduced motion keeps readable upgrade feedback",
+    "Entrance and exit remain visible at portrait aspect 0.45",
+    "Entrance and exit remain visible at portrait aspect 0.5625",
+    "Entrance and exit remain visible at portrait aspect 0.625"
+  ],
+  "Events": [
+    {
+      "label": "Welcome tapped",
+      "seconds": 0.49999999999999994,
+      "cash": 0.0,
+      "guide": 1,
+      "frame": 348
+    },
+    {
+      "label": "First upgrade prompt",
+      "seconds": 25.350000000000225,
+      "cash": 42.0,
+      "guide": 2,
+      "frame": 627
+    },
+    {
+      "label": "Busy service complete",
+      "seconds": 81.19999999999753,
+      "cash": 10108.561943607185,
+      "guide": 6,
+      "frame": 1761
+    }
+  ],
+  "firstMeal": 24.500000000000213,
+  "firstServiceSeconds": 42.049999999999748,
+  "peakQueue": 10,
+  "originalLiveStateRestored": true,
+  "scope": "Live Editor simulation, furniture collision and UI raycasts. Android physical touch/performance not tested."
+}

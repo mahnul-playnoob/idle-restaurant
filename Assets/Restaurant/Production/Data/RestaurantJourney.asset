@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b1a60dbb85946e095725d112fc6acd, type: 3}
+  m_Name: RestaurantJourney
+  m_EditorClassIdentifier: Assembly-CSharp::IdleRestaurant.RestaurantJourney
+  districts:
+  - name: Street Kitchens
+    shortName: STREET
+    description: Open-air counters, sunny awnings and lively street food.
+    landmark: MARKET SQUARE
+    ink: {r: 0.3019608, g: 0.34117648, b: 0.21568628, a: 1}
+    paper: {r: 0.9607843, g: 0.90588236, b: 0.78431374, a: 1}
+    accent: {r: 0.9019608, g: 0.6745098, b: 0.23529412, a: 1}
+    decoration: {fileID: 0}
+  - name: Comfort Diners
+    shortName: DINER
+    description: Checkerboard floors, warm booths and comforting favourites.
+    landmark: DINER AVENUE
+    ink: {r: 0.15686275, g: 0.34117648, b: 0.3647059, a: 1}
+    paper: {r: 0.8627451, g: 0.92941177, b: 0.9098039, a: 1}
+    accent: {r: 0.8745098, g: 0.6039216, b: 0.3882353, a: 1}
+    decoration: {fileID: 0}
+  - name: Asian Kitchens
+    shortName: ASIAN
+    description: Lantern-lit kitchens, bamboo screens and steaming bowls.
+    landmark: LANTERN COURT
+    ink: {r: 0.4, g: 0.27450982, b: 0.24313726, a: 1}
+    paper: {r: 0.95686275, g: 0.88235295, b: 0.7921569, a: 1}
+    accent: {r: 0.8117647, g: 0.5921569, b: 0.3137255, a: 1}
+    decoration: {fileID: 0}
+  - name: Mediterranean Bistros
+    shortName: BISTRO
+    description: Blue tiles, olive trees and relaxed terrace dining.
+    landmark: OLIVE PROMENADE
+    ink: {r: 0.15686275, g: 0.36078432, b: 0.45490196, a: 1}
+    paper: {r: 0.87058824, g: 0.91764706, b: 0.9411765, a: 1}
+    accent: {r: 0.6117647, g: 0.6745098, b: 0.38431373, a: 1}
+    decoration: {fileID: 0}
+  - name: Dessert Cafes
+    shortName: CAFE
+    description: Berry colours, cake displays and a sweet garden atmosphere.
+    landmark: BERRY GARDENS
+    ink: {r: 0.44705883, g: 0.29803923, b: 0.41960785, a: 1}
+    paper: {r: 0.9529412, g: 0.8784314, b: 0.92156863, a: 1}
+    accent: {r: 0.78039217, g: 0.5764706, b: 0.6862745, a: 1}
+    decoration: {fileID: 0}
+  goals:
+  - title: Welcome happy guests
+    kind: 0
+    firstTarget: 1
+    extraPerBook: 10
+    tickets: 10
+  - title: Finish a service
+    kind: 1
+    firstTarget: 1
+    extraPerBook: 2
+    tickets: 10
+  - title: Improve the order counter
+    kind: 2
+    firstTarget: 1
+    extraPerBook: 2
+    tickets: 10
+  - title: Improve your kitchen
+    kind: 3
+    firstTarget: 1
+    extraPerBook: 2
+    tickets: 10
+  - title: Improve the dining room
+    kind: 4
+    firstTarget: 1
+    extraPerBook: 2
+    tickets: 10
+  - title: Make restaurant improvements
+    kind: 5
+    firstTarget: 5
+    extraPerBook: 5
+    tickets: 10
+  - title: Open another restaurant
+    kind: 6
+    firstTarget: 1
+    extraPerBook: 0
+    tickets: 10
+  - title: Welcome a teammate
+    kind: 7
+    firstTarget: 1
+    extraPerBook: 0
+    tickets: 10
+  - title: Train your team
+    kind: 8
+    firstTarget: 1
+    extraPerBook: 1
+    tickets: 10
+  - title: Learn a kitchen skill
+    kind: 9
+    firstTarget: 1
+    extraPerBook: 1
+    tickets: 10
+  - title: Earn coins by serving
+    kind: 10
+    firstTarget: 150
+    extraPerBook: 100
+    tickets: 10
+  - title: Keep the service flowing
+    kind: 1
+    firstTarget: 5
+    extraPerBook: 3
+    tickets: 10
