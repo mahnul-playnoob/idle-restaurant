@@ -1,0 +1,152 @@
+{
+  "version": "0.5.1",
+  "file": "/Users/playnoob/Desktop/Mahnul/GPT/restaurant-v051-session/IdleRestaurant-v0.5.1-Gameplay-Tour.mp4",
+  "bytes": 1803452,
+  "sha256": "0b6e56f980609874b8187a962f897b07215221c16d1d4323e7bf8de58ee5f784",
+  "nominalSeconds": 34.209688623199995,
+  "source": "Edited live Unity gameplay: final fresh visual recheck for opening/night, and actual earned milestones from the 21.5-minute normal-speed fresh save. No seeded currency. Not a single uninterrupted final-balance recording.",
+  "audio": "Live game mix captured on AudioListener; gain increased 6 dB and short fades added at cuts",
+  "chapters": [
+    {
+      "id": "01-welcome",
+      "title": "Fresh save - opening the restaurant",
+      "start": 0,
+      "duration": 4.0112974351999995,
+      "sessionSeconds": 0.0,
+      "sourceFrames": 31,
+      "firstUnityFrame": 110,
+      "lastUnityFrame": 167,
+      "audioRms": 0.01130466628819704
+    },
+    {
+      "id": "02-night",
+      "title": "First earned service - candles lit at night",
+      "start": 4.0112974351999995,
+      "duration": 5.990856394300001,
+      "sessionSeconds": 47.44999999999944,
+      "sourceFrames": 45,
+      "firstUnityFrame": 691,
+      "lastUnityFrame": 778,
+      "audioRms": 0.012247380800545216
+    },
+    {
+      "id": "03-starter-first",
+      "title": "First earned teammate - assign to Orders",
+      "start": 10.0021538295,
+      "duration": 6.0808868443,
+      "sessionSeconds": 177.70000000000616,
+      "sourceFrames": 48,
+      "firstUnityFrame": 2195,
+      "lastUnityFrame": 2279,
+      "audioRms": 0.013358769938349724
+    },
+    {
+      "id": "03-outlet-two",
+      "title": "Earned opening - Toast and Bean",
+      "start": 16.0830406738,
+      "duration": 6.0762939478,
+      "sessionSeconds": 750.2499999998654,
+      "sourceFrames": 48,
+      "firstUnityFrame": 8892,
+      "lastUnityFrame": 8975,
+      "audioRms": 0.01159016415476799
+    },
+    {
+      "id": "04-team-0",
+      "title": "Earned tickets - welcome one teammate",
+      "start": 22.1593346216,
+      "duration": 6.00592041,
+      "sessionSeconds": 757.0499999998592,
+      "sourceFrames": 47,
+      "firstUnityFrame": 8985,
+      "lastUnityFrame": 9067,
+      "audioRms": 0.01599094085395336
+    },
+    {
+      "id": "05-outlet-three",
+      "title": "Earned opening - Basil and Bun",
+      "start": 28.165255031599997,
+      "duration": 6.0444335916,
+      "sessionSeconds": 1251.6499999994094,
+      "sourceFrames": 48,
+      "firstUnityFrame": 14756,
+      "lastUnityFrame": 14839,
+      "audioRms": 0.011647749692201614
+    }
+  ],
+  "validation": {
+    "decode": "PASS",
+    "durationSeconds": 34.166666666666664,
+    "width": 720,
+    "height": 1328,
+    "encodedFps": 30.0
+  },
+  "capturePasses": [
+    {
+      "id": "03-starter-first",
+      "title": "First earned teammate - assign to Orders",
+      "duration": 6.09921265,
+      "frames": 48,
+      "audioSamples": 585728,
+      "channels": 2,
+      "sampleRate": 48000,
+      "sessionSeconds": 177.70000000000616,
+      "capturePass": "21.5-minute unaccelerated fresh-save session"
+    },
+    {
+      "id": "03-outlet-two",
+      "title": "Earned opening - Toast and Bean",
+      "duration": 6.09277344,
+      "frames": 48,
+      "audioSamples": 585728,
+      "channels": 2,
+      "sampleRate": 48000,
+      "sessionSeconds": 750.2499999998654,
+      "capturePass": "21.5-minute unaccelerated fresh-save session"
+    },
+    {
+      "id": "04-team-0",
+      "title": "Earned tickets - welcome one teammate",
+      "duration": 6.02154541,
+      "frames": 47,
+      "audioSamples": 579584,
+      "channels": 2,
+      "sampleRate": 48000,
+      "sessionSeconds": 757.0499999998592,
+      "capturePass": "21.5-minute unaccelerated fresh-save session"
+    },
+    {
+      "id": "05-outlet-three",
+      "title": "Earned opening - Basil and Bun",
+      "duration": 6.06335449,
+      "frames": 48,
+      "audioSamples": 581632,
+      "channels": 2,
+      "sampleRate": 48000,
+      "sessionSeconds": 1251.6499999994094,
+      "capturePass": "21.5-minute unaccelerated fresh-save session"
+    },
+    {
+      "id": "01-welcome",
+      "title": "Fresh save - opening the restaurant",
+      "duration": 4.039242,
+      "frames": 31,
+      "audioSamples": 389120,
+      "channels": 2,
+      "sampleRate": 48000,
+      "sessionSeconds": 0.0,
+      "capturePass": "Final fresh visual recheck"
+    },
+    {
+      "id": "02-night",
+      "title": "First earned service - candles lit at night",
+      "duration": 6.015671,
+      "frames": 45,
+      "audioSamples": 577536,
+      "channels": 2,
+      "sampleRate": 48000,
+      "sessionSeconds": 47.44999999999944,
+      "capturePass": "Final fresh visual recheck"
+    }
+  ]
+}

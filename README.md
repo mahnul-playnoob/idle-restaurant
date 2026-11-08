@@ -1,3 +1,5 @@
+> Version 0.5.1: centred Street Kitchen shades, lighting at all three counters, six night-only table candles and earlier earned starter access. Readable growth targets and Map/Team readiness markers guide the longer journey. [Fresh-save playtest and editing notes](Design/Updates/WarmServiceAndFreshSession.html).
+
 > Version 0.5: longer earned progression, one-at-a-time managers with portraits, distinct outlet icons, straight-on restaurants, service-driven day/night lighting, improved animations and visible upgrades. [Balance, editing and validation](Design/Updates/ProgressionAndAtmosphere.html).
 
 > Version 0.4.0: five progressive district chapters, themed vector icons, distinct scenery and varied repeatable goal books. [Changes, editing instructions and live verification](Design/Updates/DistrictJourneyAndGoals.html). Existing progressed goal books finish before switching to varied goals.

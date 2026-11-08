@@ -6,6 +6,7 @@ namespace IdleRestaurant
     public sealed partial class RestaurantApp
     {
         int mapDistrict=-1;
+        RectTransform expansionBadge,teamBadge;
         RectTransform goalRewardBadge;TMP_Text goalRewardCount;
         readonly RestaurantSymbol[] navigationIcons=new RestaurantSymbol[5];
         RestaurantDistrict Theme=>Game.Journey.districts[Game.State.selected/8];
@@ -21,13 +22,23 @@ namespace IdleRestaurant
         {
             var text=button.GetComponentInChildren<TMP_Text>();text.rectTransform.anchorMin=new Vector2(0,.02f);text.rectTransform.anchorMax=new Vector2(1,.36f);text.fontSize=18;
             navigationIcons[index]=Symbol(button.transform,(RestaurantSymbolKind)index,new Vector2(.28f,.39f),new Vector2(.72f,.94f),index==2?Cream:Green);
+            if(index==0||index==1){var badge=Panel(index==0?"Map readiness":"Team readiness",button.transform,new Vector2(.71f,.65f),new Vector2(.97f,.97f),GuideYellow);badge.GetComponent<UnityEngine.UI.Image>().raycastTarget=false;Text(badge,"!",Vector2.zero,Vector2.one,16,Ink,TextAlignmentOptions.Center).raycastTarget=false;badge.gameObject.SetActive(false);if(index==0)expansionBadge=badge;else teamBadge=badge;}
             if(index==4){goalRewardBadge=Panel("Goal reward badge",button.transform,new Vector2(.71f,.65f),new Vector2(.97f,.97f),GuideYellow);goalRewardBadge.GetComponent<UnityEngine.UI.Image>().raycastTarget=false;goalRewardCount=Text(goalRewardBadge,"",Vector2.zero,Vector2.one,16,Ink,TextAlignmentOptions.Center);goalRewardCount.raycastTarget=false;goalRewardBadge.gameObject.SetActive(false);}
         }
         void RefreshGoalBadge()
         {
             if(!goalRewardBadge||Game==null)return;
+            int next=Array.FindIndex(Game.State.outlets,o=>!o.open);if(expansionBadge)expansionBadge.gameObject.SetActive(Game.State.introComplete&&next>0&&Game.CanOpen(next,out _));
+            bool useful=false;for(int id=0;id<catalog.managers.Length;id++)if(Game.State.managerCopies[id]>0&&Game.State.outlets[Game.State.selected].managers[catalog.managers[id].role]<0){useful=true;break;}
+            if(teamBadge)teamBadge.gameObject.SetActive(Game.State.introComplete&&(useful||Game.CanRecruit(out _)));
             int ready=0;if(Game.State.introComplete)for(int i=0;i<12;i++)if(!Game.GoalClaimed(i)&&Game.GoalProgress(i)>=Game.GoalTarget(i))ready++;
             goalRewardBadge.gameObject.SetActive(ready>0);goalRewardCount.text=ready.ToString();
+        }
+        void BuildGrowthHint()
+        {
+            var background=Panel("Next restaurant progress background",body,new Vector2(.245f,.845f),new Vector2(.745f,.905f),Cream);background.GetComponent<UnityEngine.UI.Image>().raycastTarget=false;var hint=Text(background,"",new Vector2(.025f,.06f),new Vector2(.975f,.94f),14,Theme.ink,TextAlignmentOptions.Center);hint.name="Next restaurant progress";hint.raycastTarget=false;
+            refresh.Add(()=>{background.gameObject.SetActive(Game.State.introComplete);int next=Array.FindIndex(Game.State.outlets,o=>!o.open);if(next<1){hint.text="Your restaurants keep growing";return;}int prev=next-1;
+                hint.text=Game.CanOpen(next,out _)?"NEXT RESTAURANT READY\nTap MAP to open":"NEXT RESTAURANT: "+Economy.Money(Game.FamilyUnlock(next))+"\n"+Math.Min(Game.State.outlets[prev].waves,Game.OutletServicesRequired(next))+"/"+Game.OutletServicesRequired(next)+" services · "+Math.Min(Game.OutletUpgradeCount(prev),Game.OutletUpgradesRequired(next))+"/"+Game.OutletUpgradesRequired(next)+" upgrades";});
         }
         void BuildDistrictMap()
         {

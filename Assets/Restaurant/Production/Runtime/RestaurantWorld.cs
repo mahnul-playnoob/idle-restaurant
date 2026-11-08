@@ -25,7 +25,7 @@ namespace IdleRestaurant {
    }
 
    for(int i=0;i<3;i++){
-    Vector3 p=new Vector3(-2.8f+i*2.4f,0,4.0f);Box(room,p+new Vector3(0,.55f,0),new Vector3(2.1f,1.1f,1.2f),i==0?accent:walls[d]);Box(room,p+new Vector3(0,1.13f,0),new Vector3(2.2f,.13f,1.25f),"#F6EADB");
+    Vector3 p=CounterPosition(i);Box(room,p+new Vector3(0,.55f,0),new Vector3(2.1f,1.1f,1.2f),i==0?accent:walls[d]);Box(room,p+new Vector3(0,1.13f,0),new Vector3(2.2f,.13f,1.25f),"#F6EADB");
     if(i==0){Box(room,p+new Vector3(0,1.34f,0),new Vector3(.55f,.35f,.4f),"#344B49");Box(room,p+new Vector3(0,1.37f,-.22f),new Vector3(.42f,.20f,.035f),"#A7D3B1");}
     else{Models.Cylinder(room,p+new Vector3(-.4f,1.25f,0),.27f,.12f,"#435550");}
     var counter=new GameObject("Counter collider",typeof(BoxCollider));counter.transform.SetParent(room,false);counter.GetComponent<BoxCollider>().center=p+new Vector3(0,.6f,0);counter.GetComponent<BoxCollider>().size=new Vector3(2.2f,1.2f,1.3f);
@@ -50,12 +50,13 @@ namespace IdleRestaurant {
    else{Models.Plate(r,Vector3.zero);Models.Cylinder(r,new Vector3(0,.12f,0),.22f,.22f,"#E4B58A");Models.Cylinder(r,new Vector3(0,.25f,0),.23f,.09f,"#F5D9DC");Models.Ball(r,new Vector3(0,.34f,0),new Vector3(.26f,.18f,.26f),"#FFF2DF");Models.Ball(r,new Vector3(0,.45f,0),Vector3.one*.12f,"#D56672");}
    return r;
   }
+  public static Vector3 CounterPosition(int index)=>new Vector3(-2.8f+index*2.4f,0,4f);
   public static void BuildEnvironment(Transform r,int d,int variant){
    string floor=floors[d],wall=walls[d],accent=accents[d];
    Models.Box(r,new Vector3(0,-.22f,.4f),new Vector3(10.8f,.4f,13),floor,.3f);
    Models.Box(r,new Vector3(0,.02f,-5.6f),new Vector3(11.2f,.12f,1),d==0?"#BDBFA5":floor);
    if(d!=0){Models.Box(r,new Vector3(0,1.6f,6.4f),new Vector3(10.8f,3.2f,.25f),wall);Models.Box(r,new Vector3(-5.3f,.7f,.4f),new Vector3(.22f,1.4f,12.2f),wall);}
-   else{for(int j=0;j<3;j++){Models.Box(r,new Vector3(-3.3f+j*3.3f,2.6f,5),new Vector3(3.1f,.18f,2.8f),j%2==0?accent:"#FFF0D3");for(int k=0;k<2;k++)Models.Cylinder(r,new Vector3(-4.6f+j*3.3f+k*2.6f,1.3f,5.6f),.05f,2.6f,"#697D60");}for(int i=0;i<7;i++){Models.Ball(r,new Vector3(-4.2f+i*1.4f,3.3f,3.4f),Vector3.one*.18f,"#FFE4A0");}}
+   else{for(int j=0;j<3;j++){var shade=Models.Group("Counter shade "+j,r,CounterPosition(j)+new Vector3(0,0,1));Models.Box(shade,new Vector3(0,2.6f,0),new Vector3(2.3f,.18f,2.8f),j%2==0?accent:"#FFF0D3");for(int k=0;k<2;k++)Models.Cylinder(shade,new Vector3(-1.03f+k*2.06f,1.3f,.6f),.05f,2.6f,"#697D60");}for(int i=0;i<7;i++){Models.Ball(r,new Vector3(-4.2f+i*1.4f,3.3f,3.4f),Vector3.one*.18f,"#FFE4A0");}}
    for(int j=0;j<3;j++){
     float x=-3.3f+j*3.3f;
     if(d==1){Models.Box(r,new Vector3(x,2.1f,6.2f),new Vector3(2.5f,1.7f,.12f),"#FFF0D7");Models.Box(r,new Vector3(x,2.1f,6.1f),new Vector3(2.2f,1.4f,.08f),"#A6CFCC");Models.Box(r,new Vector3(x,2.1f,6.02f),new Vector3(.08f,1.4f,.08f),accent);}

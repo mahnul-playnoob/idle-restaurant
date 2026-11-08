@@ -18,12 +18,17 @@ namespace IdleRestaurant
         public int TeamCount=>State.managerCopies.Count(x=>x>0);
         public int NextRecruitId()
         {
-            int best=-1;
-            for(int i=0;i<Catalog.managers.Length;i++)if(State.managerCopies[i]==0&&(best<0||Catalog.managers[i].rarity<Catalog.managers[best].rarity||(Catalog.managers[i].rarity==Catalog.managers[best].rarity&&i<best)))best=i;
+            int best=-1;var roles=new int[3];for(int i=0;i<Catalog.managers.Length;i++)if(State.managerCopies[i]>0)roles[Catalog.managers[i].role]++;
+            for(int i=0;i<Catalog.managers.Length;i++)if(State.managerCopies[i]==0){
+                if(best<0||Catalog.managers[i].rarity<Catalog.managers[best].rarity||
+                  (Catalog.managers[i].rarity==Catalog.managers[best].rarity&&(roles[Catalog.managers[i].role]<roles[Catalog.managers[best].role]||
+                   (roles[Catalog.managers[i].role]==roles[Catalog.managers[best].role]&&i<best))))best=i;
+            }
             return best;
         }
+        public void EnsureStarterManager(){if(!Family||State.managerCopies[0]>0||TotalWaves()<Balance.starterServices)return;State.managerCopies[0]=1;State.managerLevels[0]=Math.Max(1,State.managerLevels[0]);State.lastRecruitWaves=TotalWaves();Feedback?.Invoke(Catalog.managers[0].title+" joined your team! Open TEAM to assign.");}
         public int RecruitPrice=>Balance.recruitTickets+TeamCount*Balance.recruitTicketStep;
-        public int RecruitServicesRequired=>Balance.recruitServiceBase+TeamCount*Balance.recruitServiceStep+(int)Math.Floor(TeamCount*TeamCount*Balance.recruitServiceCurve);
+        public int RecruitServicesRequired=>Math.Max(Balance.recruitServiceBase+TeamCount*Balance.recruitServiceStep+(int)Math.Floor(TeamCount*TeamCount*Balance.recruitServiceCurve),State.lastRecruitWaves<0?0:State.lastRecruitWaves+Balance.recruitServiceGap);
         public int RecruitOutletsRequired=>Math.Min(State.outlets.Length,2+TeamCount/2);
         public bool CanRecruit(out string reason)
         {

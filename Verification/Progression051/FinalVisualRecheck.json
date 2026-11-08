@@ -1,0 +1,401 @@
+{
+  "utc": "2026-11-08T13:15:25.25021Z",
+  "status": "PASS",
+  "error": "",
+  "gameSeconds": 106.09999999999611,
+  "wallSeconds": 105.632973,
+  "timeScale": 1.0,
+  "cash": 50.274240000000013,
+  "totalEarned": 375.27423999999996,
+  "outlets": 1,
+  "managers": 0,
+  "waves": 2,
+  "purchases": 14,
+  "checks": [
+    "Fresh zero-resource save, one restaurant, no managers",
+    "Four corner lamps, nine counter pendants and six unlit daytime candles",
+    "Counter 0 is centred under its shade",
+    "Counter 1 is centred under its shade",
+    "Counter 2 is centred under its shade",
+    "Upgrade tap bought card 0",
+    "Upgrade tap bought card 3",
+    "Upgrade tap bought card 1",
+    "Upgrade tap bought card 1",
+    "Night lights all three counters and six table candles",
+    "Upgrade tap bought card 1",
+    "Upgrade tap bought card 8",
+    "Upgrade tap bought card 1",
+    "Upgrade tap bought card 8",
+    "Upgrade tap bought card 2",
+    "Upgrade tap bought card 0",
+    "Upgrade tap bought card 0",
+    "Upgrade tap bought card 0",
+    "Upgrade tap bought card 2",
+    "Upgrade tap bought card 1",
+    "Following service extinguishes candles and lamps in daylight",
+    "Day-night-day verified in the actual fresh session"
+  ],
+  "events": [
+    {
+      "kind": "fresh start",
+      "seconds": 0.0,
+      "wallSeconds": 0.000479698181,
+      "cash": 0.0,
+      "tickets": 0,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 0,
+      "detail": null
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 27.150000000000251,
+      "wallSeconds": 26.6764,
+      "cash": 32.0,
+      "tickets": 0,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 0,
+      "detail": {
+        "card": 0,
+        "level": 1
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 28.400000000000269,
+      "wallSeconds": 27.9439278,
+      "cash": 23.0,
+      "tickets": 0,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 0,
+      "detail": {
+        "card": 3,
+        "level": 1
+      }
+    },
+    {
+      "kind": "tutorial completed",
+      "seconds": 44.849999999999589,
+      "wallSeconds": 44.3736877,
+      "cash": 157.8,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": null
+    },
+    {
+      "kind": "service complete",
+      "seconds": 44.849999999999589,
+      "wallSeconds": 44.41898,
+      "cash": 157.8,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": null
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 45.249999999999567,
+      "wallSeconds": 44.774704,
+      "cash": 139.8,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 1,
+        "level": 1
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 47.349999999999447,
+      "wallSeconds": 46.85773,
+      "cash": 117.80000000000001,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 1,
+        "level": 2
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 53.849999999999078,
+      "wallSeconds": 53.3708344,
+      "cash": 101.88000000000001,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 1,
+        "level": 3
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 55.899999999998961,
+      "wallSeconds": 55.434494,
+      "cash": 73.960000000000022,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 8,
+        "level": 1
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 57.999999999998842,
+      "wallSeconds": 57.50985,
+      "cash": 43.960000000000022,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 1,
+        "level": 4
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 60.049999999998725,
+      "wallSeconds": 59.5887527,
+      "cash": 9.40000000000002,
+      "tickets": 1,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 8,
+        "level": 2
+      }
+    },
+    {
+      "kind": "goal claimed",
+      "seconds": 62.2499999999986,
+      "wallSeconds": 61.795433,
+      "cash": 16.840000000000018,
+      "tickets": 11,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": 0
+    },
+    {
+      "kind": "goal claimed",
+      "seconds": 62.399999999998592,
+      "wallSeconds": 61.9259949,
+      "cash": 16.840000000000018,
+      "tickets": 21,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": 1
+    },
+    {
+      "kind": "goal claimed",
+      "seconds": 62.549999999998583,
+      "wallSeconds": 62.0560226,
+      "cash": 16.840000000000018,
+      "tickets": 31,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": 2
+    },
+    {
+      "kind": "goal claimed",
+      "seconds": 62.749999999998572,
+      "wallSeconds": 62.2730942,
+      "cash": 16.840000000000018,
+      "tickets": 41,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": 3
+    },
+    {
+      "kind": "goal claimed",
+      "seconds": 62.999999999998558,
+      "wallSeconds": 62.51172,
+      "cash": 24.280000000000015,
+      "tickets": 51,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": 4
+    },
+    {
+      "kind": "goal claimed",
+      "seconds": 63.199999999998546,
+      "wallSeconds": 62.7347641,
+      "cash": 24.280000000000015,
+      "tickets": 61,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": 5
+    },
+    {
+      "kind": "goal claimed",
+      "seconds": 63.449999999998532,
+      "wallSeconds": 62.9607773,
+      "cash": 24.280000000000015,
+      "tickets": 71,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": 10
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 64.1499999999985,
+      "wallSeconds": 63.6736679,
+      "cash": 2.2800000000000153,
+      "tickets": 71,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 2,
+        "level": 1
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 68.249999999998266,
+      "wallSeconds": 67.78488,
+      "cash": 15.278400000000016,
+      "tickets": 71,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 0,
+        "level": 2
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 70.349999999998147,
+      "wallSeconds": 69.87158,
+      "cash": 10.504000000000016,
+      "tickets": 71,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 0,
+        "level": 3
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 72.449999999998028,
+      "wallSeconds": 71.9789,
+      "cash": 6.4496000000000144,
+      "tickets": 71,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 0,
+        "level": 4
+      }
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 80.649999999997561,
+      "wallSeconds": 80.17367,
+      "cash": 8.1264000000000181,
+      "tickets": 71,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 1,
+      "detail": {
+        "card": 2,
+        "level": 2
+      }
+    },
+    {
+      "kind": "service complete",
+      "seconds": 88.6999999999971,
+      "wallSeconds": 88.23294,
+      "cash": 46.494240000000019,
+      "tickets": 72,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 2,
+      "detail": null
+    },
+    {
+      "kind": "upgrade",
+      "seconds": 90.849999999996982,
+      "wallSeconds": 90.35706,
+      "cash": 10.494240000000019,
+      "tickets": 72,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 2,
+      "detail": {
+        "card": 1,
+        "level": 5
+      }
+    },
+    {
+      "kind": "day returned",
+      "seconds": 92.549999999996885,
+      "wallSeconds": 92.09184,
+      "cash": 10.494240000000019,
+      "tickets": 72,
+      "outlet": 0,
+      "managers": 0,
+      "waves": 2,
+      "detail": null
+    }
+  ],
+  "samples": [
+    {
+      "seconds": 30.000000000000291,
+      "cash": 23.0,
+      "income": 130.70363130520408,
+      "outlets": 1,
+      "managers": 0,
+      "waves": 0,
+      "purchases": 2,
+      "forecast": 1.0
+    },
+    {
+      "seconds": 60.199999999998717,
+      "cash": 9.40000000000002,
+      "income": 207.20429284336853,
+      "outlets": 1,
+      "managers": 0,
+      "waves": 1,
+      "purchases": 8,
+      "forecast": 0.9579476567638735
+    },
+    {
+      "seconds": 90.049999999997027,
+      "cash": 46.494240000000019,
+      "income": 214.77878487869103,
+      "outlets": 1,
+      "managers": 0,
+      "waves": 2,
+      "purchases": 13,
+      "forecast": 0.90870884237167826
+    }
+  ],
+  "scope": "Unaccelerated live Unity fresh save; actual UI taps; no seeded currency or milestone skips. Automatic upgrade choices and optional goal claims, no research or offline rewards."
+}
