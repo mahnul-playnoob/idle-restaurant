@@ -13,9 +13,9 @@ namespace IdleRestaurant
         {
             var icon=Rect(kind+" icon",parent,min,max).gameObject.AddComponent<RestaurantSymbol>();icon.kind=kind;icon.color=color;icon.raycastTarget=false;return icon;
         }
-        DistrictIcon FoodIcon(Transform parent,int district,Vector2 min,Vector2 max)
+        DistrictIcon FoodIcon(Transform parent,int district,Vector2 min,Vector2 max,int outlet=-1)
         {
-            var icon=Rect("District food emblem",parent,min,max).gameObject.AddComponent<DistrictIcon>();icon.district=district;icon.color=Game.Journey.districts[district].ink;icon.raycastTarget=false;return icon;
+            var icon=Rect("District food emblem",parent,min,max).gameObject.AddComponent<DistrictIcon>();icon.district=district;icon.variant=outlet<0?-1:outlet%8;icon.color=Game.Journey.districts[district].ink;icon.raycastTarget=false;return icon;
         }
         void StyleNavigation(UnityEngine.UI.Button button,int index)
         {
@@ -63,7 +63,7 @@ namespace IdleRestaurant
                 var node=Panel("Route node",row,new Vector2(x-.055f,.40f),new Vector2(x+.055f,.78f),theme.ink);
                 Text(node,(id+1).ToString("00"),Vector2.zero,Vector2.one,23,Cream,TextAlignmentOptions.Center).fontStyle=FontStyles.Bold;
                 var card=Panel("Outlet card",row,new Vector2(left?.23f:.025f,.08f),new Vector2(left?.975f:.77f,.94f),Cream);
-                FoodIcon(card,mapDistrict,new Vector2(.025f,.42f),new Vector2(.17f,.92f));
+                FoodIcon(card,mapDistrict,new Vector2(.025f,.42f),new Vector2(.17f,.92f),id);
                 var title=Text(card,catalog.outlets[id].title,new Vector2(.19f,.64f),new Vector2(.98f,.95f),24,theme.ink);title.enableAutoSizing=true;title.fontSizeMin=19;title.fontSizeMax=24;
                 var status=Text(card,"",new Vector2(.19f,.42f),new Vector2(.98f,.66f),17,Muted);status.enableAutoSizing=true;status.fontSizeMin=15;status.fontSizeMax=17;status.textWrappingMode=TextWrappingModes.NoWrap;
                 var info=Text(card,"",new Vector2(.035f,.08f),new Vector2(.60f,.40f),17,theme.ink);info.enableAutoSizing=true;info.fontSizeMin=15;info.fontSizeMax=17;
@@ -73,7 +73,7 @@ namespace IdleRestaurant
                     bool opened=Game.State.outlets[id].open,previous=id==0||Game.State.outlets[id-1].open,can=Game.CanOpen(id,out _),current=Game.State.selected==id;
                     status.text=current?"YOU ARE HERE":opened?"OPEN · STAR "+Game.State.outlets[id].rank:previous?"NEXT RESTAURANT":"ON YOUR JOURNEY";
                     double price=Game.Family?Game.FamilyUnlock(id):catalog.outlets[id].unlock;
-                    info.text=opened?catalog.outlets[id].menu:previous?Economy.Money(price)+" to open":"First open "+catalog.outlets[id-1].title;
+                    info.text=opened?catalog.outlets[id].menu:previous?Economy.Money(price)+" · "+Game.State.outlets[id-1].waves+"/"+Game.OutletServicesRequired(id)+" services\n"+Game.OutletUpgradeCount(id-1)+"/"+Game.OutletUpgradesRequired(id)+" improvements":"First open "+catalog.outlets[id-1].title;
                     label.text=opened?"VISIT":previous?"OPEN":"LOCKED";
                     visit.interactable=can;visit.GetComponent<UnityEngine.UI.Image>().color=can?UpgradeGreen:Unavailable;label.color=can?Cream:Ink;
                     node.GetComponent<UnityEngine.UI.Image>().color=opened?theme.ink:theme.accent;

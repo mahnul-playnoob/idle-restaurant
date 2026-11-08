@@ -2,7 +2,10 @@ using UnityEngine;
 namespace IdleRestaurant {
  [CreateAssetMenu(menuName="Restaurant/Family Balance")]
  public sealed class FamilyBalance:ScriptableObject {
-  public double startingCoins=0,mealCoins=12,outletIncomeGrowth=1.65,unlockBase=200,unlockGrowth=1.9;
+  public double startingCoins=0,mealCoins=12,outletIncomeGrowth=1.65,unlockBase=3000,unlockGrowth=1.95;
+  public int unlockServicesBase=8,unlockUpgradeBase=12,unlockUpgradesPerOutlet=2,unlockUpgradeExtraCap=60;
+  public double unlockServicesPerOutlet=.75;
+  public int recruitServiceBase=4,recruitServiceStep=4,recruitTicketStep=2;public double recruitServiceCurve=.12;
   public double[] upgradeCoins={10,18,22,15,25,30,18,28,35};
   public double orderSpeedPerLevel=.05,cookSpeedPerLevel=.06,tableSpeedPerLevel=.04,walkSpeedPerLevel=.018,payPerLevel=.12,menuPerLevel=.06,tipChancePerLevel=.02,tipFraction=.15;
   public double[] mealShares={.25,.25,.5};public int[] extraSlotTickets={0,8,16,24,40};

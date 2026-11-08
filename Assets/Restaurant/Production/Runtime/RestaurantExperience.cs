@@ -122,7 +122,7 @@ namespace IdleRestaurant
             }
             if (step < 0 || step > 2 || Time.unscaledTime - paymentAt[step] < .65f) return;
             paymentAt[step] = Time.unscaledTime;
-            paymentLabels[step].text = "+" + Economy.Money(amount) + " · " + PaymentStages[step];
+            paymentLabels[step].text = Economy.Money(amount);
         }
 
         void PositionAtWorld(RectTransform target, Vector3 position, float offset)
@@ -213,7 +213,7 @@ namespace IdleRestaurant
             gameCamera.rect = new Rect(area.x / Screen.width, (area.y + area.height * .315f) / Screen.height,
                 area.width / Screen.width, area.height * experience.playfieldHeight / Screen.height);
             // Fit the complete route and back scenery at each device aspect ratio, without camera drift.
-            gameCamera.transform.position = new Vector3(7, 16, -18);
+            gameCamera.transform.position = new Vector3(0, 16, -19);
             gameCamera.transform.LookAt(new Vector3(0, .6f, .4f));
             float width = 0, height = 0;
             for (int corner = 0; corner < 8; corner++)

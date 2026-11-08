@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 namespace IdleRestaurant {
  [UnityEngine.Scripting.Preserve,Serializable] public class OutletState {
+  public double serviceStartedSeconds,lastServiceSeconds,lastServiceEarned,incomeCalibration=1;public bool serviceTimingValid;
   public bool open; public int rank,waves,lastStarWave,pendingWaveGems; public double pendingBonus; public int[] upgrades=new int[9];public int[] managers={-1,-1,-1};
   public ServiceGuest[] service;public double spawnClock;public int ordered,cooked,seated;public double orderClock,kitchenClock,diningClock,walkClock,clearClock,waveIncome;
  }

@@ -1,3 +1,5 @@
+> Version 0.5: longer earned progression, one-at-a-time managers with portraits, distinct outlet icons, straight-on restaurants, service-driven day/night lighting, improved animations and visible upgrades. [Balance, editing and validation](Design/Updates/ProgressionAndAtmosphere.html).
+
 > Version 0.4.0: five progressive district chapters, themed vector icons, distinct scenery and varied repeatable goal books. [Changes, editing instructions and live verification](Design/Updates/DistrictJourneyAndGoals.html). Existing progressed goal books finish before switching to varied goals.
 
 > Version 0.3.2 experience pass: contextual guest tutorial, non-blocking spotlight, larger playfield and food, green upgrade feedback and automatic service rewards. [Changes and 24 live checks](Design/Updates/ExperiencePolish.html). Historical screenshots and reports below describe their respective earlier builds.

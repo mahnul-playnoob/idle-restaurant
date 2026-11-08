@@ -14,6 +14,7 @@ namespace IdleRestaurant {
   public OutletDefinition[] outlets; public ResearchDefinition[] research; public ManagerDefinition[] managers;
   public FamilyBalance familyBalance;
   public RestaurantJourney journey;
+  public Material nightLampMaterial;
   public int waveGemDailyCap=100;
   public bool useNewCosts;
   [Tooltip("Proposed starting grant. Not verified in the source package.")] public double initialCash=100;

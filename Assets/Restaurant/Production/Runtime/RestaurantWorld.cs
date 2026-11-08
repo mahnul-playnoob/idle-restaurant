@@ -4,7 +4,7 @@ using UnityEngine;
 using RestaurantPreview;
 namespace IdleRestaurant {
  public sealed partial class RestaurantWorld:MonoBehaviour {
-  public RestaurantCatalog catalog;public RestaurantGame game;public Transform room;public int shown=-1;
+  public RestaurantCatalog catalog;public RestaurantGame game;public Camera viewCamera;Camera ViewCamera=>viewCamera?viewCamera:Camera.main;public Transform room;public int shown=-1;
   readonly List<Person> guests=new List<Person>();readonly List<Person> staff=new List<Person>();readonly List<RestaurantSeat> seats=new List<RestaurantSeat>();RestaurantServiceView serviceView;
   public int OccupiedSeats=>seats.FindAll(x=>x&&x.owner>=0).Count;public int AvailableSeats=>seats.FindAll(x=>x&&x.gameObject.activeInHierarchy).Count;
   readonly List<Transform> dishes=new List<Transform>();
@@ -34,7 +34,7 @@ namespace IdleRestaurant {
    int visible=Math.Min(catalog.visibleGuests,18);string[] shirts={"#7AAEA6","#E9AE62","#A7B98C","#CE8D83","#9B9FCA","#E5BD95"};
    for(int i=0;i<visible;i++){var person=catalog.guestPrefab?new Person(room,new Vector3(-4,0,-4),catalog.guestPrefab):new Person(room,new Vector3(-4,0,-4),shirts[i%6],i%2==0?"#554539":"#9A6D44");person.root.localScale=Vector3.one*.85f;var block=new MaterialPropertyBlock();block.SetColor("_BaseColor",Models.C(i<Math.Min(4,catalog.outlets[index].premium)?"#E5AC65":shirts[i%6]));foreach(var renderer in person.root.GetComponentsInChildren<Renderer>())if(renderer.sharedMaterial.name.Contains("#75AAA1"))renderer.SetPropertyBlock(block);guests.Add(person);}
    BuildGuestAccess();BuildDistrictDetails(d,variant);
-   var returnTray=Models.Group("Tray return",room,TrayReturnPosition);Box(returnTray,new Vector3(0,.45f,0),new Vector3(.8f,.9f,.7f),walls[d]);var trayCollider=returnTray.gameObject.AddComponent<BoxCollider>();trayCollider.center=new Vector3(0,.45f,0);trayCollider.size=new Vector3(.7f,.9f,.6f);AccessLabel(returnTray,"PLATES",new Vector3(0,1.25f,0));for(int plate=0;plate<3;plate++)Models.Cylinder(returnTray,new Vector3(0,.94f+plate*.04f,0),.28f,.03f,"#F8F3E7");CombineStatic(room);ImproveMaterialSeparation();if(Camera.main)Camera.main.backgroundColor=Models.C(floors[d]);if(!serviceView)serviceView=gameObject.AddComponent<RestaurantServiceView>();serviceView.Setup(game,this,guests,staff,seats);
+   var returnTray=Models.Group("Tray return",room,TrayReturnPosition);Box(returnTray,new Vector3(0,.45f,0),new Vector3(.8f,.9f,.7f),walls[d]);var trayCollider=returnTray.gameObject.AddComponent<BoxCollider>();trayCollider.center=new Vector3(0,.45f,0);trayCollider.size=new Vector3(.7f,.9f,.6f);AccessLabel(returnTray,"PLATES",new Vector3(0,1.25f,0));for(int plate=0;plate<3;plate++)Models.Cylinder(returnTray,new Vector3(0,.94f+plate*.04f,0),.28f,.03f,"#F8F3E7");CombineStatic(room);ImproveMaterialSeparation();if(ViewCamera)ViewCamera.backgroundColor=Models.C(floors[d]);if(!serviceView)serviceView=gameObject.AddComponent<RestaurantServiceView>();serviceView.Setup(game,this,guests,staff,seats);var upgrades=room.gameObject.AddComponent<RestaurantUpgradeVisuals>();upgrades.Setup(game,index);var atmosphere=room.gameObject.AddComponent<RestaurantAtmosphere>();atmosphere.Setup(game,ViewCamera,index);
   }
   void ImproveMaterialSeparation(){
    // Property blocks preserve replaceable shared assets and add no material instances.

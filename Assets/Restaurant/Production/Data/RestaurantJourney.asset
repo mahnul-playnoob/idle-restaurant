@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b1a60dbb85946e095725d112fc6acd, type: 3}
   m_Name: RestaurantJourney
   m_EditorClassIdentifier: Assembly-CSharp::IdleRestaurant.RestaurantJourney
+  nightTransitionSeconds: 4
+  visualUpgradeMilestones: 050000000f0000001e000000
   districts:
   - name: Street Kitchens
     shortName: STREET

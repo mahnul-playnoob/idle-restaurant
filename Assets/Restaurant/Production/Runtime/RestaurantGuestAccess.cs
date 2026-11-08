@@ -40,7 +40,7 @@ namespace IdleRestaurant
             Models.Box(door, new Vector3(0, 1.48f, 0), new Vector3(1.42f, .3f, .28f), color, .06f);
             Models.Box(door, new Vector3(0, .025f, 0), new Vector3(1.1f, .04f, .8f), "#E8D7AA", .03f);
             var plaque = Models.Box(door, new Vector3(0, 1.72f, 0), new Vector3(1.45f, .45f, .12f), "#304D40", .05f);
-            if (Camera.main) plaque.rotation = Camera.main.transform.rotation;
+            if (ViewCamera) plaque.rotation = ViewCamera.transform.rotation;
             AccessLabel(door, label, new Vector3(0, 1.73f, -.10f));
             float direction = entering ? 1 : -1;
             float z = entering ? -.3f : .3f;
@@ -55,7 +55,7 @@ namespace IdleRestaurant
             var go = new GameObject(value + " sign", typeof(TextMeshPro), typeof(RestaurantActorMarker));
             go.transform.SetParent(parent, false);
             go.transform.localPosition = position;
-            if (Camera.main) { go.transform.rotation = Camera.main.transform.rotation; go.transform.position -= Camera.main.transform.forward * .18f; }
+            if (ViewCamera) { go.transform.rotation = ViewCamera.transform.rotation; go.transform.position -= ViewCamera.transform.forward * .18f; }
             var text = go.GetComponent<TextMeshPro>();
             text.text = value;
             text.fontSize = 2.8f;

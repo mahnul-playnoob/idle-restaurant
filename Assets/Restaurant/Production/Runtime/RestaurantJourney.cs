@@ -19,6 +19,8 @@ namespace IdleRestaurant
     [CreateAssetMenu(menuName="Restaurant/Journey and Goals")]
     public sealed class RestaurantJourney : ScriptableObject
     {
+        [Range(1,10)]public float nightTransitionSeconds=4;
+        public int[] visualUpgradeMilestones={5,15,30};
         public RestaurantDistrict[] districts;
         public RestaurantGoalDefinition[] goals;
         static RestaurantJourney fallback;

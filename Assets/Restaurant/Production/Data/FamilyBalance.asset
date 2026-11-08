@@ -15,8 +15,17 @@ MonoBehaviour:
   startingCoins: 0
   mealCoins: 12
   outletIncomeGrowth: 1.65
-  unlockBase: 200
-  unlockGrowth: 1.9
+  unlockBase: 3000
+  unlockGrowth: 1.95
+  unlockServicesBase: 8
+  unlockUpgradeBase: 12
+  unlockUpgradesPerOutlet: 2
+  unlockUpgradeExtraCap: 60
+  unlockServicesPerOutlet: 0.75
+  recruitServiceBase: 4
+  recruitServiceStep: 4
+  recruitTicketStep: 2
+  recruitServiceCurve: 0.12
   upgradeCoins:
   - 10
   - 18

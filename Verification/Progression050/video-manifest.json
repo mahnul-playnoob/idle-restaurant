@@ -1,0 +1,69 @@
+{
+  "version": "0.5.0",
+  "file": "/Users/playnoob/Desktop/Mahnul/GPT/restaurant-v050-update/IdleRestaurant-v0.5.0-Gameplay-Tour.mp4",
+  "bytes": 1882642,
+  "sha256": "69f649b2fe872d4ddf1bc9e76745c6711b0fe5504ecb70f368222855565b94b2",
+  "nominalSeconds": 36.1619567387,
+  "source": "Live Unity Editor source preview: actual service completion, lighting, upgrade tap, map opening and one manager welcome. Seeded progress/resources expose later features; not naturally earned progression.",
+  "audio": "Live game mix captured on AudioListener; gain increased 6 dB and short fades added at cuts",
+  "chapters": [
+    {
+      "id": "01-day",
+      "title": "Straight view - cooking and dining",
+      "start": 0,
+      "duration": 5.0886535663,
+      "sourceFrames": 39,
+      "firstUnityFrame": 4644,
+      "lastUnityFrame": 4716,
+      "audioRms": 0.013157702051103115
+    },
+    {
+      "id": "02-night",
+      "title": "Service completion - warm night lighting",
+      "start": 5.0886535663,
+      "duration": 12.04559328,
+      "sourceFrames": 95,
+      "firstUnityFrame": 4885,
+      "lastUnityFrame": 5053,
+      "audioRms": 0.012926186434924603
+    },
+    {
+      "id": "03-upgrades",
+      "title": "Preview progress - visible improvements",
+      "start": 17.1342468463,
+      "duration": 6.9920959474,
+      "sourceFrames": 55,
+      "firstUnityFrame": 5061,
+      "lastUnityFrame": 5158,
+      "audioRms": 0.012394406832754612
+    },
+    {
+      "id": "04-map",
+      "title": "Preview progress - individual restaurant icons",
+      "start": 24.1263427937,
+      "duration": 6.040924,
+      "sourceFrames": 49,
+      "firstUnityFrame": 5165,
+      "lastUnityFrame": 5246,
+      "audioRms": 0.010769578628242016
+    },
+    {
+      "id": "05-team",
+      "title": "Welcome one manager at a time",
+      "start": 30.1672667937,
+      "duration": 5.994689945,
+      "sourceFrames": 47,
+      "firstUnityFrame": 6060,
+      "lastUnityFrame": 6141,
+      "audioRms": 0.012706970795989037
+    }
+  ],
+  "validation": {
+    "decode": "PASS",
+    "width": 720,
+    "height": 1328,
+    "seconds": 36.1333333333,
+    "encodedFps": 30,
+    "note": "Editor captured source frames with timestamps; encoded frame rate is not device performance."
+  }
+}
