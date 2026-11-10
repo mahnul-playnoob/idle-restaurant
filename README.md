@@ -1,3 +1,5 @@
+> Version 0.5.2: longer fresh-save validation of the final two-service invitation gap. [Measured pacing, recovery and live UI/save checks](Design/Updates/FinalGapPlaythrough.html).
+
 > Version 0.5.1: centred Street Kitchen shades, lighting at all three counters, six night-only table candles and earlier earned starter access. Readable growth targets and Map/Team readiness markers guide the longer journey. [Fresh-save playtest and editing notes](Design/Updates/WarmServiceAndFreshSession.html).
 
 > Version 0.5: longer earned progression, one-at-a-time managers with portraits, distinct outlet icons, straight-on restaurants, service-driven day/night lighting, improved animations and visible upgrades. [Balance, editing and validation](Design/Updates/ProgressionAndAtmosphere.html).

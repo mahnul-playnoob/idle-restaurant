@@ -1,0 +1,138 @@
+{
+  "version": "0.5.2",
+  "file": "/Users/playnoob/Desktop/Mahnul/GPT/restaurant-v052-final-gap/IdleRestaurant-v0.5.2-Gameplay-Tour.mp4",
+  "bytes": 2894799,
+  "sha256": "1ebee35b82ac6e142c39bd1909f8db1cbd85c1a739f1472d29848eb528d2e5ba",
+  "nominalSeconds": 56.3027498252,
+  "source": "Edited highlights from this fresh-save session and its documented earned-checkpoint continuation. Final two-service gap active throughout; no seeded rewards or acceleration. Active play excludes capture-helper repair pause.",
+  "audio": "Live game mix captured on AudioListener; gain increased 6 dB and short fades added at cuts",
+  "chapters": [
+    {
+      "id": "01-welcome",
+      "title": "Fresh save - opening the restaurant",
+      "start": 0,
+      "duration": 4.0175781245,
+      "sessionSeconds": 0.0,
+      "sourceFrames": 32,
+      "firstUnityFrame": 652,
+      "lastUnityFrame": 707,
+      "audioRms": 0.011253504932355657
+    },
+    {
+      "id": "02-night",
+      "title": "First earned service - candles lit at night",
+      "start": 4.0175781245,
+      "duration": 6.0311431882,
+      "sessionSeconds": 47.399999999999444,
+      "sourceFrames": 47,
+      "firstUnityFrame": 1203,
+      "lastUnityFrame": 1288,
+      "audioRms": 0.012559016107541529
+    },
+    {
+      "id": "03-starter-0",
+      "title": "Earned teammate - assign to Orders",
+      "start": 10.0487213127,
+      "duration": 5.9971313514,
+      "sessionSeconds": 175.90000000000575,
+      "sourceFrames": 66,
+      "firstUnityFrame": 2719,
+      "lastUnityFrame": 2845,
+      "audioRms": 0.01270410029180522
+    },
+    {
+      "id": "03-outlet-1",
+      "title": "Earned opening - Toast and Bean",
+      "start": 16.0458526641,
+      "duration": 6.0465698227999995,
+      "sessionSeconds": 709.2999999999026,
+      "sourceFrames": 90,
+      "firstUnityFrame": 18665,
+      "lastUnityFrame": 18844,
+      "audioRms": 0.01111812603525583
+    },
+    {
+      "id": "04-team-0",
+      "title": "Earned tickets - welcome one teammate",
+      "start": 22.0924224869,
+      "duration": 6.0472412133,
+      "sessionSeconds": 715.9999999998965,
+      "sourceFrames": 89,
+      "firstUnityFrame": 18861,
+      "lastUnityFrame": 19038,
+      "audioRms": 0.015960122634984742
+    },
+    {
+      "id": "03-outlet-2",
+      "title": "Earned opening - Basil and Bun",
+      "start": 28.1396637002,
+      "duration": 6.041382015600001,
+      "sessionSeconds": 1166.4999999994868,
+      "sourceFrames": 90,
+      "firstUnityFrame": 32371,
+      "lastUnityFrame": 32550,
+      "audioRms": 0.010771665878819708
+    },
+    {
+      "id": "05-zero-service",
+      "title": "After welcome - next invitation is locked",
+      "start": 34.1810457158,
+      "duration": 6.005615235,
+      "sessionSeconds": 1182.3499999994724,
+      "sourceFrames": 90,
+      "firstUnityFrame": 42166,
+      "lastUnityFrame": 42345,
+      "audioRms": 0.014788676417193058
+    },
+    {
+      "id": "07-one-service",
+      "title": "One service completed - invitation stays locked",
+      "start": 40.186660950800004,
+      "duration": 4.0427246125,
+      "sessionSeconds": 1222.9999999994354,
+      "sourceFrames": 61,
+      "firstUnityFrame": 43384,
+      "lastUnityFrame": 43504,
+      "audioRms": 0.010256531774084364
+    },
+    {
+      "id": "04-team-2",
+      "title": "Two services completed - welcome next teammate",
+      "start": 44.229385563300006,
+      "duration": 6.02746582,
+      "sessionSeconds": 1273.8999999993891,
+      "sourceFrames": 88,
+      "firstUnityFrame": 44907,
+      "lastUnityFrame": 45083,
+      "audioRms": 0.013409102906134254
+    },
+    {
+      "id": "06-session-end",
+      "title": "Long session - earned progress",
+      "start": 50.2568513833,
+      "duration": 6.0458984418999995,
+      "sessionSeconds": 1500.0499999991835,
+      "sourceFrames": 91,
+      "firstUnityFrame": 51685,
+      "lastUnityFrame": 51865,
+      "audioRms": 0.014480920502301048
+    }
+  ],
+  "validation": {
+    "decode": "PASS",
+    "frames": 1688,
+    "encodedFps": 30,
+    "seconds": 56.266666666666666,
+    "width": 720,
+    "height": 1328
+  },
+  "recovery": {
+    "file": "108.json",
+    "sha256": "7dd4d17fa43c6aa4908266847db7abf011607138f65bf882539c7b6d748f9d8b",
+    "seconds": 1181.599999999473,
+    "cash": 311.7825761534507,
+    "services": 25,
+    "managers": 3,
+    "reason": "Capture helper read a deferred-destruction UI button in the same frame as Navigate; no game rule failure. Continuing actual earned state."
+  }
+}
