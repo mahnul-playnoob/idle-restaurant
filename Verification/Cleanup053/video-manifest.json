@@ -1,0 +1,44 @@
+{
+  "version": "0.5.3",
+  "file": "/Users/playnoob/Desktop/Mahnul/GPT/restaurant-v053-cleanup/live/IdleRestaurant-v0.5.3-People-and-Cleanup.mp4",
+  "bytes": 3880706,
+  "sha256": "f1caa9ae0905165694b1d324f2a7d52c0de8ad0b8a789cc6f97ba1b44c0c2968",
+  "nominalSeconds": 57.0981768081,
+  "source": "Live Unity Editor gameplay at normal speed. Focused fresh model with onboarding skipped; no seeded currency. Edited highlights of natural dining and two optional janitor visits.",
+  "audio": "Live game mix captured on AudioListener; gain increased 6 dB and short fades added at cuts",
+  "chapters": [
+    {
+      "id": "01-guests-and-dirt",
+      "title": "Varied guests - automatic dining",
+      "start": 0,
+      "duration": 7.023773417,
+      "sessionSeconds": 0,
+      "sourceFrames": 105,
+      "firstUnityFrame": 3432,
+      "lastUnityFrame": 3641,
+      "audioRms": 0.013716603396905867
+    },
+    {
+      "id": "02-janitor-visit",
+      "title": "Tap dirt - one janitor cleans the current batch",
+      "start": 7.023773417,
+      "duration": 38.05531466,
+      "sessionSeconds": 0,
+      "sourceFrames": 570,
+      "firstUnityFrame": 3645,
+      "lastUnityFrame": 4785,
+      "audioRms": 0.013056234067268475
+    },
+    {
+      "id": "03-second-janitor",
+      "title": "Queued visit - different janitor",
+      "start": 45.079088077,
+      "duration": 12.0190887311,
+      "sessionSeconds": 0,
+      "sourceFrames": 180,
+      "firstUnityFrame": 7226,
+      "lastUnityFrame": 7584,
+      "audioRms": 0.013620576902445867
+    }
+  ]
+}

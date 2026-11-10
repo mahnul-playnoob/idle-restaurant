@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-10T08:47:54.235290+00:00",
+  "pacingSourceDelta": [
+    "Assets/Restaurant/Production/Runtime/RestaurantCleanupUI.cs",
+    "Assets/Restaurant/Production/Runtime/RestaurantExperience.cs",
+    "Assets/Restaurant/Production/Runtime/RestaurantJourneyUI.cs",
+    "Assets/Restaurant/Production/Runtime/RestaurantTeamUI.cs"
+  ],
+  "reason": "UI refinements only: newly recruited manager focus, larger cleanup status/reward label, unsupported checkmark removal and two-line growth hint fitting. Mechanics and balance source unchanged.",
+  "scope": "Long run interrupted at fifth-manager offscreen target, fixed in product and resumed exact earned checkpoint; final growth hint tested separately.",
+  "androidBuildWarning": "One pre-existing CS0414 warning: RestaurantApp.dirty is assigned but never read."
+}

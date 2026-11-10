@@ -1,16 +1,19 @@
 using System;
 using System.IO;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
 namespace IdleRestaurant {
  [UnityEngine.Scripting.Preserve,Serializable] public class OutletState {
   public double serviceStartedSeconds,lastServiceSeconds,lastServiceEarned,incomeCalibration=1;public bool serviceTimingValid;
+  public List<CleanupMess> dirt=new List<CleanupMess>();public double nextLitterSeconds;
   public bool open; public int rank,waves,lastStarWave,pendingWaveGems; public double pendingBonus; public int[] upgrades=new int[9];public int[] managers={-1,-1,-1};
   public ServiceGuest[] service;public double spawnClock;public int ordered,cooked,seated;public double orderClock,kitchenClock,diningClock,walkClock,clearClock,waveIncome;
  }
  [UnityEngine.Scripting.Preserve,Serializable] public class ResearchState { public int level;public double finish; }
  [UnityEngine.Scripting.Preserve,Serializable] public class SaveState {
+  public CleanupVisit cleanupJob=new CleanupVisit();public int cleanupSequence,cleanupVisitSequence,cleanupVisits,queuedCleanup=-1;public double cleanupReadyUtc;public bool cleanupGuideSeen;
   public int lastRecruitWaves=-1;
   public int version=2,selected,gems,prestigeCoins,tutorial,packDry,slots=1; public double cash,totalEarned,seconds,utc,boostUntil,adReady;
   public int goalBoardVersion; public int[] goalKinds; public double[] goalBaselines,goalTargets;

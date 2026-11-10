@@ -88,11 +88,11 @@ public static class RestaurantJourneyVerification
             foreach(var s in state.outlets)s.open=false;state.outlets[index].open=true;app.Game.State=state;app.Navigate("play");app.world.Show(index);app.Game.BeginService();
             var returns=new HashSet<int>();float started=Time.realtimeSinceStartup;bool captured=false;int expected=app.Game.ServiceSize(index);
             while(state.outlets[index].waves==0&&Time.realtimeSinceStartup-started<150){
-                var guests=state.outlets[index].service;if(guests!=null)foreach(var g in guests)if(g.returnedPlate)returns.Add(g.id);
+                var guests=state.outlets[index].service;if(guests!=null)foreach(var g in guests)if(g.plateLeftOnTable)returns.Add(g.id);
                 if(!captured&&state.seconds>12){captured=true;yield return Shot("1"+d+"-district-gameplay");}
                 yield return null;
             }
-            Check(state.outlets[index].waves==1&&state.guestsServed==expected&&returns.Count==expected,"District "+d+" completes all "+expected+" meals, plate returns and exits");
+            Check(state.outlets[index].waves==1&&state.guestsServed==expected&&returns.Count==expected,"District "+d+" completes all "+expected+" meals, dishes left on tables and exits");
             Check(app.world.room.Find("District identity: "+app.Game.Journey.districts[d].name),"District "+d+" has its own playable environment details");
             Services.Add(new{district=d,guests=expected,seconds=state.seconds,returned=returns.Count});
             if(d==0){app.enabled=false;app.Navigate("tasks");yield return null;int gems=state.gems;Tap("Goal claim 0");Check(state.gems==gems+10&&app.Game.GoalClaimed(0),"Guest goal becomes claimable from actual gameplay and UI pays exactly ten tickets");yield return Shot("07-earned-goal");app.enabled=true;}

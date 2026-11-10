@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-10T08:54:04.202149+00:00",
+  "status": "PASS",
+  "device": "Android 15 ARM64 emulator, API 35, 720x1280",
+  "physicalPhone": false,
+  "package": "com.mahnul.idlerestaurant",
+  "version": "0.5.3",
+  "checks": [
+    "APK installed and launched from a fresh app save",
+    "Welcome modal rendered and opened with an actual Android tap",
+    "Highlighted Orders and Kitchen upgrades purchased through actual Android taps",
+    "Services advanced, night lights/candles rendered and guests animated",
+    "Tutorial Map step completed and Play reopened",
+    "Dirty plate tap dispatched a visible janitor",
+    "Janitor finishing label showed fixed $229 reward",
+    "Janitor finished, cash increased and 90-second cooldown counted down",
+    "Process force-stop and relaunch preserved onboarding, five service completions, upgrade levels and cooldown; no repeated cleanup payment visible"
+  ],
+  "errorsMatched": [],
+  "limits": "Screenshot and process-log smoke checks; exact reward ledger was checked in isolated and live Unity tests. This is not physical Android 11 performance validation."
+}

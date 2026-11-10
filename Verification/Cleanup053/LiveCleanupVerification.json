@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "error": "",
+  "utc": "2026-11-10T08:12:25.638086Z",
+  "timeScale": 1.0,
+  "seconds": 265.60000000002611,
+  "waves": 6,
+  "visits": 2,
+  "checks": [
+    "Automatic services continue while dirt is ignored",
+    "Finished meals, occasional tissue and paper cups appear naturally",
+    "Ignoring dirt never starts a janitor or changes rewards",
+    "Map navigation blocks world cleanup taps",
+    "Visible dirt accepts the same screen-position tap path as touch",
+    "Tap summons an actual janitor before payment",
+    "Live visit snapshots 1.5 times displayed income/min",
+    "Repeated active taps cannot spawn another janitor",
+    "Actual janitor finishes one visit and awards once",
+    "All plates and floor litter present at dispatch have been cleaned",
+    "Reward starts the confirmed global 90-second repeat interval",
+    "A cooldown tap queues one later visit without early payment",
+    "Queued cleanup waits instead of bypassing the repeat interval",
+    "Queued second janitor dispatches automatically after the interval",
+    "Second visit also completes with one payout",
+    "Meal services keep running independently throughout both cleaning visits"
+  ],
+  "events": [
+    {
+      "kind": "dispatched",
+      "seconds": 117.19999999999548,
+      "reward": 221.12965499662397,
+      "batch": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "scope": "Live Unity at normal speed; fresh model with tutorial skipped for focused optional-cleanup checks. No currency injection. Separate fresh-save pacing session required."
+}

@@ -6,6 +6,7 @@ namespace IdleRestaurant {
   public int unlockServicesBase=8,unlockUpgradeBase=12,unlockUpgradesPerOutlet=2,unlockUpgradeExtraCap=60;
   public double unlockServicesPerOutlet=.75;
   public int starterServices=4,recruitServiceGap=2;
+  public double cleanupRewardMinutes=1.5,cleanupRewardIntervalSeconds=90,litterIntervalSeconds=36;public int maxFloorLitter=4;public float janitorSpeed=3,cleanupSeconds=1.1f;
   public int recruitServiceBase=4,recruitServiceStep=4,recruitTicketStep=2;public double recruitServiceCurve=.12;
   public double[] upgradeCoins={10,18,22,15,25,30,18,28,35};
   public double orderSpeedPerLevel=.05,cookSpeedPerLevel=.06,tableSpeedPerLevel=.04,walkSpeedPerLevel=.018,payPerLevel=.12,menuPerLevel=.06,tipChancePerLevel=.02,tipFraction=.15;
@@ -23,6 +24,6 @@ namespace IdleRestaurant {
  [System.Serializable,UnityEngine.Scripting.Preserve]
  public sealed class ServiceGuest {
   public int id,variant,seat=-1,waypoint; public GuestPhase phase;public double clock,cookClock,arrivalDelay;
-  public bool ordered,foodReady,collected,mealPaid,returnedPlate;public float x,z;public double tips;
+  public bool ordered,foodReady,collected,mealPaid,returnedPlate,plateLeftOnTable;public float x,z;public double tips;
  }
 }

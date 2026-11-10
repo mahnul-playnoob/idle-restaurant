@@ -36,7 +36,7 @@ namespace IdleRestaurant
         }
         void BuildGrowthHint()
         {
-            var background=Panel("Next restaurant progress background",body,new Vector2(.245f,.845f),new Vector2(.745f,.905f),Cream);background.GetComponent<UnityEngine.UI.Image>().raycastTarget=false;var hint=Text(background,"",new Vector2(.025f,.06f),new Vector2(.975f,.94f),14,Theme.ink,TextAlignmentOptions.Center);hint.name="Next restaurant progress";hint.raycastTarget=false;
+            var background=Panel("Next restaurant progress background",body,new Vector2(.245f,.845f),new Vector2(.745f,.905f),Cream);background.GetComponent<UnityEngine.UI.Image>().raycastTarget=false;var hint=Text(background,"",new Vector2(.025f,.06f),new Vector2(.975f,.94f),14,Theme.ink,TextAlignmentOptions.Center);hint.name="Next restaurant progress";hint.raycastTarget=false;hint.enableAutoSizing=true;hint.fontSizeMin=20*(Game.State.largeText?1.12f:1);hint.fontSizeMax=24*(Game.State.largeText?1.12f:1);hint.textWrappingMode=TextWrappingModes.NoWrap;
             refresh.Add(()=>{background.gameObject.SetActive(Game.State.introComplete);int next=Array.FindIndex(Game.State.outlets,o=>!o.open);if(next<1){hint.text="Your restaurants keep growing";return;}int prev=next-1;
                 hint.text=Game.CanOpen(next,out _)?"NEXT RESTAURANT READY\nTap MAP to open":"NEXT RESTAURANT: "+Economy.Money(Game.FamilyUnlock(next))+"\n"+Math.Min(Game.State.outlets[prev].waves,Game.OutletServicesRequired(next))+"/"+Game.OutletServicesRequired(next)+" services · "+Math.Min(Game.OutletUpgradeCount(prev),Game.OutletUpgradesRequired(next))+"/"+Game.OutletUpgradesRequired(next)+" upgrades";});
         }

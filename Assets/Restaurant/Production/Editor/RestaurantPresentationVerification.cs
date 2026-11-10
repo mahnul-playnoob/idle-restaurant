@@ -112,11 +112,11 @@ public static class RestaurantPresentationVerification
             while (app.Game.TotalWaves() == 0 && Time.realtimeSinceStartup - start < 90)
             {
                 var guests = app.Game.State.outlets[0].service;
-                if (guests != null) foreach (var g in guests) if (g.returnedPlate) returned.Add(g.id);
+                if (guests != null) foreach (var g in guests) if (g.plateLeftOnTable) returned.Add(g.id);
                 yield return null;
             }
             serviceSeconds = app.Game.State.seconds;
-            if (!Check(app.Game.TotalWaves() == 1 && returned.Count == 6 && app.Game.State.guestsServed == 6, "All six guests return their plates and exit before one service reward")) yield break;
+            if (!Check(app.Game.TotalWaves() == 1 && returned.Count == 6 && app.Game.State.guestsServed == 6, "All six guests leave used dishes on tables and exit before one service reward")) yield break;
             yield return new WaitForSecondsRealtime(.8f); yield return Shot("06-first-service-exit");
             var reward=UnityEngine.GameObject.Find("Service reward");
             if(!Check(reward.GetComponent<CanvasGroup>().alpha>.95f && !reward.GetComponent<CanvasGroup>().blocksRaycasts && reward.GetComponentsInChildren<TMP_Text>().Any(t=>t.text.Contains("+1 TICKET")),"Service reward presents credited coins and ticket without a blocking claim tap")) yield break;
@@ -132,11 +132,11 @@ public static class RestaurantPresentationVerification
             while (state.outlets[7].waves == 0 && Time.realtimeSinceStartup - start < 160)
             {
                 var guests = state.outlets[7].service;
-                if (guests != null) { peakQueue = Math.Max(peakQueue, guests.Count(g => g.phase == GuestPhase.Entering || g.phase == GuestPhase.Queued)); foreach (var g in guests) if (g.returnedPlate) returned.Add(g.id); }
+                if (guests != null) { peakQueue = Math.Max(peakQueue, guests.Count(g => g.phase == GuestPhase.Entering || g.phase == GuestPhase.Queued)); foreach (var g in guests) if (g.plateLeftOnTable) returned.Add(g.id); }
                 if (!busyShot && state.seconds > 18) { busyShot = true; yield return Shot("08-bounded-entrance-queue"); }
                 yield return null;
             }
-            if (!Check(state.outlets[7].waves == 1 && state.guestsServed == 22 && returned.Count == 22 && peakQueue <= RestaurantWorld.QueueCapacity, "Busy service completes 22 meals, 22 plate returns and exits; queue stays inside its 10-person lane")) yield break;
+            if (!Check(state.outlets[7].waves == 1 && state.guestsServed == 22 && returned.Count == 22 && peakQueue <= RestaurantWorld.QueueCapacity, "Busy service completes 22 meals, 22 dishes left on tables and exits; queue stays inside its 10-person lane")) yield break;
             Note("Busy service complete"); yield return Shot("09-busy-service-complete");
             yield return new WaitForSecondsRealtime(app.experience.rewardSeconds+.3f);
             if(!Check(UnityEngine.GameObject.Find("Service reward").GetComponent<CanvasGroup>().alpha==0,"Reward card dismisses automatically while the next service continues")) yield break;

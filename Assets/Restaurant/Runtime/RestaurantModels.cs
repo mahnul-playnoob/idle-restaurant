@@ -22,7 +22,7 @@ namespace RestaurantPreview
         public static Transform Shape(PrimitiveType kind,Transform p,Vector3 pos,Vector3 size,string color)
         {
             var g=GameObject.CreatePrimitive(kind);g.name=kind.ToString();g.transform.SetParent(p,false);g.transform.localPosition=pos;g.transform.localScale=size;
-            var col=g.GetComponent<Collider>();if(col){if(Application.isPlaying)UnityEngine.Object.Destroy(col);else UnityEngine.Object.DestroyImmediate(col);}
+            var col=g.GetComponent<Collider>();if(col){col.enabled=false;if(Application.isPlaying)UnityEngine.Object.Destroy(col);else UnityEngine.Object.DestroyImmediate(col);}
             g.GetComponent<Renderer>().sharedMaterial=Mat(color);return g.transform;
         }
         public static Transform Ball(Transform p,Vector3 pos,Vector3 size,string c)=>Shape(PrimitiveType.Sphere,p,pos,size,c);
@@ -111,41 +111,57 @@ namespace RestaurantPreview
     }
     public sealed class Person
     {
-        public Transform root,body,head,leftArm,rightArm,leftLeg,rightLeg,tray;
+        public Transform root,body,head,leftArm,rightArm,leftLeg,rightLeg,leftKnee,rightKnee,tray;
         public Vector3 last;
         public Person(Transform parent,Vector3 position,GameObject prefab)
         {
             var instance=UnityEngine.Object.Instantiate(prefab,parent);root=instance.transform;root.localPosition=position;last=position;
             var rig=instance.GetComponent<IdleRestaurant.RestaurantActorRig>();if(!rig||!rig.Valid)throw new Exception("Replacement character needs a complete RestaurantActorRig");
-            body=rig.body;head=rig.head;leftArm=rig.leftArm;rightArm=rig.rightArm;leftLeg=rig.leftLeg;rightLeg=rig.rightLeg;tray=rig.tray;
+            body=rig.body;head=rig.head;leftArm=rig.leftArm;rightArm=rig.rightArm;leftLeg=rig.leftLeg;rightLeg=rig.rightLeg;tray=rig.tray;leftKnee=rig.leftKnee?rig.leftKnee:Articulate(leftLeg);rightKnee=rig.rightKnee?rig.rightKnee:Articulate(rightLeg);rig.leftKnee=leftKnee;rig.rightKnee=rightKnee;
         }
-        public Person(Transform parent,Vector3 position,string shirt,string hair,bool chef=false,bool server=false)
+        public Person(Transform parent,Vector3 position,string shirt,string hair,bool chef=false,bool server=false,int style=-1)
         {
             root=Models.Group(chef?"Chef":server?"Server":"Guest",parent,position);last=position;
             body=Models.Group("Body bounce",root,Vector3.zero);
             Models.Shape(PrimitiveType.Capsule,body,new Vector3(0,.69f,0),new Vector3(.51f,.36f,.36f),shirt);
             Models.Box(body,new Vector3(0,.47f,0),new Vector3(.38f,.23f,.30f),"#54646A",.07f);
-            head=Models.Group("Head",body,new Vector3(0,1.12f,0));Models.Ball(head,Vector3.zero,new Vector3(.49f,.54f,.46f),"#E8BC96");
+            string skin=style<0?"#E8BC96":IdleRestaurant.RestaurantCharacterArt.Skin(style);head=Models.Group("Head",body,new Vector3(0,1.12f,0));Models.Ball(head,Vector3.zero,new Vector3(.49f,.54f,.46f),skin);
             Models.Ball(head,new Vector3(-.09f,.03f,-.217f),new Vector3(.042f,.065f,.025f),"#3E3C36");Models.Ball(head,new Vector3(.09f,.03f,-.217f),new Vector3(.042f,.065f,.025f),"#3E3C36");
-            Models.Ball(head,new Vector3(0,-.04f,-.246f),new Vector3(.065f,.06f,.05f),"#DBA782");
+            Models.Ball(head,new Vector3(0,-.04f,-.246f),new Vector3(.065f,.06f,.05f),skin);
             Models.Tube(head,new[]{new Vector3(-.055f,-.095f,-.218f),new Vector3(0,-.12f,-.229f),new Vector3(.055f,-.095f,-.218f)},.012f,"#81594A");
+            if(style>=0)IdleRestaurant.RestaurantCharacterArt.Hair(head,style,hair,chef);
             if(chef)
             {
                 Models.Cylinder(head,new Vector3(0,.25f,0),.25f,.14f,"#FFFCF0");
                 for(int i=0;i<4;i++)Models.Ball(head,new Vector3(Mathf.Sin(i*1.57f)*.13f,.36f,Mathf.Cos(i*1.57f)*.1f),new Vector3(.29f,.29f,.28f),"#FFFCF0");
             }
-            else{Models.Ball(head,new Vector3(0,.19f,.025f),new Vector3(.51f,.20f,.47f),hair);Models.Ball(head,new Vector3(.18f,.10f,.015f),new Vector3(.12f,.22f,.36f),hair);}
+            else if(style<0){Models.Ball(head,new Vector3(0,.19f,.025f),new Vector3(.51f,.20f,.47f),hair);Models.Ball(head,new Vector3(.18f,.10f,.015f),new Vector3(.12f,.22f,.36f),hair);}
             if(chef || server){Models.Box(body,new Vector3(0,.65f,-.19f),new Vector3(.35f,.43f,.045f),"#FFF5DC",.02f);Models.Box(body,new Vector3(0,.55f,-.219f),new Vector3(.20f,.13f,.02f),shirt,.01f);}
-            leftArm=Arm(body,-1,shirt);rightArm=Arm(body,1,shirt);leftLeg=Leg(body,-1);rightLeg=Leg(body,1);
+            leftArm=Arm(body,-1,shirt,skin);rightArm=Arm(body,1,shirt,skin);leftLeg=Leg(body,-1);rightLeg=Leg(body,1);leftKnee=leftLeg.Find("Knee");rightKnee=rightLeg.Find("Knee");
             if(server){tray=Models.Group("Serving tray",body,new Vector3(0,.93f,-.48f));Models.Cylinder(tray,Vector3.zero,.36f,.035f,"#D8B586");}
         }
-        Transform Arm(Transform parent,int side,string shirt)
+        Transform Arm(Transform parent,int side,string shirt,string skin)
         {
-            var t=Models.Group("Arm",parent,new Vector3(side*.29f,.88f,0));Models.Shape(PrimitiveType.Capsule,t,new Vector3(0,-.17f,0),new Vector3(.15f,.20f,.15f),shirt);Models.Ball(t,new Vector3(0,-.36f,0),new Vector3(.15f,.17f,.15f),"#E8BC96");return t;
+            var t=Models.Group("Arm",parent,new Vector3(side*.29f,.88f,0));Models.Shape(PrimitiveType.Capsule,t,new Vector3(0,-.17f,0),new Vector3(.15f,.20f,.15f),shirt);Models.Ball(t,new Vector3(0,-.36f,0),new Vector3(.15f,.17f,.15f),skin);return t;
         }
         Transform Leg(Transform parent,int side)
         {
-            var t=Models.Group("Leg",parent,new Vector3(side*.13f,.39f,0));Models.Shape(PrimitiveType.Capsule,t,new Vector3(0,-.14f,0),new Vector3(.15f,.18f,.16f),"#54646A");Models.Box(t,new Vector3(0,-.30f,-.045f),new Vector3(.19f,.11f,.30f),"#5C514B",.055f);return t;
+            var t=Models.Group("Leg",parent,new Vector3(side*.13f,.39f,0));
+            Models.Shape(PrimitiveType.Capsule,t,new Vector3(0,-.10f,0),new Vector3(.15f,.11f,.16f),"#54646A");
+            var knee=Models.Group("Knee",t,new Vector3(0,-.20f,0));Models.Shape(PrimitiveType.Capsule,knee,new Vector3(0,-.04f,0),new Vector3(.145f,.075f,.15f),"#54646A");Models.Box(knee,new Vector3(0,-.10f,-.06f),new Vector3(.19f,.11f,.30f),"#5C514B",.055f);return t;
+        }
+        static Transform Articulate(Transform leg)
+        {
+            // Upgrade the shipped rigid-leg prefabs; artist replacement rigs can supply explicit knees.
+            var upper=leg.Find("Capsule");var shoe=leg.Find("Rounded block");if(!upper||!shoe)return null;
+            upper.localPosition=new Vector3(0,-.10f,0);upper.localScale=new Vector3(.15f,.11f,.16f);
+            var knee=Models.Group("Knee",leg,new Vector3(0,-.20f,0));var shin=Models.Shape(PrimitiveType.Capsule,knee,new Vector3(0,-.04f,0),new Vector3(.145f,.075f,.15f),"#54646A");var col=shin.GetComponent<Collider>();if(col)col.enabled=false;
+            shoe.SetParent(knee,false);shoe.localPosition=new Vector3(0,-.10f,-.06f);return knee;
+        }
+        public void SeatLegs(float amount)
+        {
+            amount=Mathf.Clamp01(amount);leftLeg.localRotation=rightLeg.localRotation=Quaternion.Euler(90*amount,0,0);
+            if(leftKnee)leftKnee.localRotation=Quaternion.Euler(-90*amount,0,0);if(rightKnee)rightKnee.localRotation=Quaternion.Euler(-90*amount,0,0);
         }
         public void Pose(float time,Vector3 pos,bool carry=false,bool cook=false,bool eat=false,float cheer=0,float yaw=float.NaN)
         {
@@ -154,7 +170,7 @@ namespace RestaurantPreview
             else if(delta.sqrMagnitude>.00001f)root.localRotation=Quaternion.Slerp(root.localRotation,Quaternion.LookRotation(-delta),.22f);
             float stride=Mathf.Sin(time*11)*moving;
             body.localPosition=new Vector3(0,Mathf.Abs(stride)*.045f,0);
-            leftLeg.localRotation=Quaternion.Euler(eat?65:stride*31,0,0);rightLeg.localRotation=Quaternion.Euler(eat?65:-stride*31,0,0);
+            leftLeg.localRotation=Quaternion.Euler(stride*31,0,0);rightLeg.localRotation=Quaternion.Euler(-stride*31,0,0);if(leftKnee)leftKnee.localRotation=Quaternion.Euler(-Mathf.Max(0,-stride)*18,0,0);if(rightKnee)rightKnee.localRotation=Quaternion.Euler(-Mathf.Max(0,stride)*18,0,0);if(eat)SeatLegs(1);
             float work=cook?110+Mathf.Sin(time*13)*15:carry?100:stride*-27;
             leftArm.localRotation=Quaternion.Euler(work,0,cheer*135);
             rightArm.localRotation=Quaternion.Euler(eat?60+Mathf.Sin(time*8)*25:work,0,-cheer*135);

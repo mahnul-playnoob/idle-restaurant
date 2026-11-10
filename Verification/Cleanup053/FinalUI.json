@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Growth price/services/upgrades fit two lines with largeText=False",
+    "Growth price/services/upgrades fit two lines with largeText=True",
+    "Cleanup status uses readable 24-point text",
+    "Upgrade feedback invoked after unsupported checkmark removal"
+  ],
+  "scope": "Focused live final UI checks loaded from actual earned playtest save; normal and large text; UI-only changes after pacing"
+}

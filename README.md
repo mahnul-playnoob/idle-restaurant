@@ -1,3 +1,5 @@
+> Version 0.5.3: articulated seated guests, twelve varied looks, empty-handed exits and optional all-current-mess janitor visits. [Live cleanup checks and measured fresh-save pacing](Design/Updates/Cleanup053.html) · [Editing and reward rules](Design/Updates/Cleanup-Update.md).
+
 > Version 0.5.2: longer fresh-save validation of the final two-service invitation gap. [Measured pacing, recovery and live UI/save checks](Design/Updates/FinalGapPlaythrough.html).
 
 > Version 0.5.1: centred Street Kitchen shades, lighting at all three counters, six night-only table candles and earlier earned starter access. Readable growth targets and Map/Team readiness markers guide the longer journey. [Fresh-save playtest and editing notes](Design/Updates/WarmServiceAndFreshSession.html).
@@ -10,9 +12,9 @@
 
 # Idle Restaurant Tycoon — free family edition
 
-Unity **6000.3.26f1**, portrait Android **11+**, ARM64. Active scene: `Assets/Restaurant/Production/RestaurantGame.unity`. Version **0.3.1**.
+Unity **6000.3.26f1**, portrait Android **11+**, ARM64. Active scene: `Assets/Restaurant/Production/RestaurantGame.unity`. Version **0.5.3**.
 
-This edition has **no purchases or ads**. Guests queue, order, collect food, reserve chairs, eat and return their plates. Earn coins for upgrades and new restaurants; earn tickets for teammates and useful skills. A short guided first service introduces one step at a time. There is no energy meter, guest patience penalty or daily service-ticket limit.
+This edition has **no purchases or ads**. Guests queue, order, collect food, reserve chairs, eat and leave used dishes on the table. Optional cleaning never blocks seating. Earn coins for upgrades and new restaurants; earn tickets for teammates and useful skills. A short guided first service introduces one step at a time. There is no energy meter, guest patience penalty or daily service-ticket limit.
 
 The game includes 40 restaurants in five themed districts, 71 collectible teammates, research, offline earnings, repeatable restaurant stars and rolling goal books. The 40 environments are finite authored content; continued play repeats and develops those restaurants.
 
@@ -30,7 +32,7 @@ Open the production scene and press Play. Green BUY cards are affordable, with a
 
 ## Verification
 
-Current reports: `Verification/FamilyPlay.json`, `FamilyBusyServices.json`, `FamilyEconomy.json` and `FamilyProgressionForecast.json`. The forecast is analytical, not measured total playtime. Historical `CoreChecks.json` checks the retained reference model separately.
+Latest iteration evidence: `Verification/Cleanup053/`, plus the preceding `Verification/Progression052/` invitation-gap baseline. Earlier reports: `Verification/FamilyPlay.json`, `FamilyBusyServices.json`, `FamilyEconomy.json` and `FamilyProgressionForecast.json`. The forecast is analytical, not measured total playtime. Historical `CoreChecks.json` checks the retained reference model separately.
 
 Physical-phone performance/input and child usability testing remain necessary. This is a runnable testing candidate, not a claim of a store-approved or child-tested release. See [the current handoff](Design/DevelopmentHandoff.html) for exact artifact and validation status.
 

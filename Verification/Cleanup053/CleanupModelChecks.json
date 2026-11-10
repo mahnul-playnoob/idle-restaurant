@@ -1,0 +1,32 @@
+{
+  "utc": "2026-11-10T08:46:08.187716Z",
+  "status": "PASS",
+  "checks": [
+    "Empty cleanup cannot award money",
+    "A finished meal creates one dirty dish only once",
+    "Used dishes stack at a shared table edge",
+    "Tap requests a janitor visit",
+    "One visit includes all dirt present when called",
+    "Reward is exactly 1.5 times displayed base income/min at dispatch",
+    "Repeated taps during a visit cannot duplicate jobs or rewards",
+    "An active janitor visit and fixed payout survive save/load",
+    "Completion callback pays the promised amount",
+    "Janitor finishes and pays once",
+    "Every item in the dispatched batch is cleaned",
+    "Cash ledger credits exactly one cleanup reward",
+    "Cleanup bonus does not inflate service income, completion bonuses or income/min",
+    "Further ticks do not pay the completed visit again",
+    "A cooldown tap queues one later visit",
+    "Queued janitor does not dispatch before the 90-second reward interval",
+    "Queued janitor dispatches when the confirmed interval expires",
+    "Ambient floor dirt stays bounded",
+    "Existing saves without cleanup fields load safely",
+    "Twelve editable guest looks include six feminine and six masculine presentations",
+    "All varied guests have articulated knees",
+    "Chefs and hosts also have balanced appearance variety",
+    "Janitor visits can use two different gender presentations"
+  ],
+  "scope": "Isolated seeded models and authored prefab inspection; live gameplay checks are separate",
+  "rewardMinutes": 1.5,
+  "repeatSeconds": 90.0
+}

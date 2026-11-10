@@ -31,10 +31,12 @@ namespace IdleRestaurant {
      if(g.phase==GuestPhase.Ordering&&g.clock>=OrderDuration(i)){g.ordered=true;s.ordered++;Earn(i,0,FamilyPay(i,0));ChangePhase(g,GuestPhase.ToPickup);}
      if(g.phase==GuestPhase.Receiving&&g.clock>=Balance.pickupSeconds){g.collected=true;ChangePhase(g,GuestPhase.ToSeat);}
      if(g.phase==GuestPhase.Sitting&&g.clock>=Balance.sitSeconds)ChangePhase(g,GuestPhase.Eating);
-     if(g.phase==GuestPhase.Eating&&g.clock>=MealDuration(i)){if(!g.mealPaid){g.mealPaid=true;s.seated++;State.guestsServed++;double value=FamilyPay(i,2);uint hash=(uint)(g.id*1664525+s.waves*1013904223+i*7919);if(hash%100<Math.Min(85,s.upgrades[7]*Balance.tipChancePerLevel*100+ResearchEffect("ccr")*100)){g.tips=FamilyMealValue(i)*Balance.tipFraction;value+=g.tips;}Earn(i,2,value);if(State.guideStep==1)State.guideStep=2;}ChangePhase(g,GuestPhase.Standing);}
+     if(g.mealPaid&&!g.plateLeftOnTable&&g.seat>=0)LeaveDirtyPlate(i,g);
+     if(g.phase==GuestPhase.Eating&&g.clock>=MealDuration(i)){if(!g.mealPaid){g.mealPaid=true;s.seated++;State.guestsServed++;double value=FamilyPay(i,2);uint hash=(uint)(g.id*1664525+s.waves*1013904223+i*7919);if(hash%100<Math.Min(85,s.upgrades[7]*Balance.tipChancePerLevel*100+ResearchEffect("ccr")*100)){g.tips=FamilyMealValue(i)*Balance.tipFraction;value+=g.tips;}Earn(i,2,value);LeaveDirtyPlate(i,g);if(State.guideStep==1)State.guideStep=2;}ChangePhase(g,GuestPhase.Standing);}
     }
     bool ended=true;foreach(var g in s.service)if(g.phase!=GuestPhase.Exited){ended=false;break;}if(ended){double bonus=s.waveIncome*Balance.serviceBonus*(1+ResearchEffect("arr"))+(i==0&&s.waves==0?Balance.firstServiceGift:0);RecordServiceIncome(i,s.waveIncome*(1+Balance.serviceBonus*(1+ResearchEffect("arr"))));State.cash+=bonus;State.totalEarned+=bonus;State.gems++;State.serviceStars++;s.waves++;Paid?.Invoke(i,3,bonus);Feedback?.Invoke("Service complete! +"+Economy.Money(bonus)+" and 1 ticket");s.service=null;EnsureStarterManager();if(State.guideStep==4)State.guideStep=5;}
    }
+   TickCleanup(dt);
   }
   public bool Recruit(int tier){if(tier!=0){Feedback?.Invoke("Welcome teammates one at a time");return false;}if(!CanRecruit(out var reason)){Feedback?.Invoke(reason);return false;}int id=NextRecruitId();State.gems-=RecruitPrice;State.lastRecruitWaves=TotalWaves();State.recruitSequence=id+1;State.managerCopies[id]=1;State.managerLevels[id]=Math.Max(1,State.managerLevels[id]);Feedback?.Invoke("Welcome, "+Catalog.managers[id].title+"!");return true;}
 

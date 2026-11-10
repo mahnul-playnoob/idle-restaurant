@@ -11,6 +11,7 @@ namespace IdleRestaurant {
  [Serializable] public class ManagerDefinition { public string id,title; public int role,rarity,affinity=-1; }
  [CreateAssetMenu(menuName="Restaurant/Game Catalog")] public class RestaurantCatalog:ScriptableObject {
   public GameObject guestPrefab,chefPrefab,hostPrefab;
+  public GameObject[] guestVariants,chefVariants,hostVariants,janitorVariants;
   public OutletDefinition[] outlets; public ResearchDefinition[] research; public ManagerDefinition[] managers;
   public FamilyBalance familyBalance;
   public RestaurantJourney journey;

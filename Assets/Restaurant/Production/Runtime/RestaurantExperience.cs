@@ -104,7 +104,7 @@ namespace IdleRestaurant
         void UpgradeResult(int card)
         {
             feedbackStage = card / 3; upgradeAt = Time.unscaledTime;
-            upgradeMessage.text = UpgradePurpose[card] + "  ✓";
+            upgradeMessage.text = UpgradePurpose[card];
             // This feedback identifies the affected station; it does not exaggerate a small speed increase.
         }
 

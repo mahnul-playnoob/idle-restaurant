@@ -24,6 +24,12 @@ MonoBehaviour:
   unlockServicesPerOutlet: 0.75
   starterServices: 4
   recruitServiceGap: 2
+  cleanupRewardMinutes: 1.5
+  cleanupRewardIntervalSeconds: 90
+  litterIntervalSeconds: 36
+  maxFloorLitter: 4
+  janitorSpeed: 3
+  cleanupSeconds: 1.1
   recruitServiceBase: 4
   recruitServiceStep: 4
   recruitTicketStep: 2
